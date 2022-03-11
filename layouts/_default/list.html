@@ -21,7 +21,7 @@
 			{{ end }}
 		{{ end }}
 		<h2>
-			<a href="{{ .Permalink }}">
+			<a href="{{ .Permalink | relLangURL }}">
 				{{ .Title }}
 			</a>
 		</h2>
