@@ -1,3 +1,12 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'es-AR'
+defaultContentLanguage = 'es'
+title = 'Plataformas Móviles'
+disableKinds = ['taxonomy', 'term']
+
+[params]
+	mainSections = ['clases']
+
+[frontmatter]
+	date = [':filename', ':default']
+
