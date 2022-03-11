@@ -1,0 +1,21 @@
+# IDE specific
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Hugo
+.hugo_build.lock
+go.sum
+resources/
+public/
+
+# Mac
+.DS_Store
+
+# Test
+test/go.sum
