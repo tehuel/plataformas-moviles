@@ -77,11 +77,11 @@
           <div class="col">
             <p>{{ now.Format "2006" }} | {{ .Site.Title }}</p>
           </div>
-          <div class="col text-end">
-            <a class="link-light" href="{{ .Site.Params.Repository }}/edit/main/content/{{ .File.Path }}">Editar en Github</a>
-            |
-            <a class="link-light" href="{{ .Site.Params.Repository }}/blob/main/content/{{ .File.Path }}">Ver Código Fuente</a>
-          </div>
+          {{ with .File }}
+            <div class="col text-end">
+              <a class="link-light" href="{{ site.Params.Repository }}/edit/main/content/{{ .Path }}">Editar en Github</a> | <a class="link-light" href="{{ site.Params.Repository }}/blob/main/content/{{ .Path }}">Ver Código Fuente</a>
+            </div>
+          {{ end }}
         </div>
       </div>
     </footer>
