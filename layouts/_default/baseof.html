@@ -26,6 +26,15 @@
         max-width: 40rem;
         margin: 0 auto;
       }
+      figure img {
+        max-width: 100%;
+      }
+
+      figcaption {
+        text-align: right;
+        font-style: italic;
+        color: var(--bs-gray-600);
+      }
     </style>
 
   </head>
@@ -64,8 +73,16 @@
 
     <footer class="footer py-5 bg-dark text-light">
       <div class="container">
-        <p>{{ now.Format "2006" }} | {{ .Site.Title }}</p>
-        <p></p>
+        <div class="row">
+          <div class="col">
+            <p>{{ now.Format "2006" }} | {{ .Site.Title }}</p>
+          </div>
+          <div class="col text-end">
+            <a class="link-light" href="{{ .Site.Params.Repository }}/edit/main/content/{{ .File.Path }}">Editar en Github</a>
+            |
+            <a class="link-light" href="{{ .Site.Params.Repository }}/blob/main/content/{{ .File.Path }}">Ver Código Fuente</a>
+          </div>
+        </div>
       </div>
     </footer>
 

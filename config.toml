@@ -6,6 +6,7 @@ disableKinds = ['taxonomy', 'term']
 
 [params]
 	mainSections = ['clases']
+	repository = 'https://github.com/tehuel/plataformas-moviles'
 
 [frontmatter]
 	date = [':filename', ':default']
