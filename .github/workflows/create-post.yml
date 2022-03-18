@@ -1,0 +1,10 @@
+name: create-post
+on: workflow_dispatch
+jobs:
+  create-post-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Dynamically set TODAY environment variable
+      run: echo "TODAY=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+    - name: create-post
+      run: echo $TODAY
