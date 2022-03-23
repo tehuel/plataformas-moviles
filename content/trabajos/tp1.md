@@ -1,8 +1,8 @@
 ---
-title: "TP1 - HTML y Github"
+title: "TP1 - HTML y GitHub"
 ---
 
-Primer trabajo práctico. Vamos a arrancar armando nuestro repositorio en Github y publicándolo en la web con Github Pages.
+Primer trabajo práctico. Vamos a arrancar armando nuestro repositorio en GitHub y publicándolo en la web con GitHub Pages.
 
 ## Fecha de Entrega
 
@@ -42,15 +42,15 @@ Lunes 28 de Marzo. Lo vamos a revisar durante la clase
 
 ## Consigna
 
-### Primera Parte: Repositorio en Github
+### Primera Parte: Repositorio en GitHub
 
-- Crear usuario en [Github](https://github.com) (si es que todavía no tienen).
+- Crear usuario en [GitHub](https://github.com) (si es que todavía no tienen).
 - Crear un nuevo repositorio, con el nombre `plataformas-moviles-entregas`.
 - Dentro del repositorio recién creado, agregar:
     - un archivo `index.html` en el nivel raíz.
     - una carpeta `tp-1` en el nivel raíz.
     - un archivo `index.html` dentro de la carpeta `tp-1`. Debería quedar con la forma: ![](/img/tp-1-repositorio.png)
-- Activar Github Pages. ![](/img/tp-1-pages.png)
+- Activar GitHub Pages. ![](/img/tp-1-pages.png)
     1. Ir a la sección `settings` del repositorio.
     2. Ir a la sección `pages` dentro de `settings` del repositorio.
     2. Seleccionar la branch `main` y la carpeta `root` del repositorio.
@@ -64,7 +64,7 @@ Lunes 28 de Marzo. Lo vamos a revisar durante la clase
     - Respetar los niveles de *heading*, usando las etiquetas de [`<h1>` hasta `<h6>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/Heading_Elements).
     - Conservar los resaltados con [`<strong>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/strong) y [`<em>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/em).
     - Pensar en la [semántica de las etiquetas](https://es.wikipedia.org/wiki/HTML_semántico).
-- Subir y publicar en Github el archivo HTML creado.
+- Subir y publicar en GitHub el archivo HTML creado.
 --- 
 
 Tip: Para navegar hacia un artículo random de la wikipedia se puede usar este link especial: https://es.wikipedia.org/wiki/Special:Random
