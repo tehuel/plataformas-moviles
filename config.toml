@@ -11,3 +11,5 @@ disableKinds = ['taxonomy', 'term']
 [frontmatter]
 	date = [':filename', ':default']
 
+[markup.goldmark.renderer]
+	unsafe= true
