@@ -29,10 +29,10 @@ Lunes 28 de Marzo. Lo vamos a revisar durante la clase
 
         const message = {
             e: elapsed ? "Faltan" : "Pasó hace",
-            d: d > 1 ? `${d} días` : `${d} día`,
-            h: h > 1 ? `${h} horas` : `${h} hora`,
-            m: m > 1 ? `${m} minutos` : `${m} minuto`,
-            s: s > 1 ? `${s} segundos` : `${s} segundo`,
+            d: d != 1 ? `${d} días` : `${d} día`,
+            h: h != 1 ? `${h} horas` : `${h} hora`,
+            m: m != 1 ? `${m} minutos` : `${m} minuto`,
+            s: s != 1 ? `${s} segundos` : `${s} segundo`,
         }            
         document.getElementById("timer").innerText = `${message.e} ${message.d}, ${message.h}, ${message.m} y ${message.s}.`
     }
