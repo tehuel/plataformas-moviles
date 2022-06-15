@@ -8,8 +8,11 @@
 		{{ .Content }}		
 	</div>
 
-	{{- $pages := .RegularPages }}
-	{{ $paginator := .Paginate $pages }} 
+    <div class="text-center border-bottom mb-4">
+		<h2 class="text-1">Últimas Clases</h2>
+	</div>
+    {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+	{{ $paginator := .Paginate $pages 5 }} 
 	{{ range $paginator.Pages }}
 		{{ if not .IsSection }}
 			{{ with .Date }}
@@ -22,5 +25,10 @@
 			</a>
 		</h2>
 	{{ end }}
+    <div class="text-end mt-1">
+        <p>
+            <a class="btn btn-outline-primary" href="{{ "/clases" | relLangURL }}">Ver Registro de Clases</a>
+        </p>
+    </div>
 
 {{- end }}
