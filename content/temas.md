@@ -35,15 +35,16 @@ Listado de los contenidos mínimos que esperamos cubrir durante el año:
     - Tipos Primitivos
     - Objetos
     - Listas
-- Integración con Bootstrap
+- ShadowDOM (React)
 - DOM
     - navegación
     - selección
     - modificar
 - APIs
+    - JSON
     - Autenticación
     - Paginación
-    - JSON
+- Integración con Bootstrap
 
 # Unidad 4: Proyecto Final
 - Definición de Proyecto
