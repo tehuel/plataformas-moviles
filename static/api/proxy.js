@@ -1,4 +1,4 @@
-export default function handler(req, res, next) {
+export default async function handler(req, res, next) {
   async function getURI(url) {
     try {
       const response = await axios.get(url);
