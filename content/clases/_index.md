@@ -1,5 +1,5 @@
 ---
-title: Registro de Clases
+title: Registro de Clases (2023)
 menu:
   main:
     name: Clases
