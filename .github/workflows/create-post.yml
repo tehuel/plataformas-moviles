@@ -7,30 +7,17 @@ jobs:
   create-post-job:
     runs-on: ubuntu-latest
     steps:
-    - name: Set TODAY environment variable
-      run: echo "TODAY=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
-    
-    - name: Checkout
-      uses: actions/checkout@v2
-    
-    - name: Create Post
-      run: |
-        tee -a ./content/clases/$TODAY.md << END
-        ---
-        title: Clase {#} - Ejemplo
-        ---
-        
-        Ejemplo
-        
-        END
 
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
+    - name: Checkout
+      uses: actions/checkout@master
       with:
-        commit-message: Crea Post $TODAY
-        branch: post-$TODAY
-        delete-branch: true
-        draft: true
-        title: '[Borrador] Creo Nuevo Post $TODAY'
-        body: |
-            Creo nuevo post para $TODAY
+        persist-credentials: false
+        fetch-depth: 0
+
+    - name: Create Post
+      run: ./create-post.sh
+
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
