@@ -1,10 +1,5 @@
 ---
-title: APIs (2023)
-draft: true
-menu:
-  main:
-    name: APIs
-    weight: 50
+title: APIs (2022)
 ---
 
 Listados de APIs
