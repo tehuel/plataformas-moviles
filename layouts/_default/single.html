@@ -1,10 +1,10 @@
 {{- define "main" }}
 
 	<div class="text-center border-bottom mb-4">
-		{{ with .Date }}
-			<time class="text-muted">{{ . | time.Format ":date_long" }}</time>
-		{{ end }}
 		<h1 class="display-3">{{ .Title }}</h1>
+		{{ with .Date }}
+			<time class="text-muted">{{ . | time.Format ":date_full" }}</time>
+		{{ end }}
 	</div>
 
 	{{ .Content }}

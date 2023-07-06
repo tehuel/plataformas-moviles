@@ -13,7 +13,7 @@
 	{{ range $paginator.Pages }}
 		{{ if not .IsSection }}
 			{{ with .Date }}
-				<time class="text-muted">{{ . | time.Format ":date_long" }}</time>
+				<time class="text-muted">{{ . | time.Format ":date_full" }}</time>
 			{{ end }}
 		{{ end }}
 		<h2>
