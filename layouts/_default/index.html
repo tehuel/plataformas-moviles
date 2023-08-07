@@ -14,6 +14,10 @@
     {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 	{{ $paginator := .Paginate $pages 5 }} 
 	{{ range $paginator.Pages }}
+
+		{{ $divisions := dict "7-3" "7mo 3ra" "7-4" "7mo 4ta"}}
+		{{ $division := index $divisions (index .SectionsEntries 1) }}
+
 		{{ if not .IsSection }}
 			{{ with .Date }}
 				<time class="text-muted">{{ . | time.Format ":date_full" }}</time>
@@ -21,7 +25,7 @@
 		{{ end }}
 		<h2>
 			<a href="{{ .Permalink | relLangURL }}">
-				{{ .Title }}
+				[{{ $division }}] - {{ .Title }}
 			</a>
 		</h2>
 	{{ end }}
