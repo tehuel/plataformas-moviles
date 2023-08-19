@@ -15,7 +15,7 @@
 	{{ $paginator := .Paginate $pages 5 }} 
 	{{ range $paginator.Pages }}
 
-		{{ $divisions := dict "7-3" "7mo 3ra" "7-4" "7mo 4ta"}}
+		{{ $divisions := dict "7-2" "7mo 2da" "7-3" "7mo 3ra" "7-4" "7mo 4ta"}}
 		{{ $division := index $divisions (index .SectionsEntries 1) }}
 
 		{{ if not .IsSection }}
