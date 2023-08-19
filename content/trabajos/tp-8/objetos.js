@@ -73,7 +73,7 @@ console.log("nombreCompletoDePersona()", nombreCompletoDePersona(personaEjemplo)
 function felizCumpleaños(persona) {
     // 
 }
-console.log("felizCumpleaños()", nombreCompletoDePersona(personaEjemplo));
+console.log("felizCumpleaños()", felizCumpleaños(personaEjemplo));
 
 /**
  * Recibe
