@@ -2,6 +2,8 @@ var listaNumerosEjemplo = [2,4,6,-1,5,-4,0];
 
 
 /**
+ * 01 - invertirLista
+ * 
  * Recibe
  * - `listaDeNumeros`: una lista (array) de números.
  * 
@@ -18,6 +20,8 @@ console.log("invertirLista([2,3,4]): ", invertirLista([2,3,4]))
 
 
 /**
+ * 02 - calcularPromedio
+ * 
  * Recibe
  * - `listaDeNumeros`: una lista (array) de números.
  * 
@@ -35,6 +39,8 @@ console.log("calcularPromedio(listaNumerosEjemplo): ", calcularPromedio(listaNum
 
 
 /**
+ * 03 - crearListaDeNumeros
+ * 
  * Recibe
  * - `inicio`: un número, con el valor inicial de la lista
  * - `fin`: un número, con el valor final de la lista
@@ -54,6 +60,8 @@ console.log("crearListaDeNumeros(2,5): ", crearListaDeNumeros(2,5))
 
 
 /**
+ * 04 - ordenarDeMayorAMenor
+ * 
  * Recibe
  * - `listaDeNumeros`: una lista (array) de números.
  * 
@@ -71,6 +79,8 @@ console.log("ordenarDeMayorAMenor(listaNumerosEjemplo): ", ordenarDeMayorAMenor(
 
 
 /**
+ * 05 - encontrarNumeroMayor
+ * 
  * Recibe
  * - `listaDeNumeros`: una lista (array) de números.
  * 
@@ -88,6 +98,8 @@ console.log("encontrarNumeroMayor(listaNumerosEjemplo): ", encontrarNumeroMayor(
 
 
 /**
+ * 06 - ordenarPalabrasPorLongitud
+ * 
  * Recibe
  * - `listaDePalabras`: una lista (array) de palabras (string).
  * 
@@ -104,6 +116,8 @@ console.log("ordenarPalabrasPorLongitud(['abc', 'a', 'ab']): ", ordenarPalabrasP
 
 
 /**
+ * 07 - encontrarPalabraMasCorta
+ * 
  * Recibe
  * - `listaDePalabras`: una lista (array) de palabras (string).
  * 
@@ -120,6 +134,8 @@ console.log("encontrarPalabraMasCorta(['abc', 'a', 'ab']): ", encontrarPalabraMa
 
 
 /**
+ * 08 - filtrarSoloPositivos
+ * 
  * Recibe
  * - `listaDeNumeros`: una lista (array) de números.
  * 
@@ -137,6 +153,8 @@ console.log("filtrarSoloPositivos(listaNumerosEjemplo): ", filtrarSoloPositivos(
 
 
 /**
+ * 09 - contarAprobados
+ * 
  * Recibe
  * - `listaDeNotas`: una lista (array) de números con valores entre 1 y 10.
  * 
@@ -153,6 +171,8 @@ console.log("contarAprobados([10, 4, 6, 7, 1, 9]): ", contarAprobados([10, 4, 6,
 
 
 /**
+ * 10 - filtrarSoloTruthy
+ * 
  * Recibe
  * - `listaDeValores`: una lista (array) de valores de distintos tipos.
  * 
@@ -168,6 +188,7 @@ function filtrarSoloTruthy(listaDeValores) {
 console.log("filtrarSoloTruthy(): ", filtrarSoloTruthy(["Hola", "", null, 1, 0, -1, undefined, [], {}]))
 
 /**
+ * 11 - enumerarLista
  * Recibe
  * - `listaDePalabras`: una lista (array) de palabras (strings).
  * 
