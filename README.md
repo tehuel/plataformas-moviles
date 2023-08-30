@@ -1,2 +1,3 @@
 # plataformas-moviles
-Sitio web para la materia Proyecto de Desarrollo para Plataformas Móviles de la EEST 4 Berazategui
+
+Sitio web para la materia "Proyecto de Desarrollo de Software para Plataformas Móviles" de la E.E.S.T. Nro 4 de Berazategui.
