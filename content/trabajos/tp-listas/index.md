@@ -3,7 +3,7 @@ title: "Listas en JavaScript"
 draft: true
 ---
 
-En este trabajo práctico vamos a usar listas (arrays,) dentro del lenguaje JavaScript.
+En este trabajo práctico vamos a usar listas (arrays) dentro del lenguaje JavaScript.
 
 Consigna:
 

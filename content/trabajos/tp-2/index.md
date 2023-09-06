@@ -76,7 +76,6 @@ Bonus Tracks:
 15. Mostrar los links sin atributo `href` en cursiva.
 16. Mostrar de manera alternada el color de fondo de cada uno de los elementos de los listados de películas entre `#111` y `333`.
 
-
 > **Atención**
 > 
 > - No está permitido el uso de estilos *inline*.
