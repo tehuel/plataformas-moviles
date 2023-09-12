@@ -48,7 +48,7 @@ console.log("agregarApodo()", agregarApodo(personaEjemplo, "JuanPe"));
 
 
 /**
- * 04 - sinDocumento
+ * 03 - sinDocumento
  * 
  * Recibe
  * - `persona`: objeto de la forma persona.
@@ -63,7 +63,7 @@ console.log("sinDocumento()", sinDocumento(personaEjemplo));
 
 
 /**
- * 02 - nombreCompletoDePersona
+ * 04 - nombreCompletoDePersona
  * 
  * Recibe
  * - `persona`: objeto de la forma persona.
@@ -78,7 +78,7 @@ console.log("nombreCompletoDePersona()", nombreCompletoDePersona(personaEjemplo)
 
 
 /**
- * 03 - felizCumpleaños
+ * 05 - felizCumpleaños
  * 
  * Recibe
  * - `persona`: objeto de la forma persona.
