@@ -29,7 +29,7 @@ var personaEjemplo = {
 function crearPersona(nombre, apellido, edad, documento) {
     // 
 }
-console.log("crearPersona()", crearPersona("Juan", "Pérez", 20, 123456));
+console.log("resultado crearPersona: ", crearPersona("Juan", "Pérez", 20, 123456));
 
 
 /**
@@ -44,7 +44,7 @@ console.log("crearPersona()", crearPersona("Juan", "Pérez", 20, 123456));
 function agregarApodo(persona, apodo) {
     // 
 }
-console.log("agregarApodo()", agregarApodo(personaEjemplo, "JuanPe"));
+console.log("resultado agregarApodo: ", agregarApodo(personaEjemplo, "JuanPe"));
 
 
 /**
@@ -59,7 +59,7 @@ console.log("agregarApodo()", agregarApodo(personaEjemplo, "JuanPe"));
 function sinDocumento(persona) {
     // 
 }
-console.log("sinDocumento()", sinDocumento(personaEjemplo));
+console.log("resultado sinDocumento: ", sinDocumento(personaEjemplo));
 
 
 /**
@@ -74,7 +74,7 @@ console.log("sinDocumento()", sinDocumento(personaEjemplo));
 function nombreCompletoDePersona(persona) {
     // 
 }
-console.log("nombreCompletoDePersona()", nombreCompletoDePersona(personaEjemplo));
+console.log("resultado nombreCompletoDePersona: ", nombreCompletoDePersona(personaEjemplo));
 
 
 /**
@@ -89,7 +89,7 @@ console.log("nombreCompletoDePersona()", nombreCompletoDePersona(personaEjemplo)
 function felizCumpleaños(persona) {
     // 
 }
-console.log("felizCumpleaños()", felizCumpleaños(personaEjemplo));
+console.log("resultado felizCumpleaños: ", felizCumpleaños(personaEjemplo));
 
 
 /**
@@ -105,7 +105,7 @@ console.log("felizCumpleaños()", felizCumpleaños(personaEjemplo));
 function sonLaMismaPersona(persona1, persona2) {
     // 
 }
-console.log("sonLaMismaPersona()", sonLaMismaPersona(
+console.log("resultado sonLaMismaPersona: ", sonLaMismaPersona(
     personaEjemplo,
     { apellido: "Perez", nombre: "Juan", edad: 20, documento: 12345 }
 ));
