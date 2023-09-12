@@ -33,6 +33,21 @@ console.log("crearPersona()", crearPersona("Juan", "Pérez", 20, 123456));
 
 
 /**
+ * 02 - agregarApodo
+ * 
+ * Recibe
+ * - `persona`: objeto de la forma persona.
+ * 
+ * Retorna: 
+ * - un objeto, representando a la misma persona recibida, pero con un nuevo campo 'apodo'.
+ */
+function agregarApodo(persona, apodo) {
+    // 
+}
+console.log("agregarApodo()", agregarApodo(personaEjemplo, "JuanPe"));
+
+
+/**
  * 02 - nombreCompletoDePersona
  * 
  * Recibe
