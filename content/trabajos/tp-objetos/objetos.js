@@ -90,3 +90,22 @@ function sinDocumento(persona) {
     // 
 }
 console.log("sinDocumento()", sinDocumento(personaEjemplo));
+
+
+/**
+ * 06 - sonLaMismaPersona
+ * 
+ * Recibe
+ * - `persona1`: Un objeto de la forma persona.
+ * - `persona2`: Otro objeto de la forma persona.
+ * 
+ * Retorna: 
+ * - un valor boolean ('true' o 'false'), indicando si persona1 y persona2 son la misma persona.
+ */
+function sonLaMismaPersona(persona1, persona2) {
+    // 
+}
+console.log("sonLaMismaPersona()", sonLaMismaPersona(
+    personaEjemplo,
+    { apellido: "Perez", nombre: "Juan", edad: 20, documento: 12345 }
+));
