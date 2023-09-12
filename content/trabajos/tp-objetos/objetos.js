@@ -48,6 +48,21 @@ console.log("agregarApodo()", agregarApodo(personaEjemplo, "JuanPe"));
 
 
 /**
+ * 04 - sinDocumento
+ * 
+ * Recibe
+ * - `persona`: objeto de la forma persona.
+ * 
+ * Retorna: 
+ * - un objeto, representando a la misma persona recibida, pero sin el campo documento.
+ */
+function sinDocumento(persona) {
+    // 
+}
+console.log("sinDocumento()", sinDocumento(personaEjemplo));
+
+
+/**
  * 02 - nombreCompletoDePersona
  * 
  * Recibe
@@ -75,21 +90,6 @@ function felizCumpleaños(persona) {
     // 
 }
 console.log("felizCumpleaños()", felizCumpleaños(personaEjemplo));
-
-
-/**
- * 04 - sinDocumento
- * 
- * Recibe
- * - `persona`: objeto de la forma persona.
- * 
- * Retorna: 
- * - un objeto, representando a la misma persona recibida, pero sin el campo documento.
- */
-function sinDocumento(persona) {
-    // 
-}
-console.log("sinDocumento()", sinDocumento(personaEjemplo));
 
 
 /**
