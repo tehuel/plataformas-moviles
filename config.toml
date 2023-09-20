@@ -12,5 +12,8 @@ paginate = 999
 [frontmatter]
 	date = [':filename', ':default']
 
+[markup.highlight]
+	noClasses = false
+
 [markup.goldmark.renderer]
-	unsafe= true
+	unsafe = true
