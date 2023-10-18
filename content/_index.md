@@ -14,3 +14,4 @@ Desde acá se puede acceder al [registro de clases](/clases/).
 - Tehuel Torres Baldi
 - José Yedro
 - Matias Micheltorena
+- Diego Pezet
