@@ -10,11 +10,8 @@ title: "Unidad 3: CSS"
     - Especificidad
 - Diseño Responsive
     - Media Queries
-
-## 3.1: Bootstrap
-
-- Frameworks CSS
-- Bootstrap
-    - Layout
-    - Grid / Grilla
-    - Componentes
+    - Frameworks CSS
+        - Bootstrap
+            - Layout
+            - Grid / Grilla
+            - Componentes

@@ -1,0 +1,56 @@
+---
+title: "4.2: Tipos de Datos"
+---
+
+Tipos de Datos (Primitivos)
+
+- números (enteros y de punto flotante)
+- strings
+- booleanos
+
+```js
+
+// variables y tipos
+let MiVariable;
+MiVariable = 1;
+MiVariable = 1.234;
+MiVariable = "Hola";
+MiVariable = true;
+
+// condicionales
+if (condicion) {
+
+} else {
+
+}
+
+// bucles
+while (condicion) {}
+
+do {} while (condicion);
+
+for (inicio; condicion; incremento) {}
+
+// función sin parámetros
+function MiFuncion1() {
+    return 1;
+}
+
+// expresión de función
+function MiFuncionSuma(a, b) {
+    return a + b;
+}
+var sumaResultado = MiFuncionSuma(10, 20);
+
+// función anónima
+var MiSegundaFuncionSuma = function (a, b) {
+    return a + b;
+}
+var segundoResultado = MiSegundaFuncionSuma(10,20);
+
+// expresión de función flecha (arrow function)
+var MiTercerFuncionSuma = (a, b) => {
+    return a + b;
+}
+var tercerResultado = MiTercerFuncionSuma(10,20);
+```
