@@ -2,6 +2,8 @@
 title: "Unidad 1: Web"
 ---
 
+## Esquema
+
 - Cómo funciona la Web
     - Protocolo HTTP
     - Todo a través de texto

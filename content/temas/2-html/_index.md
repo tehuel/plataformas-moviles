@@ -2,6 +2,8 @@
 title: "Unidad 2: HTML"
 ---
 
+## Esquema
+
 - Estructura de un documento HTML
     - Etiquetas
     - Contenido
