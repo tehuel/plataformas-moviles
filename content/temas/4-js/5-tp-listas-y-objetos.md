@@ -1,3 +1,38 @@
+---
+title: "4.5: TP Listas y Objetos"
+---
+
+En este trabajo práctico vamos a usar de manera combinada los tipos de datos `lista` y `objeto` dentro del lenguaje JavaScript.
+
+Consigna:
+
+- Subir todos los archivos a un directorio `tp-listas-y-objetos` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
+- En el archivo `.js` implementar las funciones solicitadas.
+
+Condiciones:
+
+- No modificar el código provisto.
+- (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
+
+Para la entrega incluir un link al repositorio de Github, y otro link a la versión funcionando en Github Pages del sitio.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Listas y Objetos en JavaScript</title>
+</head>
+<body>
+    <h1>Listas y Objetos en JavaScript</h1>
+    <p>Completar con la implementación de las funciones solicitadas en los comentarios del archivo <code>listas-y-objetos.js</code>.</p>
+    <script src="listas-y-objetos.js"></script>
+</body>
+</html>
+```
+
+```js
 var listaPersonasEjemplo = [
     {
         "apellido": "Perez",
@@ -23,71 +58,11 @@ var listaPersonasEjemplo = [
         "edad": 30,
         "documento": 45678
     },
-]
-var personaEjemplo = listaPersonasEjemplo[0]
+];
 
 /**
- * Recibe
- * - `nombre`: string, con el nombre
- * - `apellido`: string, con el apellido
- * - `edad`: numero entero, con la edad de la persona
- * - `documento`: numero entero, con el documento de la persona
+ * 01 - ordenarPorApellido
  * 
- * Retorna: 
- * - un objeto, representando una persona, con los campos recibidos.
- * 
- * Ejemplos:
- * - crearPersona("Juan", "Pérez", 20, 123456)
- * {
- *   nombre: "Juan",
- *   apellido: "Pérez",
- *   edad: 20,
- *   documento: 123456,
- * }
- */
-function crearPersona(nombre, apellido, edad, documento) {
-    // 
-}
-console.log("crearPersona()", crearPersona("Juan", "Pérez", 20, 123456));
-
-
-/**
- * Recibe
- * - `persona`: objeto de la forma persona
- * 
- * Retorna: 
- * - un string, con el nombre completo de una persona. Asumimos que nombre completo tiene el formato "Apellido, Nombre". Por ejemplo para una persona con nombre "Juan" y apellido "Pérez", el nombre completo sería "Pérez, Juan".
- */
-function nombreCompletoDePersona(persona) {
-    // 
-}
-console.log("nombreCompletoDePersona()", nombreCompletoDePersona(personaEjemplo));
-
-/**
- * Recibe
- * - `persona`: objeto de la forma persona
- * 
- * Retorna: 
- * - un objeto, representando a la misma persona recibida, pero con un año más. 
- */
-function felizCumpleaños(persona) {
-    // 
-}
-console.log("felizCumpleaños()", felizCumpleaños(personaEjemplo));
-
-/**
- * Recibe
- * - `persona`: objeto de la forma persona
- * 
- * Retorna: 
- * - un objeto, representando a la misma persona recibida, pero sin el campo documento.
- */
-function sinDocumento(persona) {
-    // 
-}
-console.log("sinDocumento()", sinDocumento(personaEjemplo));
-
-/**
  * Recibe
  * - `listaDePersonas`: una lista, array, con objetos de la forma `persona`.
  * 
@@ -100,6 +75,8 @@ function ordenarPorApellido(listaDePersonas) {
 console.log("ordenarPorApellido()", ordenarPorApellido(listaPersonasEjemplo));
 
 /**
+ * 02 - soloNombres
+ * 
  * Recibe
  * - `listaDePersonas`: una lista, array, con objetos de la forma `persona`
  * 
@@ -112,6 +89,8 @@ function soloNombres(listaDePersonas) {
 console.log("soloNombres()", soloNombres(listaPersonasEjemplo));
 
 /**
+ * 03 - promedioEdades
+ * 
  * Recibe
  * - `listaDePersonas`: una lista, array, con objetos de la forma `persona`
  * 
@@ -124,6 +103,8 @@ function promedioEdades(listaDePersonas) {
 console.log("promedioEdades()", promedioEdades(listaPersonasEjemplo));
 
 /**
+ * 04 - soloMayoresDeEdad
+ * 
  * Recibe
  * - `listaDePersonas`: una lista, array, con objetos de la forma `persona`
  * 
@@ -136,6 +117,8 @@ function soloMayoresDeEdad(listaDePersonas) {
 console.log("soloMayoresDeEdad()", soloMayoresDeEdad(listaPersonasEjemplo));
 
 /**
+ * 05 - laPersonaMayor
+ * 
  * Recibe
  * - `listaDePersonas`: una lista, array, con objetos de la forma `persona`
  * 
@@ -146,3 +129,4 @@ function laPersonaMayor(listaDePersonas) {
     //
 }
 console.log("laPersonaMayor()", laPersonaMayor(listaPersonasEjemplo));
+```
