@@ -1,3 +1,38 @@
+---
+title: "4.3: TP Listas"
+---
+
+En este trabajo práctico vamos a usar listas (arrays) dentro del lenguaje JavaScript.
+
+Consigna:
+
+- Subir todos los archivos a un directorio `tp-listas` en el repositorio de entregas en GitHub. Deberian quedar los 2 archivos (`index.html`, `listas.js`) dentro del mismo directorio.
+- En el archivo `.js` implementar las funciones solicitadas.
+
+Condiciones:
+
+- No modificar el código provisto.
+- (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
+
+Para la entrega incluir un link al repositorio de Github, y otro link a la versión funcionando en Github Pages del sitio.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Listas en JavaScript</title>
+</head>
+<body>
+    <h1>Listas en JavaScript</h1>
+    <p>Completar con la implementación de las funciones solicitadas en los comentarios del archivo <code>listas.js</code>.</p>
+    <script src="listas.js"></script>
+</body>
+</html>
+```
+
+```js
 var listaNumerosEjemplo = [2,4,6,-1,5,-4,0];
 
 
@@ -203,3 +238,4 @@ function enumerarLista(listaDePalabras) {
     //
 }
 console.log("enumerarLista(): ", enumerarLista(["Han", "Leia", "Luke", "Yoda"]))
+```
