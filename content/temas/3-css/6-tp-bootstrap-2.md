@@ -1,6 +1,5 @@
 ---
-title: "TP-6: Estructura Responsiva con Bootstrap"
-draft: true
+title: "3.6: TP Bootstrap (2)"
 ---
 
 Sexto trabajo práctico (y tercera vez que redacto este enunciado). Ahora vamos a usar Bootstrap para reconstruir "la estructura" de un sitio web conocido, teniendo en cuenta el comportamiento responsivo.
