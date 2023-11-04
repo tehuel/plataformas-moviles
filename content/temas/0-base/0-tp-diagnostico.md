@@ -1,6 +1,5 @@
 ---
-title: "TP-0: Actividad de Diagnóstico"
-draft: true
+title: "0.0: TP Diagnóstico"
 ---
 
 
