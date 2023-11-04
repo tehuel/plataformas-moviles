@@ -1,3 +1,38 @@
+---
+title: "4.4: TP Objetos"
+---
+
+En este trabajo práctico vamos a usar el tipo de datos `objeto` dentro del lenguaje JavaScript.
+
+Consigna:
+
+- Subir todos los archivos a un directorio `tp-objetos` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `objetos.js`) dentro del mismo directorio.
+- En el archivo `.js` implementar las funciones solicitadas.
+
+Condiciones:
+
+- No modificar el código provisto.
+- (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
+
+Para la entrega incluir un link al repositorio de Github, y otro link a la versión funcionando en Github Pages del sitio.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Objetos en JavaScript</title>
+</head>
+<body>
+    <h1>Objetos en JavaScript</h1>
+    <p>Completar con la implementación de las funciones solicitadas en los comentarios del archivo <code>objetos.js</code>.</p>
+    <script src="objetos.js"></script>
+</body>
+</html>
+```
+
+```js
 var personaEjemplo = {
     "apellido": "Perez",
     "nombre": "Juan",
@@ -109,3 +144,4 @@ console.log("resultado sonLaMismaPersona: ", sonLaMismaPersona(
     personaEjemplo,
     { apellido: "Perez", nombre: "Juan", edad: 20, documento: 12345 }
 ));
+```
