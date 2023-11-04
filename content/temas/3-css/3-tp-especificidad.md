@@ -1,6 +1,5 @@
 ---
-title: "TP-3: Especificidad"
-draft: true
+title: "3.3: TP Especificidad"
 ---
 
 Tercer trabajo práctico, donde nos enfrentamos al desafío de usar la especificidad de los selectores CSS para aplicar estilos.
