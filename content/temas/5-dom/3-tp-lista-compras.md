@@ -1,24 +1,27 @@
+---
+title: "5.3: TP Lista de Compras"
+---
+
+El objetivo es construir una lista de compras donde se puedan agregar productos.
+
+- Agregar funcionalidad para limpiar la lista, eliminando todos los productos.
+- Ordenar alfabéticamente la lista de productos.
+- Agregar opción para eliminar cada elemento de forma individual.
+
+## HTML
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lista de Compras - DOM y JavaScript</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Compras - DOM y JavaScript</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-
     <div class="container my-1 my-sm-2 my-md-4 my-lg-5">
         <h1>Lista de Compras</h1>
-        <p class="lead">El objetivo es construir una lista de compras donde se puedan agregar productos.</p>
-        <h2 class="h3">Objetivos Adicionales</h2>
-        <ol>
-            <li>Agregar funcionalidad para limpiar la lista, eliminando todos los productos.</li>
-            <li>Ordenar alfabéticamente la lista de productos.</li>
-            <li>Agregar opción para eliminar cada elemento de forma individual.</li>
-        </ol>
-
-        <!-- Card de Aplicación -->
         <div class="card">
             <div class="card-body">
                 <h2>Listado de Productos</h2>
@@ -62,3 +65,4 @@
     </script>
 </body>
 </html>
+```

@@ -1,30 +1,29 @@
+---
+title: "5.3: TP Editor de Texto"
+---
+
+El objetivo es construir un muy simple Editor de Texto donde se puedan aplicar distintos estilos a un texto.
+
+- Agregar un nuevo botón con un estilo adicional (puede ser para aplicar un color al texto, por ejemplo).
+- Agregar la posibilidad de editar el texto, con un input para escribir un nuevo texto.
+- Mostrar el estado actual de cada estilo en el botón (si está activado o no). Puede ser cambiando el color o el texto del propio botón.
+- Agregar la funcionalidad de modificar el tamaño del texto.
+
+
+## HTML
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Editor de Texto - DOM y JavaScript</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Editor de Texto - DOM y JavaScript</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <style type="text/css">
-        .bold {
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
-
     <div class="container my-1 my-sm-2 my-md-4 my-lg-5">
         <h1>Editor de Texto</h1>
-        <p class="lead">El objetivo es construir un muy simple Editor de Texto donde se puedan aplicar distintos estilos a un texto.</p>
-        <h2 class="h3">Objetivos Adicionales</h2>
-        <ol>
-            <li>Agregar un nuevo botón con un estilo adicional (puede ser para aplicar un color al texto, por ejemplo).</li>
-            <li>Agregar la posibilidad de editar el texto, con un input para escribir un nuevo texto.</li>
-            <li>Mostrar el estado actual de cada estilo en el botón (si está activado o no). Puede ser cambiando el color o el texto del propio botón.</li>
-            <li>Agregar la funcionalidad de modificar el tamaño del texto.</li>
-        </ol>
-
-        <!-- Card de Aplicación -->
         <div class="card">
             <div class="card-body">
                 <h2>Texto</h2>
@@ -99,3 +98,4 @@
     </script>
 </body>
 </html>
+```
