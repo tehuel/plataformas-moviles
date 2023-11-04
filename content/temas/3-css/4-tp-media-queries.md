@@ -1,6 +1,5 @@
 ---
-title: "TP-4: Media Queries"
-draft: true
+title: "3.4: TP Media Queries"
 ---
 
 Cuarto trabajo práctico, todavía con CSS. En este trabajo vamos a empezar a definir estilos de una forma condicional, usando media queries.
