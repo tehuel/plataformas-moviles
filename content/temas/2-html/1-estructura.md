@@ -25,7 +25,7 @@ La estructura básica de un documento HTML se compone de las siguientes etiqueta
 </html>
 ```
 
-*En el ejemplo se puede observar que todas las etiquetas se "cierran" escribiendo "</etiqueta>"*
+> En el ejemplo se puede observar que todas las etiquetas se *cierran* escribiendo `</etiqueta>`
 
 ## Elementos del "body"
 
