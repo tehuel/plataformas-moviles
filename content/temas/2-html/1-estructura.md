@@ -41,7 +41,7 @@ Dentro de la etiqueta `<body>` se despliegan los elementos visuales del document
 - `<label>`: Se utiliza para asociar un texto descriptivo con un elemento de formulario.
 - `<input>`: Crea un espacio para recibir datos del usuario.
 
-<a href="https://developer.mozilla.org/es/docs/Web/HTML">Más etiquetas aquí</a>
+[Documentación de Referencia de Elementos HTML](https://developer.mozilla.org/es/docs/Web/HTML/Element)
 
 ## Atributos
 
