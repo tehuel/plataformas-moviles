@@ -4,13 +4,13 @@ title: "2.1: Estructura del documento"
 
 HTML, que significa "Lenguaje de Marcado de Hipertexto" en inglés (Hypertext Markup Language), es un estándar fundamental para la creación y el diseño de páginas web. 
 
-HTML proporciona una estructura básica para la creación de documentos web y se utiliza para describir y definir el contenido de una página web, como texto, imágenes, enlaces, formularios, entre otros elementos. La esencia de HTML es el "marcado" de elementos mediante etiquetas, que son códigos encerrados entre corchetes angulares (< >). Cada etiqueta representa un tipo de contenido o estructura y puede contener atributos que proporcionan información adicional sobre el elemento.
+HTML proporciona una estructura básica para la creación de documentos web y se utiliza para describir y definir el contenido de una página web, como texto, imágenes, enlaces, formularios, entre otros elementos. La esencia de HTML es el "marcado" de elementos mediante etiquetas, que son códigos encerrados entre corchetes angulares (`<>`). Cada etiqueta representa un tipo de contenido o estructura y puede contener atributos que proporcionan información adicional sobre el elemento.
 
 La estructura básica de un documento HTML se compone de las siguientes etiquetas:
-- ```<!DOCTYPE html>```: Define la versión de HTML que se está utilizando. En este caso, se usa HTML5.
-- ```<html>```: Representa la raiz de un documento HTML. El resto de elementos descienden de este elemento.
-- ```<head>```: Provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos. El usuario no puede interactuar con los elementos dentro de esta etiqueta
-- ```<body>```: Representa el contenido de un documento HTML. Contiene textos, enlaces, imagenes, etc.
+- `<!DOCTYPE html>`: Define la versión de HTML que se está utilizando. En este caso, se usa HTML5.
+- `<html>`: Representa la raiz de un documento HTML. El resto de elementos descienden de este elemento.
+- `<head>`: Provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos. El usuario no puede interactuar con los elementos dentro de esta etiqueta
+- `<body>`: Representa el contenido de un documento HTML. Contiene textos, enlaces, imagenes, etc.
 
 ```html
 <!DOCTYPE html>
@@ -29,17 +29,17 @@ La estructura básica de un documento HTML se compone de las siguientes etiqueta
 
 ## Elementos del "body"
 
-Dentro de la etiqueta ```<body>``` se despliegan los elementos visuales del documento. Algunos de ellos son
-- ```<h1>, <h2> ... <h6>```: Representan títulos. Van del más grande (h1) al más chico (h6)
-- ```<p>```: Etiqueta de párrafo
-- ```<span>```: Sirve para aplicar estilo al texto o agrupar elementos en línea.
-- ```<div>```: Significa "division" y funciona para seccionar o agrupar contenido
-- ```<b>,<i>,<u>```: Se usan para aplicar un texto en negrita, cursiva y subrayado correspondientemente
-- ```<a>```: Permite agregar un vínculo o enlace
-- ```<img>```: Permite agregar imágenes
-- ```<form>```: Agrega un formulario
-- ```<label>```: Se utiliza para asociar un texto descriptivo con un elemento de formulario
-- ```<input>```: Crea un espacio para recibir datos del usuario
+Dentro de la etiqueta `<body>` se despliegan los elementos visuales del documento. Algunos de ellos son
+- `<h1>`, `<h2>` ... `<h6>`: Representan títulos. Van del más grande (h1) al más chico (h6).
+- `<p>`: Etiqueta de párrafo.
+- `<span>`: Sirve para aplicar estilo al texto o agrupar elementos en línea.
+- `<div>`: Significa "division" y funciona para seccionar o agrupar contenido.
+- `<b>`,`<i>`,`<u>`: Se usan para aplicar un texto en negrita, cursiva y subrayado correspondientemente.
+- `<a>`: Permite agregar un vínculo o enlace.
+- `<img>`: Permite agregar imágenes.
+- `<form>`: Agrega un formulario.
+- `<label>`: Se utiliza para asociar un texto descriptivo con un elemento de formulario.
+- `<input>`: Crea un espacio para recibir datos del usuario.
 
 <a href="https://developer.mozilla.org/es/docs/Web/HTML">Más etiquetas aquí</a>
 
