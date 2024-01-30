@@ -2,7 +2,11 @@
 title: "4.4: Objetos"
 ---
 
-Declaración y creación de Objetos
+Los objetos son estructuras que podemos definir para agrupar valores correspondientes a una entidad.
+
+Los objetos se componen de propiedades con sus respectivos valores. Estas propiedades proporcionan información sobre el objeto
+
+## Declaración y creación de Objetos
 
 ```js
 var objetoAlumno = {
