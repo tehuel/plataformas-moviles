@@ -12,7 +12,18 @@ Además, se pueden usar columnas en diferentes breakpoints. Estas clases respons
 
 ## Breakpoints y Responsividad
 
-// ...
+La responsividad permite que el diseño web se adapte a los diferentes tamaños que pueda tener el navegador. No es lo mismo ver un sitio web (Ej: Youtube) desde el navegador del celular que hacerlo desde la computadora, los elementos se adaptan a las medidas de la pantalla.
+
+Los breakpoints son medidas predefinidas de tamaño en donde se realizan cambios en el diseño CSS concretos para estas medidas. Los breakpoints de bootstrap son:
+
+- X-Small (*xs*) < 576px
+- Small (*sm*): ≥576px
+- Medium (*md*): ≥768px
+- Large (*lg*): ≥992px
+- Extra large (*xl*): ≥1200px
+- Extra extra large (*xxl*): ≥1400px
+
+Empleando estos elementos nos aseguramos que nuestro diseño se adaptará a cualquier dispositivo.
 
 ## Ejemplo: Botón Responsivo
 
