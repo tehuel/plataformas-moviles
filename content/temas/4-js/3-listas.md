@@ -2,7 +2,7 @@
 title: "4.3: Listas"
 ---
 
-Vimos el tipo de datos lista (array) en JavaScript, y algunos ejemplos de código.
+Las *listas* o *arrays* son elementos que permiten almacenar y organizar varios valores en su interior. Su propósito es otorgar al desarrollador un medio eficiente para gestionar colecciones de datos.
 
 Definir listas
 
