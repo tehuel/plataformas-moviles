@@ -16,4 +16,12 @@ Por ejemplo, si se tuviese definido un estilo para todas las imágenes de un sit
 - Estilo Inline: Son aquellos escritos dentro de la etiqueta html(`<p style="font-weight: bold"></p>`). Sobreescribe a los estilos definidos en el archivo .css. Se puede decir que tienen la mayor especifidad
 - Important: Es una excepcion que, al emplearse, sobrescribe a cualquier otro selector. Su uso es una **mala práctica** y debería evitarse.
 
+## Ejemplos
+
+### Cálculo de Especificidad
+
+![](/img/specificity.png)
+
+### Batificity
+
 A modo de ejemplo, existe el sitio http://batificity.com/
