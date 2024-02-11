@@ -16,12 +16,15 @@ La responsividad permite que el diseño web se adapte a los diferentes tamaños 
 
 Los breakpoints son medidas predefinidas de tamaño en donde se realizan cambios en el diseño CSS concretos para estas medidas. Los breakpoints de bootstrap son:
 
-- X-Small (*xs*) < 576px
-- Small (*sm*): ≥576px
-- Medium (*md*): ≥768px
-- Large (*lg*): ≥992px
-- Extra large (*xl*): ≥1200px
-- Extra extra large (*xxl*): ≥1400px
+| Breakpoint | Infijo | Dimensión |
+|---|---|---|
+Extra small | Ninguno | <576px
+Small | `sm` | ≥576px
+Medium | `md` | ≥768px
+Large | `lg` | ≥992px
+Extra large | `xl` | ≥1200px
+Extra extra large | `xxl` | ≥1400px
+{.table}
 
 Empleando estos elementos nos aseguramos que nuestro diseño se adaptará a cualquier dispositivo.
 
