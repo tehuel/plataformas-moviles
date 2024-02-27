@@ -4,4 +4,4 @@ menu:
   main
 ---
 
-Apuntes para dirigir las clases de la materia.
+Listado de Temas y Apuntes para guiar las clases de la materia.
