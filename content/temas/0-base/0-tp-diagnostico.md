@@ -2,7 +2,6 @@
 title: "0.0: TP Diagnóstico"
 ---
 
-
 Contestá y definí, con tus palabras, las siguientes preguntas.
 
 Es válido investigar en internet o en distintos medios, pero por favor no copies y pegues
@@ -18,6 +17,7 @@ definiciones (Prohibido ChatGPT). El objetivo de la actividad no es llenar pági
 1. ¿Que es la arquitectura o juego de instrucciones de un procesador?
 1. ¿Cual es la diferencia entre un lenguaje de programación compilado y un lenguaje de programación interpretado?
 1. ¿Conocés la diferencia entre tipado estático y tipado dinámico de datos?
+1. ¿Conocés la diferencia entre error semántico y error sintáctico?
 
 ## Tecnologías Web
 
