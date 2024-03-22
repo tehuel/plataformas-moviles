@@ -3,6 +3,7 @@ languageCode = 'es-AR'
 defaultContentLanguage = 'es'
 title = 'Plataformas Móviles'
 disableKinds = ['taxonomy', 'term']
+theme = ["reveal-hugo"]
 paginate = 999
 
 [params]
@@ -20,3 +21,7 @@ paginate = 999
 
 [markup.goldmark.parser.attribute]
 	block = true
+
+[outputFormats.Reveal]
+	mediaType = "text/html"
+	isHTML = true
