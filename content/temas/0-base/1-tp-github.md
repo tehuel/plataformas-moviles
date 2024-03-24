@@ -13,12 +13,15 @@ El objetivo del trabajo es crear un repositorio de GitHub en el que vamos a real
 - Activar GitHub Pages.
     1. Ir a la sección `settings` del repositorio.
     2. Ir a la sección `pages` dentro de `settings` del repositorio.
-    2. Seleccionar la branch `main` y la carpeta `root` del repositorio.
-    2. Click en `save` para guardar los cambios.
+    3. Seleccionar la branch `main` y la carpeta `root` del repositorio.
+    4. Click en `save` para guardar los cambios.
+    5. Esperar unos minutos a que el servicio se active.
+
+{{< figure src="/img/tp-1-pages.png" >}}
 
 ## Resultado
 
-Si acceden a `{usuario}.github.io/plataformas-moviles-entregas` deberian ver la página publicada.
+Si acceden a la URL `http://{usuario}.github.io/plataformas-moviles-entregas` deberian ver la página publicada.
 
 ## Posibles Poblemas
 
