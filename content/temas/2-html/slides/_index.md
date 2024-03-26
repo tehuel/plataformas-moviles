@@ -52,7 +52,26 @@ de un documento
 
 ---
 
-{{< figure src="/img/html-semantico.png" >}}
+# Semántica
+
+{{% fragment %}}
+Refiere al significado de las palabras.
+{{% /fragment %}}
+
+---
+
+{{% fragment %}}
+(en html)
+{{% /fragment %}}
+# Semántica
+
+{{% fragment %}}
+Refiere al significado o la estructura del contenido que se está etiquetando.
+{{% /fragment %}}
+
+---
+
+{{< figure src="/img/semantica.png" >}}
 
 ---
 
@@ -60,10 +79,9 @@ Documentación de Referencia
 
 [developer.mozilla.org/es/docs/Web/HTML/Reference](https://developer.mozilla.org/es/docs/Web/HTML/Reference)
 
-
 ---
 
-Preguntas
+Accesibilidad
 
 ---
 

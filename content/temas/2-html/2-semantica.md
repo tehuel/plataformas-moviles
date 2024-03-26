@@ -2,7 +2,7 @@
 title: "2.2: Semántica del Código"
 ---
 
-En el contexto de HTML, la semántica se refiere al significado o la estructura del contenido que estás marcando
+En el contexto de HTML, la semántica se refiere al significado o la estructura del contenido que estás marcando.
 
 El uso adecuado de las etiquetas semánticas ayuda a los desarrolladores a estructurar sus páginas de manera significativa.
 
