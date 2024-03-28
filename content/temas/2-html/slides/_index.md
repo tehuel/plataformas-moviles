@@ -2,8 +2,6 @@
 title: "Presentación HTML"
 outputs:
   - "Reveal"
-params: 
-  highlight_theme: "github"
 ---
 
 # HTML
