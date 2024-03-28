@@ -22,3 +22,6 @@ paginate = 999
 [outputFormats.Reveal]
 	mediaType = "text/html"
 	isHTML = true
+
+[params.reveal_hugo]
+	theme = "simple"
