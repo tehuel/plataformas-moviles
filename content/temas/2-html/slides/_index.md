@@ -91,4 +91,4 @@ Links:
 - Estándares W3C: https://www.w3.org/standards/
 - Documentación: https://developer.mozilla.org/es/docs/Web/HTML
 - Referencia: https://developer.mozilla.org/es/docs/Web/HTML/Reference
-
+- Accesibilidad: https://www.w3.org/WAI/standards-guidelines/wcag/es
