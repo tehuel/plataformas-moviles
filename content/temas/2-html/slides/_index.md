@@ -61,6 +61,7 @@ Refiere al significado de las palabras.
 {{% fragment %}}
 (en html)
 {{% /fragment %}}
+
 # Semántica
 
 {{% fragment %}}
@@ -73,17 +74,17 @@ Refiere al significado o la estructura del contenido que se está etiquetando.
 
 ---
 
-Documentación de Referencia
+# Documentación de Referencia
 
 [developer.mozilla.org/es/docs/Web/HTML/Reference](https://developer.mozilla.org/es/docs/Web/HTML/Reference)
 
 ---
 
-Accesibilidad
+# Accesibilidad
 
 ---
 
-Links: 
+Links
 
 - Especificación: https://www.w3.org/html/
 - Estándares W3C: https://www.w3.org/standards/
