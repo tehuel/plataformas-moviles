@@ -16,7 +16,7 @@ Cascade Style Sheets
 
 ---
 
-# ¿Para qué usamos CSS?
+## ¿Para qué usamos CSS?
 
 {{% fragment %}}
 Para definir cómo se va a ver el contenido que presentamos
@@ -24,7 +24,7 @@ Para definir cómo se va a ver el contenido que presentamos
 
 ---
 
-# ¿Cómo incluíamos CSS?
+## ¿Cómo incluíamos CSS?
 
 {{% fragment %}}
 - Usando `<link rel="stylesheet" href="miestilo.css" />`
@@ -38,7 +38,7 @@ Para definir cómo se va a ver el contenido que presentamos
 
 ---
 
-# Sintaxis
+## Sintaxis
 
 Para escribir css usamos reglas
 
@@ -50,17 +50,17 @@ p {
 
 ---
 
-# Sintaxis
+## Sintaxis
 
 {{< figure src="/img/regla-css.png" >}}
 
 ---
 
-# Selectores
+## Selectores
 
 Contestan a la pregunta: "**¿Qué queremos estilizar?**"
 {{% fragment %}}
-- <Etiqueta>
+- `<Etiqueta>`
 - .clases
 - #ID
 - Selector universal (*)
@@ -85,7 +85,7 @@ div p {
 
 ---
 
-# Especificidad
+## Especificidad
 
 Cálculo para determinar que reglas aplicar sobre los elementos
 
