@@ -118,7 +118,9 @@ Demo
 
 links
 
-- https://www.w3.org/Style/CSS/specs.en.html
+- Especificación: https://www.w3.org/Style/CSS/specs.en.html
 - Concepto: https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/What_is_CSS
 - Selectores: https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/How_CSS_is_structured
+- Referencia: https://developer.mozilla.org/es/docs/Web/CSS/Reference
+- Referencia Selectores: https://developer.mozilla.org/es/docs/Web/CSS/Reference#selectores
 - Epecificidad: https://developer.mozilla.org/es/docs/Web/CSS/Specificity
