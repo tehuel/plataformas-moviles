@@ -28,16 +28,24 @@ Para definir cómo se va a ver el contenido que presentamos
 
 ---
 
-## ¿Cómo incluíamos CSS?
+## ¿Cómo incluimos CSS?
 
 {{% fragment %}}
-- Usando `<link rel="stylesheet" href="miestilo.css" />`
+Vinculando un archivo CSS con `<link />`
+
+`<link rel="stylesheet" href="estilo.css" />`
 {{% /fragment %}}
+
 {{% fragment %}}
-- Con una etiqueta `<style>`
+Definiendo el CSS dentro `<style>`
+
+`<style>...</style>`
 {{% /fragment %}}
+
 {{% fragment %}}
-- Agregando el atributo `style=""` a una etiqueta html (inline)
+Agregando (inline) el atributo `style=""`
+
+`<p style="...">`
 {{% /fragment %}}
 
 ---
