@@ -56,30 +56,49 @@ Agregando (inline) el atributo `style=""`
 
 # Selectores
 
-Contestan a la pregunta: "**¿Qué queremos estilizar?**"
 {{% fragment %}}
-- `<Etiqueta>`
-- .clases
-- #ID
-- Selector universal (*)
+Contestan a la pregunta: "**¿Qué queremos estilizar?**"
 {{% /fragment %}}
-- !important
+
+{{% fragment %}}
+- `<etiquetas>`
+- `.clases`
+- `#id`
+- Selector universal (`*`)
+- `!important`
+{{% /fragment %}}
 
 ---
 
-*Nota: Los selectores pueden unirse para combinar su funcionamiento*
+*Los selectores pueden unirse para combinar su funcionamiento*
+
+{{% fragment %}}
 
 ```css
-/* selecciona todos los párrafos que tengan la case "resaltado" */
 p.resaltado {
-    /**/
-}
-
-/* selecciona todos los párrafos que tengan algun ancestro div */
-div p {
-    /**/
+/**/
 }
 ```
+
+{{% /fragment %}}
+
+{{% fragment %}}
+selecciona todos los párrafos que tengan la clase "resaltado"
+{{% /fragment %}}
+
+{{% fragment %}}
+```css
+div p {
+/**/
+}
+```
+
+{{% /fragment %}}
+
+{{% fragment %}}
+selecciona todos los párrafos que tengan algun ancestro div
+{{% /fragment %}}
+
 
 ---
 
