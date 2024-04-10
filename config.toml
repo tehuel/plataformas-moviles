@@ -13,12 +13,14 @@ paginate = 999
 [frontmatter]
 	date = [':filename', ':default']
 
+[markup.highlight]
+    style = 'vs'
+
 [markup.goldmark.renderer]
 	unsafe = true
 
 [markup.goldmark.parser.attribute]
 	block = true
-
 [outputFormats.Reveal]
 	mediaType = "text/html"
 	isHTML = true
