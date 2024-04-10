@@ -4,6 +4,8 @@ title: "1.1: Navegadores"
 
 Queremos usar la plataforma web para desarrollar nuestras aplicaciones. Para arrancar a trabajar con la plataforma web es necesario entender el proceso que permite el funcionamiento de la web.
 
+## Cómo funciona un navegador
+
 Que pasa cuando accedemos desde un browser a un sitio web:
 
 - Escribimos la URL.

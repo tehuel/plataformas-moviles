@@ -64,6 +64,6 @@ Para más detalles se puede consultar la documentación de [Combinadores de CSS]
 
 ## Pseudo Clases
 
-Existen selectores qeu trabajan sobre otros selectores, para funcionar en casos y estados específicos.
+Existen selectores que trabajan sobre otros selectores, para funcionar en casos y estados específicos.
 
 Vimos algunos ejemplos para consultar por el primer y el último elemento, pero hay [muchos más](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
