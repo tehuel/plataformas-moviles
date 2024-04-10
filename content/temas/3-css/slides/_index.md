@@ -7,12 +7,16 @@ outputs:
 # CSS
 
 {{% fragment %}}
-Cascade Style Sheets
+Cascading Style Sheets
 {{% /fragment %}}
 
 {{% fragment %}}
-*Hojas de estilo en cascada*
+*Hojas de Estilo en Cascada*
 {{% /fragment %}}
+
+---
+
+![](/img/css-peter.gif)
 
 ---
 
@@ -38,25 +42,11 @@ Para definir cómo se va a ver el contenido que presentamos
 
 ---
 
-## Sintaxis
-
-Para escribir css usamos reglas
-
-```css
-p {
-  color: red;
-}
-```
+![](/img/regla-css.png)
 
 ---
 
-## Sintaxis
-
-{{< figure src="/img/regla-css.png" >}}
-
----
-
-## Selectores
+# Selectores
 
 Contestan a la pregunta: "**¿Qué queremos estilizar?**"
 {{% fragment %}}
@@ -85,18 +75,23 @@ div p {
 
 ---
 
-## Especificidad
-
-Cálculo para determinar que reglas aplicar sobre los elementos
-
-{{< figure src="/img/specificity.png" >}}
+# Especificidad
 
 ---
 
-Links:
+![](/img/specificity.png)
 
+--- 
+
+Demo
+
+[Batificity](http://batificity.com/)
+
+---
+
+links
+
+- https://www.w3.org/Style/CSS/specs.en.html
 - Concepto: https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/What_is_CSS
 - Selectores: https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/How_CSS_is_structured
 - Epecificidad: https://developer.mozilla.org/es/docs/Web/CSS/Specificity
-
-
