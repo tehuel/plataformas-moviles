@@ -6,7 +6,7 @@ Tercer trabajo práctico, donde nos enfrentamos al desafío de usar la especific
 
 # Consigna
 
-Agregar el siguiente archivo HTML dentro del repositorio de entregas creado en el trabajo práctico anterior, en la ubicación `/tp-3/index.html`.
+Agregar el siguiente archivo HTML dentro del repositorio de entregas creado en GitHub, en la ubicación `/tp-3/index.html`.
 
 ```html
 <!DOCTYPE html>

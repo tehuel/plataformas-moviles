@@ -53,7 +53,7 @@ Para este nuevo archivo HTML creado, agregar una hoja de estilos CSS de alguna d
 
 ## Estilos dentro de CSS
 
-Dentro del estilo, implementar las definiciones para aplicar los siguientes estilos:
+Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 
 1. Agregar una regla para definir el color de fondo del documento en `#222`, y el color del texto en `#ee6`.
 2. Agregar una regla para centrar el título principal del documento.
@@ -62,7 +62,7 @@ Dentro del estilo, implementar las definiciones para aplicar los siguientes esti
 5. Agregar un borde inferior color blanco a todos los elementos `<strong>`.
 6. Mostrar el fondo gris `#444` y el texto en negrita para todos los elementos con la clase `the-force`.
 7. Mostrar el texto con color `#66f` para los elementos con la clase `light-side`, y color `#f33` para la clase `dark-side`.
-8. Agregar la regla `list-style-type: circle;` al listado con ID `og-trilogy`.
+8. Agregar la regla `list-style-type: circle;` a los elementos del listado con ID `og-trilogy`.
 9. Agregar `padding-left` al segundo listado de películas.
 10. Agregar `margin-top` al último elemento del tercer listado de películas.
 
