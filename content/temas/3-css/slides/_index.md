@@ -33,19 +33,25 @@ Para definir cómo se va a ver el contenido que presentamos
 {{% fragment %}}
 Vinculando un archivo CSS con `<link />`
 
-`<link rel="stylesheet" href="estilo.css" />`
+```html
+<link rel="stylesheet" href="estilo.css" />
+```
 {{% /fragment %}}
 
 {{% fragment %}}
-Definiendo el CSS dentro `<style>`
+Definiendo el CSS dentro de `<style>`
 
-`<style>...</style>`
+```html
+<style> ... </style>
+```
 {{% /fragment %}}
 
 {{% fragment %}}
 Agregando (inline) el atributo `style=""`
 
-`<p style="...">`
+```html
+<p style="...">
+```
 {{% /fragment %}}
 
 ---
