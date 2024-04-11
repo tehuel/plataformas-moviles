@@ -9,6 +9,10 @@ outputs:
 
 ---
 
+![](/img/media-query.jpg)
+
+---
+
 links
 
 - https://developer.mozilla.org/es/docs/Web/CSS/Specificity
