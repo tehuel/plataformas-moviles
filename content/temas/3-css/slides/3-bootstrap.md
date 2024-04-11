@@ -1,6 +1,6 @@
 ---
-title: "Presetación Bootstrap"
-weight: 2
+title: "Presentación Bootstrap"
+weight: 3
 outputs:
   - "Reveal"
 ---

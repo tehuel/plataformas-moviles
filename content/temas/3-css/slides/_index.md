@@ -108,20 +108,6 @@ selecciona todos los párrafos que tengan algun ancestro div
 
 ---
 
-# Especificidad
-
----
-
-![](/img/specificity.png)
-
---- 
-
-Demo
-
-[Batificity](http://batificity.com/)
-
----
-
 links
 
 - Especificación: https://www.w3.org/Style/CSS/specs.en.html
@@ -129,4 +115,3 @@ links
 - Selectores: https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/How_CSS_is_structured
 - Referencia: https://developer.mozilla.org/es/docs/Web/CSS/Reference
 - Referencia Selectores: https://developer.mozilla.org/es/docs/Web/CSS/Reference#selectores
-- Epecificidad: https://developer.mozilla.org/es/docs/Web/CSS/Specificity

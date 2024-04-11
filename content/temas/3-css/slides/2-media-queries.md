@@ -1,6 +1,6 @@
 ---
 title: "Presetación Media Queries"
-weight: 1 
+weight: 2
 outputs:
   - "Reveal"
 ---
