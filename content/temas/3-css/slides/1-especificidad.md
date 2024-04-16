@@ -34,5 +34,5 @@ Demo
 links
 
 - Epecificidad: https://developer.mozilla.org/es/docs/Web/CSS/Specificity
-- Batificity: http://batificity.com/
 - Especificación W3C: https://www.w3.org/TR/selectors/#specificity-rules
+- Batificity: http://batificity.com/
