@@ -13,29 +13,15 @@ outputs:
 
 ---
 
-{{% fragment %}}
-- selector universal 
-{{% /fragment %}}
 
-{{% fragment %}}
-- elementos (y pseudo-elementos) 
-{{% /fragment %}}
-
-{{% fragment %}}
-- clases, atributos (y pseudo-clases) 
-{{% /fragment %}}
-
-{{% fragment %}}
-- ids 
-{{% /fragment %}}
-
-{{% fragment %}}
-- estilos en linea (inline) 
-{{% /fragment %}}
-
-{{% fragment %}}
-- `!important` 
-{{% /fragment %}}
+|||
+|-|-|
+| selector universal | `*` |
+| elementos (pseudo-elementos)  | `p` |
+| clases, atributos (pseudo-clases) | `.resaltado` |
+| ids | `#primero` |
+| estilos en linea (inline) | `<p style=".">` |
+| modificador | `!important` |
 
 ---
 
