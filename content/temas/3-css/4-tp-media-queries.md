@@ -54,7 +54,7 @@ Agregar el siguiente **archivo HTML** dentro del repositorio de entregas, en la 
 
 Crear en el repositorio de Github un **archivo CSS** `style.css` al mismo nivel que el archivo HTML anterior, esto sería en `/tp-4/style.css`. Dentro de este archivo, implementar las siguientes reglas de CSS, con sus respectivas media queries.
 
-1. Define una media query que cambie el fondo del `body` a `#234` cuando la pantalla tenga más de `400px` de ancho.
+1. Define una media query que cambie el color de fondo del `body` a `rgb(40,60,80)` cuando la pantalla tenga más de `400px` de ancho.
 
 2. Define una media query que centre el título `h1` cuando la pantalla tenga menos de `800px` de ancho.
 
@@ -62,7 +62,7 @@ Crear en el repositorio de Github un **archivo CSS** `style.css` al mismo nivel 
 
 4. Define una media query para que cambie el color de fondo del título principal `h1` cuando el alto de la pantalla sea como mínimo `200px`.
 
-5. Define una media query para cambiar el estilo del texto de todos los párrafos para que muestren una fuente `font-family: sans-serif;` cuando la página se imprime (en papel).
+5. Define una media query para cambiar el estilo del texto de todos los párrafos para que muestren una fuente `font-family: serif;` cuando la página se imprime (en papel).
 
 6. Si el usuario prefiere un estilo de colores claros, mostrar los elementos `body` y `h1` con el texto en color `#111` y el fondo en color `#DDD`.
 
