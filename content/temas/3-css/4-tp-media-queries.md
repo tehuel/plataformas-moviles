@@ -32,25 +32,19 @@ Agregar el siguiente **archivo HTML** dentro del repositorio de entregas, en la 
   <article>
     <h1>Del videojuego a la pantalla grande</h1>
     <p>
-      Cada vez son más los videojuegos que tienen una adaptación cinematográfica. Estos últimos años se han visto en el cine títulos como <a href="">Sonic</a> o
-      <a href="https://es.wikipedia.org/wiki/Pokémon:_Detective_Pikachu">Detective Pikachu</a> y se espera que en los próximos años esta tendencia se mantenga, 
-      con los rumores de películas de <a href="https://es.wikipedia.org/wiki/God_of_War_(franquicia)">God of War</a> y 
-      <a href="https://es.wikipedia.org/wiki/Street_Fighter">Street Fighter</a>.
+      Cada vez son más los videojuegos que tienen una adaptación cinematográfica. Estos últimos años se han visto en el cine títulos como <a href="https://es.wikipedia.org/wiki/Sonic,_la_pel%C3%ADcula">Sonic</a> o <a href="https://es.wikipedia.org/wiki/Pokémon:_Detective_Pikachu">Detective Pikachu</a> y se espera que en los próximos años esta tendencia se mantenga, con los rumores de películas de <a href="https://es.wikipedia.org/wiki/God_of_War_(franquicia)">God of War</a> y <a href="https://es.wikipedia.org/wiki/Street_Fighter">Street Fighter</a>.
     </p>
     <p>
-      Sin embargo hay una en particular que llama mucho la atención, pues estamos hablando de nada más y nada menos que la película del famoso videojuego 
-      <a href="https://es.wikipedia.org/wiki/Minecraft">Minecraft</a>.
+      Sin embargo hay una en particular que llama mucho la atención, pues estamos hablando de nada más y nada menos que la película del famoso videojuego <a href="https://es.wikipedia.org/wiki/Minecraft">Minecraft</a>.
     </p>
     <p>
-      Los planes para esta adaptación cinematográfica comenzaron en febrero de 2014 cuando <a href="https://es.wikipedia.org/wiki/Markus_Persson">Markus Persson</a>
-      reveló que Mojang estaba en conversaciones con <a href="https://es.wikipedia.org/wiki/Warner_Bros.">Warner Bros</a> para el proyecto. El rodaje comenzó a 
-      mediados de enero de 2024 en Nueva Zelanda y se espera que la obra se estrene el 4 de abril de 2025.
+      Los planes para esta adaptación cinematográfica comenzaron en febrero de 2014 cuando <a href="https://es.wikipedia.org/wiki/Markus_Persson">Markus Persson</a> reveló que Mojang estaba en conversaciones con <a href="https://es.wikipedia.org/wiki/Warner_Bros.">Warner Bros</a> para el proyecto. El rodaje comenzó a mediados de enero de 2024 en Nueva Zelanda y se espera que la obra se estrene el 4 de abril de 2025.
     </p>
     <figure>
-      <img src="https://plataformas-moviles.vercel.app/img/armored-core-6.jpg" alt="MC screen">
+      <img src="https://plataformas-moviles.vercel.app/img/minecraft.jpg" alt="Minecraft Cover">
       <figcaption>Portada del Minecraft</figcaption>
     </figure>
-    <p>La película tratara de una adolescente que intentará salvar el Overwolrd del <a href="https://minecraft.fandom.com/es/wiki/Enderdragón">Enderdragon</a>.</p>
+    <p>La película tratará de una adolescente que intentará salvar el <a href="https://minecraft.fandom.com/es/wiki/Superficie">Overwolrd</a> del <a href="https://minecraft.fandom.com/es/wiki/Enderdragón">Enderdragon</a></p>
   </article>
 </body>
 </html>
