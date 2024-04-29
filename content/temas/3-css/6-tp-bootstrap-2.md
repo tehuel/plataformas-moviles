@@ -2,11 +2,11 @@
 title: "3.6: TP Bootstrap (2)"
 ---
 
-Sexto trabajo práctico (y tercera vez que redacto este enunciado). Ahora vamos a usar Bootstrap para reconstruir "la estructura" de un sitio web conocido, teniendo en cuenta el comportamiento responsivo.
+Sexto trabajo práctico. Ahora vamos a usar Bootstrap para reconstruir "la estructura" de un sitio web dado el siguiente esqueleto: <a href="https://drive.google.com/file/d/1n8N0OwUI5SI1sKlQUOWuN6ToXEmdF7Kv/view?usp=sharing">Link</a>
 
 Consigna:
 - Crear un archivo `tp-6/index.html` en el repositorio de entregas de la materia en Github.
-- En ese archivo HTML creado implementar la solucion del trabajo teniendo encuenta las siguientes condiciones
+- En ese archivo HTML creado implementar un sitio web que trate sobre cualquier tema teniendo encuenta las siguientes condiciones
 
 Condiciones: 
 - Usar Bootstrap
