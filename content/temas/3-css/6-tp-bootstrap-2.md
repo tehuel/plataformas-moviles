@@ -2,7 +2,7 @@
 title: "3.6: TP Bootstrap (2)"
 ---
 
-Sexto trabajo práctico. Ahora vamos a usar Bootstrap para reconstruir "la estructura" de un sitio web dado el siguiente esqueleto: <a href="https://drive.google.com/file/d/1n8N0OwUI5SI1sKlQUOWuN6ToXEmdF7Kv/view?usp=sharing">Link</a>
+Sexto trabajo práctico. Ahora vamos a usar Bootstrap para reconstruir "la estructura" de un sitio web dado el siguiente esqueleto: <a href="https://www.figma.com/file/FCPcWiELkdba5KxVf7c3YQ/Grillas---PMoviles?type=design&mode=design">Link</a>
 
 Consigna:
 - Crear un archivo `tp-6/index.html` en el repositorio de entregas de la materia en Github.
