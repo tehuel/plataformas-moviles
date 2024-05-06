@@ -8,8 +8,6 @@ La idea de Media Queries es hacer consultas sobre las características del dispo
 
 Con esto podemos aplicar de forma condicional estilos CSS.
 
-https://developer.mozilla.org/es/docs/Web/CSS/Specificity
-
 ## Documento de ejemplo
 
 ```html
