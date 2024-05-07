@@ -11,3 +11,26 @@ Por otro lado, una **librería** es un conjunto de funciones, clases y component
 ![](/img/framework-librería.jpg)
 
 La principal diferencia entre un framework y una librería está en la **inversión del control**. En un framework, el flujo de control de la aplicación está predefinido y controlado por el framework, lo que significa que los desarrolladores deben ajustarse a esa estructura establecida. En cambio, con una librería, los desarrolladores tienen el control total del flujo de control de la aplicación y pueden utilizar la librería según sea necesario, sin estar obligados a seguir una estructura específica.
+
+## Ventajas y Desventajas
+
+Repasamos las ventajas y desventajas de usar un framework.
+
+Ventajas
+
+- Ahorran trabajo
+- Solucionan problemas comunes
+- (Generalmente) siguen buenas prácticas
+
+Desventajas
+
+- Tienen una curva de aprendizaje
+
+## Diferentes Opciones
+
+Vemos algunos ejemplos de diferentes frameworks CSS.
+
+- Tailwind CSS (basado en utilities)
+- "classless" Frameworks (sin modificar el HTML)
+- NES.CSS (estilo particular)
+- LaTeX.css (estilo particular)
