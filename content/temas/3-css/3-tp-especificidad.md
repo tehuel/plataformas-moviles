@@ -104,6 +104,15 @@ Dentro de este archivo CSS, siempre teniendo en cuenta las reglas ya existentes 
 
 6. Una regla para que el texto `p.fuente` tenga su opacidad en 100% (se puede usar la declaración `opacity: 100%;`).
 
-7. Una regla para que el texto del elemento `p.fuente` tenga color `#000`.
+7. Una regla para que los párrafos sin id **no** tengan sombra (`text-shadow: none`). 
 
-8. Una regla para que el elemento con la clase `.complicado` aparezca en negrita y con color `#C62`.
+# Bonus Track
+
+1. Una regla para que el texto del elemento `p.fuente` tenga color `#000`.
+
+2. Una regla para que el elemento con la clase `.complicado` aparezca en negrita y con color `#C62`.
+
+> **Atención**
+> 
+> - No modificar la estructura de las etiquetas HTML ya existentes.
+> - Antes de utilizar `!important`, asegurarse de que no exista otra alternativa.
