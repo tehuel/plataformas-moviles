@@ -2,16 +2,20 @@
 title: "3.6: TP Bootstrap (2)"
 ---
 
-Sexto trabajo práctico (y tercera vez que redacto este enunciado). Ahora vamos a usar Bootstrap para reconstruir "la estructura" de un sitio web conocido, teniendo en cuenta el comportamiento responsivo.
+Sexto trabajo práctico. Ahora vamos a usar Bootstrap para reconstruir "la estructura" de un sitio web dado el siguiente esqueleto
 
-Consigna:
-- Crear un archivo `tp-6/index.html` en el repositorio de entregas de la materia en Github.
-- En ese archivo HTML creado implementar la solucion del trabajo teniendo encuenta las siguientes condiciones
+[<img src="/img/screen-figma-bootstrap.png"> click para ver versión completa del diseño](https://www.figma.com/file/FCPcWiELkdba5KxVf7c3YQ/Grillas---PMoviles?type=design&mode=design)
 
-Condiciones: 
-- Usar Bootstrap
+# Consigna
+
+- Crear un archivo `tp-6/index.html` en el repositorio de entregas de la materia, en Github.
+- En ese archivo HTML creado implementar un sitio web que replique la estructura mostrada en los diseños esquemáticos.
+
+## Condiciones
+
+- Usar la última versión de Bootstrap.
 - Usar la grilla y las columnas para armar la estructura
-- Incluir componentes de Bootstrap como Card, Navbar, Button, etc...
-- Replicar "la estructura" del sitio, sin preocuparse en el aspecto visual o el diseño, sino dando prioridad al comportamiento en diferentes breakpoints
+- Incluir los componentes de Bootstrap (como Card, Navbar, Button, etc...) que considere necesarios.
+- Replicar "la estructura" del sitio, sin preocuparse en el aspecto visual o el diseño, sino dando prioridad al comportamiento en diferentes breakpoints.
 
-Para la entrega incluir un link al sitio publicado en gihub pages y otro link al sitio usado como referencia. En el caso de no usar un sitio de referencia, incluir un comentario en la entrega aclarando que no se usó referencia.
+> Contenido: El tema o contenido del trabajo es libre. En caso de querer generar texto de relleno, una práctica común es usar [Lorem Ipsum](https://www.lipsum.com/)
