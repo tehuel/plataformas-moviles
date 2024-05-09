@@ -16,21 +16,28 @@ La principal diferencia entre un framework y una librería está en la **inversi
 
 Repasamos las ventajas y desventajas de usar un framework.
 
-Ventajas
+### Ventajas
 
 - Ahorran trabajo
 - Solucionan problemas comunes
 - (Generalmente) siguen buenas prácticas
+- Encapsulan funcionalidad compleja, ej media queries (esto también es una desventaja)
 
-Desventajas
+### Desventajas
 
 - Tienen una curva de aprendizaje
+- Nos abstraemos del lenguaje de programación
+- Tenemos que adaptar nuestro código a lo que el framework quiere
+- Al encapsular funcionalidad compleja, se vuelve un poco mas difícil solucionar problemas
 
 ## Diferentes Opciones
 
 Vemos algunos ejemplos de diferentes frameworks CSS.
 
-- Tailwind CSS (basado en utilities)
-- "classless" Frameworks (sin modificar el HTML)
-- NES.CSS (estilo particular)
-- LaTeX.css (estilo particular)
+- Bootstrap  - [link](https://getbootstrap.com/)
+- Tailwind CSS (basado en utilities) - [link](https://tailwindcss.com/)
+- "classless" Frameworks (sin modificar el HTML) - [link bolt css](https://boltcss.com/)
+- NES.CSS (estilo particular) - [link](https://nostalgic-css.github.io/NES.css/)
+- LaTeX.css (estilo particular) - [link](https://latex.vercel.app/)
+- Pure.css (framework muy pequeño y modular) - [link](https://purecss.io/)
+- Bulma - [link](https://bulma.io/)
