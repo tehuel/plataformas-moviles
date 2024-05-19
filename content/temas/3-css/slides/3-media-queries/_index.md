@@ -12,6 +12,10 @@ outputs:
 
 ---
 
+![](/img/responsive-clipart.gif)
+
+---
+
 links
 
 - https://developer.mozilla.org/es/docs/Web/CSS/Specificity
