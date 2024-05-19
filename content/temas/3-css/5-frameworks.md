@@ -22,6 +22,7 @@ Repasamos las ventajas y desventajas de usar un framework.
 - Solucionan problemas comunes
 - (Generalmente) siguen buenas prácticas
 - Encapsulan funcionalidad compleja, ej media queries (esto también es una desventaja)
+- Permiten compartir conocimiento entre distintos proyectos
 
 ### Desventajas
 
