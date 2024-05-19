@@ -1,6 +1,5 @@
 ---
-title: "Presetación Media Queries"
-weight: 2
+title: "3 - CSS Media Queries"
 outputs:
   - "Reveal"
 ---
