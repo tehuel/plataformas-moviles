@@ -28,7 +28,7 @@ El tamaño del equipo hará que los requisitos del trabajo cambien, a mas integr
 
 ## Definición del Trabajo
 
-La elección del tema del Traajo Final, quedará a cargo de cada equipo. Una vez que el equipo haya elegido el tema sobre el cual se va a trabajar, se hará un analisis para definir si en el rango de tiempo con el que contamos y la cantidad de integrantes es posible realizarlo. En caso de que el tema sea complejo o se necesite mucho tiempo para desarrollarlo, el equipo y los profesores se pondrán de acuerdo en cuales van a ser los limites y en que funcionalidades nos vamos a enfocar.
+Cada equipo elegirá el tema de su trabajo final. Se analizará junto a los docentes si el alcance propuesto por los alumnos es viable en el tiempo disponible y con el número de integrantes del equipo. En caso de ser necesario se ajustará el alcance.
 
 El trabajo final tendrá aproximadamente 4 iteraciones, durante 4 semanas continuas. El equipo de alumnos tendrá 1 semana completa para trabajar entre iteración. Cada vez que una iteración finalice se hará una pequeña reunión (en clase) para revisar los avances, hacer correcciones y definir los objetivos de la próxima iteración.
 
