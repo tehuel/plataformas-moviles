@@ -2,7 +2,7 @@
 title: "Unidad 7: Trabajo Integrador"
 ---
 
-El trabajo final integrador tiene como idea unificar todos los temas vistos durante el año en la materia. El trabajo será realizado de forma **iterativa e incremental**, donde en cada interación se va a analizar lo que fue definido, acordar cuales serián las próximas funcionalidades a agregar y cuales fueron los problemas con los que se encontraron.
+El trabajo final integrador tiene como objetivo unificar todos los temas vistos durante el año en la materia. Se realizará de forma **iterativa e incremental**. En cada iteración se revisará el avance alcanzado por el equipo, se acordarán las próximas funcionalidades y se identificarán los problemas encontrados.
 
 ## Esquema
 
