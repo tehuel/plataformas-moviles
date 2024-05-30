@@ -2,28 +2,32 @@
 title: "3.6.2: Componentes de Bootstrap"
 ---
 
+Los componentes de Bootstrap permiten crear interfaces de usuario responsivas de manera sencilla.
+
+Algunos de los componentes que disponemos son:
+
 ## Card
 
-Las <a href="https://getbootstrap.com/docs/5.2/components/card/">cards</a> de Bootstrap son contenedores con bordes que incluye opciones para incluir distinto tipo de contenido en ellas. 
+Las [cards](https://getbootstrap.com/docs/5.3/components/card/) de Bootstrap se utiliza para mostrar contenido variado con un diseño consistente, incluyendo encabezados, pies de página, imágenes y texto.
 
 ```html
-<div class="card" style="width: 18rem;">
+<div class="card">
   <img class="card-img-top" src="..." alt="Imagen de tarjeta">
   <div class="card-body">
     <h5 class="card-title">Título</h5>
     <p class="card-text">Lorem ipsum dolor sit amet.</p>
-    <a href="#" class="btn btn-primary">Btn</a>
+    <a href="#" class="btn btn-primary">Botón</a>
   </div>
 </div>
 ```
 
 ## Button
 
-Se incluyen distintos estilos predefinidos de <a href="https://getbootstrap.com/docs/5.2/components/buttons/">botones</a>, cada uno con un propósito en la semántica.
+Se incluyen distintos estilos predefinidos de [botones](https://getbootstrap.com/docs/5.3/components/buttons/), con diferencias en su aspecto visual y también en su semántica.
 
-Si bien estan diseñadas para usarse con la etiqueta `<button>`, se pueden emplear tambien con las etiquetas `<a>` o `<input>`
+Aunque el componente se llama *button*, se puede usar también para elementos de tipo `<a>` además de `<button>`.
 
-Se pueden emplear las clases `.active` (por defecto) o `.disabled` para alternar el estado del botón, estableciendo si este puede ser clickeado o no
+También se pueden emplear las clases `.active` para resaltar el botón y marcarlo como *activo* o `.disabled` para mostrarlo como desactivado.
 
 ```html
 <button type="button" class="btn btn-primary">Primary</button>
@@ -40,12 +44,10 @@ Se pueden emplear las clases `.active` (por defecto) o `.disabled` para alternar
 
 ## Carousel
 
-El <a href="https://getbootstrap.com/docs/5.2/components/carousel/">carrusel</a> es un componente para mostrar una serie de elementos de manera rotativa y automática en una página.
-
-Existen distintos tipos de carrusel dependiendo de qué tanto control queramos darle al usuario sobre el mismo. Por defecto el carrusel ira alternando el contenido automáticamente.
+El [carrusel](https://getbootstrap.com/docs/5.3/components/carousel) permite mostrar una serie de elementos como imágenes o contenido personalizado, con controles de navegación e indicadores para desplazarse entre los elementos de manera intuitiva y visualmente atractiva.
 
 ```html
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <span>Slide 1</span>
@@ -64,7 +66,7 @@ Existen distintos tipos de carrusel dependiendo de qué tanto control queramos d
 
 ## Colores
 
-Los colores en Bootstrap se usan a partir de la semántica, transmitiendo su significado a partir de los nombres de clases utilizados.
+Los [colores](https://getbootstrap.com/docs/5.3/utilities/colors/) en Bootstrap se usan a partir de la semántica, transmitiendo su significado a partir de los nombres de clases utilizados.
 
 - `primary` (Primario)
 - `secondary` (Secundario)

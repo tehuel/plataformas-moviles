@@ -104,7 +104,7 @@ var nuevoValor = 33;
 listaDeNumeros.push(nuevoValor);
 
 // agregar un elemento al inicio de una lista
-listaDeNumeros.push(nuevoValor);
+listaDeNumeros.unshift(nuevoValor);
 ```
 
 
