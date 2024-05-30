@@ -4,13 +4,6 @@ title: "Unidad 7: Trabajo Integrador"
 
 El trabajo final integrador tiene como objetivo unificar todos los temas vistos durante el año en la materia. Se realizará de forma **iterativa e incremental**. En cada iteración se revisará el avance alcanzado por el equipo, se acordarán las próximas funcionalidades y se identificarán los problemas encontrados.
 
-## Esquema
-
-- Definición de forma de evaluación 
-- Definición de estructura del equipo
-- Definición del Trabajo (elección del tema)
-- Presentación y Defensa
-
 ### Definición de forma de Evaluación
 
 La evaluación del trabajo final se realizará teniendo en cuenta todos los conceptos y herramientas aprendidas durante todo el año. Tal cual lo expresamos durante toda la materia, nuestra evaluación no se enfoca principalmente en tener una página web / aplicación 100% funcional, si no que se enfoca en la evolución que tuvieron los alumnos hasta llegar a la presentación final. 
@@ -43,7 +36,6 @@ Al final la 4ta iteración se espera tener una página web / aplicación que cum
 Que cosas quedan fuera del alcance del trabajo:
 - Desarrollar un backend o una API propia, por la naturaleza y el tiempo con el que contamos no es necesario ponerse a desarrollar una API propia (en caso de que sea algo que ya existe para otra materia se puede charlar)
 - No buscamos desarrollar una aplicación con lógica compleja ni rebuscada.
-
 
 ## Presentación y evaluación
 
