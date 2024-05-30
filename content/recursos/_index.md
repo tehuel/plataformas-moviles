@@ -16,7 +16,7 @@ Listado de recursos generales que acompañan a la materia.
 - [Referencia CSS](https://cssreference.io/) (en inglés)
 - [Documentación Git](https://git-scm.com/docs/git/es)
 
-## API's
+## API's ⚙️
 - [Listado de API's públicas](https://github.com/public-apis/public-apis)
 - [Listado de API's públicas sin autorización](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/)
 - [API de API's](https://api.publicapis.org/entries)
