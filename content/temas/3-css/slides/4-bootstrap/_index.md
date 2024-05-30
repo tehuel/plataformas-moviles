@@ -1,6 +1,5 @@
 ---
-title: "Presentación Bootstrap"
-weight: 3
+title: "4 - Frameworks CSS - Bootstrap"
 outputs:
   - "Reveal"
 ---

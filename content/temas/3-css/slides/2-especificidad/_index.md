@@ -1,6 +1,5 @@
 ---
-title: "Especificidad en CSS"
-weight: 1
+title: "2 - Especificidad en CSS"
 outputs:
   - "Reveal"
 ---

@@ -10,9 +10,13 @@ Las columnas en Bootstrap se dividen en diferentes "porciones" utilizando clases
 
 Además, se pueden usar columnas en diferentes breakpoints. Estas clases responsivas, como `col-sm-nn`, `col-md-nn` y `col-lg-nn`, permiten definir diferentes tamaños de columnas para adaptarse a las distintas resoluciones de pantalla.
 
+> **Nota**: Existe la posibilidad de dejar que las columnas tomen un tamaño de manera automática usando sólo la clase `col` (sin especificar un tamaño), pero en este curso vamos a preferir ser siempre explícitos con el tamaño para tener un mejor control de los resultados.
+
 ## Breakpoints y Responsividad
 
 La responsividad permite que el diseño web se adapte a los diferentes tamaños que pueda tener el navegador. No es lo mismo ver un sitio web (Ej: Youtube) desde el navegador del celular que hacerlo desde la computadora, los elementos se adaptan a las medidas de la pantalla.
+
+![](/img/responsive-clipart.gif)
 
 Los breakpoints son medidas predefinidas de tamaño en donde se realizan cambios en el diseño CSS concretos para estas medidas. Los breakpoints de bootstrap son:
 
