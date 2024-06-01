@@ -6,7 +6,7 @@ En este trabajo práctico vamos a usar listas (arrays) dentro del lenguaje JavaS
 
 Consigna:
 
-- Subir todos los archivos a un directorio `tp-listas` en el repositorio de entregas en GitHub. Deberian quedar los 2 archivos (`index.html`, `listas.js`) dentro del mismo directorio.
+- Subir todos los archivos a un directorio `tp-8` en el repositorio de entregas en GitHub. Deberian quedar los 2 archivos (`index.html`, `listas.js`) dentro del mismo directorio.
 - En el archivo `.js` implementar las funciones solicitadas.
 
 Condiciones:
