@@ -11,8 +11,13 @@ La evaluación del trabajo final se realizará teniendo en cuenta todos los conc
 Sabemos que dentro del mundo de la programación los problemas y las trabas son cosas que suceden con mucha facilidad, por eso es que hacemos mucho hincapie en que si vemos la evolución de un equipo de alumnos, por mas que no hayan llegado a terminar el proyecto, nosotros vamos a tener en cuenta el compromiso y el esfuerzo en caso de haber existido.
 
 Si bien el proyecto va a tener un puntaje final, la evaluación se realizará de forma iterativa a medida que el proyecto va avanzando teniendo en cuenta los siguientes criterios:
-- TODO AGREGAR CRITERIOS DE EVALUACION
 
+- Aplicación de los temas vistos en clase
+- Seguimiento de las consignas y pautas del trabajo
+- Comunicación en tiempo y forma de avances y problemáticas
+- Organización del trabajo y de cada una de las tareas
+- Presentación del trabajo
+    
 ## Definición de estructura del Equipo
 
 A diferencia de los trabajos prácticos que fuimos realizando durante el año, el trabajo final es en equipos. Lo ideal es que los equipos tengan como máximo 3 integrantes, también puede haber equipos de 2 integrantes y en caso de que algún alumno quiera trabajar de forma individual, también será posible. 
@@ -39,4 +44,4 @@ Que cosas quedan fuera del alcance del trabajo:
 
 ## Presentación y evaluación
 
-Se espera que el equipo presente el estado final de su trabajo final, explicando con que problemas se encontraron y como hicieron para resolverlos. En este punto se realizará la evaluación.
+Se espera que el equipo presente el estado final de su trabajo, explicando con que problemas se encontraron y como hicieron para resolverlos. En este punto se realizará la evaluación.
