@@ -6,7 +6,7 @@ En este trabajo práctico vamos a usar de manera combinada los tipos de datos `l
 
 Consigna:
 
-- Subir todos los archivos a un directorio `tp-listas-y-objetos` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
+- Subir todos los archivos a un directorio `tp-9` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
 - En el archivo `.js` implementar las funciones solicitadas.
 
 Condiciones:
