@@ -1,5 +1,5 @@
 ---
-title: "4.2: Tipos de Datos"
+title: "4.2: Sintaxis Básica"
 ---
 
 Tipos de Datos (Primitivos)
@@ -16,21 +16,32 @@ MiVariable = 1;
 MiVariable = 1.234;
 MiVariable = "Hola";
 MiVariable = true;
+```
 
+Condicionales
+
+```js
 // condicionales
 if (condicion) {
 
 } else {
 
 }
+```
 
-// bucles
+Bucles
+
+```js
 while (condicion) {}
 
 do {} while (condicion);
 
 for (inicio; condicion; incremento) {}
+```
 
+Funciones
+
+```js
 // expresión de función
 function MiPrimeraFuncionSuma(a, b) {
     return a + b;
