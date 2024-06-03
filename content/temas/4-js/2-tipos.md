@@ -31,26 +31,21 @@ do {} while (condicion);
 
 for (inicio; condicion; incremento) {}
 
-// función sin parámetros
-function MiFuncion1() {
-    return 1;
-}
-
 // expresión de función
-function MiFuncionSuma(a, b) {
+function MiPrimeraFuncionSuma(a, b) {
     return a + b;
 }
-var sumaResultado = MiFuncionSuma(10, 20);
+let primerResultado = MiPrimeraFuncionSuma(10, 20);
 
 // función anónima
-var MiSegundaFuncionSuma = function (a, b) {
+let MiSegundaFuncionSuma = function (a, b) {
     return a + b;
 }
-var segundoResultado = MiSegundaFuncionSuma(10,20);
+let segundoResultado = MiSegundaFuncionSuma(10,20);
 
 // expresión de función flecha (arrow function)
-var MiTercerFuncionSuma = (a, b) => {
+let MiTercerFuncionSuma = (a, b) => {
     return a + b;
 }
-var tercerResultado = MiTercerFuncionSuma(10,20);
+let tercerResultado = MiTercerFuncionSuma(10,20);
 ```
