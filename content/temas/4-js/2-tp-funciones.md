@@ -15,8 +15,6 @@ Condiciones:
 - No modificar el código provisto.
 - (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
 
-Para la entrega incluir un link al repositorio de Github, y otro link a la versión funcionando en Github Pages del sitio.
-
 ## HTML
 
 ```html
@@ -34,41 +32,46 @@ Para la entrega incluir un link al repositorio de Github, y otro link a la versi
 
 // Implementar una función "suma" que retorne la suma de 2 numeros
 // ejemplo: suma(2,3) retorna 5
-
 function suma(num1, num2) {
     // return num1 + num2;
 }
 
-console.log("suma(2,3): ", suma(2,3))
+console.log(suma(2,3)); // 5
+console.log(suma(4,4)); // 8
 
 
 // Implementar una función "elevarAlCubo" que eleve al cubo un numero
 // ejemplo: elevarAlCubo(3) retorna 27
 
-console.log("elevarAlCubo(3): ", elevarAlCubo(3))
+console.log(elevarAlCubo(3)); // 27
+console.log(elevarAlCubo(99)); // 970299
 
 // Implementar una función "restoDivisionEntera" para devolver el resto de una división entera entre un dividendo y un divisor
 // ejemplo: restoDivisionEntera(3,2) retorna 1
 
-console.log("restoDivisionEntera(3,2): ", restoDivisionEntera(3,2))
+console.log(restoDivisionEntera(3,2)); // 1
+console.log(restoDivisionEntera(3,3)); // 0
 
 
 // Implementar una función "numeroPi" para devolver el numero PI
 // ejemplo: numeroPi() retorna 3,14...
 
-console.log("numeroPi(): ", numeroPi())
+console.log("numeroPi: ", numeroPi());
 
 
 // Implementar una función "numeroRandom" para devolver un número random / aleatorio
 // ejemplo: numeroRandom() retorna 0,123...
 
-console.log("numeroRandom(): ", numeroRandom())
+console.log("numeroRandom: ", numeroRandom());
+console.log("numeroRandom: ", numeroRandom());
 
 
 // Implementar una función "mejorNumeroRandom" para devolver un número random entre 2 valores recibidos como parámetros
 // ejemplo: mejorNumeroRandom(1,6) retorna 3
 
-console.log("mejorNumeroRandom(1,6): ", mejorNumeroRandom(1,6))
+console.log("mejorNumeroRandom(1,6): ", mejorNumeroRandom(1,6));
+console.log("mejorNumeroRandom(1,6): ", mejorNumeroRandom(1,6));
+console.log("mejorNumeroRandom(2,3): ", mejorNumeroRandom(2,4));
 
 
 // Cadenas de Caracteres
@@ -76,18 +79,21 @@ console.log("mejorNumeroRandom(1,6): ", mejorNumeroRandom(1,6))
 // Implementar una función "transformarMayuscula" que transforme a mayúscula la palabra recibida como parámetro
 // ejemplo: transformarMayuscula("Plataformas Móviles") retorna "PLATAFORMAS MÓVILES"
 
-console.log("transformarMayuscula(\"Plataformas Móviles\"): ", transformarMayuscula("Plataformas Móviles"))
+console.log("transformarMayuscula(\"hola\"): ", transformarMayuscula("hola"));
+console.log("transformarMayuscula(\"Plataformas Móviles\"): ", transformarMayuscula("Plataformas Móviles"));
 
 
 // Implementar una función "primeraLetra" que nos devuelva la inicial de la palabra recibida como parámetro
 // ejemplo: primeraLetra("Plataformas") retorna "P"
 
-console.log("primeraLetra(\"Plataformas\"): ", primeraLetra("Plataformas"))
+console.log("primeraLetra(\"hola\"): ", primeraLetra("hola"));
+console.log("primeraLetra(\"Plataformas\"): ", primeraLetra("Plataformas"));
 
 
 // Implementar una función "ultimaLetra" que nos devuelva la letra final la palabra recibida como parámetro
 // ejemplo: ultimaLetra("Plataformas") retorna "s"
 
+console.log("ultimaLetra(\"hola\"): ", ultimaLetra("hola"));
 console.log("ultimaLetra(\"Plataformas\"): ", ultimaLetra("Plataformas"))
 
 
