@@ -115,7 +115,9 @@ console.log("listadoDeLetrasAPalabra([\"h\", \"o\", \"l\", \"a\"]): ", listadoDe
 // Implementar una función "palabraInvertida" que devuelva la palabra invertida
 // ejemplo: palabraInvertida("hola") retorna "aloh";
 
-console.log("palabraInvertida(\"hola\"): ", palabraInvertida("hola"))
+console.log("palabraInvertida(\"hola\"): ", palabraInvertida("hola"));
+console.log("palabraInvertida(\"chau\"): ", palabraInvertida("chau"));
+console.log("palabraInvertida(\"ana\"): ", palabraInvertida("ana"));
 
 </script>
 </body>
