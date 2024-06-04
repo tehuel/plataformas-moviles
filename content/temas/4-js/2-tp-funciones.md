@@ -66,12 +66,13 @@ console.log("numeroRandom: ", numeroRandom());
 console.log("numeroRandom: ", numeroRandom());
 
 
-// Implementar una función "mejorNumeroRandom" para devolver un número random entre 2 valores recibidos como parámetros
-// ejemplo: mejorNumeroRandom(1,6) retorna 3
+// Implementar una función "mejorNumeroRandom" que devuelva un número random, pero comprendido entre los dos valores `min` y `max` recibidos como parámetros.
+// ejemplo: mejorNumeroRandom(2,4) retorna un número random entre 2 y 4.
 
 console.log("mejorNumeroRandom(1,6): ", mejorNumeroRandom(1,6));
 console.log("mejorNumeroRandom(1,6): ", mejorNumeroRandom(1,6));
-console.log("mejorNumeroRandom(2,3): ", mejorNumeroRandom(2,4));
+console.log("mejorNumeroRandom(2,4): ", mejorNumeroRandom(2,4));
+console.log("mejorNumeroRandom(2,4): ", mejorNumeroRandom(2,4));
 
 
 // Cadenas de Caracteres
