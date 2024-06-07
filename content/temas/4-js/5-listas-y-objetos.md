@@ -6,7 +6,7 @@ Queremos almacenar un listado de alumnos. Evaluamos distintas opciones
 
 ```js
 // la posicion indica que alumno refiere en los listados
-var listadoDeNombres = ["Juan", "Sahid"]
+var listadoDeNombres = ["Lionel", "Sahid"]
 var listadoDeApellidos = []
 var listaDeEdades = [18, 19, 20]
 ```
@@ -14,7 +14,7 @@ var listaDeEdades = [18, 19, 20]
 ```js
 // objeto con todos los alumnos
 var objetoDeAlumnos = {
-    nombre_1: "Juan",
+    nombre_1: "Lionel",
     apellido_1: "",
     edad_1: 18,
 
@@ -29,7 +29,7 @@ var objetoDeAlumnos = {
 // Un objeto para cada alumno, dentro de otro objeto.
 var objetoListaAlumnos = {
     alumno_1: {
-        nombre: "Juan",
+        nombre: "Lionel",
         apellido: "",
         edad: 18,
     },
@@ -45,7 +45,7 @@ var objetoListaAlumnos = {
 // un objeto para cada alumno, una lista para contener a todos los alumnos
 var listaDeAlumnos = [
     {
-        nombre: "Juan",
+        nombre: "Lionel",
         apellido: "",
         edad: 18,
     },
@@ -86,7 +86,7 @@ Creo un nuevo alumno y lo agrego al listado
 
 ```js
 var alumnoA = {
-    nombre: "Juan",
+    nombre: "Lionel",
     apellido: "",
     edad: 18,
 };
