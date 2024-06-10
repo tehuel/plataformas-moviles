@@ -70,6 +70,7 @@ console.log("resultado crearPersona: ", crearPersona("Juan", "Pérez", 20, 12345
  * 
  * Recibe
  * - `persona`: objeto de la forma persona.
+ * - `apodo`: string, con el apodo que agregarle a la persona.
  * 
  * Retorna: 
  * - un objeto, representando a la misma persona recibida, pero con un nuevo campo 'apodo'.
