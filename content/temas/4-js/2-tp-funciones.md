@@ -38,6 +38,8 @@ function suma(num1, num2) {
 
 console.log(suma(2,3)); // 5
 console.log(suma(4,4)); // 8
+console.log(suma(-10,10)); // 0
+
 
 
 // Implementar una función "elevarAlCubo" que eleve al cubo un numero
@@ -46,11 +48,16 @@ console.log(suma(4,4)); // 8
 console.log(elevarAlCubo(3)); // 27
 console.log(elevarAlCubo(99)); // 970299
 
+
+
 // Implementar una función "restoDivisionEntera" para devolver el resto de una división entera entre un dividendo y un divisor
 // ejemplo: restoDivisionEntera(3,2) retorna 1
 
-console.log(restoDivisionEntera(3,2)); // 1
+console.log(restoDivisionEntera(1,3)); // 1
+console.log(restoDivisionEntera(2,3)); // 2
 console.log(restoDivisionEntera(3,3)); // 0
+console.log(restoDivisionEntera(4,3)); // 1
+
 
 
 // Implementar una función "numeroPi" para devolver el numero PI
@@ -59,11 +66,13 @@ console.log(restoDivisionEntera(3,3)); // 0
 console.log("numeroPi: ", numeroPi());
 
 
+
 // Implementar una función "numeroRandom" para devolver un número random / aleatorio
 // ejemplo: numeroRandom() retorna 0,123...
 
 console.log("numeroRandom: ", numeroRandom());
 console.log("numeroRandom: ", numeroRandom());
+
 
 
 // Implementar una función "mejorNumeroRandom" que devuelva un número random, pero comprendido entre los dos valores `min` y `max` recibidos como parámetros.
@@ -84,34 +93,49 @@ console.log("transformarMayuscula(\"hola\"): ", transformarMayuscula("hola"));
 console.log("transformarMayuscula(\"Plataformas Móviles\"): ", transformarMayuscula("Plataformas Móviles"));
 
 
+
 // Implementar una función "primeraLetra" que nos devuelva la inicial de la palabra recibida como parámetro
-// ejemplo: primeraLetra("Plataformas") retorna "P"
+// ejemplo: primeraLetra("plataformas") retorna "p"
 
 console.log("primeraLetra(\"hola\"): ", primeraLetra("hola"));
-console.log("primeraLetra(\"Plataformas\"): ", primeraLetra("Plataformas"));
+console.log("primeraLetra(\"plataformas\"): ", primeraLetra("plataformas"));
+
 
 
 // Implementar una función "ultimaLetra" que nos devuelva la letra final la palabra recibida como parámetro
 // ejemplo: ultimaLetra("Plataformas") retorna "s"
 
 console.log("ultimaLetra(\"hola\"): ", ultimaLetra("hola"));
-console.log("ultimaLetra(\"Plataformas\"): ", ultimaLetra("Plataformas"))
+console.log("ultimaLetra(\"Plataformas\"): ", ultimaLetra("Plataformas"));
+
+
+
+// Implementar una función "palabraSinPrimeraLetra" que nos devuelva la palabra recibida como parámetro sin la primera letra
+// ejemplo: palabraSinPrimeraLetra("plataformas") retorna "lataformas" (sin la "p")
+
+console.log("palabraSinPrimeraLetra(\"hola\"): ", palabraSinPrimeraLetra("hola"));
+console.log("palabraSinPrimeraLetra(\"plataformas\"): ", palabraSinPrimeraLetra("plataformas"));
+
 
 
 // Implementar una función "primeraLetraMayuscula" que devuelve la palabra original con su primera letra en mayúscula
 // ejemplo: primeraLetraMayuscula("plataformas") retorna "Plataformas"
 
-console.log("primeraLetraMayuscula(\"plataformas\"): ", primeraLetraMayuscula("plataformas"))
+console.log("primeraLetraMayuscula(\"hola\"): ", primeraLetraMayuscula("hola"));
+console.log("primeraLetraMayuscula(\"plataformas\"): ", primeraLetraMayuscula("plataformas"));
 
-// Implementar una función "palabraAListaDeLetras" que dada una palabra me retorne un listado de sus letras
-// ejemplo: palabraAListaDeLetras("hola") retorna ['h', 'o', 'l', 'a'];
 
-console.log("palabraAListaDeLetras(\"hola\"): ", palabraAListaDeLetras("hola"))
 
-// Implementar una función "listaDeLetrasAPalabra" que dado un listado de letras, devuelva una palabra
-// ejemplo: listadoDeLetrasAPalabra(["h", "o", "l", "a"]) retorna "hola";
+// Implementar una función "terminaCon" que devuelve verdadero o falso si la palabra termina con la terminación recibida
+// ejemplo: terminaCon("plataformas", "mas") retorna true
 
-console.log("listadoDeLetrasAPalabra([\"h\", \"o\", \"l\", \"a\"]): ", listadoDeLetrasAPalabra(["h", "o", "l", "a"]))
+console.log(terminaCon("hola", "a")); // true
+console.log(terminaCon("hola", "o")); // false
+
+console.log(terminaCon("plataformas", "mas")); // true
+console.log(terminaCon("plataformas", "más")); // false
+
+
 
 // Implementar una función "palabraInvertida" que devuelva la palabra invertida
 // ejemplo: palabraInvertida("hola") retorna "aloh";
