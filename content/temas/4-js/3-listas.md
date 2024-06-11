@@ -141,6 +141,30 @@ console.log("lista de preposiciones filtrada", listaFiltrada)
 console.log("lista de preposiciones original", listaDePreposiciones)
 ```
 
+## Existencia de elemento en lista
+
+Podemos necesitar averiguar si un elemento es parte de la lista. Para eso debemos recorrer la lista y consultar cada elemento (hasta encontrar el elemento consultado).
+
+```js
+function existeNumeroEnLista(numero, lista) {
+	let encontrado = false;
+	// queremos saber si numero está en la lista
+	for(let i = 0; i < lista.length; i++) {
+		// accedemos a valor en posicion i
+		let valorActual = lista[i];
+		// si es el que buscamos
+		if (valorActual == numero) {
+			encontrado = true;
+		}
+	}
+	return encontrado;
+}
+```
+
+Una alternativa es usar el método [`Array.includes()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes);
+
+---
+
 > Comentario extra: Para intercambiar 2 posiciones de una lista es necesario usar una letiable temporal
 >
 >     let temporal = nuevaLista(0);
