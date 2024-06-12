@@ -46,7 +46,8 @@
         border-left: 3px solid var(--bs-gray-600);
         background-color: var(--bs-gray-100);
       }
-      blockquote p:last-child, footer p:last-child {
+      blockquote p:last-child, 
+      footer p:last-child {
         margin: 0;
       }
 
@@ -111,5 +112,71 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script>
+      function createCopyButton(highlightDiv) {
+        const button = document.createElement("button");
+        button.className = "copy-code-button btn btn-sm btn-outline-primary";
+        button.type = "button";
+        button.innerText = "Copiar";
+        button.style = "position: absolute; right: 0; top:0; margin: 0.5em"
+        button.addEventListener("click", () =>
+          copyCodeToClipboard(button, highlightDiv)
+        );
+        addCopyButtonToDom(button, highlightDiv);
+        highlightDiv.style = "position: relative"
+      }
+  
+      async function copyCodeToClipboard(button, highlightDiv) {
+        const codeToCopy = highlightDiv.querySelector("pre code")
+          .innerText;
+        try {
+          result = await navigator.permissions.query({ name: "clipboard-write" });
+          if (result.state == "granted" || result.state == "prompt") {
+            await navigator.clipboard.writeText(codeToCopy);
+          } else {
+            copyCodeBlockExecCommand(codeToCopy, highlightDiv);
+          }
+        } catch (_) {
+          copyCodeBlockExecCommand(codeToCopy, highlightDiv);
+        } finally {
+          codeWasCopied(button);
+        }
+      }
+  
+      function copyCodeBlockExecCommand(codeToCopy, highlightDiv) {
+        const textArea = document.createElement("textArea");
+        textArea.contentEditable = "true";
+        textArea.readOnly = "false";
+        textArea.className = "copyable-text-area";
+        textArea.value = codeToCopy;
+        highlightDiv.insertBefore(textArea, highlightDiv.firstChild);
+        const range = document.createRange();
+        range.selectNodeContents(textArea);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+        document.execCommand("copy");
+        highlightDiv.removeChild(textArea);
+      }
+  
+      function codeWasCopied(button) {
+        button.blur();
+        button.innerText = "Copiado!";
+        setTimeout(function () {
+          button.innerText = "Copiar";
+        }, 2000);
+      }
+  
+      function addCopyButtonToDom(button, highlightDiv) {
+        highlightDiv.insertBefore(button, highlightDiv.firstChild);
+        const wrapper = document.createElement("div");
+        wrapper.className = "highlight-wrapper";
+        highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
+        wrapper.appendChild(highlightDiv);
+      }
+  
+      document.querySelectorAll(".highlight").forEach((highlightDiv) => createCopyButton(highlightDiv));
+    </script>
   </body>
 </html>
