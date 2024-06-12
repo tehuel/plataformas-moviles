@@ -9,7 +9,6 @@ Tipos de Datos (Primitivos)
 - booleanos
 
 ```js
-
 // variables y tipos
 let MiVariable;
 MiVariable = 1;
