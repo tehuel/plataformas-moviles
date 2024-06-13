@@ -6,14 +6,14 @@ Queremos almacenar un listado de alumnos. Evaluamos distintas opciones
 
 ```js
 // la posicion indica que alumno refiere en los listados
-var listadoDeNombres = ["Lionel", "Sahid"]
-var listadoDeApellidos = []
-var listaDeEdades = [18, 19, 20]
+let listadoDeNombres = ["Lionel", "Sahid"]
+let listadoDeApellidos = []
+let listaDeEdades = [18, 19, 20]
 ```
 
 ```js
 // objeto con todos los alumnos
-var objetoDeAlumnos = {
+let objetoDeAlumnos = {
     nombre_1: "Lionel",
     apellido_1: "",
     edad_1: 18,
@@ -26,7 +26,7 @@ var objetoDeAlumnos = {
 
 ```js
 // Un objeto para cada alumno, dentro de otro objeto.
-var objetoListaAlumnos = {
+let objetoListaAlumnos = {
     alumno_1: {
         nombre: "Lionel",
         apellido: "",
@@ -42,7 +42,7 @@ var objetoListaAlumnos = {
 
 ```js
 // un objeto para cada alumno, una lista para contener a todos los alumnos
-var listaDeAlumnos = [
+let listaDeAlumnos = [
     {
         nombre: "Lionel",
         apellido: "",
@@ -87,6 +87,6 @@ console.log("Lista de alumnos actualizada: ", listaDeAlumnos);
 
 ```js
 // accedo a campos dentro de los alumnos, dentro del listado
-var nombreDelAlumno = listaDeAlumnosEjemplo[1].nombre;
-var apellidoDelAlumno = listaDeAlumnosEjemplo[1].apellido;
+let nombreDelAlumno = listaDeAlumnosEjemplo[1].nombre;
+let apellidoDelAlumno = listaDeAlumnosEjemplo[1].apellido;
 ```
