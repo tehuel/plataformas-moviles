@@ -12,6 +12,7 @@ let listaDeStrings = ['a', 'abc'];
 let listaDeFloats = [1.23, 2.34, 3.45];
 let listaDeBooleanos = [false, false, true];
 let listaDeMultiplesTipos = [1, 'a', 1.23, false];
+let listaVacia = [];
 ```
 
 ## Operaciones sobre listas
@@ -24,6 +25,8 @@ let primerElemento = listaDeNumeros[0];
 
 // conocer la longitud de una lista
 let cantidadElementos = listaDeNumeros.length
+
+// acceder a último elemento?
 ```
 
 ### Agregar elementos
@@ -33,10 +36,10 @@ Se pueden usar los métodos `push()` y `unshift()` de listas.
 ```js
 let nuevoValor = 33;
 
-// agregar un elemento al final de una lista
+// agregar elemento al final de la lista
 listaDeNumeros.push(nuevoValor);
 
-// agregar un elemento al inicio de una lista
+// agregar elemento al inicio de la lista
 listaDeNumeros.unshift(nuevoValor);
 ```
 
@@ -141,27 +144,44 @@ console.log("lista de preposiciones filtrada", listaFiltrada)
 console.log("lista de preposiciones original", listaDePreposiciones)
 ```
 
+## Ordenar Listas
+
+Se puede usar el método `sort()` de listas para ordenarlas.
+
+```js
+let listaDesordenada = [4,6,2,1,9];
+let listaOrdenada = listaDesordenada.sort();
+
+console.log("lista ordenada", listaOrdenada)
+```
+
 ## Existencia de elemento en lista
 
 Podemos necesitar averiguar si un elemento es parte de la lista. Para eso debemos recorrer la lista y consultar cada elemento (hasta encontrar el elemento consultado).
 
 ```js
-function existeNumeroEnLista(numero, lista) {
+let listaDeNombres = ["Mateo", "Sofía", "Benjamín", "Valentina", "Thiago"];
+
+function existeElementoEnLista(elemento, lista) {
 	let encontrado = false;
-	// queremos saber si numero está en la lista
+	// queremos saber si elemento está en lista
 	for(let i = 0; i < lista.length; i++) {
 		// accedemos a valor en posicion i
 		let valorActual = lista[i];
+
 		// si es el que buscamos
-		if (valorActual == numero) {
+		if (valorActual == elemento) {
 			encontrado = true;
 		}
 	}
 	return encontrado;
 }
-```
 
-Una alternativa es usar el método [`Array.includes()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes);
+console.log("Existe 'Martina' en lista?", existeElementoEnLista("Martina", listaDeNombres));
+
+// Otra opción para consultar existencia de elemento en lista
+console.log("Existe 'Lautaro' en lista?", listaDeNombres.includes("Lautaro"));
+```
 
 ---
 
