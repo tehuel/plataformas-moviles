@@ -51,10 +51,20 @@
         margin: 0;
       }
 
+      .highlight {
+        position: relative;
+      }
+
       .highlight pre {
         border: var(--bs-border-width) var(--bs-border-style) var(--bs-gray-500);
         border-radius: var(--bs-border-radius);
         padding: 1em;
+      }
+
+      .btn-copy-code {
+        position: absolute;
+        right: 0;
+        top:-1rem;
       }
     </style>
 
@@ -115,15 +125,13 @@
     <script>
       function createCopyButton(highlightDiv) {
         const button = document.createElement("button");
-        button.className = "copy-code-button btn btn-sm btn-outline-primary";
+        button.className = "btn btn-sm btn-secondary btn-copy-code";
         button.type = "button";
         button.innerText = "Copiar";
-        button.style = "position: absolute; right: 0; top:0; margin: 0.5em"
         button.addEventListener("click", () =>
           copyCodeToClipboard(button, highlightDiv)
         );
         addCopyButtonToDom(button, highlightDiv);
-        highlightDiv.style = "position: relative"
       }
   
       async function copyCodeToClipboard(button, highlightDiv) {
