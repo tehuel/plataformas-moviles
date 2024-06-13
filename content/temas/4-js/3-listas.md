@@ -157,7 +157,7 @@ console.log("lista ordenada", listaOrdenada)
 
 ## Existencia de elemento en lista
 
-Podemos necesitar averiguar si un elemento es parte de la lista. Para eso debemos recorrer la lista y consultar cada elemento (hasta encontrar el elemento consultado).
+Podemos necesitar averiguar si un elemento es parte de la lista. Para eso debemos recorrer la lista y consultar cada elemento (hasta encontrar el elemento buscado).
 
 ```js
 let listaDeNombres = ["Mateo", "Sofía", "Benjamín", "Valentina", "Thiago"];
