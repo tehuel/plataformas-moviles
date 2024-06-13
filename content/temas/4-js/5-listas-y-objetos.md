@@ -22,7 +22,6 @@ var objetoDeAlumnos = {
     apellido_2: "",
     edad_2: 19,
 }
-
 ```
 
 ```js
@@ -57,21 +56,29 @@ var listaDeAlumnos = [
 ]
 ```
 
+## Agregar nuevos valores
+
 ```js
-// Agrego un nuevo alumno al listado
+// Agrego un nuevo alumno como objeto
 listaDeAlumnos.push({
     nombre: "Agustin",
     apellido: "",
     edad: 19,
 });
 
-// Agrego otro nuevo alumno al listado
+// Agrego otro nuevo alumno desde variable
 let otroNuevoAlumno = {
     nombre: "Camila",
     apellido: "",
     edad: 19,
 };
 listaDeAlumnos.push(otroNuevoAlumno);
+
+// Agrego un alumno creado desde una función
+let resultadoDeCrearNuevoAlumno = crearNuevoAlumno("Fabian", "", 20);
+listaDeAlumnos.push(resultadoDeCrearNuevoAlumno);
+
+//...
 
 console.log("Lista de alumnos actualizada: ", listaDeAlumnos);
 ```
