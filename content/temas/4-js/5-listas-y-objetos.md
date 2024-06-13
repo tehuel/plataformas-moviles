@@ -59,50 +59,26 @@ var listaDeAlumnos = [
 
 ```js
 // Agrego un nuevo alumno al listado
-listaDeAlumnos[2] = {
+listaDeAlumnos.push({
     nombre: "Agustin",
     apellido: "",
     edad: 19,
+});
 
-}
-console.log("Lista Nueva de Alumnos: ", listaDeAlumnos);
+// Agrego otro nuevo alumno al listado
+let otroNuevoAlumno = {
+    nombre: "Camila",
+    apellido: "",
+    edad: 19,
+};
+listaDeAlumnos.push(otroNuevoAlumno);
 
-```
-
-Creo un nuevo alumno y lo agrego al listado
-
-```js
-// function crearNuevoAlumno(nombre, apellido, edad) {
-//     return {
-//         nombre,
-//         apellido,
-//         edad,
-//     };
-// }
-// var nuevaListaDeAlumnos = agregarAlumno(listaDeAlumnos, datosDelAlumno);
+console.log("Lista de alumnos actualizada: ", listaDeAlumnos);
 ```
 
 ## Accediendo a valores dentro de una lista de objetos
 
 ```js
-var alumnoA = {
-    nombre: "Lionel",
-    apellido: "",
-    edad: 18,
-};
-
-var alumnoB = {
-    nombre: "Sahid",
-    apellido: "",
-    edad: 19,
-};
-
-// creo un listado de alumnos
-var listaDeAlumnosEjemplo = [
-    alumnoA,
-    alumnoB,
-];
-
 // accedo a campos dentro de los alumnos, dentro del listado
 var nombreDelAlumno = listaDeAlumnosEjemplo[1].nombre;
 var apellidoDelAlumno = listaDeAlumnosEjemplo[1].apellido;
