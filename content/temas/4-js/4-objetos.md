@@ -30,7 +30,7 @@ alumno["edad"]
 alumno["Un.Campo.Apodo"]
 
 // el acceso por corchetes se puede usar para acceder a campos con nombres calculados
-var campoImportante = "nombre";
+let campoImportante = "nombre";
 alumno[campoImportante]
 campoImportante = "apellido";
 alumno[campoImportante]
@@ -50,7 +50,7 @@ alumno["Un.Campo.Apodo"] = "Juampi";
 Tipos de valores dentro de los campos de un objeto
 
 ```js
-var objetoConDatosDeDistintosTipos = {
+let objetoConDatosDeDistintosTipos = {
     unValorBooleano: true,
     unValorNumerico: 2,
     unValorString: "aaaaa",
