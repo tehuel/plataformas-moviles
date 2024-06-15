@@ -1,5 +1,5 @@
 ---
-title: "4.2: TP Funciones"
+title: "4.2: tp-7 (Funciones)"
 ---
 
 Séptimo trabajo práctico, en el que vamos a trabajar con la definición de funciones en JavaScript.

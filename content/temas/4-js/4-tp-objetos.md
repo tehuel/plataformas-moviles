@@ -1,5 +1,5 @@
 ---
-title: "4.4: TP Objetos"
+title: "4.4: tp-9 (Objetos)"
 ---
 
 En este trabajo práctico vamos a usar el tipo de datos `objeto` dentro del lenguaje JavaScript.

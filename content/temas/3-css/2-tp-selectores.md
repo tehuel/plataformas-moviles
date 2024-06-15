@@ -1,5 +1,5 @@
 ---
-title: "3.2: TP Selectores"
+title: "3.2: tp-2 (Selectores)"
 ---
 
 Segundo Trabajo Práctico, donde ponemos en marcha la implementación de selectores en CSS.

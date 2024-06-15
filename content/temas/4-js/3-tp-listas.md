@@ -1,5 +1,5 @@
 ---
-title: "4.3: TP Listas"
+title: "4.3: tp-8 (Listas)"
 ---
 
 En este trabajo práctico vamos a usar listas (arrays) dentro del lenguaje JavaScript.

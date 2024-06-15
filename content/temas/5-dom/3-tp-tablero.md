@@ -1,5 +1,5 @@
 ---
-title: "5.3: TP Tablero de Puntos"
+title: "5.3: tp-14 (Tablero de Puntos)"
 ---
 
 El objetivo es construir un tablero para mostrar el puntaje de un partido entre 2 equipos.

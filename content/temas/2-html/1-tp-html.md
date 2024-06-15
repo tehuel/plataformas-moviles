@@ -1,5 +1,5 @@
 ---
-title: "2.1: TP-HTML"
+title: "2.1: tp-1 (HTML)"
 ---
 
 # Contenido en HTML

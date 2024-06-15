@@ -1,5 +1,5 @@
 ---
-title: "5.3: TP Editor de Texto"
+title: "5.3: tp-11 (Editor de Texto)"
 ---
 
 El objetivo es construir un muy simple Editor de Texto donde se puedan aplicar distintos estilos a un texto.

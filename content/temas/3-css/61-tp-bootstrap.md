@@ -1,5 +1,5 @@
 ---
-title: "3.6.1: TP Bootstrap"
+title: "3.6.1: tp-5 (Bootstrap)"
 ---
 
 Quinto trabajo práctico, una vez más en CSS. En este trabajo vamos integrando el framework Bootstrap para la construcción de pantallas.

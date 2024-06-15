@@ -1,5 +1,5 @@
 ---
-title: "4.5: TP Listas y Objetos"
+title: "4.5: tp-10 (Listas y Objetos)"
 ---
 
 En este trabajo práctico vamos a usar de manera combinada los tipos de datos `lista` y `objeto` dentro del lenguaje JavaScript.

@@ -1,5 +1,5 @@
 ---
-title: "5.3: TP Lista de Compras"
+title: "5.3: tp-12 (Lista de Compras)"
 ---
 
 El objetivo es construir una lista de compras donde se puedan agregar productos.
