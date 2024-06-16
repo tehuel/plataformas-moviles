@@ -36,7 +36,7 @@ Para este proyecto deberán crear una "[PokéDex](https://pokemon.fandom.com/es/
 
 Es un API que nos ofrece distinta información sobre comidas.
 
-Para este projecto deberán construir "Recetas", con la información que obtengamos.
+Para este proyecto deberán una aplicación de "Recetario", con la información que obtengamos de la API.
 
 **Objetivos:**
 
