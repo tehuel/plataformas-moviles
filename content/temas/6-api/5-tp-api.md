@@ -52,7 +52,7 @@ Para este proyecto deberán una aplicación de "Recetario", con la información 
 **Final Boss:**
 
 1. Reemplazar el listado por una grilla de cartas (responsiva), donde cada carta tenga el nombre y su imagen. (El botón para mostrar más información debería seguir estando)
-2. Agregar botones que nos permitan ver, a parte de comida china, recetas italianas y americanas.
+2. Agregar botones que nos permitan ver, además de comida china, recetas italianas y americanas.
 3. Agregar spinner para mostrar estado de loading
 
 ## Entrega
