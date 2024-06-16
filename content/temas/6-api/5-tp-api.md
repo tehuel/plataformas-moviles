@@ -18,7 +18,7 @@ Para este proyecto deberán crear una "[PokéDex](https://pokemon.fandom.com/es/
 
 **Objetivos:**
 
-1. La página deberá tener un listado de los primeros 151 pokémon
+1. La aplicación deberá mostrar un listado de los nombres de los primeros 151 pokémon
 2. De cada pokémon en el listado nos interesa poder visualizar su nombre.
 3. Para cada pokémon, agregar un botón que permita ver información adicional del mismo. Dicha información puede incluir:
    1. Nombre
