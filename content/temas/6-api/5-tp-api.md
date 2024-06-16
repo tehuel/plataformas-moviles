@@ -29,7 +29,7 @@ Para este proyecto deberán crear una "[PokéDex](https://pokemon.fandom.com/es/
 **Power Ups:**
 
 1. Reemplazar el listado por una grilla de cartas (responsiva), donde cada carta tenga el nombre, la imagen y los tipos del pokémon. (El botón para mostrar más información debería seguir estando)
-2. Agregar un botón que nos permita visualizar más pokemon
+2. Agregar un botón al final del listado que nos permita visualizar más pokemon, ademas de los 151 mostrados inicialmente.
 3. Agregar spinner para mostrar estado de loading
 
 ## TheMealDB
