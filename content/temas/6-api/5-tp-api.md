@@ -42,7 +42,7 @@ Para este proyecto deberán una aplicación de "Recetario", con la información 
 
 1. La página deberá tener un listado de recetas chinas
 2. De cada receta en el listado nos interesa poder visualizar su nombre.
-3. Para cada receta, agregar un botón que permita ver información adicional del mismo. Dicha información puede incluir:
+3. Para cada receta del listado, agregar un botón que permita ver información adicional de la misma. Dicha información puede incluir:
    1. Nombre
    2. Descripción
    3. Ingredientes
