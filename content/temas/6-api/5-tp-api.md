@@ -14,7 +14,7 @@ Para este trabajo deben elegir una de las siguientes dos opciones:
 
 La PokeApi es una API de Pokemon que permite obtener información sobre Pokemon, sus movimientos, sus tipos, etc.
 
-Para este projecto deberán crear una "PokéDex", con la información que obtengamos.
+Para este proyecto deberán crear una "[PokéDex](https://pokemon.fandom.com/es/wiki/Pok%C3%A9dex)", con la información que podemos obtener a partir de la API.
 
 **Objetivos:**
 
