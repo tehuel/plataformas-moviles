@@ -155,6 +155,13 @@ let listaOrdenada = listaDesordenada.sort();
 console.log("lista ordenada", listaOrdenada)
 ```
 
+Al método [`.sort()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) se le puede pasar como parámetro una función que defina el criterio por el que queremos ordenar la lista. Esta funcion "criterioDeOrdenamiento" recibe 2 elementos de la lista, y devuelve como resultado un número para decidir cual de los 2 elementos debe aparecer antes en la lista.
+
+- Si devuelve un número negativo es que los elementos tienen que intercambiar posiciones.
+- Si devuelve un numero positivo es para que los elementos mantengan su posición en la lista.
+
+Con strings la comparación se puede hacer con [`localeCompare()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)
+
 ## Existencia de elemento en lista
 
 Podemos necesitar averiguar si un elemento es parte de la lista. Para eso debemos recorrer la lista y consultar cada elemento (hasta encontrar el elemento buscado).
