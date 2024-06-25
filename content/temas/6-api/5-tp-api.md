@@ -1,5 +1,5 @@
 ---
-title: "6.5: TP de APIs"
+title: "6.5: tp-15 (APIs)"
 ---
 
 El objetivo es construir una pequeña aplicación con HTML + CSS (con Bootstrap) + JS, que consuma recursos de alguna API.
