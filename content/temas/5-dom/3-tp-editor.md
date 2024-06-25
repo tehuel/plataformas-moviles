@@ -35,17 +35,17 @@ El objetivo es construir un muy simple Editor de Texto donde se puedan aplicar d
                 <h2>Opciones de Formato</h2>
                 <div class="row">
                     <div class="col-12 col-md-4 my-1">
-                        <button id="btn-negrita" class="btn d-block w-100 btn-primary" data-funcion="negrita">
+                        <button id="btn-negrita" class="btn d-block w-100 btn-primary" data-formato="negrita">
                             Bold (Negrita)
                         </button>
                     </div>
                     <div class="col-12 col-md-4 my-1">
-                        <button id="btn-cursiva" class="btn d-block w-100 btn-primary" data-funcion="cursiva">
+                        <button id="btn-cursiva" class="btn d-block w-100 btn-primary" data-formato="cursiva">
                             Italic (Cursiva)
                         </button>
                     </div>
                     <div class="col-12 col-md-4 my-1">
-                        <button id="btn-subrayado" class="btn d-block w-100 btn-primary" data-funcion="subrayado">
+                        <button id="btn-subrayado" class="btn d-block w-100 btn-primary" data-formato="subrayado">
                             Underline (Subrayado)
                         </button>
                     </div>
@@ -81,7 +81,7 @@ El objetivo es construir un muy simple Editor de Texto donde se puedan aplicar d
         }
 
         function handlerBoton(e) {
-            const funcionBoton = e.target.dataset.funcion;
+            const funcionBoton = e.target.dataset.formato;
             switch (funcionBoton) {
                 case 'negrita':
                     funcionNegrita();
