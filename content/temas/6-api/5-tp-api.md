@@ -57,5 +57,5 @@ Para este proyecto deberán una aplicación de "Recetario", con la información 
 
 ## Entrega
 
-Para la entrega del trabajo, crear un directorio `tp-7/` en su repositorio de entregas, y subir un archivo como `tp-7/index.html`, junto con los archivos js y css correspondientes
+Para la entrega del trabajo, crear un directorio `tp-15/` en su repositorio de entregas, y subir un archivo como `tp-15/index.html`, junto con los archivos js y css correspondientes
 
