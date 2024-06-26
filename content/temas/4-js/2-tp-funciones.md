@@ -15,8 +15,6 @@ Condiciones:
 - No modificar el código provisto.
 - (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
 
-Para la entrega incluir un link al repositorio de Github, y otro link a la versión funcionando en Github Pages del sitio.
-
 ## HTML
 
 ```html
