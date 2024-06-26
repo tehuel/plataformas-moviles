@@ -14,6 +14,6 @@ Vimos algunos conceptos antes de arrancar con código.
 
 # API
 
-> Una API (del inglés, application programming interface, en español, interfaz de programación de aplicaciones)1​es una pieza de código que permite a diferentes aplicaciones comunicarse entre sí y compartir información y funcionalidades. Una API es un intermediario entre dos sistemas, que permite que una aplicación se comunique con otra y pida datos o acciones específicas. 
+> Una API (del inglés, application programming interface, en español, interfaz de programación de aplicaciones) ​es una pieza de código que permite a diferentes aplicaciones comunicarse entre sí y compartir información y funcionalidades. Una API es un intermediario entre dos sistemas, que permite que una aplicación se comunique con otra y pida datos o acciones específicas. 
 >
 > Fuente: [Wikipedia](https://es.wikipedia.org/wiki/API)
