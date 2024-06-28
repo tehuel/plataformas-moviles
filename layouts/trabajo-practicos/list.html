@@ -18,19 +18,4 @@
         </h2>
     {{ end }}
 
-	<!-- {{ $pages := .Pages }}
-	{{ $paginator := .Paginate $pages }} 
-	{{ range $paginator.Pages }}
-		{{ if not .IsSection }}
-			{{ with .Date }}
-				<time class="text-muted">{{ . | time.Format ":date_full" }}</time>
-			{{ end }}
-		{{ end }}
-		<h2>
-			<a href="{{ .Permalink | relLangURL }}">
-				{{ .Title }}
-			</a>
-		</h2>
-	{{ end }} -->
-
 {{- end }}
