@@ -1,5 +1,6 @@
 ---
 title: "3.6.2: tp-6 (Bootstrap (2))"
+tags: "tp"
 ---
 
 Sexto trabajo práctico. Ahora vamos a usar Bootstrap para reconstruir "la estructura" de un sitio web dado el siguiente esqueleto
