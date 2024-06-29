@@ -1,0 +1,21 @@
+{{- define "main" }}
+
+	{{ partial "breadcrumb.html" . }}
+	
+	<div class="text-center border-bottom mb-4">
+		<h1 class="display-3">{{ .Title }}</h1>
+	</div>
+
+	<div class="content my-4">
+		{{ .Content }}		
+	</div>
+
+    {{ range where .Site.Pages "Params.tags" "tp" }}
+        <h2>
+            <a href="{{ .Permalink | relLangURL }}">
+                {{ .Title }}
+            </a>
+        </h2>
+    {{ end }}
+
+{{- end }}

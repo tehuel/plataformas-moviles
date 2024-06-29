@@ -1,5 +1,6 @@
 ---
 title: "5.3: tp-13 (Lista de Contactos)"
+tags: "tp"
 ---
 
 El objetivo es construir una lista de contactos, ordenada alfabéticamente.
