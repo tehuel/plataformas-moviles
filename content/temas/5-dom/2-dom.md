@@ -27,16 +27,16 @@ let todosLosParrafos = document.querySelectorAll('p');
 let elementoConCondiciones = document.querySelector('div#id > p.clase'); 
 ```
 
-Como alternativa, podemos usar otros métodos para buscar elementos específicos.
+> Como alternativa, podemos usar otros métodos para buscar elementos específicos.
+> 
+> ```js
+> document.getElementById('id');
+> document.getElementsByClassName('clase');
+> document.getElementsByTagName('tag');
+> document.getElementsByName('nombre');
+> ```
 
-```js
-document.getElementById('id');
-document.getElementsByClassName('clase');
-document.getElementsByTagName('tag');
-document.getElementsByName('nombre');
-```
-
-Las búsquedas funcionan para encontrar elementos dentro de otros elementos.
+Las búsquedas pueden funcionar para encontrar elementos dentro de otros elementos.
 
 ```html
 <!-- Estructura en HTML -->
@@ -63,7 +63,14 @@ let nuevoParrafo = document.createElement('p');
 nuevoParrafo.innerText = "Este es el contenido del nuevo párrafo.";
 ```
 
-Para conocer todos los atributos (además del `innerText` que usamos en el ejemplo) y métodos que se pueden usar en el nuevo elemento, se puede consultar la [documentación de `element` en MDN](https://developer.mozilla.org/es/docs/Web/API/Element).
+Para conocer todos los atributos (además del `innerText` que usamos en el ejemplo) y métodos que se pueden usar para modificar un elemento, se puede consultar la [documentación de `element` en MDN](https://developer.mozilla.org/es/docs/Web/API/Element).
+
+Algunas posibilidades:
+- style (para modificar los estilos inline)
+- classList (para modificar las clases del elemento)
+- innerHTML
+- dataset
+- ...etc.
 
 ## Mostrar Elementos
 
