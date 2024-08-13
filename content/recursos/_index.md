@@ -17,11 +17,10 @@ Listado de recursos generales que acompañan a la materia.
 - [Documentación Git](https://git-scm.com/docs/git/es)
 
 ## API's ⚙️
-- [Listado de API's públicas](https://github.com/public-apis/public-apis)
+- Listados de APIs: [1](https://github.com/public-apis/public-apis), [2](https://publicapis.dev/), [3](https://publicapis.io/)
 - [Listado de API's públicas sin autorización](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/)
-- [API de API's](https://api.publicapis.org/entries)
 - [API de Rick And Morty](https://rickandmortyapi.com/)
-- [Poke API](https://pokeapi.co/)
+- [PokeAPI](https://pokeapi.co/)
 - [API Google Maps](https://developers.google.com/maps/documentation)
 - [API MercadoPago](https://www.mercadopago.com.ar/developers/es/reference)
 - [API Http Cat's](https://http.cat)
