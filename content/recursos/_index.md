@@ -17,7 +17,7 @@ Listado de recursos generales que acompañan a la materia.
 - [Documentación Git](https://git-scm.com/docs/git/es)
 
 ## API's ⚙️
-- Listados de APIs: [1](https://github.com/public-apis/public-apis), [2](https://publicapis.dev/), [3](https://publicapis.io/)
+- Listados de APIs: [github.com/public-apis](https://github.com/public-apis/public-apis), [publicapis.dev](https://publicapis.dev/), [publicapis.io](https://publicapis.io/)
 - [Listado de API's públicas sin autorización](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/)
 - [API de Rick And Morty](https://rickandmortyapi.com/)
 - [PokeAPI](https://pokeapi.co/)
