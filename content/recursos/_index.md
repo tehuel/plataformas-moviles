@@ -28,6 +28,16 @@ Listado de recursos generales que acompañan a la materia.
 - [API de Star Wars](https://swapi.dev/)
 - [API de Emoji's](https://emoji-api.com/)
 
+## Hosting
+- [Github Pages](https://docs.github.com/es/pages/quickstart) Frontend (estático)
+- [Vercel](https://vercel.com/docs/deployments/overview) Fullstack
+- [Surge.sh](https://surge.sh/) Frontend
+- [Railway](https://railway.app/) Fullstack
+- [Render](https://render.com/) Fullstack
+- [Netlify](https://www.netlify.com/) Fullstack
+- [Cloudflare Pages](https://pages.cloudflare.com/) Fullstack
+- [InfinityFree](https://www.infinityfree.com/) Fullstack (PHP + MySQL)
+
 ## Herramientas 🛠
 - [Usar Google Sheet como API json](https://benborgers.com/posts/google-sheets-json)
 - [Caniuse](https://caniuse.com/) (página para chequear el soporte de los navegadores con JS y otras herramientas.)
