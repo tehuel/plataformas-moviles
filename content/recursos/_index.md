@@ -27,6 +27,7 @@ Listado de recursos generales que acompañan a la materia.
 - [API Http Cat's](https://http.cat)
 - [API de Star Wars](https://swapi.dev/)
 - [API de Emoji's](https://emoji-api.com/)
+- APIs de Contadores: [letscountapi.com](https://letscountapi.com/), [counterapi.dev](https://counterapi.dev/api/endpoints.html)
 
 ## Hosting
 - [Github Pages](https://docs.github.com/es/pages/quickstart) Frontend (estático)
