@@ -50,3 +50,4 @@ Listado de recursos generales que acompañan a la materia.
 - [Developer Roadmap](https://roadmap.sh/)
 - [DevDocs](https://devdocs.io) (documentación de muchos lenguajes, frameworks, etc. Pero esta en inglés.)
 - [Scripts js para DOM](https://phuoc.ng/collection/html-dom/) (un montón de scripts para resolver distintos problemas del DOM.)
+- [Componentes HTML + CSS](https://uiverse.io/) (distintos componentes ya hechos por otras personas usando HTML y CSS)
