@@ -38,77 +38,107 @@ function suma(num1, num2) {
     // return num1 + num2;
 }
 
-console.log("suma(2,3): ", suma(2,3))
+console.log("Resultados de suma():")
+console.log(suma(2,3)); // 5
+console.log(suma(4,4)); // 8
+console.log(suma(-10,10)); // 0
 
 
 // Implementar una función "elevarAlCubo" que eleve al cubo un numero
 // ejemplo: elevarAlCubo(3) retorna 27
 
-console.log("elevarAlCubo(3): ", elevarAlCubo(3))
+console.log("Resultados de elevarAlCubo():")
+console.log(elevarAlCubo(3)); // 27
+console.log(elevarAlCubo(99)); // 970299
 
 // Implementar una función "restoDivisionEntera" para devolver el resto de una división entera entre un dividendo y un divisor
 // ejemplo: restoDivisionEntera(3,2) retorna 1
 
-console.log("restoDivisionEntera(3,2): ", restoDivisionEntera(3,2))
+console.log("Resultados de restoDivisionEntera():")
+console.log(restoDivisionEntera(1,3)); // 1
+console.log(restoDivisionEntera(2,3)); // 2
+console.log(restoDivisionEntera(3,3)); // 0
+console.log(restoDivisionEntera(4,3)); // 1
 
 
 // Implementar una función "numeroPi" para devolver el numero PI
 // ejemplo: numeroPi() retorna 3,14...
 
-console.log("numeroPi(): ", numeroPi())
+console.log("Resultado de numeroPi():")
+console.log(numeroPi())
 
 
 // Implementar una función "numeroRandom" para devolver un número random / aleatorio
 // ejemplo: numeroRandom() retorna 0,123...
 
-console.log("numeroRandom(): ", numeroRandom())
+console.log("Resultados de numeroRandom():")
+console.log(numeroRandom())
+console.log(numeroRandom())
+console.log(numeroRandom())
 
 
-// Implementar una función "mejorNumeroRandom" para devolver un número random entre 2 valores recibidos como parámetros
-// ejemplo: mejorNumeroRandom(1,6) retorna 3
+// Implementar una función "numeroRandomDesdeHasta" para devolver un número random entre 2 valores recibidos como parámetros
+// ejemplo: numeroRandomDesdeHasta(1,6) retorna 3
 
-console.log("mejorNumeroRandom(1,6): ", mejorNumeroRandom(1,6))
+console.log("Resultados de numeroRandomDesdeHasta():")
+console.log(numeroRandomDesdeHasta(1,6))
+console.log(numeroRandomDesdeHasta(2,5))
+console.log(numeroRandomDesdeHasta(3,4))
 
 
 // Cadenas de Caracteres
 
-// Implementar una función "transformarMayuscula" que transforme a mayúscula la palabra recibida como parámetro
+// Implementar una función "transformarMayuscula" que transforme a mayúscula la cadena de caracteres recibida como parámetro
 // ejemplo: transformarMayuscula("Plataformas Móviles") retorna "PLATAFORMAS MÓVILES"
 
-console.log("transformarMayuscula(\"Plataformas Móviles\"): ", transformarMayuscula("Plataformas Móviles"))
+console.log("Resultados de transformarMayuscula():")
+console.log(transformarMayuscula("Plataformas Móviles"))
+console.log(transformarMayuscula("hola mundo"))
+console.log(transformarMayuscula("abc"))
 
 
-// Implementar una función "primeraLetra" que nos devuelva la inicial de la palabra recibida como parámetro
+// Implementar una función "primeraLetra" que nos devuelva la inicial de la cadena de caracteres recibida como parámetro
 // ejemplo: primeraLetra("Plataformas") retorna "P"
 
-console.log("primeraLetra(\"Plataformas\"): ", primeraLetra("Plataformas"))
+console.log("Resultados de primeraLetra():")
+console.log(primeraLetra("Plataformas Móviles"))
+console.log(primeraLetra("hola mundo"))
+console.log(primeraLetra("abc"))
 
 
-// Implementar una función "ultimaLetra" que nos devuelva la letra final la palabra recibida como parámetro
-// ejemplo: ultimaLetra("Plataformas") retorna "s"
+// Implementar una función "sinPrimeraLetra" que nos devuelva la cadena de caracteres recibida como parámetro sin la primera letra
+// ejemplo: sinPrimeraLetra("Plataformas") retorna "lataformas"
 
-console.log("ultimaLetra(\"Plataformas\"): ", ultimaLetra("Plataformas"))
+console.log("Resultados de sinPrimeraLetra():")
+console.log(sinPrimeraLetra("Plataformas Móviles"))
+console.log(sinPrimeraLetra("hola mundo"))
+console.log(sinPrimeraLetra("abc"))
 
 
-// Implementar una función "primeraLetraMayuscula" que devuelve la palabra original con su primera letra en mayúscula
+// Implementar una función "primeraLetraMayuscula" que devuelve la cadena de caracteres recibida, pero  con su primera letra en mayúscula
 // ejemplo: primeraLetraMayuscula("plataformas") retorna "Plataformas"
 
-console.log("primeraLetraMayuscula(\"plataformas\"): ", primeraLetraMayuscula("plataformas"))
+console.log("Resultados de primeraLetraMayuscula():")
+console.log(primeraLetraMayuscula("plataformas móviles"))
+console.log(primeraLetraMayuscula("hola mundo"))
+console.log(primeraLetraMayuscula("abc"))
 
-// Implementar una función "palabraAListaDeLetras" que dada una palabra me retorne un listado de sus letras
-// ejemplo: palabraAListaDeLetras("hola") retorna ['h', 'o', 'l', 'a'];
 
-console.log("palabraAListaDeLetras(\"hola\"): ", palabraAListaDeLetras("hola"))
-
-// Implementar una función "listaDeLetrasAPalabra" que dado un listado de letras, devuelva una palabra
-// ejemplo: listadoDeLetrasAPalabra(["h", "o", "l", "a"]) retorna "hola";
-
-console.log("listadoDeLetrasAPalabra([\"h\", \"o\", \"l\", \"a\"]): ", listadoDeLetrasAPalabra(["h", "o", "l", "a"]))
+// Implementar una función "terminaCon" que devuelve verdadero o falso si la palabra termina con la terminación recibida
+// ejemplo: terminaCon("plataformas", "mas") retorna true
+console.log("Resultados de terminaCon():")
+console.log(terminaCon("hola", "a")); // true
+console.log(terminaCon("hola", "o")); // false
+console.log(terminaCon("plataformas", "mas")); // true
+console.log(terminaCon("plataformas", "más")); // false
 
 // Implementar una función "palabraInvertida" que devuelva la palabra invertida
 // ejemplo: palabraInvertida("hola") retorna "aloh";
 
-console.log("palabraInvertida(\"hola\"): ", palabraInvertida("hola"))
+console.log("Resultados de palabraInvertida():")
+console.log(palabraInvertida("plataformas móviles"))
+console.log(palabraInvertida("hola mundo"))
+console.log(palabraInvertida("abc"))
 
 </script>
 </body>
