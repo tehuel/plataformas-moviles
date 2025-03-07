@@ -4,11 +4,12 @@ defaultContentLanguage = 'es'
 title = 'Plataformas Móviles'
 disableKinds = ['taxonomy', 'term']
 theme = ["reveal-hugo"]
-paginate = 999
-
 [params]
 	mainSections = ['clases']
 	repository = 'https://github.com/tehuel/plataformas-moviles'
+
+[pagination]
+	pagerSize = 999
 
 [frontmatter]
 	date = [':filename', ':default']
