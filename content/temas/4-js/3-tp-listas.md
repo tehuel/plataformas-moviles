@@ -59,7 +59,43 @@ console.log("invertirLista([2,3,4]): ", invertirLista([2,3,4]))
 
 
 /**
- * 02 - calcularPromedio
+ * 02 - sumarLista
+ * 
+ * Recibe
+ * - `listaDeNumeros`: una lista (array) de números.
+ * 
+ * Retorna: 
+ * - un numero con el resultado de la suma de todos los elementos de la lista.
+ * 
+ * Ejemplos:
+ * - sumarLista([2,3,4]) retorna 9
+ */
+function sumarLista(listaDeNumeros) {
+    //
+}
+console.log("sumarLista([2,3,4]): ", sumarLista([2,3,4]))
+
+
+/**
+ * 03 - contarElementosLista
+ * 
+ * Recibe
+ * - `listaDeNumeros`: una lista (array) de números.
+ * 
+ * Retorna: 
+ * - un numero con la cantidad de elementos contenidos dentro de la lista.
+ * 
+ * Ejemplos:
+ * - sumarLista([2,3,4]) retorna 9
+ */
+function contarElementosLista(listaDeNumeros) {
+    //
+}
+console.log("contarElementosLista([2,3,4]): ", contarElementosLista([2,3,4]))
+
+
+/**
+ * 04 - calcularPromedio
  * 
  * Recibe
  * - `listaDeNumeros`: una lista (array) de números.
@@ -78,7 +114,7 @@ console.log("calcularPromedio(listaNumerosEjemplo): ", calcularPromedio(listaNum
 
 
 /**
- * 03 - crearListaDeNumeros
+ * 05 - crearListaDeNumeros
  * 
  * Recibe
  * - `inicio`: un número, con el valor inicial de la lista
@@ -99,7 +135,7 @@ console.log("crearListaDeNumeros(2,5): ", crearListaDeNumeros(2,5))
 
 
 /**
- * 04 - ordenarDeMayorAMenor
+ * 06 - ordenarDeMayorAMenor
  * 
  * Recibe
  * - `listaDeNumeros`: una lista (array) de números.
@@ -118,7 +154,7 @@ console.log("ordenarDeMayorAMenor(listaNumerosEjemplo): ", ordenarDeMayorAMenor(
 
 
 /**
- * 05 - encontrarNumeroMayor
+ * 07 - encontrarNumeroMayor
  * 
  * Recibe
  * - `listaDeNumeros`: una lista (array) de números.
@@ -137,7 +173,7 @@ console.log("encontrarNumeroMayor(listaNumerosEjemplo): ", encontrarNumeroMayor(
 
 
 /**
- * 06 - ordenarPalabrasPorLongitud
+ * 08 - ordenarPalabrasPorLongitud
  * 
  * Recibe
  * - `listaDePalabras`: una lista (array) de palabras (string).
@@ -155,7 +191,7 @@ console.log("ordenarPalabrasPorLongitud(['abc', 'a', 'ab']): ", ordenarPalabrasP
 
 
 /**
- * 07 - encontrarPalabraMasCorta
+ * 09 - encontrarPalabraMasCorta
  * 
  * Recibe
  * - `listaDePalabras`: una lista (array) de palabras (string).
@@ -173,7 +209,7 @@ console.log("encontrarPalabraMasCorta(['abc', 'a', 'ab']): ", encontrarPalabraMa
 
 
 /**
- * 08 - filtrarSoloPositivos
+ * 10 - filtrarSoloPositivos
  * 
  * Recibe
  * - `listaDeNumeros`: una lista (array) de números.
@@ -192,7 +228,7 @@ console.log("filtrarSoloPositivos(listaNumerosEjemplo): ", filtrarSoloPositivos(
 
 
 /**
- * 09 - contarAprobados
+ * 11 - contarAprobados
  * 
  * Recibe
  * - `listaDeNotas`: una lista (array) de números con valores entre 1 y 10.
@@ -210,7 +246,7 @@ console.log("contarAprobados([10, 4, 6, 7, 1, 9]): ", contarAprobados([10, 4, 6,
 
 
 /**
- * 10 - filtrarSoloTruthy
+ * 12 - filtrarSoloTruthy
  * 
  * Recibe
  * - `listaDeValores`: una lista (array) de valores de distintos tipos.
@@ -227,7 +263,7 @@ function filtrarSoloTruthy(listaDeValores) {
 console.log("filtrarSoloTruthy(): ", filtrarSoloTruthy(["Hola", "", null, 1, 0, -1, undefined, [], {}]))
 
 /**
- * 11 - enumerarLista
+ * 13 - enumerarLista
  * Recibe
  * - `listaDePalabras`: una lista (array) de palabras (strings).
  * 
