@@ -27,9 +27,15 @@ La estructura básica de un documento HTML se compone de las siguientes etiqueta
 
 > En el ejemplo se puede observar que las etiquetas se *cierran* escribiendo `</etiqueta>`
 
+## Etiqueta
+
+Detalle de cada uno de los componentes de una etiqueta HTML.
+
+{{< figure src="/img/etiqueta-html.png" >}}
+
 ## Elementos del "body"
 
-Dentro de la etiqueta `<body>` se puede incluir el contenido del documento, mediante diferentes etiquetas. Algunoa de ellos son
+Dentro de la etiqueta `<body>` se puede incluir el contenido del documento, mediante diferentes etiquetas. Algunos de ellos son
 - `<h1>`, `<h2>` ... `<h6>`: Representan títulos. Se ordenan del más importante (h1) al menos importante (h6).
 - `<p>`: Etiqueta de párrafo.
 - `<div>`: Significa "division" y funciona para seccionar o agrupar contenido.
