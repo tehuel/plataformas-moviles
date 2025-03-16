@@ -1,6 +1,6 @@
 ---
 title: Trabajos Prácticos
-type: trabajo-practicos
+type: trabajos-practicos
 menu:
   main:
     weight: 200
