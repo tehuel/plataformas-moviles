@@ -2,18 +2,25 @@
 title: "2.2: Semántica del Código"
 ---
 
-En el contexto de HTML, la semántica se refiere al significado o la estructura del contenido que estás marcando.
+En HTML, la semántica define el significado y la estructura del contenido. El uso de etiquetas semánticas en lugar de elementos genéricos como `<div>` mejora la organización del código, facilita su comprensión y puede aportar beneficios en accesibilidad y <abbr title="Search Engine Optimization">SEO</abbr>.
 
-El uso adecuado de las etiquetas semánticas ayuda a los desarrolladores a estructurar sus páginas de manera significativa.
+Dentro de las etiquetas HTML semánticas podemos incluir:
 
-Por ejemplo, en lugar de simplemente usar divisiones (`<div>`) para todo, se pueden emplear etiquetas con significado para indicar claramente la estructura y la relación del contenido en tu página web. Esto no solo hace que tu código sea más legible, sino que también puede tener beneficios en términos de SEO (Optimización para Motores de Búsqueda) y accesibilidad.
-
-- `<header>`: Define la cabecera de un documento o una sección.
-- `<nav>`: Representa una sección de navegación.
-- `<article>`: Define un contenido independiente y autónomo, como un artículo de un blog.
-- `<section>`: Define una sección de un documento.
-- `<aside>`: Representa contenido tangencial, a menudo contenido relacionado con el contenido circundante.
-- `<footer>`: Define el pie de un documento o una sección.
-- `<main>`: Define el contenido principal de un documento.
+- `<header>`: Cabecera de un documento o sección.
+- `<nav>`: Enlaces de navegación.
+- `<article>`: Contenido independiente, como un artículo de blog.
+- `<section>`: Sección dentro de un documento.
+- `<aside>`: Contenido relacionado o secundario.
+- `<footer>`: Pie de página o de sección.
+- `<main>`: Contenido principal del documento.
+- `<figure>` y `<figcaption>`: Agrupa contenido ilustrativo, como imágenes o gráficos, generalmente acompañado de una descripción.
+- `<mark>`: Resalta texto dentro del contenido.
+- `<time>`: Representa una fecha u hora, útil para eventos o publicaciones.
+- `<address>`: Define información de contacto, como direcciones físicas o electrónicas.
+- `<cite>`: Indica la fuente de una cita o referencia.
+- `<code>`: Representa fragmentos de código fuente en un documento.
+- `<kbd>`: Indica entradas de teclado o comandos del usuario.
+- `<samp>`: Representa la salida de un programa o sistema.
+- `<abbr>`: Define abreviaciones o acrónimos, permitiendo mostrar su significado completo al pasar el cursor sobre ellos.
 
 {{< figure src="/img/semantica.png" title="HTML semantico / HTML no semántico" >}}
