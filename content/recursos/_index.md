@@ -2,8 +2,7 @@
 title: Recursos
 menu:
   main:
-    name: Recursos
-    weight: 600
+    weight: 300
 ---
 
 Listado de recursos generales que acompañan a la materia.
