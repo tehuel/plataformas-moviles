@@ -17,3 +17,10 @@ tags: "tp"
 - Subir y publicar en GitHub el archivo HTML creado.
 
 > Tip: Para navegar hacia un artículo random de la wikipedia se puede usar este link especial: https://es.wikipedia.org/wiki/Special:Random
+
+<div class="card text-bg-primary">
+  <div class="card-body">
+    <p class="card-title h4">Importante</p>
+    <p class="card-text">No copiar el código HTML de wikipedia, sólo copiar el contenido en formato texto plano.</p>
+  </div>
+</div>
