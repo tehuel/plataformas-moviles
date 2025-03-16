@@ -4,7 +4,7 @@ title: "0.1: GitHub y Git"
 
 **Git** es un sistema de control de versiones distribuido (DVCS, por sus siglas en inglés) diseñado para rastrear los cambios en el código fuente durante el desarrollo de software. Fue creado por Linus Torvalds en 2005 para gestionar el desarrollo del kernel de Linux. Git permite a los desarrolladores trabajar en un mismo proyecto de forma colaborativa, manteniendo un historial de cambios y versiones de archivos.
 
-**GitHub** es una plataforma en línea que proporciona un servicio de alojamiento para proyectos de desarrollo de software. Es una herramienta fundamental para desarrolladores de todo el mundo que les permite colaborar, compartir y trabajar en proyectos de software de código abierto y privado.
+**GitHub** es una plataforma en línea que proporciona un servicio de alojamiento para proyectos de desarrollo de software, permitiendo colaborar, compartir y trabajar en proyectos de software de código abierto y privado. Existen otras plataformas similares como GitLab, BitBucket, Codeberg, Gogs, etc.
 
 Entonces, ¿son lo mismo Git y GitHub?
 
