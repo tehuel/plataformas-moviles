@@ -50,12 +50,14 @@ Dentro de la etiqueta `<body>` se puede incluir el contenido del documento, medi
 
 ## Atributos
 
-Los atributos proporcionan información adicional sobre los elementos y les permiten tener características específicas. Estos se definen dentro de las etiquetas mediante un nombre clave y su valor.
+Los atributos proporcionan información adicional sobre los elementos y les permiten tener características específicas. Estos se definen dentro de la etiqueta de apertura mediante un nombre y su valor.
 Algunos ejemplos son:
--**id**: Define un edentificador único para el elemento
-- **src**: Especifica la fuente de la imagen
-- **alt**: Proporciona un texto alternativo para la imagen en caso de que la misma no se pueda cargar
-- **href**: Especifica la URL destino de un enlace
+
+- **id**: Define un identificador único para el elemento
+- **lang**: Define el idioma del contenido
+- **src**: Especifica la fuente de la imagen, para una etiqueta `<img>`
+- **alt**: Proporciona un texto alternativo para una imagen, para una etiqueta `<img>`
+- **href**: Especifica la URL destino de un enlace, para una etiqueta `<a>`
 
 ### Sitio web de ejemplo
 
