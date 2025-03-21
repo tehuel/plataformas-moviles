@@ -27,6 +27,14 @@ outputs:
 
 ## Historia
 
+- {{% fragment %}}1990: Primer Navegador{{% /fragment %}}
+- {{% fragment %}}1993: Primer Navegador Popular{{% /fragment %}}
+- {{% fragment %}}1994: Netscape{{% /fragment %}}
+- {{% fragment %}}1995: Internet Explorer{{% /fragment %}}
+- {{% fragment %}}2004: Firefox{{% /fragment %}}
+- {{% fragment %}}2008: Google Chrome{{% /fragment %}}
+
+
 ---
 
 ## Monopolio
