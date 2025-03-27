@@ -33,6 +33,11 @@ outputs:
 - {{% fragment %}}2004: Firefox{{% /fragment %}}
 - {{% fragment %}}2008: Google Chrome{{% /fragment %}}
 
+---
+
+## Demo: Primer Sitio Web
+
+- {{% fragment %}}[1991: info.cern.ch](https://info.cern.ch/){{% /fragment %}}
 
 ---
 
@@ -67,7 +72,8 @@ Secuencia de Navegación
 
 ---
 
-## Demo con CURL
+## Demo, HTTP con CURL
+
 `curl -v http://example.com`
 
 ---
