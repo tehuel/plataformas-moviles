@@ -41,10 +41,6 @@ outputs:
 
 ---
 
-## Monopolio
-
----
-
 # 🔗
 # ¿Cómo se Transmite?
 
@@ -93,3 +89,14 @@ Secuencia de Navegación
 - {{% fragment %}}Evolución{{% /fragment %}}
 
 ---
+
+## Monopolio
+
+{{< figure src="/img/browser-yearly-2009-2025.png" >}}
+
+---
+
+Links
+
+- [Gráfico de Cuota de Mercado de Navegadores](https://gs.statcounter.com/browser-market-share#yearly-2009-2025) 
+- [List of Websites before 1995, Wikipedia](https://en.wikipedia.org/wiki/List_of_websites_founded_before_1995)
