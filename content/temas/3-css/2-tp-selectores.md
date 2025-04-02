@@ -7,7 +7,7 @@ Segundo Trabajo Práctico, donde ponemos en marcha la implementación de selecto
 
 ## Consigna
 
-Agregar el siguiente archivo HTML dentro del repositorio de entregas creado en el trabajo práctico anterior, en la ubicación `/tp-2/index.html`.
+Agregar el siguiente archivo HTML dentro del repositorio de entregas de la materia, en la ubicación `/tp-2/index.html`.
 
 ```html
 <!DOCTYPE html>
@@ -45,7 +45,7 @@ Agregar el siguiente archivo HTML dentro del repositorio de entregas creado en e
 </html>
 ```
 
-También modificar el archivo `/index.html` (en la raiz del repositorio) para incluir un link a este nuevo `/tp-2/index.html` recién creado.
+> Nota: Sería buena idea recordar también modificar el archivo `/index.html` (en la raiz del repositorio) para incluir un link a este nuevo `/tp-2/index.html` recién creado.
 
 Para este nuevo archivo HTML creado, agregar una hoja de estilos CSS de alguna de las siguientes maneras vistas en clase:
 

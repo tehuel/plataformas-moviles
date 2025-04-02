@@ -17,7 +17,7 @@ Otra opción es usar este link para navegar hacia un artículo aleatorio: https:
 
 ## 2. Copiar el contenido en un arhivo HTML
 
-- Crear un nuevo archivo HTML en la ruta `tp-1/index.html`.
+- Crear un nuevo archivo HTML en la ruta `/tp-1/index.html`.
 - Seleccionar todo el contenido del artículo de la wikipedia y pegarlo como texto plano en el archivo recién creado.
 
 <div class="card text-bg-warning">
@@ -49,5 +49,5 @@ Al final del documento incluir un enlace `<a>` que apunte hacia el articulo de w
 
 ## 6. Publicar en GitHub
 
-- Subir el archivo HTML creado (`tp-1/index.html`) al repositorio de entregas de la materia.
+- Subir el archivo HTML creado (`/tp-1/index.html`) al repositorio de entregas de la materia.
 - Comprobar que sea accesible vía Github Pages en una dirección de la forma `https://{usuario}.github.io/{repositorio}/tp-1/index.html`.
