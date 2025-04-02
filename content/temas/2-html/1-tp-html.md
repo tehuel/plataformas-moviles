@@ -3,28 +3,51 @@ title: "2.1: tp-1 (HTML)"
 tags: "tp"
 ---
 
-# Contenido en HTML
+# Objetivo
 
-- Elegir un artículo de la wikipedia.
-- Seleccionar todo el contenido del artículo y copiarlo en un archivo HTML que creamos en `tp-1/index.html`.
-- Agregar todas las etiquetas HTML que considere necesarias para que el artículo mantenga una estructura correcta, teniendo en cuenta: 
-    - Respetar los niveles de *heading*, usando las etiquetas de [`<h1>` hasta `<h6>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/Heading_Elements).
-    - Conservar los resaltados con [`<strong>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/strong) y [`<em>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/em).
-    - Pensar en la [semántica de las etiquetas](https://es.wikipedia.org/wiki/HTML_semántico).
-    - Utilizar variedad de etiquetas (no quedarse sólo en `<p>`s y `<h1>`s).
-        - Links
-        - Imágenes
-        - Tablas
-        - Etc. 
-    - No enfocarse en el aspecto visual del resultado, pensar sólo en la estructura y jerarquía del documento.
-- Agregar al final del documento un link al artículo original de Wikipedia usado como fuente.
-- Subir y publicar en GitHub el archivo HTML creado.
+Crear un archivo HTML estructurado correctamente a partir de un artículo de Wikipedia, aplicando etiquetas semánticas y respetando la jerarquía del contenido.
 
-> Tip: Para navegar hacia un artículo random de la wikipedia se puede usar este link especial: https://es.wikipedia.org/wiki/Special:Random
+# Instrucciones
+
+## 1. Seleccionar un Artículo de la Wikipedia
+
+Se puede elegir cualquier artículo de interés dentro de la Wikipedia. 
+
+Otra opción es usar este link para navegar hacia un artículo aleatorio: https://es.wikipedia.org/wiki/Special:Random
+
+## 2. Copiar el contenido en un arhivo HTML
+
+- Crear un nuevo archivo HTML en la ruta `tp-1/index.html`.
+- Seleccionar todo el contenido del artículo de la wikipedia y pegarlo como texto plano en el archivo recién creado.
 
 <div class="card text-bg-warning">
   <div class="card-body">
-    <p class="card-title h4">Importante</p>
-    <p class="card-text">No copiar el código HTML de wikipedia, sólo copiar el contenido en formato texto plano.</p>
+    No copiar el código HTML de wikipedia, sólo copiar el contenido en formato texto plano
   </div>
 </div>
+
+## 3. Estructurar el contenido con HTML
+
+- Agregar las etiquetas HTML adecuadas para mantener la jerarquía y semántica adecuada al documento:
+  - **Encabezados**: Usar etiquetas [`<h1>` a `<h6>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/Heading_Elements), según corresponda.
+  - **Resaltados**: Conservar los énfasis y resaltados originales con [`<strong>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/strong) y [`<em>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/em). 
+  - **Variedad de Etiquetas**: No limitarse a `<p>`s y `<h1>`s, intentar incluir elementos como:
+    - Enlaces (`<a>`) para referencias o secciones internas.
+    - Imágenes (`<img>`) si el artículo original las tiene.
+    - Listas (`<ul>`, `<ol>`, `<dl>`) si hay información en formato de lista.
+    - Tablas (`<table>`) si el artículo contiene datos tabulares.
+    - Otros elementos semánticos adecuados (`<blockquote>`, `<cite>`, `<code>`, etc.).
+
+## 4. Pensar en la estructura, no en el diseño
+
+- No es necesario aplicar estilos.
+- No hay que pensar en el aspecto visual del documento.
+
+## 5. Agregar un enlace al artículo original
+
+Al final del documento incluir un enlace `<a>` que apunte hacia el articulo de wikipdia usado como fuente.
+
+## 6. Publicar en GitHub
+
+- Subir el archivo HTML creado (`tp-1/index.html`) al repositorio de entregas de la materia.
+- Comprobar que sea accesible vía Github Pages en una dirección de la forma `https://{usuario}.github.io/{repositorio}/tp-1/index.html`.
