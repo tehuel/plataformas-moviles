@@ -111,7 +111,11 @@ Agregar link a detalles del repositorio.
 
 Si acceden a la URL `http://{usuario}.github.io/plataformas-moviles-entregas` deberian ver la página publicada.
 
+---
+
 ## Posibles Poblemas
 
-- Error 404
-- Página en blanco
+Llegar a alguno de los siguientes problemas no es algo negativo, por el contrario, indica que el proyecto ya estaría correctamente configurado.
+
+- Error 404: Puede ser que no exista un `index.html` en la raiz del repositorio.
+- Página en blanco: Puede ser que el `index.html` en la raiz del repositorio esté vacío.
