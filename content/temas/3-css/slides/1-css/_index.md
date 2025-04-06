@@ -66,17 +66,50 @@ Agregando (inline) el atributo `style=""`
 Contestan a la pregunta: "**¿Qué queremos estilizar?**"
 {{% /fragment %}}
 
+---
+
+## Selectores Básicos
+
 {{% fragment %}}
-- `<etiquetas>`
-- `.clases`
-- `#id`
-- Selector universal (`*`)
-- `!important`
+- elementos
+
+- #id
+
+- .clase
+
+- `*` (selector universal )
+{{% /fragment %}}
+
+--- 
+
+## Pseudo-clases
+
+Un estado especial del elemento
+
+{{% fragment %}}
+- `:hover`
+- `:visited`
+- `:focused`
+- ...
 {{% /fragment %}}
 
 ---
 
-*Los selectores pueden unirse para combinar su funcionamiento*
+## Pseudo-elementos
+
+Una parte especial del elemento
+
+{{% fragment %}}
+- `::selection`
+- `::after`
+- `::first-letter`
+- ...
+{{% /fragment %}}
+
+---
+
+
+## Combinaciones
 
 {{% fragment %}}
 
