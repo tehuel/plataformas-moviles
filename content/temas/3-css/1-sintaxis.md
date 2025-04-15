@@ -22,9 +22,9 @@ Vimos y presentamos algunos selectores, aunque para un listado más completo se 
 
 ## Ejemplos
 
-Una demostración concreta la capacidad y flexibilidad de CSS es la posibilidad de aplicar estilos completamente distintos a un mismo documento HTML, sin modificar su estructura. Podemos usar algunos sitios web como ejemplos:
+Una forma muy clara de ver lo que se puede hacer con CSS es comparar cómo un mismo archivo HTML puede verse de maneras totalmente distintas solo cambiando el CSS. Hay algunos sitios que muestran esto de forma muy visual:
 
-- [CSS Zen Garden](https://csszengarden.com/): Proyecto pionero que propone un único archivo HTML inmutable al que distintos diseñadores aplican hojas de estilo personalizadas, generando resultados visuales radicalmente distintos. Su objetivo es destacar el alcance del diseño web basado únicamente en CSS.
-- [Style Stage](https://stylestage.dev/): Iniciativa moderna inspirada en CSS Zen Garden, que mantiene un HTML base y fomenta la participación de la comunidad a través del envío de hojas de estilo.
+- [CSS Zen Garden](https://csszengarden.com/): Un proyecto que existe desde 2003, donde se usa siempre el mismo HTML y distintos diseñadores crean estilos completamente diferentes usando solo CSS.
+- [Style Stage](https://stylestage.dev/): Un sitio más moderno, inspirado en CSS Zen Garden, que también usa un HTML fijo y permite enviar hojas de estilo a través de GitHub para cambiar el diseño.
 
-Estos sitios demuestran que el contenido y la presentación pueden mantenerse desacoplados, poniendo en práctica uno de los principios fundamentales del desarrollo web: la separación entre estructura (HTML) y estilo (CSS).
+Estos ejemplos muestran cómo el contenido y el diseño pueden ir separados, algo clave en desarrollo web.
