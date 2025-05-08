@@ -3,20 +3,16 @@ title: "4.2: tp-7 (Funciones)"
 tags: "tp"
 ---
 
-Séptimo trabajo práctico, en el que vamos a trabajar con la definición de funciones en JavaScript.
+# Objetivo 
 
-Consigna:
+Practicar la definición y el uso de funciones en JavaScript.
 
-- Subir el archivo HTML en `tp-7/index.html`.
-- En ese archivo HTML creado implementar las funciones solicitadas.
+# Formato de Entrga
 
-Condiciones:
+- Crear un archivo HTML en la ruta `/tp-7/index.html`, con el contenido del HTML inicial.
+- Subir el archivo al repositorio de entregas.
 
-- Usar al menos una vez cada una de las 3 formas distintas de definición de funciones que vimos en clase.
-- No modificar el código provisto.
-- (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
-
-## HTML
+## HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -144,3 +140,10 @@ console.log(palabraInvertida("abc"))
 </body>
 </html>
 ```
+
+# Consigna
+
+- Implementar dentro del `<script>` las funciones solicitadas
+- Usar al menos una vez cada una de las 3 formas distintas de definición de funciones que vimos en clase.
+- No modificar el código provisto.
+- (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.

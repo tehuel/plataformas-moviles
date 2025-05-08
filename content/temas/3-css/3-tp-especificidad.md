@@ -3,11 +3,18 @@ title: "3.3: tp-3 (Especificidad)"
 tags: "tp"
 ---
 
-Tercer trabajo práctico, donde nos enfrentamos al desafío de usar la especificidad de los selectores CSS para aplicar estilos.
+# Objetivo
 
-# Consigna
+Practicar el uso de la especificidad en CSS para aplicar estilos de manera precisa.
 
-Agregar el siguiente archivo HTML dentro del repositorio de entregas creado en GitHub, en la ubicación `/tp-3/index.html`.
+# Formato de Entrega
+
+- Crear un archivo HTML en la ruta `/tp-3/index.html`, con el contenido del HTML inicial.
+- Crear una hoja de estilos CSS vinculada al HTML.
+- Subir ambos archivos al repositorio de entregas.
+
+
+## HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -87,9 +94,13 @@ Agregar el siguiente archivo HTML dentro del repositorio de entregas creado en G
 </html>
 ```
 
-# Reglas
+# Consigna
+
+## 1. Crear Archivo CSS
 
 Crear en el repositorio de Github un archivo `style.css` al mismo nivel que el archivo HTML anterior, esto sería en `/tp-3/style.css`.
+
+## 2. Agregar estilos CSS
 
 Dentro de este archivo CSS, siempre teniendo en cuenta las reglas ya existentes en el HTML, implementar las siguientes reglas:
 
@@ -107,7 +118,7 @@ Dentro de este archivo CSS, siempre teniendo en cuenta las reglas ya existentes 
 
 7. Una regla para que los párrafos sin id **no** tengan sombra (`text-shadow: none`). 
 
-# Bonus Track
+## 3. Bonus Track
 
 1. Una regla para que el texto del elemento `p.fuente` tenga color `#000`.
 

@@ -3,11 +3,17 @@ title: "3.2: tp-2 (Selectores)"
 tags: "tp"
 ---
 
-Segundo Trabajo Práctico, donde ponemos en marcha la implementación de selectores en CSS.
+# Objetivo
 
-## Consigna
+Aplicar estilos básicos a un documento HTML utilizando selectores CSS.
 
-Agregar el siguiente archivo HTML dentro del repositorio de entregas de la materia, en la ubicación `/tp-2/index.html`.
+# Formato de Entrega
+
+- Crear un archivo HTML en la ruta `/tp-2/index.html`, con el contenido del HTML inicial.
+- Crear una hoja de estilos CSS vinculada al HTML.
+- Subir ambos archivos al repositorio de entregas.
+
+## HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -47,12 +53,16 @@ Agregar el siguiente archivo HTML dentro del repositorio de entregas de la mater
 
 > Nota: Sería buena idea recordar también modificar el archivo `/index.html` (en la raiz del repositorio) para incluir un link a este nuevo `/tp-2/index.html` recién creado.
 
+# Consigna
+
+## 1. Agregar Archivo CSS
+
 Para este nuevo archivo HTML creado, agregar una hoja de estilos CSS de alguna de las siguientes maneras vistas en clase:
 
 - Usando un elemento `<link>` dentro del `<head></head>` del documento.
 - Usando un elemento `<style></style>` dentro del documento.
 
-## Estilos dentro de CSS
+## 2. Agregar estilos CSS
 
 Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 
@@ -67,7 +77,7 @@ Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 9. Agregar `padding-left` al segundo listado de películas.
 10. Agregar `margin-top` al último elemento del tercer listado de películas.
 
-Bonus Tracks: 
+## 3. Bonus Tracks
 
 11. Hacer que todos los títulos muestren su texto en mayúscula
 12. Hacer que la primera linea del primer párrafo se muestre color `#efe`

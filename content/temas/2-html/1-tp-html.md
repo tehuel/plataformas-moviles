@@ -7,7 +7,14 @@ tags: "tp"
 
 Crear un archivo HTML estructurado correctamente a partir de un artículo de Wikipedia, aplicando etiquetas semánticas y respetando la jerarquía del contenido.
 
-# Instrucciones
+# Formato de Entrega
+
+- Crear un archivo HTML en la ruta `/tp-1/index.html`.
+- Subir el archivo al repositorio de entregas de la materia.
+- Comprobar que sea accesible vía GitHub Pages en una dirección de la forma `https://{usuario}.github.io/{repositorio}/tp-1/index.html`.
+
+
+# Consigna
 
 ## 1. Seleccionar un Artículo de la Wikipedia
 
@@ -15,10 +22,9 @@ Se puede elegir cualquier artículo de interés dentro de la Wikipedia.
 
 Otra opción es usar este link para navegar hacia un artículo aleatorio: https://es.wikipedia.org/wiki/Special:Random
 
-## 2. Copiar el contenido en un arhivo HTML
+## 2. Copiar el contenido
 
-- Crear un nuevo archivo HTML en la ruta `/tp-1/index.html`.
-- Seleccionar todo el contenido del artículo de la wikipedia y pegarlo como texto plano en el archivo recién creado.
+Pegar el contenido como texto plano en el archivo HTML creado.
 
 <div class="card text-bg-warning">
   <div class="card-body">
@@ -46,8 +52,3 @@ Otra opción es usar este link para navegar hacia un artículo aleatorio: https:
 ## 5. Agregar un enlace al artículo original
 
 Al final del documento incluir un enlace `<a>` que apunte hacia el articulo de wikipdia usado como fuente.
-
-## 6. Publicar en GitHub
-
-- Subir el archivo HTML creado (`/tp-1/index.html`) al repositorio de entregas de la materia.
-- Comprobar que sea accesible vía Github Pages en una dirección de la forma `https://{usuario}.github.io/{repositorio}/tp-1/index.html`.
