@@ -122,6 +122,7 @@ console.log(primeraLetraMayuscula("abc"))
 
 // Implementar una función "terminaCon" que devuelve verdadero o falso si la palabra termina con la terminación recibida
 // ejemplo: terminaCon("plataformas", "mas") retorna true
+
 console.log("Resultados de terminaCon():")
 console.log(terminaCon("hola", "a")); // true
 console.log(terminaCon("hola", "o")); // false
