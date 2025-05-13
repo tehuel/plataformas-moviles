@@ -3,17 +3,16 @@ title: "4.5: tp-10 (Listas y Objetos)"
 tags: "tp"
 ---
 
+# Objetivo
+
 En este trabajo práctico vamos a usar de manera combinada los tipos de datos `lista` y `objeto` dentro del lenguaje JavaScript.
 
-Consigna:
+# Formato de Entrega
 
 - Subir todos los archivos a un directorio `tp-10` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
 - En el archivo `.js` implementar las funciones solicitadas.
 
-Condiciones:
-
-- No modificar el código provisto.
-- (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
+## HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -129,3 +128,8 @@ function laPersonaMayor(listaDePersonas) {
 }
 console.log("laPersonaMayor()", laPersonaMayor(listaPersonasEjemplo));
 ```
+
+# Condiciones
+
+- No modificar el código provisto.
+- (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.

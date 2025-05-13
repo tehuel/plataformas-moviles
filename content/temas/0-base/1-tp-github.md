@@ -3,7 +3,7 @@ title: "0.1: tp-0 (Github)"
 tags: "tp"
 ---
 
-# Repositorio en GitHub
+# Objetivo
 
 El objetivo del trabajo es crear un repositorio de GitHub en el que vamos a realizar las entregas de los trabajos prácticos a lo largo del año.
 

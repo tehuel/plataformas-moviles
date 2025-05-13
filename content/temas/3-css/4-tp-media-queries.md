@@ -3,7 +3,7 @@ title: "3.4: tp-4 (Media Queries)"
 tags: "tp"
 ---
 
-# objetivo
+# Objetivo
 
 Definir estilos condicionales utilizando media queries para adaptar el diseño a diferentes dispositivos.
 
