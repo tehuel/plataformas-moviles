@@ -13,7 +13,6 @@ Crear un archivo HTML estructurado correctamente a partir de un artículo de Wik
 - Subir el archivo al repositorio de entregas de la materia.
 - Comprobar que sea accesible vía GitHub Pages en una dirección de la forma `https://{usuario}.github.io/{repositorio}/tp-1/index.html`.
 
-
 # Consigna
 
 ## 1. Seleccionar un Artículo de la Wikipedia

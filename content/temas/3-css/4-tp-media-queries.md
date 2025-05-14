@@ -13,7 +13,6 @@ Definir estilos condicionales utilizando media queries para adaptar el diseño a
 - Crear una hoja de estilos CSS vinculada al HTML, en la ruta `/tp-4/style.css`.
 - Subir ambos archivos al repositorio de entregas.
 
-
 ## HTML Inicial
 
 ```html

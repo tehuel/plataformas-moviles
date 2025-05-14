@@ -13,7 +13,6 @@ Practicar el uso de la especificidad en CSS para aplicar estilos de manera preci
 - Crear una hoja de estilos CSS vinculada al HTML.
 - Subir ambos archivos al repositorio de entregas.
 
-
 ## HTML Inicial
 
 ```html

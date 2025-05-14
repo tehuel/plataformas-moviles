@@ -9,11 +9,11 @@ Practicar el uso del sistema de grillas de Bootstrap para construir diferentes l
 
 # Formato de Entrega
 
-- Crear los siguientes archivos (todo dentro de una carpeta `/tp-5/`):
-    - `/tp-5/layout-1.html`
-    - `/tp-5/layout-2.html`
-    - `/tp-5/layout-3.html`
-    - `/tp-5/index.html` (índice con enlaces a cada uno de los layouts).
+- Crear los siguientes archivos (todo dentro de una carpeta `/tp-6/`):
+    - `/tp-6/layout-1.html`
+    - `/tp-6/layout-2.html`
+    - `/tp-6/layout-3.html`
+    - `/tp-6/index.html` (índice con enlaces a cada uno de los layouts).
 - Subir todos los archivos al repositorio de entregas.
 
 ## HTML Inicial
@@ -81,7 +81,7 @@ Para cada layout, realizar las modificaciones necesarias al HTML inicial para qu
 
 ## 4. Índice
 
-Una vez realizados los 3 layouts, crear un nuevo archivo `tp-5/index.html` con un listado de links apuntando a cada uno de los layouts creados, por ejemplo: 
+Una vez realizados los 3 layouts, crear un nuevo archivo `tp-6/index.html` con un listado de links apuntando a cada uno de los layouts creados, por ejemplo: 
 
 ```html
 <ul>

@@ -112,7 +112,25 @@ console.log("calcularPromedio(listaNumerosEjemplo): ", calcularPromedio(listaNum
 
 
 /**
- * 05 - crearListaDeNumeros
+ * 05 - triplicarLista
+ * 
+ * Recibe
+ * - `listaDeNumeros`: una lista (array) de números.
+ * 
+ * Retorna: 
+ * - una lista de números donde cada elemento es el triple del valor original.
+ * 
+ * Ejemplos:
+ * - triplicarLista([1, 2, 3]) retorna [3, 6, 9]
+ */
+function triplicarLista(listaDeNumeros) {
+    //
+}
+console.log("triplicarLista([1, 2, 3]): ", triplicarLista([1, 2, 3]));
+
+
+/**
+ * 06 - crearListaDeNumeros
  * 
  * Recibe
  * - `inicio`: un número, con el valor inicial de la lista
@@ -133,7 +151,7 @@ console.log("crearListaDeNumeros(2,5): ", crearListaDeNumeros(2,5))
 
 
 /**
- * 06 - ordenarDeMayorAMenor
+ * 07 - ordenarDeMayorAMenor
  * 
  * Recibe
  * - `listaDeNumeros`: una lista (array) de números.
@@ -152,7 +170,7 @@ console.log("ordenarDeMayorAMenor(listaNumerosEjemplo): ", ordenarDeMayorAMenor(
 
 
 /**
- * 07 - encontrarNumeroMayor
+ * 08 - encontrarNumeroMayor
  * 
  * Recibe
  * - `listaDeNumeros`: una lista (array) de números.
@@ -171,7 +189,7 @@ console.log("encontrarNumeroMayor(listaNumerosEjemplo): ", encontrarNumeroMayor(
 
 
 /**
- * 08 - ordenarPalabrasPorLongitud
+ * 09 - ordenarPalabrasPorLongitud
  * 
  * Recibe
  * - `listaDePalabras`: una lista (array) de palabras (string).
@@ -189,7 +207,7 @@ console.log("ordenarPalabrasPorLongitud(['abc', 'a', 'ab']): ", ordenarPalabrasP
 
 
 /**
- * 09 - encontrarPalabraMasCorta
+ * 10 - encontrarPalabraMasCorta
  * 
  * Recibe
  * - `listaDePalabras`: una lista (array) de palabras (string).
@@ -207,7 +225,7 @@ console.log("encontrarPalabraMasCorta(['abc', 'a', 'ab']): ", encontrarPalabraMa
 
 
 /**
- * 10 - filtrarSoloPositivos
+ * 11 - filtrarSoloPositivos
  * 
  * Recibe
  * - `listaDeNumeros`: una lista (array) de números.
@@ -226,7 +244,7 @@ console.log("filtrarSoloPositivos(listaNumerosEjemplo): ", filtrarSoloPositivos(
 
 
 /**
- * 11 - contarAprobados
+ * 12 - contarAprobados
  * 
  * Recibe
  * - `listaDeNotas`: una lista (array) de números con valores entre 1 y 10.
@@ -244,7 +262,7 @@ console.log("contarAprobados([10, 4, 6, 7, 1, 9]): ", contarAprobados([10, 4, 6,
 
 
 /**
- * 12 - filtrarSoloTruthy
+ * 13 - filtrarSoloTruthy
  * 
  * Recibe
  * - `listaDeValores`: una lista (array) de valores de distintos tipos.
@@ -261,7 +279,7 @@ function filtrarSoloTruthy(listaDeValores) {
 console.log("filtrarSoloTruthy(): ", filtrarSoloTruthy(["Hola", "", null, 1, 0, -1, undefined, [], {}]))
 
 /**
- * 13 - enumerarLista
+ * 14 - enumerarLista
  * Recibe
  * - `listaDePalabras`: una lista (array) de palabras (strings).
  * 
