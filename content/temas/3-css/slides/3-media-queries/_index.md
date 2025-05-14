@@ -18,4 +18,4 @@ outputs:
 
 links
 
-- https://developer.mozilla.org/es/docs/Web/CSS/Specificity
+- https://developer.mozilla.org/es/docs/Web/CSS/CSS_media_queries

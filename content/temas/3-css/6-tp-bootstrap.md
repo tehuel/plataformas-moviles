@@ -30,22 +30,14 @@ Integrar el framework Bootstrap para mejorar la presentación y la funcionalidad
 
     <h2>Comandos más populares de Git</h2>
     <ul>
-        <li><code>git init</code> - Inicializa un nuevo repositorio Git en el directorio actual. Este comando crea un
-            repositorio vacío.</li>
-        <li><code>git clone [url]</code> - Clona un repositorio remoto en tu máquina local. Ejemplo:
-            <code>git clone https://github.com/usuario/repositorio.git</code>.</li>
-        <li><code>git status</code> - Muestra el estado del repositorio: archivos modificados, nuevos archivos no
-            rastreados, cambios preparados para el commit, etc.</li>
-        <li><code>git add [archivo]</code> - Agrega un archivo o cambios específicos al área de preparación (staging
-            area) para el commit.</li>
-        <li><code>git commit -m "[mensaje]"</code> - Crea un commit con los archivos añadidos al área de preparación,
-            agregando un mensaje descriptivo.</li>
-        <li><code>git push</code> - Sube los cambios locales al repositorio remoto. Generalmente se usa después de un
-            commit para actualizar el repositorio remoto.</li>
-        <li><code>git pull</code> - Obtiene y fusiona los cambios del repositorio remoto al repositorio local.
-            Equivalente a <code>git fetch</code> seguido de <code>git merge</code>.</li>
-        <li><code>git checkout [rama]</code> - Cambia a una rama específica del repositorio. Si la rama no existe, se
-            puede crear con <code>git checkout -b [rama]</code>.</li>
+        <li><code>git init</code> - Inicializa un nuevo repositorio Git en el directorio actual. Este comando crea un repositorio vacío.</li>
+        <li><code>git clone [url]</code> - Clona un repositorio remoto en tu máquina local. Ejemplo: <code>git clone https://github.com/usuario/repositorio.git</code>.</li>
+        <li><code>git status</code> - Muestra el estado del repositorio: archivos modificados, nuevos archivos no rastreados, cambios preparados para el commit, etc.</li>
+        <li><code>git add [archivo]</code> - Agrega un archivo o cambios específicos al área de preparación (staging area) para el commit.</li>
+        <li><code>git commit -m "[mensaje]"</code> - Crea un commit con los archivos añadidos al área de preparación, agregando un mensaje descriptivo.</li>
+        <li><code>git push</code> - Sube los cambios locales al repositorio remoto. Generalmente se usa después de un commit para actualizar el repositorio remoto.</li>
+        <li><code>git pull</code> - Obtiene y combina los cambios del repositorio remoto al local. Equivalente a <code>git fetch</code> seguido de <code>git merge</code>.</li>
+        <li><code>git checkout [rama]</code> - Cambia a una rama específica del repositorio. Si la rama no existe, se puede crear con <code>git checkout -b [rama]</code>.</li>
     </ul>
 
     <h2>Comparación con otros sistemas</h2>
@@ -82,7 +74,7 @@ Integrar el framework Bootstrap para mejorar la presentación y la funcionalidad
     </table>
 
     <h2>¿Ya usaste Git?</h2>
-    <p>Completá el siguiente formulario para contarnos tu experiencia:</p>
+    <p>Completá el siguiente formulario para compartir tu experiencia:</p>
 
     <form class="form">
         <label for="nombre">Tu nombre:</label>
