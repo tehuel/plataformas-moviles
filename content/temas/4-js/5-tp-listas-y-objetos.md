@@ -101,7 +101,21 @@ function promedioEdades(listaDePersonas) {
 console.log("promedioEdades()", promedioEdades(listaPersonasEjemplo));
 
 /**
- * 04 - soloMayoresDeEdad
+ * 04 - cumplirAños
+ * 
+ * Recibe
+ * - `listaDePersonas`: una lista, array, con objetos de la forma `persona`
+ * 
+ * Retorna: 
+ * - una nueva lista, donde la edad de cada persona se incrementa en 1.
+ */
+function cumplirAños(listaDePersonas) {
+    //
+}
+console.log("cumplirAños()", cumplirAños(listaPersonasEjemplo));
+
+/**
+ * 05 - soloMayoresDeEdad
  * 
  * Recibe
  * - `listaDePersonas`: una lista, array, con objetos de la forma `persona`
@@ -115,7 +129,7 @@ function soloMayoresDeEdad(listaDePersonas) {
 console.log("soloMayoresDeEdad()", soloMayoresDeEdad(listaPersonasEjemplo));
 
 /**
- * 05 - laPersonaMayor
+ * 06 - laPersonaMayor
  * 
  * Recibe
  * - `listaDePersonas`: una lista, array, con objetos de la forma `persona`
@@ -127,6 +141,20 @@ function laPersonaMayor(listaDePersonas) {
     //
 }
 console.log("laPersonaMayor()", laPersonaMayor(listaPersonasEjemplo));
+
+/**
+ * 07 - agregarHeladoFavorito
+ * 
+ * Recibe
+ * - `listaDePersonas`: una lista, array, con objetos de la forma `persona`.
+ * - `listaDeHelados`: una lista, array, con strings para gustos de helado.
+ * 
+ * Retorna: 
+ * - una nueva lista, donde a cada persona se le agrega un campo `heladoFavorito` tomado de la lista de listaDeHelados. Si no hay más helados disponibles, se asigna "vainilla" por defecto.
+ */
+function agregarHeladoFavorito(listaDePersonas, listaDeHelados) {
+}
+console.log("agregarHeladoFavorito()", agregarHeladoFavorito(listaPersonasEjemplo, ["chocolate", "limon", "frutilla"]));
 ```
 
 # Condiciones
