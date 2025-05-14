@@ -153,6 +153,7 @@ console.log("laPersonaMayor()", laPersonaMayor(listaPersonasEjemplo));
  * - una nueva lista, donde a cada persona se le agrega un campo `heladoFavorito` tomado de la lista de listaDeHelados. Si no hay más helados disponibles, se asigna "vainilla" por defecto.
  */
 function agregarHeladoFavorito(listaDePersonas, listaDeHelados) {
+    // 
 }
 console.log("agregarHeladoFavorito()", agregarHeladoFavorito(listaPersonasEjemplo, ["chocolate", "limon", "frutilla"]));
 ```
