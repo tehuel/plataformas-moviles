@@ -7,7 +7,7 @@ tags: "tp"
 
 Practicar la definición y el uso de funciones en JavaScript.
 
-# Formato de Entrga
+# Formato de Entrega
 
 - Crear un archivo HTML en la ruta `/tp-7/index.html`, con el contenido del HTML inicial.
 - Subir el archivo al repositorio de entregas.
@@ -172,5 +172,11 @@ console.log(palabraInvertida("abc"))
 
 - Implementar dentro del `<script>` las funciones solicitadas
 - Usar al menos una vez cada una de las 3 formas distintas de definición de funciones que vimos en clase.
-- No modificar el código provisto.
+
+# Bonus Track (consignas adicionales)
+
 - (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
+
+# Condiciones
+
+- No modificar el código provisto.
