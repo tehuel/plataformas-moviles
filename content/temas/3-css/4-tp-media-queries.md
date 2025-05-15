@@ -3,15 +3,21 @@ title: "3.4: tp-4 (Media Queries)"
 tags: "tp"
 ---
 
-Cuarto trabajo práctico, todavía con CSS. En este trabajo vamos a empezar a definir estilos de una forma condicional, usando media queries.
+# Objetivo
 
-# Consigna
+Definir estilos condicionales utilizando media queries para adaptar el diseño a diferentes dispositivos.
 
-Agregar el siguiente **archivo HTML** dentro del repositorio de entregas, en la ubicación `/tp-4/index.html`.
+# Formato de Entrega
+
+- Crear un archivo HTML en la ruta `/tp-4/index.html`, con el contenido del HTML inicial.
+- Crear una hoja de estilos CSS vinculada al HTML, en la ruta `/tp-4/style.css`.
+- Subir ambos archivos al repositorio de entregas.
+
+## HTML Inicial
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,9 +57,9 @@ Agregar el siguiente **archivo HTML** dentro del repositorio de entregas, en la 
 </html>
 ```
 
-# Reglas
+# Consigna
 
-Crear en el repositorio de Github un **archivo CSS** `style.css` al mismo nivel que el archivo HTML anterior, esto sería en `/tp-4/style.css`. Dentro de este archivo, implementar las siguientes reglas de CSS, con sus respectivas media queries.
+Dentro del archivo CSS creado, implementar las siguientes reglas de estilo, con sus respectivas media queries
 
 1. Define una media query que cambie el color de fondo del `body` a `rgb(40,60,80)` cuando la pantalla tenga más de `400px` de ancho.
 

@@ -3,11 +3,16 @@ title: "3.6: tp-5 (Bootstrap)"
 tags: "tp"
 ---
 
-Quinto trabajo práctico, una vez más en CSS. En este trabajo práctico comenzamos con la instalación y uso del framework bootstrap.
+# Objetivo
 
-# Consigna
+Integrar el framework Bootstrap para mejorar la presentación y la funcionalidad de una página web.
 
-A partir del siguiente archivo HTML, implementar los cambios solicitados en la sección de **Requisitos**. Una vez finalizado, subir el resultado al repositorio de entregas de la materia en la carpeta `/tp-5/index.html`.
+# Formato de Entrega
+
+- Crear un archivo HTML en la ruta `/tp-5/index.html` con el contenido del HTML inicial.
+- Subir el archivo HTML junto con todos los recursos que considere necesarios al repositorio de entregas de la materia.
+
+## HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -89,16 +94,16 @@ A partir del siguiente archivo HTML, implementar los cambios solicitados en la s
 </html>
 ```
 
-# Requisitos
+# Consigna
 
-### 1 - Instalar Bootstrap
+## 1 - Instalar Bootstrap
 
 Instalar Bootstrap en el documento utilizando alguna de las dos formas vistas en clase:
 
 - **CDN**: Agregar el enlace al archivo CSS y JS de Bootstrap desde su servidor oficial.
 - **Archivos locales**: Descargar los archivos de Bootstrap y enlazarlos desde el proyecto.
 
-### 2 - Usar Clases de Bootstrap
+## 2 - Usar Clases de Bootstrap
 
 Aplicar las siguientes modificaciones utilizando clases de Bootstrap:
 
@@ -108,7 +113,7 @@ Aplicar las siguientes modificaciones utilizando clases de Bootstrap:
 - Cambiar el estilo y color de la tabla.
 - Agregar margenes y sombra al listado de comandos.
 
-### 3 - Usar Componentes de Bootstrap
+## 3 - Usar Componentes de Bootstrap
 
 Agregar al menos **dos componentes** de Bootstrap a la página. Algunas sugerencias:
 
@@ -119,7 +124,7 @@ Agregar al menos **dos componentes** de Bootstrap a la página. Algunas sugerenc
 - **Carousel**: Incluir un carrusel de imágenes.
 - **Container**: Para agregar un espaciado a todo el documento
 
-### 4 - Bonus Track
+## 4 - Bonus Track
 
 Agregar algunos de los componentes más avanzados, activados a través de botones:
 

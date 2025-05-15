@@ -3,15 +3,17 @@ title: "5.3: tp-11 (Editor de Texto)"
 tags: "tp"
 ---
 
-El objetivo es construir un muy simple Editor de Texto donde se puedan aplicar distintos estilos a un texto.
+# Objetivo
 
-- Agregar un nuevo botón con un estilo adicional (puede ser para aplicar un color al texto, por ejemplo).
-- Agregar la posibilidad de editar el texto, con un input para escribir un nuevo texto.
-- Mostrar el estado actual de cada estilo en el botón (si está activado o no). Puede ser cambiando el color o el texto del propio botón.
-- Agregar la funcionalidad de modificar el tamaño del texto.
+El objetivo de este trabajo práctico es desarrollar un editor de texto básico que permita aplicar distintos estilos al texto utilizando JavaScript y manipulaciones del DOM.
 
 
-## HTML
+# Formato de Entrega
+
+- Crear un archivo HTML en la ruta `/tp-11/index.html` con el contenido inicial proporcionado.
+- Subir el archivo al repositorio de entregas.
+
+## HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -59,29 +61,30 @@ El objetivo es construir un muy simple Editor de Texto donde se puedan aplicar d
     <script type="text/javascript">
         /**
          * funcionNegrita()
-         * esta función se va a llamar cuando el usuario selecciona la opción Bold (negrita).
+         * Esta función se ejecuta cuando el usuario selecciona la opción Bold (negrita).
          */
         function funcionNegrita() {
-            // su implementación
+            // Implementación pendiente
         }
 
         /**
          * funcionCursiva()
-         * esta función se va a llamar cuando el usuario selecciona la opción Bold (negrita).
+         * Esta función se ejecuta cuando el usuario selecciona la opción Italic (cursiva).
          */
         function funcionCursiva() {
-            // su implementación
+            // Implementación pendiente
         }
 
         /**
          * funcionSubrayado()
-         * esta función se va a llamar cuando el usuario selecciona la opción Bold (negrita).
+         * Esta función se ejecuta cuando el usuario selecciona la opción Underline (subrayado).
          */
         function funcionSubrayado() {
-            // su implementación
+            // Implementación pendiente
         }
 
         function handlerBoton(e) {
+            // Obtiene el valor del atributo "data-formato" del botón que disparó el evento
             const funcionBoton = e.target.dataset.formato;
             switch (funcionBoton) {
                 case 'negrita':
@@ -100,3 +103,15 @@ El objetivo es construir un muy simple Editor de Texto donde se puedan aplicar d
 </body>
 </html>
 ```
+
+# Consigna
+
+- Implementar las funciones de estilo que ya están definidas en el HTML inicial: negrita, cursiva y subrayado.
+- Añadir un nuevo botón que aplique un estilo adicional al texto (por ejemplo, cambiar el color del texto).
+- Incluir un campo de entrada (input) que permita al usuario editar el texto mostrado.
+- Mostrar el estado actual de cada estilo en los botones correspondientes. Esto puede hacerse cambiando el color o el texto del botón para indicar si el estilo está activado o no.
+- Agregar una funcionalidad para modificar el tamaño del texto.
+
+# Bonus Track
+
+- (Opcional) Explorar y añadir otras funcionalidades que puedan mejorar la experiencia del editor de texto.

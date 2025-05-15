@@ -3,17 +3,16 @@ title: "4.4: tp-9 (Objetos)"
 tags: "tp"
 ---
 
+# Objetivo
+
 En este trabajo práctico vamos a usar el tipo de datos `objeto` dentro del lenguaje JavaScript.
 
-Consigna:
+# Formato de Entrega
 
 - Subir todos los archivos a un directorio `tp-9` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `objetos.js`) dentro del mismo directorio.
 - En el archivo `.js` implementar las funciones solicitadas.
 
-Condiciones:
-
-- No modificar el código provisto.
-- (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
+## HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -98,7 +97,22 @@ console.log("resultado sinDocumento: ", sinDocumento(personaEjemplo));
 
 
 /**
- * 04 - nombreCompletoDePersona
+ * 04 - tieneDocumento
+ * 
+ * Recibe
+ * - `persona`: objeto de la forma persona.
+ * 
+ * Retorna: 
+ * - un valor boolean ('true' o 'false'), indicando si la propiedad 'documento' existe en el objeto recibido.
+ */
+function tieneDocumento(persona) {
+    // 
+}
+console.log("resultado tieneDocumento: ", tieneDocumento(personaEjemplo));
+
+
+/**
+ * 05 - nombreCompletoDePersona
  * 
  * Recibe
  * - `persona`: objeto de la forma persona.
@@ -113,7 +127,7 @@ console.log("resultado nombreCompletoDePersona: ", nombreCompletoDePersona(perso
 
 
 /**
- * 05 - felizCumpleaños
+ * 06 - felizCumpleaños
  * 
  * Recibe
  * - `persona`: objeto de la forma persona.
@@ -128,7 +142,7 @@ console.log("resultado felizCumpleaños: ", felizCumpleaños(personaEjemplo));
 
 
 /**
- * 06 - sonLaMismaPersona
+ * 07 - sonLaMismaPersona
  * 
  * Recibe
  * - `persona1`: Un objeto de la forma persona.
@@ -144,4 +158,29 @@ console.log("resultado sonLaMismaPersona: ", sonLaMismaPersona(
     personaEjemplo,
     { apellido: "Perez", nombre: "Juan", edad: 20, documento: 12345 }
 ));
+
+
+/**
+ * 08 - personaMasGrande
+ * 
+ * Recibe
+ * - `persona1`: Un objeto de la forma persona.
+ * - `persona2`: Otro objeto de la forma persona.
+ * 
+ * Retorna: 
+ * - el objeto de la persona con mayor edad. Si ambas tienen la misma edad, retorna cualquiera de las dos.
+ */
+function personaMasGrande(persona1, persona2) {
+    // 
+}
+console.log("resultado personaMasGrande: ", personaMasGrande(
+    { nombre: "Ana", edad: 30 },
+    { nombre: "Luis", edad: 25 }
+));
 ```
+
+# Condiciones
+
+- No modificar el código provisto.
+- (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
+

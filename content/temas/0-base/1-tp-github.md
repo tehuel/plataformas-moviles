@@ -3,10 +3,11 @@ title: "0.1: tp-0 (Github)"
 tags: "tp"
 ---
 
-# Repositorio en GitHub
+# Objetivo
 
-El objetivo del trabajo es crear un repositorio de GitHub en el que vamos a realizar las entregas de los trabajos prácticos a lo largo del año.
+El objetivo principal de esta actividad es configurar un repositorio en GitHub que sirva como espacio centralizado para las entregas de los trabajos prácticos de la materia Plataformas Móviles. 
 
+Además, se busca familiarizar a los estudiantes con el uso de herramienta de colaboración y publicación de contenido web, como lo son GitHub y GitHub Pages.
 
 ## Usuario de Github
 
