@@ -3,13 +3,16 @@ title: "5.3: tp-14 (Tablero de Puntos)"
 tags: "tp"
 ---
 
-El objetivo es construir un tablero para mostrar el puntaje de un partido entre 2 equipos.
+# Objetivo
 
-- En lugar de tener un único boton para incrementar los puntos del equipo, se desea tener un botón para incrementar (+) y otro para decrementar (-) los puntos de cada equipo.
-- Agregar la acción de invertir puntaje, para intercambiar los puntos entre el equipo local y el equipo visitante.
-- Agregar la acción de finalizar partido, que deshabilita los botones de puntaje, para que ya no se puedan sumar puntos. Los botones se tendrían que volver a habilitar cuando se reinicia el tablero.
+Construir un tablero para mostrar y gestionar el puntaje de un partido entre 2 equipos.
 
-## HTML
+# Formato de Entrega
+
+- Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
+- Subir el trabajo al repositorio de entregas, en el directorio `/tp-14/`.
+
+## HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -68,3 +71,17 @@ El objetivo es construir un tablero para mostrar el puntaje de un partido entre 
 </body>
 </html>
 ```
+
+# Consigna
+
+Implementar las siguientes funcionalidades:
+
+- Agregar un botón para incrementar (+) y otro para decrementar (-) los puntos de cada equipo.
+- Agregar la acción de invertir puntaje, para intercambiar los puntos entre el equipo local y el equipo visitante.
+- Agregar la acción de finalizar partido, que deshabilita los botones de puntaje, para que ya no se puedan sumar puntos. Los botones se deben volver a habilitar cuando se reinicia el tablero.
+
+# Bonus Track
+
+- Permitir cambiar los nombres de los equipos.
+- Personalización de colores: Permitir cambiar el color de fondo o los colores de los equipos.
+- Atajos de teclado: Permitir controlar el tablero usando el teclado (por ejemplo, teclas para sumar/restar puntos).

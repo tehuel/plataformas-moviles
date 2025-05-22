@@ -3,16 +3,16 @@ title: "5.3: tp-13 (Lista de Contactos)"
 tags: "tp"
 ---
 
-El objetivo es construir una lista de contactos, ordenada alfabéticamente.
+# Objetivo
 
-> Sugerencia: usar la función `mostrarListado()` para dibujar en la pantalla el listado de contactos.
+Construir una lista de contactos, ordenada alfabéticamente, y agregar funcionalidades avanzadas de gestión.
 
-- Agregar opción de ordenar por nombre o por apellido el listado de contactos.
-- Agregar un nuevo campo teléfono al formulario y a la lista de contactos.
-- Agregar la opción de marcar como favorito un contacto. Luego, agregar opción para ver sólo los contactos favoritos.
+# Formato de Entrega
 
+- Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
+- Subir el trabajo al repositorio de entregas, en el directorio `/tp-13/`.
 
-## HTML
+## HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -90,3 +90,21 @@ El objetivo es construir una lista de contactos, ordenada alfabéticamente.
 </body>
 </html>
 ```
+
+# Consigna
+
+Implementar las siguientes funcionalidades:
+
+- Agregar contactos a la lista.
+- Ordenar el listado de contactos alfabéticamente.
+- Agregar opción de ordenar por nombre o por apellido.
+- Agregar un nuevo campo teléfono al formulario y a la lista de contactos.
+- Agregar la opción de marcar como favorito un contacto.
+- Agregar opción para ver sólo los contactos favoritos.
+
+# Bonus Track
+
+- Permitir editar los datos de un contacto ya agregado.
+- Agregar la opción de eliminar contactos individualmente.
+- Permitir seleccionar varios contactos y eliminarlos juntos.
+- Agregar un buscador para filtrar contactos por nombre, apellido o teléfono.

@@ -3,13 +3,16 @@ title: "5.3: tp-12 (Lista de Compras)"
 tags: "tp"
 ---
 
-El objetivo es construir una lista de compras donde se puedan agregar productos.
+# Objetivo
 
-- Agregar funcionalidad para limpiar la lista, eliminando todos los productos.
-- Ordenar alfabéticamente la lista de productos.
-- Agregar opción para eliminar cada elemento de forma individual.
+Construir una lista de compras donde se puedan agregar productos dinámicamente utilizando JavaScript y el DOM.
 
-## HTML
+# Formato de Entrega
+
+- Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
+- Subir el trabajo al repositorio de entregas, en el directorio `/tp-12/`.
+
+## HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -54,9 +57,9 @@ El objetivo es construir una lista de compras donde se puedan agregar productos.
             // su implementación
         }
 
-        function handlerFormulario(e) {
-            e.preventDefault();
-            const input = e.target.querySelector('input');
+        function handlerFormulario(evento) {
+            evento.preventDefault();
+            const input = evento.target.querySelector('input');
             const nombreProducto = input.value;
             input.value = "";
             agregarProducto(nombreProducto);
@@ -67,3 +70,18 @@ El objetivo es construir una lista de compras donde se puedan agregar productos.
 </body>
 </html>
 ```
+
+# Consigna
+
+Implementar las siguientes funcionalidades en la lista de compras:
+
+- Agregar productos: sumar nuevos productos a la lista.
+- Limpiar la lista: opción para borrar todos los productos.
+- Ordenar productos: posibilidad de ordenar la lista alfabéticamente.
+- Eliminar productos: cada producto debe poder eliminarse de forma individual.
+
+# Bonus Tracks
+
+- Habilitar la edición del nombre de un producto ya agregado.
+- Marcar productos como comprados: Permitir marcar/desmarcar productos como comprados (por ejemplo, tachando el texto).
+- Persistencia local: Guardar la lista de productos en `localStorage` para que no se pierda al recargar la página.
