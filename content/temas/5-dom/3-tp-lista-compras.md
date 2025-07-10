@@ -1,5 +1,5 @@
 ---
-title: "5.3: tp-12 (Lista de Compras)"
+title: "5.3: tp-13 (Lista de Compras)"
 tags: "tp"
 ---
 
@@ -10,7 +10,7 @@ Construir una lista de compras donde se puedan agregar productos dinámicamente 
 # Formato de Entrega
 
 - Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
-- Subir el trabajo al repositorio de entregas, en el directorio `/tp-12/`.
+- Subir el trabajo al repositorio de entregas, en el directorio `/tp-13/`.
 
 ## HTML Inicial
 
