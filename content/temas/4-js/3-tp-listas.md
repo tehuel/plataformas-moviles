@@ -84,7 +84,9 @@ console.log("sumarLista([2,3,4]): ", sumarLista([2,3,4]))
  * - un numero con la cantidad de elementos contenidos dentro de la lista.
  * 
  * Ejemplos:
- * - sumarLista([2,3,4]) retorna 9
+ * - contarElementosLista([2,3,4]) retorna 3
+ * - contarElementosLista([2,3]) retorna 2
+ * - contarElementosLista([]) retorna 0
  */
 function contarElementosLista(listaDeNumeros) {
     //
