@@ -1,5 +1,5 @@
 ---
-title: "4.5: tp-10 (Listas y Objetos)"
+title: "4.5: tp-11 (Listas y Objetos)"
 tags: "tp"
 ---
 
@@ -9,7 +9,7 @@ En este trabajo práctico vamos a usar de manera combinada los tipos de datos `l
 
 # Formato de Entrega
 
-- Subir todos los archivos a un directorio `tp-10` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
+- Subir todos los archivos a un directorio `tp-11` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
 - En el archivo `.js` implementar las funciones solicitadas.
 
 ## HTML Inicial

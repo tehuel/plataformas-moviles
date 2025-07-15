@@ -1,5 +1,5 @@
 ---
-title: "6.5: tp-15 (APIs)"
+title: "6.5: tp-16 (APIs)"
 tags: "tp"
 ---
 
@@ -55,5 +55,5 @@ Para este proyecto deberán crear una aplicación de "Recetario", con la informa
 
 ## Entrega
 
-Para la entrega del trabajo, crear un directorio `tp-15/` en su repositorio de entregas, y subir un archivo como `tp-15/index.html`, junto con los archivos js y css correspondientes.
+Para la entrega del trabajo, crear un directorio `tp-16/` en su repositorio de entregas, y subir un archivo como `tp-16/index.html`, junto con los archivos js y css correspondientes.
 

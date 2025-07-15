@@ -1,5 +1,5 @@
 ---
-title: "3.6.2: tp-6 (Bootstrap (2))"
+title: "3.6.2: tp-7 (Bootstrap (2))"
 tags: "tp"
 ---
 
@@ -11,7 +11,7 @@ Usar Bootstrap para reconstruir "la estructura" de un sitio web, partiendo de un
 
 # Consigna
 
-- Crear un archivo `tp-6/index.html` en el repositorio de entregas de la materia, en Github.
+- Crear un archivo `tp-7/index.html` en el repositorio de entregas de la materia, en Github.
 - En ese archivo HTML creado implementar un sitio web que replique la estructura mostrada en los diseños esquemáticos.
 
 ## Condiciones

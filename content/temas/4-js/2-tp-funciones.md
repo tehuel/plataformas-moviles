@@ -1,5 +1,5 @@
 ---
-title: "4.2: tp-7 (Funciones)"
+title: "4.2: tp-8 (Funciones)"
 tags: "tp"
 ---
 
@@ -9,7 +9,7 @@ Practicar la definición y el uso de funciones en JavaScript.
 
 # Formato de Entrega
 
-- Crear un archivo HTML en la ruta `/tp-7/index.html`, con el contenido del HTML inicial.
+- Crear un archivo HTML en la ruta `/tp-8/index.html`, con el contenido del HTML inicial.
 - Subir el archivo al repositorio de entregas.
 
 ## HTML Inicial

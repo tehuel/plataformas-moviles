@@ -1,5 +1,5 @@
 ---
-title: "4.4: tp-9 (Objetos)"
+title: "4.4: tp-10 (Objetos)"
 tags: "tp"
 ---
 
@@ -9,7 +9,7 @@ En este trabajo práctico vamos a usar el tipo de datos `objeto` dentro del leng
 
 # Formato de Entrega
 
-- Subir todos los archivos a un directorio `tp-9` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `objetos.js`) dentro del mismo directorio.
+- Subir todos los archivos a un directorio `tp-10` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `objetos.js`) dentro del mismo directorio.
 - En el archivo `.js` implementar las funciones solicitadas.
 
 ## HTML Inicial
