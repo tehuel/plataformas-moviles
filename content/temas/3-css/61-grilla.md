@@ -32,6 +32,21 @@ Extra extra large | `xxl` | ≥1400px
 
 Empleando estos elementos nos aseguramos que nuestro diseño se adaptará a cualquier dispositivo.
 
+## Diagrama de Breakpoints
+
+```goat
+XS ---------------------------------------------------->
+        SM -------------------------------------------->
+                MD ------------------------------------>
+                        LG ---------------------------->
+                                XL -------------------->
+                                        XXL ----------->
+ |       |       |       |       |       |
+ +-------+-------+-------+-------+-------+--------------
+```
+
+Podemos ver como los breakpoints más grandes se van "apilando" para tapar breakpoints anteriores.
+
 ## Ejemplo: Botón Responsivo
 
 Ejemplo para poder hacer "aparecer y desaparecer" un botón, pero se puede aplicar para distintos elementos o secciones de una página.
