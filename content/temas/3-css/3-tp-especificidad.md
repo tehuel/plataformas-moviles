@@ -65,12 +65,11 @@ Practicar el uso de la especificidad en CSS para aplicar estilos de manera preci
 		}
 
 		body p.fuente.parrafo {
-			color: #999 !important;
+			color: #bbb !important;
 			font-size: 0.9rem;
-			opacity: 75%;
+			opacity: 50%;
 			text-align: center;
 		}
-
 	</style>
 </head>
 <body>
@@ -115,7 +114,7 @@ Dentro de este archivo CSS, siempre teniendo en cuenta las reglas ya existentes 
 
 6. Una regla para que el texto `p.fuente` tenga su opacidad en 100% (se puede usar la declaración `opacity: 100%;`).
 
-7. Una regla para que los párrafos sin id **no** tengan sombra (`text-shadow: none`). 
+7. Una regla para que los párrafos sin id tengan un color de fondo `rgba(190, 120, 240, 0.6)`. 
 
 ## 3. Bonus Track
 
