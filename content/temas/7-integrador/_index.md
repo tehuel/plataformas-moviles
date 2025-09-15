@@ -2,46 +2,60 @@
 title: "Unidad 7: Trabajo Integrador"
 ---
 
-El trabajo final integrador tiene como objetivo unificar todos los temas vistos durante el año en la materia. Se realizará de forma **iterativa e incremental**. En cada iteración se revisará el avance alcanzado por el equipo, se acordarán las próximas funcionalidades y se identificarán los problemas encontrados.
+Este trabajo reúne **todos los temas vistos durante el año** y se realiza en **equipo**.
+Se organiza en **iteraciones** para que puedan planificar, avanzar y mejorar de manera ordenada.
 
-### Definición de forma de Evaluación
+## Organización del Proyecto
 
-La evaluación del trabajo final se realizará teniendo en cuenta todos los conceptos y herramientas aprendidas durante todo el año. Tal cual lo expresamos durante toda la materia, nuestra evaluación no se enfoca principalmente en tener una página web / aplicación 100% funcional, si no que se enfoca en la evolución que tuvieron los alumnos hasta llegar a la presentación final. 
+- Formato de trabajo: iterativo e incremental.
+- Duración: iteraciones de 1 semana
+- Dinámica: 
+	- 1 semana para trabajar en cada iteración.
+	- Al final de cada iteración, reunión breve en clase para revisar avances, corregir y definir objetivos para la próxima.
 
-Sabemos que dentro del mundo de la programación los problemas y las trabas son cosas que suceden con mucha facilidad, por eso es que hacemos mucho hincapie en que si vemos la evolución de un equipo de alumnos, por mas que no hayan llegado a terminar el proyecto, nosotros vamos a tener en cuenta el compromiso y el esfuerzo en caso de haber existido.
+El objetivo es que vivan un proceso real de trabajo en equipo: planificar, desarrollar, resolver problemas y mejorar.
 
-Si bien el proyecto va a tener un puntaje final, la evaluación se realizará de forma iterativa a medida que el proyecto va avanzando teniendo en cuenta los siguientes criterios:
+## Equipos, Temas y Alcance
 
-- Aplicación de los temas vistos en clase
-- Seguimiento de las consignas y pautas del trabajo
-- Comunicación en tiempo y forma de avances y problemáticas
-- Organización del trabajo y de cada una de las tareas
-- Presentación del trabajo
-    
-## Definición de estructura del Equipo
+- Cada equipo elige el tema de su proyecto.
+- Lo ideal son equipos de hasta 3 integrantes.
+- Se puede trabajar de a 2 o de forma individual.
+- Los docentes revisarán si el alcance es viable en el tiempo disponible y con el tamaño del equipo.
+- Si hace falta, se ajustará el alcance.
+- A mayor cantidad de integrantes, más funcionalidades se esperan en el proyecto.
 
-A diferencia de los trabajos prácticos que fuimos realizando durante el año, el trabajo final es en equipos. Lo ideal es que los equipos tengan como máximo 3 integrantes, también puede haber equipos de 2 integrantes y en caso de que algún alumno quiera trabajar de forma individual, también será posible. 
+## Requisitos
 
-El tamaño del equipo hará que los requisitos del trabajo cambien, a mas integrantes, mas funcionalidades se espera que tenga el trabajo integrador.
+Dentro de los requisitos técnicos que debe cumplir el proyecto se espera: 
 
-## Definición del Trabajo
+- Diseño responsivo: que funcione bien en distintas platafomas (desktop, mobile y tamaños intermedios).
+- Consumo de una API externa para mostrar contenido dinámico o realizar acciones.
+- Diseño usable y accesible: la interfaz debe ser clara de usar.
 
-Cada equipo elegirá el tema de su trabajo final. Se analizará junto a los docentes si el alcance propuesto por los alumnos es viable en el tiempo disponible y con el número de integrantes del equipo. En caso de ser necesario se ajustará el alcance.
+Queda fuera del alcance:
 
-El trabajo final tendrá aproximadamente 4 iteraciones, durante 4 semanas continuas. El equipo de alumnos tendrá 1 semana completa para trabajar entre iteración. Cada vez que una iteración finalice se hará una pequeña reunión (en clase) para revisar los avances, hacer correcciones y definir los objetivos de la próxima iteración.
+- Desarrollar un backend o una API propia (salvo que ya exista y se acuerde con los docentes).
+- Implementar lógica muy compleja.
 
-Con las iteraciones lo que intentamos generar es una ambiente real de trabajo en equipo, donde a medida que el trabajo avanza se van viendo los cambios y se van organizando los proximos pasos a seguir entre todos.
+## Seguimiento
 
-Al final la 4ta iteración se espera tener una página web / aplicación que cumpla con los siguientes requisitos:
+Cada equipo deberá usar un tablero de tareas (estilo Kanban) para organizar:
 
-- Tener un diseño responsivo, deberá funcionar correctamente tanto en web desktop, como en web mobile e intermedios.
-- Consumir una API externa y cargar contenido dinamicamente. También se podría consumir una API externa para realizar acciones especificas.
-- Tener un diseño (UI) cuidado y elegante. Es parte de la evaluación que el trabajo final sea minimamente usable y que se entienda.
+- Tareas a realizar.
+- Prioridades.
+- Estado de avance.
 
-Que cosas quedan fuera del alcance del trabajo:
-- Desarrollar un backend o una API propia, por la naturaleza y el tiempo con el que contamos no es necesario ponerse a desarrollar una API propia (en caso de que sea algo que ya existe para otra materia se puede charlar)
-- No buscamos desarrollar una aplicación con lógica compleja ni rebuscada.
+La herramienta la elige el equipo (puede ser Trello, Jira, Notion, GitHub Projects, etc.). El tablero se usará también para mostrar el progreso durante las reuniones de revisión.
 
-## Presentación y evaluación
+## Evaluación
 
-Se espera que el equipo presente el estado final de su trabajo, explicando con que problemas se encontraron y como hicieron para resolverlos. En este punto se realizará la evaluación.
+La evaluación es continua (iteración por iteración) y se centra en el proceso: cómo evolucionan, se organizan y resuelven problemas, no solo en el resultado final.
+
+Criterios que se tendrán en cuenta:
+
+- Aplicación de los temas vistos en clase.
+- Cumplimiento de consignas y pautas.
+- Uso y actualización del tablero de tareas.
+- Comunicación clara y a tiempo sobre avances y problemas.
+- Organización del trabajo y las tareas.
+- Presentación final del proyecto.
