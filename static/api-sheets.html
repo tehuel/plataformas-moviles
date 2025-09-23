@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API con Google Sheets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1>API con Google Sheets</h1>
+      <p>Información del sistema solar obtenida desde <a href="https://docs.google.com/spreadsheets/d/1UC7JtMbxsSQA53OykkaUTbAVAoG208rTNSio1qY7lDM/">Google Sheets</a> usando <a href="https://github.com/benborgers/opensheet">benborgers/opensheet</a>.</p>
+
+      <div class="table-responsive">
+        <table class="table table-light table-bordered table-striped shadow-sm">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Planeta</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Distancia Media</th>
+              <th scope="col">Período Orbital</th>
+              <th scope="col">Diámetro</th>
+              <th scope="col">Lunas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="7" class="text-center">
+                <div class="spinner-border my-5" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+      async function obtenerPlanetas() {
+        const request = await fetch('https://opensheet.elk.sh/1UC7JtMbxsSQA53OykkaUTbAVAoG208rTNSio1qY7lDM/1');
+        const data = await request.json();
+        return data;
+      }
+
+      function vaciarTabla() {
+        document.querySelector('tbody tr').remove();
+      }
+
+      function construirTabla(infoTodosLosPlanetas) {
+        const tabla = document.querySelector('tbody');
+        infoTodosLosPlanetas.forEach((infoUnPlaneta, index) => {
+          tabla.appendChild(construirFila(infoUnPlaneta, index + 1));
+        })
+      }
+
+      function construirFila(infoUnPlaneta, index) {
+        const fila = document.createElement('tr');
+        fila.appendChild(construirCelda(index));
+        Object.values(infoUnPlaneta).forEach((valor) => {
+          fila.appendChild(construirCelda(valor));
+        })
+        return fila;
+      }
+
+      function construirCelda(infoCelda) {
+        const td = document.createElement('td');
+        td.innerText = infoCelda;
+        return td;        
+      }
+
+      document.addEventListener("DOMContentLoaded", async (event) => {
+        const infoTodosLosPlanetas = await obtenerPlanetas();
+        vaciarTabla();
+        construirTabla(infoTodosLosPlanetas);
+      });
+    </script>
+  </body>
+</html>
