@@ -58,7 +58,6 @@
       }
 
       function construirFila(infoUnPlaneta, nroPlaneta) {
-        //console.log('Info un planeta', infoUnPlaneta);
         const elementoFila = document.createElement('tr');
         const valoresFila = [nroPlaneta, ...Object.values(infoUnPlaneta)];
         valoresFila.forEach((valor) => {
@@ -70,7 +69,6 @@
       }
 
       function construirCelda(infoCelda) {
-        // console.log('infoCelda', infoCelda)
         const elementoCelda = document.createElement('td');
         elementoCelda.innerText = infoCelda;
 
@@ -79,7 +77,6 @@
 
       document.addEventListener("DOMContentLoaded", async (event) => {
         const infoTodosLosPlanetas = await obtenerPlanetas();
-        //console.log('info', infoTodosLosPlanetas);
         vaciarTabla();
         construirTabla(infoTodosLosPlanetas);
       });
