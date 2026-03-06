@@ -37,7 +37,7 @@ Vemos algunos ejemplos de diferentes frameworks CSS.
 
 - Bootstrap  - [link](https://getbootstrap.com/)
 - Tailwind CSS (basado en utilities) - [link](https://tailwindcss.com/)
-- "classless" Frameworks (sin modificar el HTML) - [link bolt css](https://boltcss.com/)
+- "classless" Frameworks (sin modificar el HTML) - [listado demo](https://dohliam.github.io/dropin-minimal-css/)
 - NES.CSS (estilo particular) - [link](https://nostalgic-css.github.io/NES.css/)
 - LaTeX.css (estilo particular) - [link](https://latex.vercel.app/)
 - Pure.css (framework muy pequeño y modular) - [link](https://purecss.io/)
