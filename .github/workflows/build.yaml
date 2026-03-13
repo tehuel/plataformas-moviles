@@ -39,4 +39,4 @@ jobs:
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           local-dir: ./public/
-          server-dir: public_html/
+          server-dir: /home/lperconti_diegohpezet/public_html/
