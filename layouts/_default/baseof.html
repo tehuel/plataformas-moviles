@@ -122,68 +122,64 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <!-- Clipboard JS -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+
     <script>
-      function createCopyButton(highlightDiv) {
-        const button = document.createElement("button");
-        button.className = "btn btn-sm btn-secondary btn-copy-code";
-        button.type = "button";
-        button.innerText = "Copiar";
-        button.addEventListener("click", () =>
-          copyCodeToClipboard(button, highlightDiv)
-        );
-        addCopyButtonToDom(button, highlightDiv);
-      }
-  
-      async function copyCodeToClipboard(button, highlightDiv) {
-        const codeToCopy = highlightDiv.querySelector("pre code").textContent;
-        try {
-          result = await navigator.permissions.query({ name: "clipboard-write" });
-          if (result.state == "granted" || result.state == "prompt") {
-            await navigator.clipboard.writeText(codeToCopy);
-          } else {
-            copyCodeBlockExecCommand(codeToCopy, highlightDiv);
-          }
-        } catch (_) {
-          copyCodeBlockExecCommand(codeToCopy, highlightDiv);
-        } finally {
-          codeWasCopied(button);
+      function initClipboardForCodeButtons() {
+        if (typeof ClipboardJS === "undefined") {
+          return;
         }
+
+        document.querySelectorAll(".highlight").forEach(function (highlightDiv, index) {
+          var codeElement = highlightDiv.querySelector("pre code");
+          if (!codeElement) {
+            return;
+          }
+
+          if (!codeElement.id) {
+            codeElement.id = "code-block-" + index;
+          }
+
+          var button = document.createElement("button");
+          button.className = "btn btn-sm btn-secondary btn-copy-code";
+          button.type = "button";
+          button.innerText = "Copiar";
+          button.setAttribute("data-clipboard-target", "#" + codeElement.id);
+
+          highlightDiv.insertBefore(button, highlightDiv.firstChild);
+          var wrapper = document.createElement("div");
+          wrapper.className = "highlight-wrapper";
+          highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
+          wrapper.appendChild(highlightDiv);
+        });
+
+        var clipboard = new ClipboardJS(".btn-copy-code");
+
+        clipboard.on("success", function (event) {
+          setCopyStatus(event.trigger, true);
+          event.clearSelection();
+        });
+
+        clipboard.on("error", function (event) {
+          setCopyStatus(event.trigger, false);
+        });
       }
-  
-      function copyCodeBlockExecCommand(codeToCopy, highlightDiv) {
-        const textArea = document.createElement("textArea");
-        textArea.contentEditable = "true";
-        textArea.readOnly = "false";
-        textArea.className = "copyable-text-area";
-        textArea.value = codeToCopy;
-        highlightDiv.insertBefore(textArea, highlightDiv.firstChild);
-        const range = document.createRange();
-        range.selectNodeContents(textArea);
-        const sel = window.getSelection();
-        sel.removeAllRanges();
-        sel.addRange(range);
-        textArea.setSelectionRange(0, 999999);
-        document.execCommand("copy");
-        highlightDiv.removeChild(textArea);
-      }
-  
-      function codeWasCopied(button) {
+
+      function setCopyStatus(button, isSuccess) {
         button.blur();
-        button.innerText = "Copiado!";
+        button.innerText = isSuccess ? "Copiado" : "No se pudo copiar";
+        const className = isSuccess ? "btn-success" : "btn-danger";
+        button.classList.add(className);
+
         setTimeout(function () {
           button.innerText = "Copiar";
+          button.classList.remove(className)
         }, 2000);
       }
-  
-      function addCopyButtonToDom(button, highlightDiv) {
-        highlightDiv.insertBefore(button, highlightDiv.firstChild);
-        const wrapper = document.createElement("div");
-        wrapper.className = "highlight-wrapper";
-        highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
-        wrapper.appendChild(highlightDiv);
-      }
-  
-      document.querySelectorAll(".highlight").forEach((highlightDiv) => createCopyButton(highlightDiv));
+
+      initClipboardForCodeButtons();
     </script>
   </body>
 </html>
