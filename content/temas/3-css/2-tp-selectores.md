@@ -74,15 +74,15 @@ Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 6. Mostrar el fondo gris `#444` y el texto en **negrita** para todos los elementos con la clase `the-force`.
 7. Mostrar el texto con color `#66f` para los elementos con la clase `light-side`, y color `#f33` para la clase `dark-side`.
 8. Agregar la regla `list-style-type: circle;` a los elementos del listado con ID `og-trilogy`.
-9. Agregar `padding-left` al segundo listado de películas.
-10. Agregar `margin-top` al último elemento del tercer listado de películas.
+9. Hacer que el título principal cambie de color cuando se pasa el puntero por encima.
+10. Hacer que los links visitados cambien a color gris.
 
 ## 3. Bonus Tracks
 
-11. Hacer que todos los títulos muestren su texto en mayúscula
-12. Hacer que la primera linea del primer párrafo se muestre color `#efe`
-13. Hacer que el título principal cambie de color cuando se pasa el puntero por encima.
-14. Hacer que los links visitados cambien a color gris.
+11. Agregar `margin-left` al segundo listado de películas.
+12. Agregar `margin-top` al último elemento del tercer listado de películas.
+13. Hacer que todos los títulos muestren su texto en mayúscula.
+14. Hacer que la primera linea del primer párrafo se muestre color `#efe`.
 15. Mostrar los links sin atributo `href` en cursiva.
 16. Mostrar de manera alternada el color de fondo de cada uno de los elementos de los listados de películas entre `#111` y `#333`.
 
