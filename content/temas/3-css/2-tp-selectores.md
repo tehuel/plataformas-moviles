@@ -67,22 +67,22 @@ Para este nuevo archivo HTML creado, agregar una hoja de estilos CSS de alguna d
 Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 
 1. Mostrar todos los parrafos con una fuente `sans-serif`.
-2. Agregar una regla para definir el color de fondo del documento en `#222`, y el color del texto en `#ee6`.
+2. Agregar una regla para definir el color de fondo del documento en `rgb(34, 34, 34)`, y el color del texto en `rgb(238, 238, 102)`.
 3. Mostrar centrado el título principal del documento.
 4. Agregar una regla para mostrar en color `#eee` todos los títulos del documento.
-5. Agregar un borde inferior color blanco a todos los elementos `<strong>`.
-6. Mostrar el fondo gris `#444` y el texto en **negrita** para todos los elementos con la clase `the-force`.
-7. Mostrar el texto con color `#66f` para los elementos con la clase `light-side`, y color `#f33` para la clase `dark-side`.
+5. Agregar un borde inferior color `white` a todos los elementos `<strong>`.
+6. Mostrar el fondo gris `#444444` y el texto en **negrita** para todos los elementos con la clase `the-force`.
+7. Mostrar el texto con color `#6666ff` para los elementos con la clase `light-side`, y color `#ff3333` para la clase `dark-side`.
 8. Agregar la regla `list-style-type: circle;` a los elementos del listado con ID `og-trilogy`.
-9. Hacer que el título principal cambie de color cuando se pasa el puntero por encima.
-10. Hacer que los links visitados cambien a color gris.
+9. Hacer que el título principal cambie de color cuando se pasa el puntero por encima a `#ff0`.
+10. Hacer que los links visitados cambien a color `gray`.
 
 ## 3. Bonus Tracks
 
 11. Agregar `margin-left` al segundo listado de películas.
 12. Agregar `margin-top` al último elemento del tercer listado de películas.
 13. Hacer que todos los títulos muestren su texto en mayúscula.
-14. Hacer que la primera linea del primer párrafo se muestre color `#efe`.
+14. Hacer que la primera linea del primer párrafo se muestre color `rgb(238, 255, 238)`.
 15. Mostrar los links sin atributo `href` en cursiva.
 16. Mostrar de manera alternada el color de fondo de cada uno de los elementos de los listados de películas entre `#111` y `#333`.
 
