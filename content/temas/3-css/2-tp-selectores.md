@@ -10,7 +10,7 @@ Aplicar estilos básicos a un documento HTML utilizando selectores CSS.
 # Formato de Entrega
 
 - Crear un archivo HTML en la ruta `/tp-2/index.html`, con el contenido del HTML inicial.
-- Crear un archivo CSS en la ruta `/tp-2/style.css`, con el contenido de los estilos, o bien agregar un bloque `<style></style>` dentro del documento HTML para incluir los estilos.
+- Agregar estilos CSS al documento HTML (usando un archivo `.css` externo o una etiqueta `<style>` dentro del documento).
 - Subir todo al repositorio de entregas en GitHub.
 
 ## HTML Inicial
