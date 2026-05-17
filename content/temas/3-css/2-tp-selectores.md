@@ -66,9 +66,9 @@ Para este nuevo archivo HTML creado, agregar una hoja de estilos CSS de alguna d
 
 Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 
-1. Agregar una regla para definir el color de fondo del documento en `#222`, y el color del texto en `#ee6`.
-2. Agregar una regla para centrar el título principal del documento.
-3. Mostrar todos los párrafos con una fuente `sans-serif`.
+1. Mostrar todos los parrafos con una fuente `sans-serif`.
+2. Agregar una regla para definir el color de fondo del documento en `#222`, y el color del texto en `#ee6`.
+3. Mostrar centrado el título principal del documento.
 4. Agregar una regla para mostrar en color `#eee` todos los títulos del documento.
 5. Agregar un borde inferior color blanco a todos los elementos `<strong>`.
 6. Mostrar el fondo gris `#444` y el texto en **negrita** para todos los elementos con la clase `the-force`.
