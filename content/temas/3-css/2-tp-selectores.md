@@ -84,7 +84,7 @@ Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 13. Hacer que el título principal cambie de color cuando se pasa el puntero por encima.
 14. Hacer que los links visitados cambien a color gris.
 15. Mostrar los links sin atributo `href` en cursiva.
-16. Mostrar de manera alternada el color de fondo de cada uno de los elementos de los listados de películas entre `#111` y `333`.
+16. Mostrar de manera alternada el color de fondo de cada uno de los elementos de los listados de películas entre `#111` y `#333`.
 
 > **Atención**
 > 
