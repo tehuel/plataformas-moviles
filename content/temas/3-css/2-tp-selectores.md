@@ -71,7 +71,7 @@ Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 3. Mostrar todos los párrafos con una fuente `sans-serif`.
 4. Agregar una regla para mostrar en color `#eee` todos los títulos del documento.
 5. Agregar un borde inferior color blanco a todos los elementos `<strong>`.
-6. Mostrar el fondo gris `#444` y el texto en negrita para todos los elementos con la clase `the-force`.
+6. Mostrar el fondo gris `#444` y el texto en **negrita** para todos los elementos con la clase `the-force`.
 7. Mostrar el texto con color `#66f` para los elementos con la clase `light-side`, y color `#f33` para la clase `dark-side`.
 8. Agregar la regla `list-style-type: circle;` a los elementos del listado con ID `og-trilogy`.
 9. Agregar `padding-left` al segundo listado de películas.
