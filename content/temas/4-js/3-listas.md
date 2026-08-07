@@ -192,7 +192,7 @@ console.log("Existe 'Lautaro' en lista?", listaDeNombres.includes("Lautaro"));
 
 ---
 
-> Comentario extra: Para intercambiar 2 posiciones de una lista es necesario usar una letiable temporal
+> Comentario extra: Para intercambiar 2 posiciones de una lista es necesario usar una variable temporal
 >
 >     let temporal = nuevaLista(0);
 >     nuevaLista[0] = nuevaLista[1];
