@@ -4,6 +4,5 @@ Sitio web para la materia "Proyecto de Desarrollo de Software para Plataformas M
 
 El sitio se encuentra publicado en:
 - https://plataformas-moviles.tecnica4berazategui.edu.ar
+- https://plataformas-moviles.tec4.ar
 - https://plataformas-moviles.vercel.app
-
-Esto es una prueba de deploy. 
