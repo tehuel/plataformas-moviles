@@ -64,4 +64,19 @@ El front-end y el back-end se comunican a través de la **API HTTP**, que funcio
 
 Una ventaja de esta división es que un mismo back-end puede atender a muchos front-ends distintos: una web, una app de Android y una de iOS pueden usar la misma API.
 
+---
+
+## Detalles adicionales
+
+<details>
+    <summary>Evolución: de monolitos a APIs y microservicios</summary>
+
+La forma de organizar las aplicaciones fue cambiando con el tiempo:
+
+1. **Monolito**: toda la aplicación (interfaz de usuario, lógica de negocio y acceso a los datos) es un único programa. Es simple de empezar, pero a medida que crece se vuelve difícil de mantener y de escalar.
+2. **Front-end + API**: se separa la interfaz de usuario del resto, y ambas partes se comunican mediante una API HTTP. Es la arquitectura que usamos en esta unidad.
+3. **Microservicios**: el back-end se divide a su vez en muchos servicios pequeños e independientes, cada uno con una responsabilidad (y muchas veces con su propia base de datos), que se comunican entre sí también mediante APIs.
+
 {{< figure src="/img/monolito-microservicios.png" title="Comparativa entre arquitecturas monolítica y de microservicios" >}}
+
+</details>
