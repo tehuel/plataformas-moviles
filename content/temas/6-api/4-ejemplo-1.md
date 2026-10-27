@@ -100,11 +100,14 @@ async function obtenerImagenDesdeApi(id) {
 }
 ```
 
-Combinando ambas funciones, podemos conseguir los `datosDeImagen`:
+Combinando ambas funciones (dentro de otra función `async`), podemos conseguir los `datosDeImagen`:
 
 ```js
-const idAleatorio = generarNumeroAleatorio(100);
-const datosDeImagen = await obtenerImagenDesdeApi(idAleatorio);
+async function obtenerImagenAleatoria() {
+    const idAleatorio = generarNumeroAleatorio(100);
+    const datosDeImagen = await obtenerImagenDesdeApi(idAleatorio);
+    return datosDeImagen;
+}
 ```
 
 # Mostrar imagen en el DOM
