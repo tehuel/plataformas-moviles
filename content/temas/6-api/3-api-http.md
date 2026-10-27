@@ -42,6 +42,33 @@ La URL completa se arma uniendo la URL base con el endpoint: `https://pokeapi.co
 
 ¿Cómo sabemos qué endpoints existen y qué devuelve cada uno? Leyendo la **documentación** de la API. Por ejemplo, para obtener información de un pokémon, [la documentación](https://pokeapi.co/docs/v2#pokemon) indica que se usa el endpoint `/pokemon/{id o nombre del pokemon}`, y muestra un ejemplo de la respuesta.
 
+## Parámetros
+
+Muchas veces necesitamos indicarle a la API *qué* queremos exactamente. Para eso se agregan **parámetros** en la URL, de dos formas:
+
+**En la ruta**: forman parte del camino de la URL. La documentación los suele indicar entre llaves, como `{id}`.
+
+```shell
+https://pokeapi.co/api/v2/pokemon/4
+https://pokeapi.co/api/v2/pokemon/charmander
+```
+
+**En la *query string***: van al final de la URL, después de un `?`, con el formato `clave=valor`. Si hay más de uno, se separan con `&`.
+
+```shell
+https://pokeapi.co/api/v2/pokemon?limit=151
+https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese
+```
+
+En el primer ejemplo, el parámetro `limit` le pide a la API una lista de 151 pokémon. En el segundo, el parámetro `a` (*area*) filtra las comidas de origen chino.
+
+En el código, podemos armar la URL con los parámetros usando *template strings*: un texto entre comillas invertidas (`` ` ``) donde `${...}` se reemplaza por el valor de la variable.
+
+```js
+const id = 4;
+const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+```
+
 ## Desde el Browser
 
 Para acceder desde el browser, visitamos el endpoint en la URL `https://pokeapi.co/api/v2/pokemon/4` y obtenemos una respuesta en formato JSON.
