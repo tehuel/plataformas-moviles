@@ -47,14 +47,21 @@ Yendo desde lo más general hacia lo más específico, podemos pensar la relaci�
 └─────────────────┴──────┴────────┘
 ```
 
-## Arquitectura de una Aplicación
+## Arquitectura de una Aplicación: Front-end y Back-end
 
-Hablamos un momento sobre arquitectura de una aplicación.
+Las aplicaciones que usan una API HTTP suelen dividirse en dos partes, cada una con su propia responsabilidad:
 
-- División entre Front y Back ends
-- División de Responsabilidades
-- Monolitos y Servicios
+- **Front-end** (cliente): es la parte que ve y usa la persona. Muestra la información y reacciona a sus acciones. Por ejemplo, una página web hecha con HTML, CSS y JS, o una app de Android.
+- **Back-end** (servidor): es la parte que guarda y procesa los datos. La persona usuaria no la ve.
+
+El front-end y el back-end se comunican a través de la **API HTTP**, que funciona como un **contrato**: define qué se le puede pedir al servidor y qué va a responder.
+
+1. El front-end envía un **pedido HTTP** (por ejemplo: "dame los datos del pokémon 4").
+2. El back-end busca los datos y devuelve una **respuesta HTTP**.
+3. Los datos de la respuesta viajan en formato **JSON**, un formato de texto que tanto el cliente como el servidor saben leer (lo vemos en detalle en [6.2](/temas/6-api/2-json/)).
 
 {{< figure src="/img/arquitectura.png" title="Arquitectura de ejemplo de una aplicación con API HTTP" >}}
+
+Una ventaja de esta división es que un mismo back-end puede atender a muchos front-ends distintos: una web, una app de Android y una de iOS pueden usar la misma API.
 
 {{< figure src="/img/monolito-microservicios.png" title="Comparativa entre arquitecturas monolítica y de microservicios" >}}
