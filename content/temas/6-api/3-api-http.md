@@ -113,3 +113,32 @@ obtenerPokemon();
 ```
 
 Hay dos `await` porque son dos esperas distintas: primero llega la respuesta (con el código de estado) y después se termina de recibir y convertir el contenido.
+
+### Manejo de errores
+
+Al depender de la red y de otro sistema, un pedido puede fallar. Hay dos casos principales:
+
+1. **El servidor responde, pero con un error**: por ejemplo, pedimos un pokémon que no existe y la respuesta tiene código `404`. Para detectarlo revisamos `respuesta.ok`, que es `true` solo si el código de estado indica éxito (200-299).
+2. **No hay respuesta**: por ejemplo, no hay conexión a internet. En este caso `fetch()` produce un error que podemos atrapar con `try/catch`.
+
+```js
+async function obtenerPokemon(id) {
+    try {
+        const respuesta = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+
+        // caso 1: el servidor respondió con un error
+        if (!respuesta.ok) {
+            console.log("Error en la respuesta:", respuesta.status);
+            return;
+        }
+
+        const pokemon = await respuesta.json();
+        console.log(pokemon.name);
+    } catch (error) {
+        // caso 2: no se pudo completar el pedido
+        console.log("No se pudo conectar con la API:", error);
+    }
+}
+```
+
+En una aplicación real, además de mostrar el error en la consola, conviene avisarle a la persona usuaria con un mensaje en la página.
