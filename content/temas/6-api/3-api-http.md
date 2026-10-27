@@ -87,14 +87,29 @@ Esta pestaña también muestra los pedidos que hace nuestro código JavaScript, 
 
 ## Desde JavaScript
 
-Para acceder a esa misma información en formato JSON desde nuestro código JavaScript (`await` solo se puede usar dentro de funciones marcadas como `async`):
+Para hacer pedidos HTTP desde JavaScript se usa la función [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Window/fetch).
+
+### Asincronía: esperar la respuesta
+
+Un pedido HTTP **no es instantáneo**: viaja por internet hasta el servidor, el servidor lo procesa y la respuesta vuelve. Puede tardar milisegundos o varios segundos.
+
+Por eso `fetch()` no devuelve los datos de inmediato, sino una **promesa** (*Promise*): un valor que va a estar disponible *más adelante*. Es como pedir en un local de comida: te dan un número de pedido y, mientras lo preparan, podés hacer otras cosas. La página tampoco se "congela" mientras espera.
+
+Para esperar a que la promesa se cumpla y obtener el resultado se usa **`await`**. Y `await` solo se puede usar dentro de funciones marcadas como **`async`**:
 
 ```js
 async function obtenerPokemon() {
-    let respuesta = await fetch("https://pokeapi.co/api/v2/pokemon/4");
-    let pokemon = await respuesta.json();
+    // 1. envía el pedido y espera la respuesta
+    const respuesta = await fetch("https://pokeapi.co/api/v2/pokemon/4");
 
-    console.log(pokemon.name)
-    //imprime "charmander"
+    // 2. espera a que llegue el contenido y lo convierte de JSON a objeto
+    const pokemon = await respuesta.json();
+
+    // 3. ya podemos usar los datos
+    console.log(pokemon.name); // "charmander"
 }
+
+obtenerPokemon();
 ```
+
+Hay dos `await` porque son dos esperas distintas: primero llega la respuesta (con el código de estado) y después se termina de recibir y convertir el contenido.
