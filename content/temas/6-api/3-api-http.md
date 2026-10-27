@@ -26,7 +26,21 @@ Cliente                                              Servidor
    | <-------------------------------------------------- |
 ```
 
-Para obtener información de un Pokemon, podemos usar el endpoint `/pokemon`, según [la documentación](https://pokeapi.co/docs/v2#pokemon), accediendo a la URL `https://pokeapi.co/api/v2/pokemon/{id o nombre del pokemon}`.
+## Endpoint
+
+Una API ofrece distintas URLs, una para cada tipo de recurso o acción. Cada una de esas URLs se llama **endpoint**.
+
+Por ejemplo, la PokéAPI tiene como URL base `https://pokeapi.co/api/v2` y, entre otros, estos endpoints:
+
+| Endpoint | Devuelve |
+|---|---|
+| `/pokemon/{id o nombre}` | Información de un pokémon |
+| `/type/{id o nombre}` | Información de un tipo (fuego, agua, etc.) |
+| `/ability/{id o nombre}` | Información de una habilidad |
+
+La URL completa se arma uniendo la URL base con el endpoint: `https://pokeapi.co/api/v2/pokemon/4`.
+
+¿Cómo sabemos qué endpoints existen y qué devuelve cada uno? Leyendo la **documentación** de la API. Por ejemplo, para obtener información de un pokémon, [la documentación](https://pokeapi.co/docs/v2#pokemon) indica que se usa el endpoint `/pokemon/{id o nombre del pokemon}`, y muestra un ejemplo de la respuesta.
 
 ## Desde el Browser
 
