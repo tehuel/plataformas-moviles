@@ -15,15 +15,14 @@ Cada comunicación con la API tiene dos partes:
 	- **Código de estado**: un número que indica cómo salió el pedido. Por ejemplo `200` (OK), `404` (no encontrado) o `500` (error en el servidor).
 	- **Contenido** (*body*): los datos pedidos, generalmente en JSON.
 
-```
-Cliente                                              Servidor
-   |                                                     |
-   |  GET https://pokeapi.co/api/v2/pokemon/4            |
-   | --------------------------------------------------> |
-   |                                                     |
-   |  200 OK                                             |
-   |  { "id": 4, "name": "charmander", ... }             |
-   | <-------------------------------------------------- |
+```mermaid
+sequenceDiagram
+    participant C as Cliente
+    participant S as Servidor
+
+    C->>S: GET /api/v2/pokemon/4
+    S-->>C: 200 OK
+    S-->>C: { "id": 4, "name": "charmander", ... }
 ```
 
 ## Endpoint
