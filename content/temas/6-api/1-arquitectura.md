@@ -38,13 +38,19 @@ Ejemplos de APIs HTTP:
 Yendo desde lo más general hacia lo más específico, podemos pensar la relación entre Interfaces, APIs y APIs HTTP como se ven en el diagrama
 
 ```goat
-┌─────────────────────────────────┐
-│   Interfaces                    │
-├────────────────────────┐        │
-│   APIs                 │        │
-├─────────────────┐      │        │
-│   APIs HTTP     │      │        │
-└─────────────────┴──────┴────────┘
++---------------------------------------+
+| Interfaces                            |
+|                                       |
+|    +-----------------------------+    |
+|    | APIs                        |    |
+|    |                             |    |
+|    |    +-------------------+    |    |
+|    |    | APIs HTTP         |    |    |
+|    |    +-------------------+    |    |
+|    |                             |    |
+|    +-----------------------------+    |
+|                                       |
++---------------------------------------+
 ```
 
 ## Arquitectura de una Aplicación: Front-end y Back-end
