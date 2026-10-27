@@ -75,14 +75,11 @@ function generarNumeroAleatorio(limite) {
 }
 ```
 
-Para pedir a la API una imagen usando un id, es necesario modificar la función de conexión para que acepte un id como parámetro. Además, verificamos con `response.ok` si el pedido fue exitoso:
+Para pedir a la API una imagen usando un id, es necesario modificar la función de conexión para que acepte un id como parámetro:
 
 ```js
 async function obtenerImagenDesdeApi(id) {
     const response = await fetch(`https://picsum.photos/id/${id}/info`);
-    if (!response.ok) {
-        throw new Error(`Error en el pedido: ${response.status}`);
-    }
     const data = await response.json();
     return data;
 }
@@ -118,7 +115,7 @@ function mostrarImgEnDom(src) {
 
 Uniendo todo:
 - Asociamos el evento con `addEventListener()` como vimos en la unidad de eventos.
-- Usamos `try / catch / finally` para que, si una imagen no existe o falla la conexión, mostremos un aviso y el botón se vuelva a activar en el bloque `finally`.
+- Desactivamos el botón mientras se realiza la consulta y lo volvemos a activar al finalizar.
 - Pedimos la imagen en un tamaño reducido (`600/400`) para que cargue rápido.
 
 ```html
@@ -148,9 +145,6 @@ Uniendo todo:
 
         async function obtenerImagenDesdeApi(id) {
             const response = await fetch(`https://picsum.photos/id/${id}/info`);
-            if (!response.ok) {
-                throw new Error(`Error en el pedido: ${response.status}`);
-            }
             const data = await response.json();
             return data;
         }
@@ -167,18 +161,13 @@ Uniendo todo:
             const boton = document.querySelector('#botonObtenerImagen');
             boton.disabled = true; // desactivo el botón mientras se realiza el pedido
 
-            try {
-                const idAleatorio = generarNumeroAleatorio(100);
-                const datosDeImagen = await obtenerImagenDesdeApi(idAleatorio);
-                // Usamos el id para pedir una imagen redimensionada a 600x400
-                const urlDeImagen = `https://picsum.photos/id/${datosDeImagen.id}/600/400`;
-                mostrarImgEnDom(urlDeImagen);
-            } catch (error) {
-                console.error("Error al obtener imagen:", error);
-                alert("No se pudo cargar la imagen. Probá nuevamente.");
-            } finally {
-                boton.disabled = false; // vuelvo a activar el botón siempre
-            }
+            const idAleatorio = generarNumeroAleatorio(100);
+            const datosDeImagen = await obtenerImagenDesdeApi(idAleatorio);
+            // Usamos el id para pedir una imagen redimensionada a 600x400
+            const urlDeImagen = `https://picsum.photos/id/${datosDeImagen.id}/600/400`;
+            mostrarImgEnDom(urlDeImagen);
+
+            boton.disabled = false; // vuelvo a activar el botón al terminar
         }
 
         document.querySelector('#botonObtenerImagen').addEventListener('click', handlerBoton);
@@ -190,6 +179,33 @@ Uniendo todo:
 ---
 
 ## Detalles adicionales
+
+<details>
+    <summary>Manejo de errores con try / catch / finally</summary>
+
+Si un id aleatorio no existe en la API o la conexión a internet falla durante el `fetch()`, la ejecución se interrumpe y la línea que vuelve a activar el botón (`boton.disabled = false`) no llega a ejecutarse, dejando el botón deshabilitado permanentemente.
+
+Para evitar esto, en JavaScript se puede utilizar un bloque `try / catch / finally`. El bloque `finally` tiene la propiedad de ejecutarse **siempre**, tanto si todo salió bien como si ocurrió un error:
+
+```js
+async function handlerBoton() {
+    const boton = document.querySelector('#botonObtenerImagen');
+    boton.disabled = true;
+
+    try {
+        const idAleatorio = generarNumeroAleatorio(100);
+        const datosDeImagen = await obtenerImagenDesdeApi(idAleatorio);
+        const urlDeImagen = `https://picsum.photos/id/${datosDeImagen.id}/600/400`;
+        mostrarImgEnDom(urlDeImagen);
+    } catch (error) {
+        console.error("Error al obtener la imagen:", error);
+    } finally {
+        boton.disabled = false; // se ejecuta siempre, garantizando que el botón vuelva a funcionar
+    }
+}
+```
+
+</details>
 
 <details>
     <summary>El mismo pedido con <code>.then()</code></summary>
