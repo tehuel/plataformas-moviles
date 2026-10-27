@@ -2,16 +2,6 @@
 title: "6.1: Arquitectura"
 ---
 
-Hablamos un momento sobre arquitectura de una aplicación.
-
-- División entre Front y Back ends
-- División de Responsabilidades
-- Monolitos y Servicios
-
-{{< figure src="/img/arquitectura.png" title="Arquitectura de ejemplo de una aplicación con API HTTP" >}}
-
-{{< figure src="/img/monolito-microservicios.png" title="Comparativa entre arquitecturas monolítica y de microservicios" >}}
-
 ## Interfaces
 
 Empezamos desde una visión general, definiendo a las **interfaces** como las "reglas" o formas de interactuar y comunicarse con un sistema o partes de un sistema. 
@@ -57,3 +47,14 @@ Yendo desde lo más general hacia lo más específico, podemos pensar la relaci�
 └─────────────────┴──────┴────────┘
 ```
 
+## Arquitectura de una Aplicación
+
+Hablamos un momento sobre arquitectura de una aplicación.
+
+- División entre Front y Back ends
+- División de Responsabilidades
+- Monolitos y Servicios
+
+{{< figure src="/img/arquitectura.png" title="Arquitectura de ejemplo de una aplicación con API HTTP" >}}
+
+{{< figure src="/img/monolito-microservicios.png" title="Comparativa entre arquitecturas monolítica y de microservicios" >}}
