@@ -32,4 +32,21 @@ Este es un recorte (simplificado) de la información que devuelve la PokéAPI so
 	- otro objeto `{ }` o una lista `[ ]`
 - No puede haber una coma después del último elemento.
 
-Dado que JSON es nativo en JavaScript, no es necesario utilizar bibliotecas o módulos adicionales. JavaScript ofrece métodos como `JSON.parse()` y `JSON.stringify()` para convertir entre objetos JavaScript y cadenas JSON de manera sencilla.
+## JSON vs Objetos de JavaScript
+
+JSON se parece mucho a un objeto de JavaScript, pero hay una diferencia importante: **JSON es texto** (un string), mientras que un objeto es un valor con el que JavaScript puede trabajar.
+
+Cuando recibimos datos de una API, llegan como texto. Para poder usarlos hay que convertirlos en un objeto. JavaScript trae incorporado el objeto `JSON` para hacer estas conversiones:
+
+- `JSON.parse(texto)`: convierte de texto JSON a objeto.
+- `JSON.stringify(objeto)`: convierte de objeto a texto JSON.
+
+```js
+const texto = '{ "id": 4, "name": "charmander" }';
+
+const pokemon = JSON.parse(texto);  // de texto a objeto
+console.log(pokemon.name);          // "charmander"
+
+const textoNuevo = JSON.stringify(pokemon);  // de objeto a texto
+console.log(textoNuevo);                     // '{"id":4,"name":"charmander"}'
+```
