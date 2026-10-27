@@ -142,3 +142,141 @@ async function obtenerPokemon(id) {
 ```
 
 En una aplicación real, además de mostrar el error en la consola, conviene avisarle a la persona usuaria con un mensaje en la página.
+
+---
+
+## Detalles adicionales
+
+<details>
+    <summary>Paginación</summary>
+
+Cuando un endpoint devuelve una lista muy grande (por ejemplo, todos los pokémon), la API no la manda completa: la divide en **páginas** y devuelve una por vez.
+
+En la PokéAPI, el endpoint `/pokemon` (sin id) devuelve una página de 20 pokémon. Con los parámetros `limit` (cuántos) y `offset` (desde cuál) podemos elegir qué página queremos:
+
+```shell
+https://pokeapi.co/api/v2/pokemon?limit=20&offset=0    # del 1 al 20
+https://pokeapi.co/api/v2/pokemon?limit=20&offset=20   # del 21 al 40
+```
+
+La respuesta incluye la cantidad total y las URLs de la página siguiente y la anterior:
+
+```json
+{
+    "count": 1302,
+    "next": "https://pokeapi.co/api/v2/pokemon?offset=20&limit=20",
+    "previous": null,
+    "results": [
+        { "name": "bulbasaur", "url": "https://pokeapi.co/api/v2/pokemon/1/" },
+        ...
+    ]
+}
+```
+
+Cada API resuelve la paginación a su manera (`page`, `per_page`, `cursor`, etc.), así que hay que revisar su documentación.
+
+</details>
+
+<details>
+    <summary>Autenticación</summary>
+
+Las APIs que usamos en la materia son públicas, pero muchas APIs piden que nos **identifiquemos** en cada pedido. Por ejemplo, para limitar cuántos pedidos hace cada usuario, para cobrar por el uso, o porque dan acceso a datos privados (como nuestra cuenta de Mercado Pago).
+
+La forma más común es una **API key**: un código secreto que la API nos da al registrarnos y que se envía en cada pedido, ya sea como parámetro en la URL o en un *header* del pedido.
+
+Por ejemplo, en las URLs de TheMealDB (`/api/json/v1/1/...`), el `1` es una API key de prueba pública. Para Google Maps, en cambio, hay que registrarse para obtener una.
+
+> **Cuidado**: una API key privada no se debe subir a un repositorio público ni incluir en el código de una página web, porque cualquiera podría verla y usarla.
+
+</details>
+
+<details>
+    <summary>Sintaxis alternativa: <code>.then()</code></summary>
+
+Antes de que existiera `async/await`, las promesas se manejaban con el método `.then()`, que recibe una función que se ejecuta cuando la promesa se cumple. Es muy común encontrarla en documentación y ejemplos en internet.
+
+Estos dos códigos hacen lo mismo:
+
+```js
+// con async/await
+async function obtenerPokemon() {
+    const respuesta = await fetch("https://pokeapi.co/api/v2/pokemon/4");
+    const pokemon = await respuesta.json();
+    console.log(pokemon.name);
+}
+```
+
+```js
+// con .then()
+fetch("https://pokeapi.co/api/v2/pokemon/4")
+    .then((respuesta) => respuesta.json())
+    .then((pokemon) => {
+        console.log(pokemon.name);
+    });
+```
+
+Para los errores, en lugar de `try/catch` se usa `.catch()`:
+
+```js
+fetch("https://pokeapi.co/api/v2/pokemon/4")
+    .then((respuesta) => respuesta.json())
+    .then((pokemon) => console.log(pokemon.name))
+    .catch((error) => console.log("Error:", error));
+```
+
+</details>
+
+<details>
+    <summary>Otros métodos HTTP</summary>
+
+En esta unidad solo pedimos datos con `GET`, que es el método que usa `fetch()` por defecto. Pero las APIs también permiten crear, modificar o borrar datos usando otros métodos:
+
+| Método | Uso |
+|---|---|
+| `GET` | Obtener datos |
+| `POST` | Crear un dato nuevo |
+| `PUT` / `PATCH` | Modificar un dato existente |
+| `DELETE` | Borrar un dato |
+
+```js
+// ejemplo de POST, enviando datos en JSON
+await fetch("https://ejemplo.com/api/contactos", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ nombre: "Juan" }),
+});
+```
+
+</details>
+
+<details>
+    <summary>Códigos de estado</summary>
+
+Los códigos de estado se agrupan según su primer dígito:
+
+| Códigos | Significado | Ejemplos |
+|---|---|---|
+| `2xx` | Éxito | `200` OK, `201` Creado |
+| `3xx` | Redirección | `301` Movido permanentemente |
+| `4xx` | Error del cliente (el pedido está mal) | `400` Pedido incorrecto, `401` No autenticado, `404` No encontrado |
+| `5xx` | Error del servidor | `500` Error interno, `503` Servicio no disponible |
+
+`respuesta.ok` es `true` para los códigos `2xx`.
+
+</details>
+
+<details>
+    <summary>Headers</summary>
+
+Además del método, la URL, el código de estado y el contenido, los pedidos y las respuestas llevan **headers** (encabezados): datos extra sobre la comunicación. Por ejemplo, `Content-Type: application/json` indica que el contenido está en formato JSON. Se pueden ver en la pestaña Red de las herramientas de desarrollo.
+
+</details>
+
+<details>
+    <summary>Error de CORS</summary>
+
+Por seguridad, el navegador solo permite que una página haga pedidos a una API de otro dominio si esa API lo autoriza. Si no lo autoriza, el pedido falla y en la consola aparece un error que menciona **CORS**.
+
+No es un error de nuestro código: es una configuración de la API. Las APIs públicas pensadas para usarse desde el navegador (como PokéAPI o TheMealDB) lo permiten.
+
+</details>
