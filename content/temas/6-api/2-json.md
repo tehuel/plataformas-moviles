@@ -63,3 +63,66 @@ pokemon.types[0].type.name    // "fire"
 ```
 
 > Cuando pedimos datos a una API con `fetch`, la conversión de texto a objeto la hace `respuesta.json()`, que vemos en [6.3](/temas/6-api/3-api-http/).
+
+---
+
+## Detalles adicionales
+
+<details>
+    <summary>¿JSON es "nativo" de JavaScript?</summary>
+
+JSON está *basado* en la sintaxis de objetos de JavaScript (de ahí su nombre), y JavaScript trae soporte incorporado con `JSON.parse()` y `JSON.stringify()`, sin necesidad de instalar nada.
+
+Pero JSON es un formato independiente del lenguaje: se usa desde Python, Java, Kotlin, PHP y prácticamente cualquier otro. Por eso es tan útil para comunicar aplicaciones construidas con tecnologías diferentes.
+
+</details>
+
+<details>
+    <summary>Diferencias entre JSON y un objeto de JavaScript</summary>
+
+Algunas cosas que son válidas en un objeto de JavaScript **no** lo son en JSON:
+
+```js
+// válido como objeto JS, inválido como JSON
+{
+    nombre: 'Juan',            // claves sin comillas y strings con comillas simples
+    saludar: function() {},    // funciones
+    edad: undefined,           // undefined
+    // comentarios
+    activo: true,              // coma final
+}
+```
+
+```json
+{
+    "nombre": "Juan",
+    "activo": true
+}
+```
+
+</details>
+
+<details>
+    <summary>Errores al convertir</summary>
+
+Si el texto no es JSON válido, `JSON.parse()` produce un error (`SyntaxError`) y el código se detiene. Esto pasa, por ejemplo, si una API responde con una página de error en HTML en lugar de JSON.
+
+```js
+JSON.parse("{ name: 'charmander' }");
+// SyntaxError: JSON.parse: expected property name...
+```
+
+</details>
+
+<details>
+    <summary>Formatear JSON para leerlo</summary>
+
+`JSON.stringify()` acepta un tercer parámetro para agregar sangría y hacer el texto más legible:
+
+```js
+console.log(JSON.stringify(pokemon, null, 2));
+```
+
+Los navegadores (como Firefox) también muestran el JSON formateado al abrir directamente la URL de una API.
+
+</details>
