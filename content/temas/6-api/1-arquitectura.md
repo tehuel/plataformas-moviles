@@ -25,7 +25,7 @@ Ejemplos de APIs:
 
 ## APIs HTTP
 
-De forma más específica todavía, dentro de las APIs, una API HTTP es un tipo de API que utiliza el protocolo HTTP (Hypertext Transfer Protocol) como medio para permitir la comunicación entre aplicaciones a través de la web. Estas APIs permiten que las aplicaciones realicen solicitudes HTTP para acceder a recursos en línea, como datos, servicios o funcionalidades, y reciban respuestas en formato HTTP, generalmente en JSON.
+De forma más específica todavía, dentro de las APIs, una API HTTP es un tipo de API que utiliza el protocolo HTTP (Hypertext Transfer Protocol) como medio para permitir la comunicación entre aplicaciones a través de la web. Estas APIs permiten que las aplicaciones realicen solicitudes HTTP para acceder a recursos en línea, como datos, servicios o funcionalidades, y reciban una respuesta HTTP cuyo contenido generalmente está en formato JSON.
 
 Ejemplos de APIs HTTP:
 
