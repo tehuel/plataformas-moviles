@@ -13,7 +13,7 @@ title: "Unidad 6: APIs"
 	- Endpoint
 	- Parámetros
 	- Asincronía (`fetch`, `async/await`)
-	- Manejo de errores
+	- Manejo de errores (adicional)
 	- Paginación (adicional)
 	- Autenticación (adicional)
 - Ejemplos

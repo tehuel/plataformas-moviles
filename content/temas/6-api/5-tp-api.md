@@ -27,9 +27,7 @@ Para este trabajo utilizaremos la **[Dragon Ball API](https://dragonball-api.com
 1. **Evoluciones y transformaciones**: En el detalle del personaje, además de los datos del planeta, mostrar el listado de sus transformaciones (`transformations`), incluyendo el nombre de cada fase, su nivel de poder y su foto.
 2. **Paginación**: Agregar botones para navegar entre páginas ("Página siguiente / anterior") o un botón "Cargar más personajes" al final del listado, usando los parámetros `page` y `limit` de la API.
 3. **Buscador o filtros**: Agregar un campo de texto para buscar personajes por nombre (`?name=...`) o botones para filtrar por raza (`race`) o género (`gender`).
-4. **Feedback visual (Loading y Errores)**:
-   - Mostrar un *spinner* de Bootstrap mientras los datos se están descargando (tanto al cargar la grilla como al abrir el detalle).
-   - Manejar errores con `try / catch` para mostrar un mensaje claro en pantalla si falla la conexión.
+4. **Feedback visual (Loading)**: Mostrar un *spinner* de Bootstrap mientras los datos se están descargando (tanto al cargar la grilla como al abrir el detalle).
 
 ## Entrega
 
@@ -85,5 +83,23 @@ Para mostrar el detalle en un modal de Bootstrap sin recargar la página:
    const modal = new bootstrap.Modal(document.getElementById('modalDetalle'));
    modal.show();
    ```
+
+</details>
+
+<details>
+    <summary>Manejo de errores con try / catch</summary>
+
+En este curso no profundizamos en el manejo avanzado de excepciones, por lo que no es un requisito para el trabajo. Sin embargo, en aplicaciones reales es una buena práctica envolver las llamadas a `fetch()` en un bloque `try / catch` para detectar si el usuario se quedó sin internet o si el servidor está caído:
+
+```js
+try {
+    const respuesta = await fetch("https://dragonball-api.com/api/characters/1");
+    const personaje = await respuesta.json();
+    console.log(personaje);
+} catch (error) {
+    console.error("No se pudo conectar con la API:", error);
+    alert("Ocurrió un problema de conexión. Probá nuevamente.");
+}
+```
 
 </details>
