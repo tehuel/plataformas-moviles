@@ -16,15 +16,17 @@ Cada comunicación con la API tiene dos partes:
 	- **Contenido** (*body*): los datos pedidos, generalmente en JSON.
 
 ```goat
-Cliente                                                  Servidor
-   |                                                        |
-   |   GET https://pokeapi.co/api/v2/pokemon/4              |
-   |------------------------------------------------------->|
-   |                                                        |
-   |   200 OK                                               |
-   |   { "id": 4, "name": "charmander", ... }               |
-   |<-------------------------------------------------------|
-   |                                                        |
+.---------.                                 .----------.
+| Cliente |                                 | Servidor |
+'----+----'                                 '----+-----'
+     |                                           |
+     |  GET https://pokeapi.co/api/v2/pokemon/4  |
+     |------------------------------------------>|
+     |                                           |
+     |                  200 OK                   |
+     |  { "id": 4, "name": "charmander", ... }   |
+     |<------------------------------------------|
+     |                                           |
 ```
 
 ## Endpoint
