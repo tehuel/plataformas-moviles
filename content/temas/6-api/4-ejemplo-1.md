@@ -41,36 +41,17 @@ Sabiendo esto, podemos hacer un sitio simple que nos permita obtener y mostrar i
 
 # Conexión desde JS
 
-Para poder obtener datos de una api en JavaScript existe el comando [`fetch`](https://developer.mozilla.org/es/docs/Web/API/Window/fetch). Su estructura es la siguiente:
+Para obtener datos de una API en JavaScript usamos la función [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Window/fetch) junto con `async/await` (ver [6.3](/temas/6-api/3-api-http/)):
 
 ```js
-fetch(url)
-    .then((response) => response.json())    // Convierte los datos a json
-    .then((data) => {                       // Crea una nueva función, pasando los datos obtenidos como parámetro
-        console.log(data)                   // (O cualquier código js)
-    })
+async function obtenerDatos(url) {
+    const response = await fetch(url);     // envía el pedido y espera la respuesta
+    const data = await response.json();    // convierte el contenido de JSON a objeto
+    console.log(data);                     // ya podemos usar los datos
+}
 ```
 
-Entonces, por ejemplo, si pasamos la siguiente url: 'https://picsum.photos/id/0/info', obtenemos todos los datos de la imagen '0'
-
-```js
-fetch(`https://picsum.photos/id/0/info`)
-    .then((response) => {
-        return response.json();
-    })
-    .then((data) => {
-        console.log(data);
-    })
-```
-Resultado:
-
-{{< figure src="/img/ejemplofetch.png" title="Respuesta de API" >}}
-
-## Sintaxis Alternativa: `async/await`
-
-Una sintaxis alternativa al uso de `fetch().then()` es el uso de `async/await`. La idea en ambos casos es la misma, esperar el resultado del pedido HTTP.
-
-El uso de `await fetch()` sólo está permitido dentro de funciones marcadas como `async`.
+Entonces, por ejemplo, si usamos la URL `https://picsum.photos/id/0/info`, obtenemos todos los datos de la imagen `0`:
 
 ```js
 async function obtenerImagenDesdeApi() {
@@ -79,6 +60,10 @@ async function obtenerImagenDesdeApi() {
     console.log(data);
 }
 ```
+
+Resultado:
+
+{{< figure src="/img/ejemplofetch.png" title="Respuesta de API" >}}
 
 # Obtener imagen aleatoria
 
@@ -90,11 +75,14 @@ function generarNumeroAleatorio(limite) {
 }
 ```
 
-Para pedir a la API una imagen usando un id, es necesario modificar la función de conexión para que acepte un id como parametro:
+Para pedir a la API una imagen usando un id, es necesario modificar la función de conexión para que acepte un id como parámetro. Además, verificamos con `response.ok` si el pedido fue exitoso:
 
 ```js
 async function obtenerImagenDesdeApi(id) {
     const response = await fetch(`https://picsum.photos/id/${id}/info`);
+    if (!response.ok) {
+        throw new Error(`Error en el pedido: ${response.status}`);
+    }
     const data = await response.json();
     return data;
 }
@@ -119,7 +107,7 @@ function mostrarImgEnDom(src) {
     // creo un nuevo elemento <img>
     const elementoImg = document.createElement('img');
     elementoImg.src = src;
-    elementoImg.classList.add('img-fluid'); // clase de bootstrap
+    elementoImg.classList.add('img-fluid', 'my-2'); // clases de bootstrap
 
     // agrego el elemento <img> al DOM
     document.querySelector('#contenedorImagenes').appendChild(elementoImg);
@@ -127,6 +115,11 @@ function mostrarImgEnDom(src) {
 ```
 
 # Código Final
+
+Uniendo todo:
+- Asociamos el evento con `addEventListener()` como vimos en la unidad de eventos.
+- Usamos `try / catch / finally` para que, si una imagen no existe o falla la conexión, mostremos un aviso y el botón se vuelva a activar en el bloque `finally`.
+- Pedimos la imagen en un tamaño reducido (`600/400`) para que cargue rápido.
 
 ```html
 <!DOCTYPE html>
@@ -141,7 +134,7 @@ function mostrarImgEnDom(src) {
     <div class="container my-5">
         <h1 class="text-center">Ejemplo Lorem Picsum</h1>
 
-        <button id="botonObtenerImagen" class="btn btn-primary my-3" onclick="handlerBoton()">   
+        <button id="botonObtenerImagen" class="btn btn-primary my-3">   
             Obtener Imagen
         </button>
 
@@ -155,6 +148,9 @@ function mostrarImgEnDom(src) {
 
         async function obtenerImagenDesdeApi(id) {
             const response = await fetch(`https://picsum.photos/id/${id}/info`);
+            if (!response.ok) {
+                throw new Error(`Error en el pedido: ${response.status}`);
+            }
             const data = await response.json();
             return data;
         }
@@ -162,20 +158,52 @@ function mostrarImgEnDom(src) {
         function mostrarImgEnDom(src) {
             const elementoImg = document.createElement('img');
             elementoImg.src = src;
-            elementoImg.classList.add('img-fluid');
+            elementoImg.classList.add('img-fluid', 'my-2');
 
             document.querySelector('#contenedorImagenes').appendChild(elementoImg);
         }
 
         async function handlerBoton() {
-            document.querySelector('#botonObtenerImagen').disabled = true; // desactivo el botón
-            const idAleatorio = generarNumeroAleatorio(100);
-            const datosDeImagen = await obtenerImagenDesdeApi(idAleatorio);
-            const urlDeImagen = datosDeImagen.download_url;
-            mostrarImgEnDom(urlDeImagen);
-            document.querySelector('#botonObtenerImagen').disabled = false; // vuelvo a activar el boton
+            const boton = document.querySelector('#botonObtenerImagen');
+            boton.disabled = true; // desactivo el botón mientras se realiza el pedido
+
+            try {
+                const idAleatorio = generarNumeroAleatorio(100);
+                const datosDeImagen = await obtenerImagenDesdeApi(idAleatorio);
+                // Usamos el id para pedir una imagen redimensionada a 600x400
+                const urlDeImagen = `https://picsum.photos/id/${datosDeImagen.id}/600/400`;
+                mostrarImgEnDom(urlDeImagen);
+            } catch (error) {
+                console.error("Error al obtener imagen:", error);
+                alert("No se pudo cargar la imagen. Probá nuevamente.");
+            } finally {
+                boton.disabled = false; // vuelvo a activar el botón siempre
+            }
         }
+
+        document.querySelector('#botonObtenerImagen').addEventListener('click', handlerBoton);
     </script>
 </body>
 </html>
 ```
+
+---
+
+## Detalles adicionales
+
+<details>
+    <summary>El mismo pedido con <code>.then()</code></summary>
+
+En internet es común encontrar este mismo código escrito con `.then()` en lugar de `async/await`. Hacen lo mismo:
+
+```js
+fetch(`https://picsum.photos/id/0/info`)
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+    });
+```
+
+Más detalles en [6.3: Detalles adicionales](/temas/6-api/3-api-http/#detalles-adicionales).
+
+</details>
