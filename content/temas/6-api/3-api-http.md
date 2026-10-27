@@ -75,6 +75,16 @@ Para acceder desde el browser, visitamos el endpoint en la URL `https://pokeapi.
 
 {{< figure src="/img/charmander-pokeapi.png" title="Vista de JSON interpretado (izquierda) y en crudo (derecha) en Firefox" >}}
 
+### Ver el pedido en las herramientas de desarrollo
+
+Con las herramientas de desarrollo del navegador podemos ver cada pedido y su respuesta:
+
+1. Abrir las herramientas de desarrollo (`F12`) y elegir la pestaña **Red** (*Network*).
+2. Recargar la página.
+3. Hacer clic en el pedido para ver su **método**, **URL**, **código de estado** y la **respuesta**.
+
+Esta pestaña también muestra los pedidos que hace nuestro código JavaScript, por lo que es muy útil para encontrar errores.
+
 ## Desde JavaScript
 
 Para acceder a esa misma información en formato JSON desde nuestro código JavaScript (`await` solo se puede usar dentro de funciones marcadas como `async`):
