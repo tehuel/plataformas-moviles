@@ -1,5 +1,5 @@
 ---
-title: "6.4: Ejemplo API con Google Sheets"
+title: "6.5: Ejemplo API con Google Sheets"
 ---
 
 En este ejemplo se muestra cómo usar Google Sheets como una pequeña base de datos accesible mediante API, transformando su contenido en formato JSON.
