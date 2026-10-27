@@ -46,14 +46,56 @@ Para la hoja del ejemplo anterior, la URL queda:
 https://opensheet.elk.sh/1UC7JtMbxsSQA53OykkaUTbAVAoG208rTNSio1qY7lDM/1
 ```
 
-Al abrir esa URL se obtiene una representación en JSON de los datos de la hoja.
+Al abrir esa URL se obtiene una representación en JSON de los datos de la hoja, como una lista de objetos donde cada objeto representa una fila:
+
+```json
+[
+  {
+    "Planeta": "Mercurio",
+    "Tipo": "Terrestre",
+    "Diámetro": "4879 km",
+    "Lunas": "0"
+  },
+  {
+    "Planeta": "Venus",
+    "Tipo": "Terrestre",
+    "Diámetro": "12104 km",
+    "Lunas": "0"
+  }
+]
+```
 
 ## 4. Usar los datos en una aplicación
 
-Con este _endpoint_ es posible consumir los datos desde cualquier lenguaje o framework que trabaje con JSON y HTTP.
+Con este *endpoint* es posible consumir los datos con `fetch()` desde JavaScript igual que con cualquier otra API HTTP:
 
-> Nota: Usando este método de conexión, las ediciones y cambios realizados en los datos de la hoja pueden tardar algunos minutos en verse reflejados en el JSON debido a cierto tiempo de cache.
+```js
+async function obtenerPlanetas() {
+    const respuesta = await fetch("https://opensheet.elk.sh/1UC7JtMbxsSQA53OykkaUTbAVAoG208rTNSio1qY7lDM/1");
+    const planetas = await respuesta.json();
+    console.log(planetas);
+}
+```
 
+Podemos ver un ejemplo completo en funcionamiento que genera una tabla y permite filtrar por texto en tiempo real:
+👉 [Ver demo de API con Sheets](/api-sheets.html)
 
-Siguiendo con esta idea podemos construir aplicaciones usando estos datos en JSON, como por ejemplo:
-[API Sheets](/api-sheets.html)
+---
+
+## Detalles adicionales
+
+<details>
+    <summary>Privacidad de la hoja compartida</summary>
+
+Al configurar el permiso como "Cualquier persona con el enlace - Lector", la hoja y todos sus datos quedan disponibles públicamente en internet. 
+
+**Nunca** guardes contraseñas, claves secretas ni datos personales sensibles en hojas configuradas de esta manera.
+
+</details>
+
+<details>
+    <summary>Caché y actualización de datos</summary>
+
+Usando este servicio intermedio, los cambios o ediciones realizados en la hoja de cálculo pueden tardar unos minutos en verse reflejados en el JSON debido al tiempo de caché del servidor.
+
+</details>
