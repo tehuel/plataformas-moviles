@@ -12,12 +12,14 @@ Para acceder desde el browser, visitamos el endpoint en la URL `https://pokeapi.
 
 ## Desde JavaScript
 
-Para acceder a esa misma información en formato JSON desde nuestro código JavaScript
+Para acceder a esa misma información en formato JSON desde nuestro código JavaScript (`await` solo se puede usar dentro de funciones marcadas como `async`):
 
 ```js
-let respuesta = await fetch("https://pokeapi.co/api/v2/pokemon/4");
-let pokemon = await respuesta.json():
+async function obtenerPokemon() {
+    let respuesta = await fetch("https://pokeapi.co/api/v2/pokemon/4");
+    let pokemon = await respuesta.json();
 
-console.log(pokemon.name)
-//imprime "charmander"
+    console.log(pokemon.name)
+    //imprime "charmander"
+}
 ```
