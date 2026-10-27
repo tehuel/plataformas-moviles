@@ -50,3 +50,16 @@ console.log(pokemon.name);          // "charmander"
 const textoNuevo = JSON.stringify(pokemon);  // de objeto a texto
 console.log(textoNuevo);                     // '{"id":4,"name":"charmander"}'
 ```
+
+## Acceder a los Datos
+
+Una vez convertido a objeto, accedemos a los datos igual que con cualquier objeto o lista de JavaScript (ver [4.3: Listas](/temas/4-js/3-listas/) y [4.4: Objetos](/temas/4-js/4-objetos/)). Con el ejemplo de Charmander:
+
+```js
+pokemon.name                  // "charmander"
+pokemon.types                 // la lista de tipos
+pokemon.types[0]              // el primer elemento de la lista
+pokemon.types[0].type.name    // "fire"
+```
+
+> Cuando pedimos datos a una API con `fetch`, la conversión de texto a objeto la hace `respuesta.json()`, que vemos en [6.3](/temas/6-api/3-api-http/).
