@@ -2,16 +2,6 @@
 title: "6.1: Arquitectura"
 ---
 
-Hablamos un momento sobre arquitectura de una aplicación.
-
-- División entre Front y Back ends
-- División de Responsabilidades
-- Monolitos y Servicios
-
-{{< figure src="/img/arquitectura.png" title="Arquitectura de ejemplo de una aplicación con API HTTP" >}}
-
-{{< figure src="/img/monolito-microservicios.png" title="Comparativa entre arquitecturas monolítica y de microservicios" >}}
-
 ## Interfaces
 
 Empezamos desde una visión general, definiendo a las **interfaces** como las "reglas" o formas de interactuar y comunicarse con un sistema o partes de un sistema. 
@@ -35,7 +25,7 @@ Ejemplos de APIs:
 
 ## APIs HTTP
 
-De forma más específica todavía, dentro de las APIs, una API HTTP es un tipo de API que utiliza el protocolo HTTP (Hypertext Transfer Protocol) como medio para permitir la comunicación entre aplicaciones a través de la web. Estas APIs permiten que las aplicaciones realicen solicitudes HTTP para acceder a recursos en línea, como datos, servicios o funcionalidades, y reciban respuestas en formato HTTP, generalmente en JSON.
+De forma más específica todavía, dentro de las APIs, una API HTTP es un tipo de API que utiliza el protocolo HTTP (Hypertext Transfer Protocol) como medio para permitir la comunicación entre aplicaciones a través de la web. Estas APIs permiten que las aplicaciones realicen solicitudes HTTP para acceder a recursos en línea, como datos, servicios o funcionalidades, y reciban una respuesta HTTP cuyo contenido generalmente está en formato JSON.
 
 Ejemplos de APIs HTTP:
 
@@ -48,12 +38,51 @@ Ejemplos de APIs HTTP:
 Yendo desde lo más general hacia lo más específico, podemos pensar la relación entre Interfaces, APIs y APIs HTTP como se ven en el diagrama
 
 ```goat
-┌─────────────────────────────────┐
-│   Interfaces                    │
-├────────────────────────┐        │
-│   APIs                 │        │
-├─────────────────┐      │        │
-│   APIs HTTP     │      │        │
-└─────────────────┴──────┴────────┘
++---------------------------------------+
+| Interfaces                            |
+|                                       |
+|    +-----------------------------+    |
+|    | APIs                        |    |
+|    |                             |    |
+|    |    +-------------------+    |    |
+|    |    | APIs HTTP         |    |    |
+|    |    +-------------------+    |    |
+|    |                             |    |
+|    +-----------------------------+    |
+|                                       |
++---------------------------------------+
 ```
 
+## Arquitectura de una Aplicación: Front-end y Back-end
+
+Las aplicaciones que usan una API HTTP suelen dividirse en dos partes, cada una con su propia responsabilidad:
+
+- **Front-end** (cliente): es la parte que ve y usa la persona. Muestra la información y reacciona a sus acciones. Por ejemplo, una página web hecha con HTML, CSS y JS, o una app de Android.
+- **Back-end** (servidor): es la parte que guarda y procesa los datos. La persona usuaria no la ve.
+
+El front-end y el back-end se comunican a través de la **API HTTP**, que funciona como un **contrato**: define qué se le puede pedir al servidor y qué va a responder.
+
+1. El front-end envía un **pedido HTTP** (por ejemplo: "dame los datos del pokémon 4").
+2. El back-end busca los datos y devuelve una **respuesta HTTP**.
+3. Los datos de la respuesta viajan en formato **JSON**, un formato de texto que tanto el cliente como el servidor saben leer (lo vemos en detalle en [6.2](/temas/6-api/2-json/)).
+
+{{< figure src="/img/arquitectura.png" title="Arquitectura de ejemplo de una aplicación con API HTTP" >}}
+
+Una ventaja de esta división es que un mismo back-end puede atender a muchos front-ends distintos: una web, una app de Android y una de iOS pueden usar la misma API.
+
+---
+
+## Detalles adicionales
+
+<details>
+    <summary>Evolución: de monolitos a APIs y microservicios</summary>
+
+La forma de organizar las aplicaciones fue cambiando con el tiempo:
+
+1. **Monolito**: toda la aplicación (interfaz de usuario, lógica de negocio y acceso a los datos) es un único programa. Es simple de empezar, pero a medida que crece se vuelve difícil de mantener y de escalar.
+2. **Front-end + API**: se separa la interfaz de usuario del resto, y ambas partes se comunican mediante una API HTTP. Es la arquitectura que usamos en esta unidad.
+3. **Microservicios**: el back-end se divide a su vez en muchos servicios pequeños e independientes, cada uno con una responsabilidad (y muchas veces con su propia base de datos), que se comunican entre sí también mediante APIs.
+
+{{< figure src="/img/monolito-microservicios.png" title="Comparativa entre arquitecturas monolítica y de microservicios" >}}
+
+</details>
