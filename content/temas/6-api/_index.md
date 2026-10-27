@@ -4,7 +4,18 @@ title: "Unidad 6: APIs"
 
 ## Esquema
 
-- Separación front-back
+- Arquitectura
+	- Interfaces y APIs
+	- Separación front-back
 - JSON
-- Autenticación
-- Paginación
+- APIs HTTP
+	- Request y Response
+	- Endpoint
+	- Parámetros
+	- Asincronía (`fetch`, `async/await`)
+	- Manejo de errores
+	- Paginación (adicional)
+	- Autenticación (adicional)
+- Ejemplos
+	- Lorem Picsum
+	- Google Sheets
