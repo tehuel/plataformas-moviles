@@ -117,38 +117,39 @@ obtenerPokemon();
 
 Hay dos `await` porque son dos esperas distintas: primero llega la respuesta (con el código de estado) y después se termina de recibir y convertir el contenido.
 
-### Manejo de errores
+---
 
-Al depender de la red y de otro sistema, un pedido puede fallar. Hay dos casos principales:
+## Detalles adicionales
 
-1. **El servidor responde, pero con un error**: por ejemplo, pedimos un pokémon que no existe y la respuesta tiene código `404`. Para detectarlo revisamos `respuesta.ok`, que es `true` solo si el código de estado indica éxito (200-299).
-2. **No hay respuesta**: por ejemplo, no hay conexión a internet. En este caso `fetch()` produce un error que podemos atrapar con `try/catch`.
+<details>
+    <summary>Manejo de errores (¿qué pasa si un pedido falla?)</summary>
+
+Al depender de una red y de un servidor externo, un pedido HTTP puede fallar por dos motivos principales:
+
+1. **El servidor responde, pero con un código de error**: por ejemplo, si pedimos un recurso que no existe, la respuesta devuelve código `404`. Para detectarlo podemos revisar la propiedad `respuesta.ok`, que vale `true` únicamente si el código es exitoso (rango 200-299).
+2. **No hay conexión o el servidor está caído**: en este caso `fetch()` lanza una excepción que en JavaScript se puede capturar usando un bloque `try / catch`.
 
 ```js
 async function obtenerPokemon(id) {
     try {
         const respuesta = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
 
-        // caso 1: el servidor respondió con un error
+        // caso 1: el servidor respondió con un error (ej. 404)
         if (!respuesta.ok) {
-            console.log("Error en la respuesta:", respuesta.status);
+            console.log("Error en la respuesta del servidor:", respuesta.status);
             return;
         }
 
         const pokemon = await respuesta.json();
         console.log(pokemon.name);
     } catch (error) {
-        // caso 2: no se pudo completar el pedido
+        // caso 2: falló la conexión por completo
         console.log("No se pudo conectar con la API:", error);
     }
 }
 ```
 
-En una aplicación real, además de mostrar el error en la consola, conviene avisarle a la persona usuaria con un mensaje en la página.
-
----
-
-## Detalles adicionales
+</details>
 
 <details>
     <summary>Paginación</summary>
