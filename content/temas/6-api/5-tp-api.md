@@ -3,28 +3,30 @@ title: "6.6: tp-16 (APIs)"
 tags: "tp"
 ---
 
-Construir una aplicación web con HTML, CSS (Bootstrap) y JavaScript que consuma la **[Dragon Ball API](https://dragonball-api.com/)** ([documentación oficial](https://dragonball-api.com/docs)) implementando el patrón de **listado y detalle**.
+Construir una aplicación web con HTML, CSS (Bootstrap) y JavaScript que consuma la **[API de Comidas Argentinas](https://api.tehuel.com.ar/)** ([documentación interactiva y OpenAPI](https://api.tehuel.com.ar/)) implementando el patrón de **listado y detalle**, junto con **filtrado por categoría**.
 
 ## Requisitos
 
-1. **Listado de personajes**: mostrar una grilla de tarjetas responsivas con Bootstrap. Cada tarjeta debe incluir:
-   - Nombre (`name`)
-   - Imagen (`image`)
-   - Raza (`race`)
-   - Ki (`ki` o `maxKi`)
-   - Botón para ver más información.
-2. **Detalle**: al hacer clic en el botón de un personaje, consultar su endpoint por ID (`/api/characters/{id}`) y mostrar los datos de su **planeta de origen** (`originPlanet`):
-   - Nombre (`name`)
-   - Imagen (`image`)
-   - Descripción (`description`)
-   La información puede mostrarse en un Modal de Bootstrap, un panel lateral (*offcanvas*) o una sección dedicada.
+1. **Listado de comidas**: mostrar una grilla de tarjetas responsivas usando el sistema de grillas y componentes Card de Bootstrap. Cada tarjeta debe incluir:
+   - Imagen (`imagen`)
+   - Nombre (`nombre`)
+   - Categoría o grupo (`grupo`) y/o badges con los tipos de comida (`tipo`)
+   - Botón para ver más información / detalle.
+2. **Filtro por categoría (`grupo`)**: incluir botones o un menú de selección para filtrar el listado según su grupo (`salados`, `dulces`, `bebidas`) o ver todas las comidas.
+3. **Detalle**: al hacer clic en el botón de una comida, consultar su endpoint específico por ID (`/comidas/{id}`) y mostrar su información completa en un **Modal** o panel lateral (**Offcanvas**) de Bootstrap:
+   - Nombre (`nombre`)
+   - Imagen destacada (`imagen`)
+   - Descripción (`descripcion`)
+   - Región geográfica de origen (`region`)
+   - Listado de ingredientes principales (`ingredientes_principales`)
 
 ## Opcionales (Power Ups)
 
-1. **Transformaciones**: mostrar en el detalle el listado de evoluciones (`transformations`) con su nombre, nivel de poder y foto.
-2. **Paginación**: controles para navegar entre páginas o botón "Cargar más", usando los parámetros `page` y `limit`.
-3. **Buscador / Filtros**: filtrar personajes por nombre (`?name=...`), raza o género.
-4. **Spinner de carga**: mostrar un indicador de carga mientras se esperan las respuestas de la API.
+1. **Buscador en tiempo real**: agregar un campo de texto para buscar platos por su nombre utilizando el parámetro `?busqueda=...`.
+2. **Paginación**: controles para navegar entre páginas (botones "Anterior / Siguiente" o botón "Cargar más"), aprovechando los parámetros `pagina` y `limite` de la API, junto con los metadatos devueltos (`pagina`, `paginas`, `total`).
+3. **Sistema de "Likes" o Votos**: incorporar un botón de "Me gusta" o "Votar" en cada tarjeta o en el detalle que consulte e incremente el contador mediante `POST https://api.tehuel.com.ar/contador/{id}` y actualice el número en pantalla.
+4. **Spinner de carga**: mostrar un indicador visual (`spinner-border` de Bootstrap) mientras se esperan las respuestas de la API.
+5. **Ordenamiento**: permitir ordenar los resultados por nombre o grupo de forma ascendente o descendente usando los parámetros `ordenar_campo` y `ordenar_sentido`.
 
 ## Entrega
 
@@ -35,61 +37,42 @@ Crear la carpeta `tp-16/` en el repositorio de entregas con `index.html` y los a
 ## Detalles adicionales
 
 <details>
-    <summary>Endpoints de la API</summary>
-
-- **Listado**: `https://dragonball-api.com/api/characters?page=1&limit=10`
-  Devuelve un objeto con la lista en `items` y los datos de paginación en `meta`.
-- **Detalle por ID**: `https://dragonball-api.com/api/characters/{id}`
-  Ejemplo: `https://dragonball-api.com/api/characters/1`
-
-</details>
-
-<details>
-    <summary>Estructura de originPlanet y personajes sin planeta</summary>
-
-En el detalle, `originPlanet` tiene la siguiente estructura:
-
-```json
-{
-  "id": 1,
-  "name": "Planeta Vegeta",
-  "description": "Planeta natal de la raza Saiyan...",
-  "image": "https://dragonball-api.com/planets/Planeta_Vegeta_en_Dragon_Ball_Super.webp"
-}
-```
-
-> Si el personaje no tiene planeta asignado, `originPlanet` es `null`. Contemplar este caso en el código (por ejemplo, mostrando *"Planeta desconocido"*) para evitar errores al acceder a sus propiedades.
-
-</details>
-
-<details>
     <summary>Abrir Modal de Bootstrap desde JavaScript</summary>
 
 Con un único elemento modal en el HTML:
 
 ```js
-// Actualizar el contenido del modal con los datos recibidos
-document.querySelector('#modalPlanetaNombre').innerText = planeta.name;
+// Actualizar el contenido del modal con los datos recibidos de la API
+document.querySelector("#modalTitulo").innerText = comida.nombre;
+document.querySelector("#modalDescripcion").innerText = comida.descripcion;
+document.querySelector("#modalRegion").innerText = comida.region;
+document.querySelector("#modalImagen").src = comida.imagen;
 
 // Abrir el modal con la API de Bootstrap
-const modal = new bootstrap.Modal(document.getElementById('modalDetalle'));
+const modal = new bootstrap.Modal(document.getElementById("modalDetalle"));
 modal.show();
 ```
 
 </details>
 
 <details>
-    <summary>Manejo de errores con try / catch</summary>
+    <summary>Ejemplo de petición POST con fetch (Power Up: Likes)</summary>
 
-Para capturar fallos de conexión o caídas del servidor sin que la ejecución se detenga:
+Para enviar un pedido `POST` que sume un like o voto al contador de un plato:
 
 ```js
-try {
-    const respuesta = await fetch("https://dragonball-api.com/api/characters/1");
-    const personaje = await respuesta.json();
-    console.log(personaje);
-} catch (error) {
-    console.error("Error al conectar con la API:", error);
+async function darLike(idComida) {
+    try {
+        const respuesta = await fetch(`https://api.tehuel.com.ar/contador/${idComida}`, {
+            method: "POST"
+        });
+        const datos = await respuesta.json();
+        console.log(`Nuevo conteo para ${idComida}:`, datos.count);
+        // Actualizar el elemento correspondiente en el DOM
+        document.querySelector(`#likes-${idComida}`).innerText = datos.count;
+    } catch (error) {
+        console.error("Error al registrar el like:", error);
+    }
 }
 ```
 
