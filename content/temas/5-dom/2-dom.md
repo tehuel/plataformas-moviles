@@ -114,34 +114,3 @@ let elementoPadre = document.querySelector('div.padre');
 elementoPadre.remove();
 ```
 
-## Modificar y Mostrar Componentes (Modales de Bootstrap)
-
-Al combinar la manipulación del DOM con librerías de componentes como Bootstrap, podemos actualizar dinámicamente los elementos dentro de una ventana modal y luego controlar su apertura o cierre desde JavaScript.
-
-```html
-<!-- Estructura del modal en el HTML -->
-<div class="modal fade" id="modalDetalle" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalTitulo">Título</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p id="modalDescripcion">Texto</p>
-      </div>
-    </div>
-  </div>
-</div>
-```
-
-```js
-// 1. Actualizar el contenido del modal en el DOM
-document.querySelector('#modalTitulo').innerText = "Nuevo Título";
-document.querySelector('#modalDescripcion').innerText = "Descripción actualizada dinámicamente con JS.";
-
-// 2. Abrir el modal utilizando la API de Bootstrap
-const modal = new bootstrap.Modal(document.getElementById('modalDetalle'));
-modal.show();
-```
-
