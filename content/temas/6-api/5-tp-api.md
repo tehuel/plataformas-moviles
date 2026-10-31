@@ -13,7 +13,7 @@ Construir una aplicación web con HTML, CSS (Bootstrap) y JavaScript que consuma
    - Categoría o grupo (`grupo`) y/o badges con los tipos de comida (`tipo`)
    - Botón para ver más información / detalle.
 2. **Filtro por categoría (`grupo`)**: incluir botones o un menú de selección para filtrar el listado según su grupo (`salados`, `dulces`, `bebidas`) o ver todas las comidas.
-3. **Detalle**: al hacer clic en el botón de una comida, consultar su endpoint específico por ID (`/comidas/{id}`) y mostrar su información completa en un **Modal** o panel lateral (**Offcanvas**) de Bootstrap:
+3. **Detalle**: al hacer clic en el botón de una comida, consultar su endpoint específico por ID (`/comidas/{id}`) y mostrar su información completa en un **Modal** o panel lateral (**Offcanvas**) de Bootstrap (ver cómo [controlar un Modal desde JavaScript](/temas/5-dom/2-dom/#modificar-y-mostrar-componentes-modales-de-bootstrap)):
    - Nombre (`nombre`)
    - Imagen destacada (`imagen`)
    - Descripción (`descripcion`)
@@ -35,25 +35,6 @@ Crear la carpeta `tp-16/` en el repositorio de entregas con `index.html` y los a
 ---
 
 ## Detalles adicionales
-
-<details>
-    <summary>Abrir Modal de Bootstrap desde JavaScript</summary>
-
-Con un único elemento modal en el HTML:
-
-```js
-// Actualizar el contenido del modal con los datos recibidos de la API
-document.querySelector("#modalTitulo").innerText = comida.nombre;
-document.querySelector("#modalDescripcion").innerText = comida.descripcion;
-document.querySelector("#modalRegion").innerText = comida.region;
-document.querySelector("#modalImagen").src = comida.imagen;
-
-// Abrir el modal con la API de Bootstrap
-const modal = new bootstrap.Modal(document.getElementById("modalDetalle"));
-modal.show();
-```
-
-</details>
 
 <details>
     <summary>Ejemplo de petición POST con fetch (Power Up: Likes)</summary>
