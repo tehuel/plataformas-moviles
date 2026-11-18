@@ -28,7 +28,7 @@ jobs:
             destination: dist/ftp
           - target: dokploy
             artifact: dokploy-site
-            base-url: ${{ vars.DOKPLOY_BASE_URL || 'http://pm.apps.tec4.ar/' }}
+            base-url: ${{ vars.DOKPLOY_BASE_URL || 'https://plataformas-moviles.apps.tec4.ar/' }}
             destination: dist/dokploy
           - target: vercel
             artifact: vercel-site
