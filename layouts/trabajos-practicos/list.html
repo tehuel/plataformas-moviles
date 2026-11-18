@@ -12,7 +12,7 @@
 
     {{ range where .Site.Pages "Params.tags" "tp" }}
         <h2>
-            <a href="{{ .Permalink | relLangURL }}">
+            <a href="{{ .RelPermalink }}">
                 {{ .Title }}
             </a>
         </h2>

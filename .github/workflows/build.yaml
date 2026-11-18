@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: "production"
@@ -28,6 +30,14 @@ jobs:
             artifact: dokploy-site
             base-url: ${{ vars.DOKPLOY_BASE_URL || 'http://pm.apps.tec4.ar/' }}
             destination: dist/dokploy
+          - target: vercel
+            artifact: vercel-site
+            base-url: ${{ vars.VERCEL_BASE_URL || 'https://plataformas-moviles.vercel.app/' }}
+            destination: dist/vercel
+          - target: github-pages
+            artifact: github-pages-site
+            base-url: ${{ vars.GITHUB_PAGES_BASE_URL || 'https://tehuel.github.io/plataformas-moviles/' }}
+            destination: dist/github-pages
 
     steps:
       - name: Checkout
@@ -92,3 +102,55 @@ jobs:
           publish_dir: ./dist/dokploy
           force_orphan: true
           enable_jekyll: false
+
+  deploy-vercel:
+    name: Deploy Vercel
+    needs: build
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    steps:
+      - name: Download Vercel build
+        uses: actions/download-artifact@v4
+        with:
+          name: vercel-site
+          path: dist/vercel
+
+      - name: Verify Vercel configuration
+        run: |
+          test -n "$VERCEL_TOKEN" || { echo "Missing GitHub secret: VERCEL_TOKEN"; exit 1; }
+          test -n "$VERCEL_ORG_ID" || { echo "Missing GitHub secret: VERCEL_ORG_ID"; exit 1; }
+          test -n "$VERCEL_PROJECT_ID" || { echo "Missing GitHub secret: VERCEL_PROJECT_ID"; exit 1; }
+
+      - name: Link Vercel project
+        run: |
+          mkdir -p .vercel
+          printf '{"orgId":"%s","projectId":"%s"}' "$VERCEL_ORG_ID" "$VERCEL_PROJECT_ID" > .vercel/project.json
+
+      - name: Deploy Vercel
+        run: npx --yes vercel@latest deploy dist/vercel --prod --yes --token "$VERCEL_TOKEN"
+
+  deploy-github-pages:
+    name: Deploy GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download GitHub Pages build
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages-site
+          path: dist/github-pages
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/github-pages
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

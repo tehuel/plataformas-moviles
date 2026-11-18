@@ -1,0 +1,8 @@
+{{- $src := .Get "src" -}}
+{{- if not (or (hasPrefix $src "http://") (hasPrefix $src "https://")) -}}
+  {{- $src = printf "%s%s" site.Home.RelPermalink (strings.TrimPrefix $src "/") -}}
+{{- end -}}
+<figure>
+  <img src="{{ $src }}"{{ with .Get "alt" }} alt="{{ . }}"{{ end }}>
+  {{- with .Get "title" }}<figcaption>{{ . }}</figcaption>{{ end -}}
+</figure>

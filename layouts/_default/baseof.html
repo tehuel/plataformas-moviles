@@ -19,7 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
     <!-- Code CSS -->
-    <link href="{{ "/css/syntax.css" | relLangURL }}" rel="stylesheet">
+    <link href="{{ .Site.Home.RelPermalink }}css/syntax.css" rel="stylesheet">
 
     <style type="text/css">
       li > p {
@@ -68,16 +68,16 @@
       }
     </style>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Home.RelPermalink }}apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.Home.RelPermalink }}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.Home.RelPermalink }}favicon-16x16.png">
+    <link rel="mask-icon" href="{{ .Site.Home.RelPermalink }}safari-pinned-tab.svg" color="#5bbad5">
   </head>
   <body class="h-100 d-flex flex-column">
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
+        <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -94,7 +94,7 @@
               {{ $active := or $isSameUrl $isMenuCurrent}}
 
               <li class="nav-item">
-                <a class="nav-link{{ if $active }} active{{ end}}" aria-current="page" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                <a class="nav-link{{ if $active }} active{{ end}}" aria-current="page" href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
               </li>
             {{ end }}
           </ul>

@@ -1,0 +1,5 @@
+{{- $src := .Destination | safeURL -}}
+{{- if not (or (hasPrefix $src "http://") (hasPrefix $src "https://")) -}}
+  {{- $src = printf "%s%s" site.Home.RelPermalink (strings.TrimPrefix $src "/") -}}
+{{- end -}}
+<img src="{{ $src }}"{{ with .Text }} alt="{{ . }}"{{ end }}{{ with .Title }} title="{{ . }}"{{ end }}>

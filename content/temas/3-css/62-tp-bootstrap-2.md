@@ -7,7 +7,7 @@ tags: "tp"
 
 Usar Bootstrap para reconstruir "la estructura" de un sitio web, partiendo de un diseño.
 
-[<img src="/img/screen-figma-bootstrap.png"> click para ver versión completa del diseño](https://www.figma.com/file/FCPcWiELkdba5KxVf7c3YQ/Grillas---PMoviles?type=design&mode=design)
+[![Diseño esquemático](/img/screen-figma-bootstrap.png) click para ver versión completa del diseño](https://www.figma.com/file/FCPcWiELkdba5KxVf7c3YQ/Grillas---PMoviles?type=design&mode=design)
 
 # Consigna
 
