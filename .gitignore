@@ -13,6 +13,7 @@ node_modules/
 go.sum
 resources/
 public/
+dist/
 
 # Mac
 .DS_Store
