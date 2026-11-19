@@ -48,7 +48,8 @@ Definir estilos condicionales utilizando media queries para adaptar el diseño a
       Los planes para esta adaptación cinematográfica comenzaron en febrero de 2014 cuando <a href="https://es.wikipedia.org/wiki/Markus_Persson">Markus Persson</a> reveló que Mojang estaba en conversaciones con <a href="https://es.wikipedia.org/wiki/Warner_Bros.">Warner Bros</a> para el proyecto. El rodaje comenzó a mediados de enero de 2024 en Nueva Zelanda y se espera que la obra se estrene el 4 de abril de 2025.
     </p>
     <figure>
-      {{< figure src="/img/minecraft.jpg" alt="Minecraft Cover" title="Portada del Minecraft" >}}
+      <img src="{{< absurl "/img/minecraft.jpg" >}}" alt="Minecraft Cover">
+      <figcaption>Portada del Minecraft</figcaption>
     </figure>
     <p>La película tratará de una adolescente que intentará salvar el <a href="https://minecraft.fandom.com/es/wiki/Superficie">Overwolrd</a> del <a href="https://minecraft.fandom.com/es/wiki/Enderdragón">Enderdragon</a></p>
   </article>
