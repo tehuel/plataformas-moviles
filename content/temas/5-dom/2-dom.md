@@ -113,3 +113,4 @@ let nuevoElemento = elementoPadre.cloneNode(true);
 let elementoPadre = document.querySelector('div.padre');
 elementoPadre.remove();
 ```
+
