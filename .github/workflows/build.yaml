@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: "production"
@@ -83,65 +81,35 @@ jobs:
           local-dir: ./dist/ftp/
           server-dir: ${{ secrets.ftp_directory }}
 
-  deploy-dokploy:
-    name: Deploy Dokploy
+  publish-static-branches:
+    name: Publish ${{ matrix.target }} branch
     needs: build
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - target: dokploy
+            artifact: dokploy-site
+            branch: dokploy
+          - target: vercel
+            artifact: vercel-site
+            branch: vercel
+          - target: github-pages
+            artifact: github-pages-site
+            branch: gh-pages
     steps:
-      - name: Download Dokploy build
+      - name: Download ${{ matrix.target }} build
         uses: actions/download-artifact@v4
         with:
-          name: dokploy-site
-          path: dist/dokploy
+          name: ${{ matrix.artifact }}
+          path: dist/site
 
-      - name: Publish Dokploy Static branch
+      - name: Publish ${{ matrix.target }} branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: dokploy
-          publish_dir: ./dist/dokploy
+          publish_branch: ${{ matrix.branch }}
+          publish_dir: ./dist/site
           force_orphan: true
           enable_jekyll: false
-
-  deploy-vercel:
-    name: Publish Vercel Static branch
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download Vercel build
-        uses: actions/download-artifact@v4
-        with:
-          name: vercel-site
-          path: dist/vercel
-
-      - name: Publish Vercel Static branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: vercel
-          publish_dir: ./dist/vercel
-          force_orphan: true
-          enable_jekyll: false
-
-  deploy-github-pages:
-    name: Deploy GitHub Pages
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Download GitHub Pages build
-        uses: actions/download-artifact@v4
-        with:
-          name: github-pages-site
-          path: dist/github-pages
-
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist/github-pages
-
-      - name: Deploy GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
