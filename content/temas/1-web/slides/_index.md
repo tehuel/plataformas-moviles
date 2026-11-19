@@ -92,7 +92,7 @@ Secuencia de Navegación
 
 ## Monopolio
 
-{{< figure src="/img/browser-yearly-2009-2025.png" >}}
+![](/img/browser-yearly-2009-2025.png)
 
 ---
 

@@ -12,7 +12,7 @@ Google Sheets es una opción muy conveniente para almacenar y publicar datos por
 - Utilizar la primera fila para definir los nombres de los campos (por ejemplo: nombre, email, telefono).
 - Abrir el menú “Compartir” y configurar la opción “Cualquier persona con el enlace” - “Lector” para permitir el acceso a la hoja.
 
-{{< figure src="/img/compartir-planilla.png" >}}
+![](/img/compartir-planilla.png)
 
 ## 2. Obtener el ID de la hoja
 

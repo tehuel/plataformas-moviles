@@ -66,7 +66,7 @@ El front-end y el back-end se comunican a través de la **API HTTP**, que funcio
 2. El back-end busca los datos y devuelve una **respuesta HTTP**.
 3. Los datos de la respuesta viajan en formato **JSON**, un formato de texto que tanto el cliente como el servidor saben leer (lo vemos en detalle en [6.2](/temas/6-api/2-json/)).
 
-{{< figure src="/img/arquitectura.png" title="Arquitectura de ejemplo de una aplicación con API HTTP" >}}
+![](/img/arquitectura.png "Arquitectura de ejemplo de una aplicación con API HTTP")
 
 Una ventaja de esta división es que un mismo back-end puede atender a muchos front-ends distintos: una web, una app de Android y una de iOS pueden usar la misma API.
 
@@ -83,6 +83,6 @@ La forma de organizar las aplicaciones fue cambiando con el tiempo:
 2. **Front-end + API**: se separa la interfaz de usuario del resto, y ambas partes se comunican mediante una API HTTP. Es la arquitectura que usamos en esta unidad.
 3. **Microservicios**: el back-end se divide a su vez en muchos servicios pequeños e independientes, cada uno con una responsabilidad (y muchas veces con su propia base de datos), que se comunican entre sí también mediante APIs.
 
-{{< figure src="/img/monolito-microservicios.png" title="Comparativa entre arquitecturas monolítica y de microservicios" >}}
+![](/img/monolito-microservicios.png "Comparativa entre arquitecturas monolítica y de microservicios")
 
 </details>

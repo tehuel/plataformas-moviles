@@ -63,7 +63,7 @@ async function obtenerImagenDesdeApi() {
 
 Resultado:
 
-{{< figure src="/img/ejemplofetch.png" title="Respuesta de API" >}}
+![](/img/ejemplofetch.png "Respuesta de API")
 
 # Obtener imagen aleatoria
 

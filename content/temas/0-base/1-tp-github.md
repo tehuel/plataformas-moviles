@@ -26,7 +26,7 @@ Crear un nuevo repositorio, con el nombre `plataformas-moviles-entregas`.
 <details>
     <summary>(Screenshot)</summary>
 
-{{< figure src="/img/github-nuevo-repo.png" >}}
+![](/img/github-nuevo-repo.png)
 
 </details>
 
@@ -45,14 +45,14 @@ Dentro del repositorio recién creado, agregar un nuevo archivo.
 <details>
     <summary>(Si el repo está vacío)</summary>
 
-{{< figure src="/img/github-new-file-1.png" >}}
+![](/img/github-new-file-1.png)
 
 </details>
 
 <details>
     <summary>(Si el repo ya tiene archivos)</summary>
 
-{{< figure src="/img/github-new-file-2.png" >}}
+![](/img/github-new-file-2.png)
 
 </details>
 
@@ -85,14 +85,14 @@ Activar GitHub Pages.
 4. Click en `save` para guardar los cambios.
 5. Esperar unos minutos a que el servicio se active.
 
-{{< figure src="/img/tp-1-pages.png" >}}
+![](/img/tp-1-pages.png)
 
 Si todo salió bien, al volver a entrar a la sección pages se debería ver el link en un recuadro.
 
 <details>
     <summary>(Screenshot: link en recuadro)</summary>
 
-{{< figure src="/img/github-pages-link.png" >}}
+![](/img/github-pages-link.png)
 
 </details>
 
@@ -103,7 +103,7 @@ Agregar link a detalles del repositorio.
 <details>
     <summary>(Screenshot: link en detalles)</summary>
 
-{{< figure src="/img/github-repo-details.png" >}}
+![](/img/github-repo-details.png)
 
 </details>
 

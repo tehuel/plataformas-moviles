@@ -20,6 +20,9 @@ theme = ["reveal-hugo"]
 [markup.goldmark.renderer]
 	unsafe = true
 
+[markup.goldmark.parser]
+	wrapStandAloneImageWithinParagraph = false
+
 [markup.goldmark.parser.attribute]
 	block = true
 [outputFormats.Reveal]

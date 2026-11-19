@@ -1,5 +1,5 @@
 {{- $href := .Destination -}}
 {{- if hasPrefix $href "/" -}}
-  {{- $href = printf "%s%s" site.Home.RelPermalink (strings.TrimPrefix "/" $href) -}}
+  {{- $href = strings.TrimPrefix "/" $href | relURL -}}
 {{- end -}}
 <a href="{{ $href | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>

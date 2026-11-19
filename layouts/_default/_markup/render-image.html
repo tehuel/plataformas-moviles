@@ -1,5 +1,9 @@
-{{- $src := .Destination -}}
-{{- if not (or (hasPrefix $src "http://") (hasPrefix $src "https://")) -}}
-  {{- $src = printf "%s%s" site.Home.RelPermalink (strings.TrimPrefix "/" $src) -}}
+{{- $src := strings.TrimPrefix "/" .Destination | relURL -}}
+{{- if .IsBlock -}}
+<figure>
+  <img src="{{ $src | safeURL }}"{{ with .PlainText }} alt="{{ . }}"{{ end }}>
+  {{- with .Title }}<figcaption>{{ . }}</figcaption>{{ end -}}
+</figure>
+{{- else -}}
+<img src="{{ $src | safeURL }}"{{ with .PlainText }} alt="{{ . }}"{{ end }}{{ with .Title }} title="{{ . }}"{{ end }}>
 {{- end -}}
-<img src="{{ $src | safeURL }}"{{ with .Text }} alt="{{ . }}"{{ end }}{{ with .Title }} title="{{ . }}"{{ end }}>

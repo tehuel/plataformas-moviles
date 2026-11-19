@@ -16,7 +16,7 @@ Hypertext Markup Language
 
 ---
 
-{{< figure src="/img/html-tatoo.jpg" >}}
+![](/img/html-tatoo.jpg)
 
 ---
 
@@ -32,7 +32,7 @@ de un documento
 
 ---
 
-{{< figure src="/img/etiqueta-html.png" >}}
+![](/img/etiqueta-html.png)
 
 ---
 
@@ -70,7 +70,7 @@ Refiere al significado o la estructura del contenido que se está etiquetando.
 
 ---
 
-{{< figure src="/img/semantica.png" >}}
+![](/img/semantica.png)
 
 ---
 
