@@ -113,3 +113,13 @@ jobs:
           publish_dir: ./dist/site
           force_orphan: true
           enable_jekyll: false
+
+      - name: Trigger Dokploy deployment
+        if: matrix.target == 'dokploy'
+        env:
+          DOKPLOY_WEBHOOK_URL: ${{ secrets.DOKPLOY_WEBHOOK_URL }}
+        run: |
+          curl -fsS -X POST "$DOKPLOY_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -H "X-GitHub-Event: push" \
+            -d '{"ref":"refs/heads/dokploy"}'
