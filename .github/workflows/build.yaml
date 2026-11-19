@@ -104,13 +104,9 @@ jobs:
           enable_jekyll: false
 
   deploy-vercel:
-    name: Deploy Vercel
+    name: Publish Vercel Static branch
     needs: build
     runs-on: ubuntu-latest
-    env:
-      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
     steps:
       - name: Download Vercel build
         uses: actions/download-artifact@v4
@@ -118,19 +114,14 @@ jobs:
           name: vercel-site
           path: dist/vercel
 
-      - name: Verify Vercel configuration
-        run: |
-          test -n "$VERCEL_TOKEN" || { echo "Missing GitHub secret: VERCEL_TOKEN"; exit 1; }
-          test -n "$VERCEL_ORG_ID" || { echo "Missing GitHub secret: VERCEL_ORG_ID"; exit 1; }
-          test -n "$VERCEL_PROJECT_ID" || { echo "Missing GitHub secret: VERCEL_PROJECT_ID"; exit 1; }
-
-      - name: Link Vercel project
-        run: |
-          mkdir -p .vercel
-          printf '{"orgId":"%s","projectId":"%s"}' "$VERCEL_ORG_ID" "$VERCEL_PROJECT_ID" > .vercel/project.json
-
-      - name: Deploy Vercel
-        run: npx --yes vercel@latest deploy dist/vercel --prod --yes --token "$VERCEL_TOKEN"
+      - name: Publish Vercel Static branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: vercel
+          publish_dir: ./dist/vercel
+          force_orphan: true
+          enable_jekyll: false
 
   deploy-github-pages:
     name: Deploy GitHub Pages
