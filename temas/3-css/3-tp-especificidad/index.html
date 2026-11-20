@@ -1,0 +1,78 @@
+<!doctype html><html lang=es-AR class=h-100><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.145.0"><title>3.3: tp-3 (Especificidad) | Plataformas Móviles</title>
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/cosmo/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=/css/syntax.css rel=stylesheet><style type=text/css>li>p{margin:0}.container{max-width:60rem;margin:0 auto}.container img{max-width:100%}figcaption{text-align:right;font-style:italic;color:var(--bs-gray-600)}blockquote{padding:1em;border-left:3px solid var(--bs-gray-600);background-color:var(--bs-gray-100)}blockquote p:last-child,footer p:last-child{margin:0}.highlight{position:relative}.highlight pre{border:var(--bs-border-width)var(--bs-border-style)var(--bs-gray-500);border-radius:var(--bs-border-radius);padding:1em}.btn-copy-code{position:absolute;right:0;top:-1rem}</style><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5></head><body class="h-100 d-flex flex-column"><nav class="navbar navbar-expand-sm navbar-dark bg-dark"><div class=container><a class=navbar-brand href=/>Plataformas Móviles</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarSupportedContent><ul class="navbar-nav ms-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" href=/temas/>Temas</a></li><li class=nav-item><a class=nav-link href=/trabajos-practicos/>Trabajos Prácticos</a></li><li class=nav-item><a class=nav-link href=/recursos/>Recursos</a></li></ul></div></div></nav><div class="container flex-grow-1 my-3"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/temas/>Temas</a></li><li class=breadcrumb-item><a href=/temas/3-css/>Unidad 3: CSS</a></li><li class="breadcrumb-item active" aria-current=page>3.3: tp-3 (Especificidad)</li></ol></nav><div class="text-center border-bottom mb-4"><h1 class=display-3>3.3: tp-3 (Especificidad)</h1></div><h2 id=objetivo>Objetivo</h2><p>Practicar el uso de la especificidad en CSS para aplicar estilos de manera precisa.</p><h2 id=formato-de-entrega>Formato de Entrega</h2><ul><li>Crear un archivo HTML en la ruta <code>tp-3/index.html</code>, con el contenido del HTML inicial.</li><li>Crear una hoja de estilos CSS vinculada al HTML.</li><li>Subir ambos archivos al repositorio de entregas.</li></ul><h3 id=html-inicial>HTML Inicial</h3><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#00f>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;html lang=<span style=color:#a31515>&#34;es&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;head&gt;
+</span></span><span style=display:flex><span>	&lt;meta charset=<span style=color:#a31515>&#34;utf-8&#34;</span>&gt;
+</span></span><span style=display:flex><span>	&lt;meta name=<span style=color:#a31515>&#34;viewport&#34;</span> content=<span style=color:#a31515>&#34;width=device-width, initial-scale=1&#34;</span>&gt;
+</span></span><span style=display:flex><span>	&lt;title&gt;TP3 - Especificidad CSS&lt;/title&gt;
+</span></span><span style=display:flex><span>	&lt;link rel=<span style=color:#a31515>&#34;stylesheet&#34;</span> type=<span style=color:#a31515>&#34;text/css&#34;</span> href=<span style=color:#a31515>&#34;style.css&#34;</span>&gt;
+</span></span><span style=display:flex><span>	&lt;style type=<span style=color:#a31515>&#34;text/css&#34;</span>&gt;
+</span></span><span style=display:flex><span>		body {
+</span></span><span style=display:flex><span>			<span style=color:#00f>font-size</span>: 18<span style=color:#2b91af>px</span>;
+</span></span><span style=display:flex><span>			<span style=color:#00f>background-color</span>: #ffe;
+</span></span><span style=display:flex><span>			<span style=color:#00f>color</span>: #210;
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>		#contenedor {
+</span></span><span style=display:flex><span>			<span style=color:#00f>max-width</span>: 40<span style=color:#2b91af>ch</span>;
+</span></span><span style=display:flex><span>			<span style=color:#00f>margin</span>: 2<span style=color:#2b91af>rem</span> <span style=color:#00f>auto</span>;
+</span></span><span style=display:flex><span>			<span style=color:#00f>padding</span>: 1<span style=color:#2b91af>rem</span>;
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>		h1 {
+</span></span><span style=display:flex><span>			<span style=color:#00f>font-size</span>: 2<span style=color:#2b91af>rem</span>;
+</span></span><span style=display:flex><span>			<span style=color:#00f>text-align</span>: <span style=color:#00f>left</span>;
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>		p {
+</span></span><span style=display:flex><span>			<span style=color:#00f>font-family</span>: <span style=color:#00f>sans-serif</span>;
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>		#primer-parrafo {
+</span></span><span style=display:flex><span>			<span style=color:#00f>font-size</span>: 1.3<span style=color:#2b91af>rem</span>;
+</span></span><span style=display:flex><span>			<span style=color:#00f>background-color</span>: #eec;
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>		p.<span style=color:#2b91af>importante</span> em {
+</span></span><span style=display:flex><span>			<span style=color:#00f>font-weight</span>: <span style=color:#00f>bold</span>;
+</span></span><span style=display:flex><span>			<span style=color:#00f>color</span>: #144;
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>		p.<span style=color:#2b91af>novelas</span> a {
+</span></span><span style=display:flex><span>			<span style=color:#00f>outline</span>: <span style=color:#00f>none</span>;
+</span></span><span style=display:flex><span>			<span style=color:#00f>text-decoration</span>: <span style=color:#00f>none</span>;
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>		p.<span style=color:#2b91af>novelas</span> a:hover {
+</span></span><span style=display:flex><span>			<span style=color:#00f>text-decoration</span>: <span style=color:#00f>underline</span>;
+</span></span><span style=display:flex><span>			<span style=color:#00f>background-color</span>: #ccd;
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>		body p.<span style=color:#2b91af>fuente</span>.<span style=color:#2b91af>parrafo</span> {
+</span></span><span style=display:flex><span>			<span style=color:#00f>color</span>: #bbb <span style=color:#00f>!important</span>;
+</span></span><span style=display:flex><span>			<span style=color:#00f>font-size</span>: 0.9<span style=color:#2b91af>rem</span>;
+</span></span><span style=display:flex><span>			<span style=color:#00f>opacity</span>: 50<span style=color:#2b91af>%</span>;
+</span></span><span style=display:flex><span>			<span style=color:#00f>text-align</span>: <span style=color:#00f>center</span>;
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>	&lt;/style&gt;
+</span></span><span style=display:flex><span>&lt;/head&gt;
+</span></span><span style=display:flex><span>&lt;body&gt;
+</span></span><span style=display:flex><span>	&lt;article id=<span style=color:#a31515>&#34;contenedor&#34;</span>&gt;
+</span></span><span style=display:flex><span>		&lt;h1 class=<span style=color:#a31515>&#34;titulo&#34;</span>&gt;Gandalf&lt;/h1&gt;
+</span></span><span style=display:flex><span>		
+</span></span><span style=display:flex><span>		&lt;p id=<span style=color:#a31515>&#34;primer-parrafo&#34;</span> class=<span style=color:#a31515>&#34;importante parrafo&#34;</span>&gt;
+</span></span><span style=display:flex><span>			Gandalf es un personaje ficticio perteneciente al &lt;em&gt;legendarium&lt;/em&gt; del escritor británico &lt;a href=<span style=color:#a31515>&#34;https://es.wikipedia.org/wiki/J._R._R._Tolkien&#34;</span>&gt;J. R. R. Tolkien.&lt;/a&gt;
+</span></span><span style=display:flex><span>		&lt;/p&gt;
+</span></span><span style=display:flex><span>		
+</span></span><span style=display:flex><span>		&lt;p class=<span style=color:#a31515>&#34;novelas parrafo&#34;</span>&gt;
+</span></span><span style=display:flex><span>			Es uno de los principales personajes de las novelas &lt;a href=<span style=color:#a31515>&#34;https://es.wikipedia.org/wiki/El_hobbit&#34;</span>&gt;El hobbit&lt;/a&gt; y &lt;a href=<span style=color:#a31515>&#34;https://es.wikipedia.org/wiki/El_Señor_de_los_Anillos&#34;</span>&gt;El Señor de los Anillos&lt;/a&gt;, aunque también aparece en &lt;span class=<span style=color:#a31515>&#34;complicado&#34;</span> style=<span style=color:#a31515>&#34;color: #622&#34;</span>&gt;El Silmarillion&lt;/span&gt;, donde se narran sus orígenes.
+</span></span><span style=display:flex><span>		&lt;/p&gt;
+</span></span><span style=display:flex><span>	&lt;/article&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	&lt;p class=<span style=color:#a31515>&#34;fuente parrafo&#34;</span>&gt;
+</span></span><span style=display:flex><span>		Fuente: &lt;a href=<span style=color:#a31515>&#34;https://es.wikipedia.org/wiki/Gandalf&#34;</span>&gt;https://es.wikipedia.org/wiki/Gandalf&lt;/a&gt;
+</span></span><span style=display:flex><span>	&lt;/p&gt;
+</span></span><span style=display:flex><span>&lt;/body&gt;
+</span></span><span style=display:flex><span>&lt;/html&gt;
+</span></span></code></pre></div><h2 id=consigna>Consigna</h2><h3 id=1-crear-archivo-css>1. Crear Archivo CSS</h3><p>Crear en el repositorio de GitHub un archivo <code>style.css</code> al mismo nivel que el archivo HTML anterior, esto sería en <code>tp-3/style.css</code>.</p><h3 id=2-agregar-estilos-css>2. Agregar estilos CSS</h3><p>Dentro de este archivo CSS, siempre teniendo en cuenta las reglas ya existentes en el HTML, implementar las siguientes reglas:</p><ol><li><p>Una regla para centrar (declaración <code>text-align: center</code>) el título <code>&lt;h1></code>.</p></li><li><p>Una regla para aplicar una fuente con serifas (declaración <code>font-family: serif;</code>) a todos los párrafos del documento.</p></li><li><p>Una regla para que el elemento con id <code>#primer-parrafo</code> tenga color de fondo <code>#CEE</code>.</p></li><li><p>Una regla para cambiar el color a <code>#933</code> para los elementos <code>&lt;em></code> del primer párrafo.</p></li><li><p>Una regla para que todos los links muestren outline (declaración <code>outline: 1px solid #333</code>).</p></li><li><p>Una regla para que el texto <code>p.fuente</code> tenga su opacidad en 100% (se puede usar la declaración <code>opacity: 100%;</code>).</p></li><li><p>Una regla para que los párrafos sin id tengan un color de fondo <code>rgba(190, 120, 240, 0.6)</code>.</p></li></ol><h2 id=bonus-track>Bonus Track</h2><ol><li><p>Una regla para que el texto del elemento <code>p.fuente</code> tenga color <code>#000</code>.</p></li><li><p>Una regla para que el elemento con la clase <code>.complicado</code> aparezca en negrita y con color <code>#C62</code>.</p></li></ol><blockquote><p><strong>Atención:</strong></p><ul><li>No modificar la estructura de las etiquetas HTML ya existentes.</li><li>Antes de utilizar <code>!important</code>, asegurarse de que no exista otra alternativa.</li></ul></blockquote></div><footer class="footer py-5 bg-dark text-light"><div class=container><div class=row><div class=col-md><p>2026 | Plataformas Móviles</p></div><div class="col-md text-md-end"><a class=link-light href=https://github.com/tehuel/plataformas-moviles/edit/main/content/temas/3-css/3-tp-especificidad.md>Editar en GitHub</a> | <a class=link-light href=https://github.com/tehuel/plataformas-moviles/blob/main/content/temas/3-css/3-tp-especificidad.md>Ver Código Fuente</a></div></div></div></footer><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script>function initClipboardForCodeButtons(){if(typeof ClipboardJS=="undefined")return;document.querySelectorAll(".highlight").forEach(function(e,t){var n,o,s=e.querySelector("pre code");if(!s)return;s.id||(s.id="code-block-"+t),n=document.createElement("button"),n.className="btn btn-sm btn-secondary btn-copy-code",n.type="button",n.innerText="Copiar",n.setAttribute("data-clipboard-target","#"+s.id),e.insertBefore(n,e.firstChild),o=document.createElement("div"),o.className="highlight-wrapper",e.parentNode.insertBefore(o,e),o.appendChild(e)});var e=new ClipboardJS(".btn-copy-code");e.on("success",function(e){setCopyStatus(e.trigger,!0),e.clearSelection()}),e.on("error",function(e){setCopyStatus(e.trigger,!1)})}function setCopyStatus(e,t){e.blur(),e.innerText=t?"Copiado":"No se pudo copiar";const n=t?"btn-success":"btn-danger";e.classList.add(n),setTimeout(function(){e.innerText="Copiar",e.classList.remove(n)},2e3)}initClipboardForCodeButtons()</script></body></html>

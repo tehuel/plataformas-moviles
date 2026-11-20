@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unidad 2: HTML on Plataformas Móviles</title><link>https://plataformas-moviles.vercel.app/temas/2-html/</link><description>Recent content in Unidad 2: HTML on Plataformas Móviles</description><generator>Hugo</generator><language>es-AR</language><atom:link href="https://plataformas-moviles.vercel.app/temas/2-html/index.xml" rel="self" type="application/rss+xml"/><item><title>2.1: Estructura del documento</title><link>https://plataformas-moviles.vercel.app/temas/2-html/1-estructura/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.vercel.app/temas/2-html/1-estructura/</guid><description>&lt;p>HTML, que significa &amp;ldquo;Lenguaje de Marcado de Hipertexto&amp;rdquo; (en inglés Hypertext Markup Language), es un estándar fundamental para la creación de páginas web.&lt;/p>
+&lt;p>HTML proporciona una estructura para la creación de documentos web y se utiliza para describir y definir el contenido de una página web, como texto, imágenes, enlaces, formularios, tablas, entre otros elementos. La esencia de HTML es el &amp;ldquo;marcado&amp;rdquo; de elementos mediante etiquetas, que son códigos encerrados entre corchetes angulares (&lt;code>&amp;lt;&amp;gt;&lt;/code>). Cada etiqueta representa un tipo de contenido o estructura y puede contener atributos que proporcionan información adicional sobre el elemento.&lt;/p></description></item><item><title>2.1: tp-1 (HTML)</title><link>https://plataformas-moviles.vercel.app/temas/2-html/1-tp-html/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.vercel.app/temas/2-html/1-tp-html/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Crear un archivo HTML estructurado correctamente a partir de un artículo de Wikipedia, aplicando etiquetas semánticas y respetando la jerarquía del contenido.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Crear un archivo HTML en la ruta &lt;code>tp-1/index.html&lt;/code>.&lt;/li>
+&lt;li>Subir el archivo al repositorio de entregas de la materia.&lt;/li>
+&lt;li>Comprobar que sea accesible vía GitHub Pages en una dirección de la forma &lt;code>https://{usuario}.github.io/{repositorio}/tp-1/index.html&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;h3 id="1-seleccionar-un-artículo-de-la-wikipedia">1. Seleccionar un Artículo de la Wikipedia&lt;/h3>
+&lt;p>Se puede elegir cualquier artículo de interés dentro de la Wikipedia.&lt;/p></description></item><item><title>2.2: Semántica del Código</title><link>https://plataformas-moviles.vercel.app/temas/2-html/2-semantica/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.vercel.app/temas/2-html/2-semantica/</guid><description>&lt;p>En HTML, la semántica define el significado y la estructura del contenido. El uso de etiquetas semánticas en lugar de elementos genéricos como &lt;code>&amp;lt;div&amp;gt;&lt;/code> mejora la organización del código, facilita su comprensión y puede aportar beneficios en accesibilidad y &lt;abbr title="Search Engine Optimization">SEO&lt;/abbr>.&lt;/p>
+&lt;p>Dentro de las etiquetas HTML semánticas podemos incluir:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>&amp;lt;header&amp;gt;&lt;/code>: Cabecera de un documento o sección.&lt;/li>
+&lt;li>&lt;code>&amp;lt;nav&amp;gt;&lt;/code>: Enlaces de navegación.&lt;/li>
+&lt;li>&lt;code>&amp;lt;article&amp;gt;&lt;/code>: Contenido independiente, como un artículo de blog.&lt;/li>
+&lt;li>&lt;code>&amp;lt;section&amp;gt;&lt;/code>: Sección dentro de un documento.&lt;/li>
+&lt;li>&lt;code>&amp;lt;aside&amp;gt;&lt;/code>: Contenido relacionado o secundario.&lt;/li>
+&lt;li>&lt;code>&amp;lt;footer&amp;gt;&lt;/code>: Pie de página o de sección.&lt;/li>
+&lt;li>&lt;code>&amp;lt;main&amp;gt;&lt;/code>: Contenido principal del documento.&lt;/li>
+&lt;li>&lt;code>&amp;lt;figure&amp;gt;&lt;/code> y &lt;code>&amp;lt;figcaption&amp;gt;&lt;/code>: Agrupa contenido ilustrativo, como imágenes o gráficos, generalmente acompañado de una descripción.&lt;/li>
+&lt;li>&lt;code>&amp;lt;mark&amp;gt;&lt;/code>: Resalta texto dentro del contenido.&lt;/li>
+&lt;li>&lt;code>&amp;lt;time&amp;gt;&lt;/code>: Representa una fecha u hora, útil para eventos o publicaciones.&lt;/li>
+&lt;li>&lt;code>&amp;lt;address&amp;gt;&lt;/code>: Define información de contacto, como direcciones físicas o electrónicas.&lt;/li>
+&lt;li>&lt;code>&amp;lt;cite&amp;gt;&lt;/code>: Indica la fuente de una cita o referencia.&lt;/li>
+&lt;li>&lt;code>&amp;lt;code&amp;gt;&lt;/code>: Representa fragmentos de código fuente en un documento.&lt;/li>
+&lt;li>&lt;code>&amp;lt;kbd&amp;gt;&lt;/code>: Indica entradas de teclado o comandos del usuario.&lt;/li>
+&lt;li>&lt;code>&amp;lt;samp&amp;gt;&lt;/code>: Representa la salida de un programa o sistema.&lt;/li>
+&lt;li>&lt;code>&amp;lt;abbr&amp;gt;&lt;/code>: Define abreviaciones o acrónimos, permitiendo mostrar su significado completo al pasar el cursor sobre ellos.&lt;/li>
+&lt;/ul>
+&lt;figure>
+ &lt;img src="https://plataformas-moviles.vercel.app/img/semantica.png" alt="Comparación entre estructura con etiquetas HTML semánticas y estructura solo con div">&lt;figcaption>HTML semántico / HTML no semántico&lt;/figcaption>&lt;/figure></description></item></channel></rss>
