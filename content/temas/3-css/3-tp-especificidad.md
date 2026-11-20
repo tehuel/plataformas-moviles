@@ -122,7 +122,7 @@ Dentro de este archivo CSS, siempre teniendo en cuenta las reglas ya existentes 
 
 2. Una regla para que el elemento con la clase `.complicado` aparezca en negrita y con color `#C62`.
 
-> **Atención**
+> **Atención:**
 > 
 > - No modificar la estructura de las etiquetas HTML ya existentes.
 > - Antes de utilizar `!important`, asegurarse de que no exista otra alternativa.

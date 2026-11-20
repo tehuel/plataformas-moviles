@@ -43,7 +43,7 @@ listaDeNumeros.push(nuevoValor);
 listaDeNumeros.unshift(nuevoValor);
 ```
 
-> Info: Existe otra forma de agregar o eliminar elementos usando posiciones, pero puede traer problemas:
+> **Nota:** Existe otra forma de agregar o eliminar elementos usando posiciones, pero puede traer problemas:
 > 
 > ```js
 > // agegar un nuevo elemento al final de la lista
@@ -192,11 +192,13 @@ console.log("Existe 'Lautaro' en lista?", listaDeNombres.includes("Lautaro"));
 
 ---
 
-> Comentario extra: Para intercambiar 2 posiciones de una lista es necesario usar una variable temporal
+> **Nota:** Para intercambiar 2 posiciones de una lista es necesario usar una variable temporal:
 >
->     let temporal = nuevaLista[0];
->     nuevaLista[0] = nuevaLista[1];
->     nuevaLista[1] = temporal;
+> ```js
+> let temporal = nuevaLista[0];
+> nuevaLista[0] = nuevaLista[1];
+> nuevaLista[1] = temporal;
+> ```
 
 ## Listas dentro de listas
 

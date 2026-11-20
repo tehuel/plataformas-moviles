@@ -19,7 +19,7 @@ Crear usuario en [GitHub](https://github.com) (si es que todavía no tienen).
 
 Crear un nuevo repositorio, con el nombre `plataformas-moviles-entregas`.
 
-> Atención al nombre, debe ser exacto:
+> **Atención:** el nombre debe ser exacto:
 > - todo en minúscula
 > - todo en plural
 > - separar con guión medio (`-`)

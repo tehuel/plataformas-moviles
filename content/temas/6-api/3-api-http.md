@@ -189,7 +189,7 @@ La forma más común es una **API key**: un código secreto que la API nos da al
 
 Por ejemplo, en las URLs de TheMealDB (`/api/json/v1/1/...`), el `1` es una API key de prueba pública. Para Google Maps, en cambio, hay que registrarse para obtener una.
 
-> **Cuidado**: una API key privada no se debe subir a un repositorio público ni incluir en el código de una página web, porque cualquiera podría verla y usarla.
+> **Cuidado:** una API key privada no se debe subir a un repositorio público ni incluir en el código de una página web, porque cualquiera podría verla y usarla.
 
 </details>
 

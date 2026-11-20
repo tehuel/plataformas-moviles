@@ -24,4 +24,4 @@ Usar Bootstrap para reconstruir "la estructura" de un sitio web, partiendo de un
 - Incluir los componentes de Bootstrap (como Card, Navbar, Button, etc...) que considere necesarios.
 - Replicar "la estructura" del sitio, sin preocuparse en el aspecto visual o el diseño, sino dando prioridad al comportamiento en diferentes breakpoints.
 
-> Contenido: El tema o contenido del trabajo es libre. En caso de querer generar texto de relleno, una práctica común es usar [Lorem Ipsum](https://www.lipsum.com/)
+> **Nota:** El tema o contenido del trabajo es libre. En caso de querer generar texto de relleno, una práctica común es usar [Lorem Ipsum](https://www.lipsum.com/)

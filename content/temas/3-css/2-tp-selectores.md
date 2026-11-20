@@ -51,7 +51,7 @@ Aplicar estilos básicos a un documento HTML utilizando selectores CSS.
 </html>
 ```
 
-> Nota: Sería buena idea recordar también modificar el archivo `index.html` (en la raiz del repositorio) para incluir un link a este nuevo `tp-2/index.html` recién creado.
+> **Nota:** Sería buena idea recordar también modificar el archivo `index.html` (en la raiz del repositorio) para incluir un link a este nuevo `tp-2/index.html` recién creado.
 
 ## Consigna
 
@@ -86,7 +86,7 @@ Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 15. Mostrar los links sin atributo `href` en cursiva.
 16. Mostrar de manera alternada el color de fondo de cada uno de los elementos de los listados de películas entre `#111` y `#333`.
 
-> **Atención**
+> **Atención:**
 > 
 > - No está permitido el uso de estilos *inline*.
 > - No modificar la estructura de las etiquetas HTML ya existentes.

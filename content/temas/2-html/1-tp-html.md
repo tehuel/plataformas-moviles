@@ -25,11 +25,7 @@ Otra opción es usar este link para navegar hacia un [artículo aleatorio](https
 
 Pegar el contenido como texto plano en el archivo HTML creado.
 
-<div class="card text-bg-warning">
-  <div class="card-body">
-    No copiar el código HTML de wikipedia, sólo copiar el contenido en formato texto plano
-  </div>
-</div>
+> **Atención:** No copiar el código HTML de Wikipedia, solo copiar el contenido en formato texto plano.
 
 ### 3. Estructurar el contenido con HTML
 
