@@ -9,10 +9,9 @@ Definir funciones para el manejo de listas (arrays) dentro del lenguaje JavaScri
 
 ## Formato de Entrega
 
-- Subir todos los archivos a un directorio `tp-9` en el repositorio de entregas en GitHub. Deberian quedar los 2 archivos (`index.html`, `listas.js`) dentro del mismo directorio.
-- En el archivo `.js` implementar las funciones solicitadas.
+- Subir todos los archivos a un directorio `tp-9/` en el repositorio de entregas en GitHub. Deberian quedar los 2 archivos (`index.html`, `listas.js`) dentro del mismo directorio.
 
-### HTML Inicial
+### Código Inicial
 
 Archivo `index.html`:
 
@@ -298,7 +297,14 @@ function enumerarLista(listaDePalabras) {
 console.log("enumerarLista(): ", enumerarLista(["Han", "Leia", "Luke", "Yoda"]))
 ```
 
+## Consigna
+
+- En el archivo `.js` implementar las funciones solicitadas.
+
 ## Condiciones
 
 - No modificar el código HTML provisto.
+
+## Bonus Track
+
 - (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.

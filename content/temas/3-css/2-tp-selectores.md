@@ -9,7 +9,7 @@ Aplicar estilos básicos a un documento HTML utilizando selectores CSS.
 
 ## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `/tp-2/index.html`, con el contenido del HTML inicial.
+- Crear un archivo HTML en la ruta `tp-2/index.html`, con el contenido del HTML inicial.
 - Agregar estilos CSS al documento HTML (usando un archivo `.css` externo o una etiqueta `<style>` dentro del documento).
 - Subir todo al repositorio de entregas en GitHub.
 
@@ -51,7 +51,7 @@ Aplicar estilos básicos a un documento HTML utilizando selectores CSS.
 </html>
 ```
 
-> Nota: Sería buena idea recordar también modificar el archivo `/index.html` (en la raiz del repositorio) para incluir un link a este nuevo `/tp-2/index.html` recién creado.
+> Nota: Sería buena idea recordar también modificar el archivo `index.html` (en la raiz del repositorio) para incluir un link a este nuevo `tp-2/index.html` recién creado.
 
 ## Consigna
 
@@ -77,7 +77,7 @@ Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 9. Hacer que el título principal cambie de color cuando se pasa el puntero por encima a `#ff0`.
 10. Hacer que los links visitados cambien a color `gray`.
 
-### 3. Bonus Tracks
+## Bonus Track
 
 11. Agregar `margin-left` al segundo listado de películas.
 12. Agregar `margin-top` al último elemento del tercer listado de películas.

@@ -9,10 +9,11 @@ En este trabajo práctico vamos a usar el tipo de datos `objeto` dentro del leng
 
 ## Formato de Entrega
 
-- Subir todos los archivos a un directorio `tp-10` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `objetos.js`) dentro del mismo directorio.
-- En el archivo `.js` implementar las funciones solicitadas.
+- Subir todos los archivos a un directorio `tp-10/` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `objetos.js`) dentro del mismo directorio.
 
-### HTML Inicial
+### Código Inicial
+
+Archivo `index.html`:
 
 ```html
 <!DOCTYPE html>
@@ -29,6 +30,8 @@ En este trabajo práctico vamos a usar el tipo de datos `objeto` dentro del leng
 </body>
 </html>
 ```
+
+Archivo `objetos.js`:
 
 ```js
 var personaEjemplo = {
@@ -179,8 +182,15 @@ console.log("resultado personaMasGrande: ", personaMasGrande(
 ));
 ```
 
+## Consigna
+
+- En el archivo `.js` implementar las funciones solicitadas.
+
 ## Condiciones
 
 - No modificar el código provisto.
+
+## Bonus Track
+
 - (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
 

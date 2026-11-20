@@ -3,6 +3,8 @@ title: "0.0: TP Diagnóstico"
 tags: ["tp"]
 ---
 
+## Consigna
+
 Contestá y definí, con tus palabras, las siguientes preguntas.
 
 Es válido investigar en internet o en distintos medios, pero por favor no copies y pegues
@@ -10,7 +12,7 @@ definiciones (Prohibido ChatGPT). El objetivo de la actividad no es llenar pági
 
 > El Trabajo Práctico es individual.
 
-## Plataformas Móviles
+### Plataformas Móviles
 
 1. ¿Que diferencias hay entre un smartphone y un feature phone (o dumb phone)?
 1. ¿Qué diferencias encontrás entre un teléfono móvil (smartphone) y una computadora? ¿Y qué similitudes?
@@ -20,7 +22,7 @@ definiciones (Prohibido ChatGPT). El objetivo de la actividad no es llenar pági
 1. ¿Conocés la diferencia entre tipado estático y tipado dinámico de datos?
 1. ¿Conocés la diferencia entre error semántico y error sintáctico?
 
-## Tecnologías Web
+### Tecnologías Web
 
 1. ¿Qué es HTML? ¿Para qué sirve?
 1. ¿Qué es CSS? ¿Para qué sirve?

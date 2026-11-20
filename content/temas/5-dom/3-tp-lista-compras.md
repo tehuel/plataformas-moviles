@@ -10,7 +10,7 @@ Construir una lista de compras donde se puedan agregar productos dinámicamente 
 ## Formato de Entrega
 
 - Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
-- Subir el trabajo al repositorio de entregas, en el directorio `/tp-13/`.
+- Subir el trabajo al repositorio de entregas, en el directorio `tp-13/`.
 
 ### HTML Inicial
 
@@ -80,7 +80,7 @@ Implementar las siguientes funcionalidades en la lista de compras:
 - Ordenar productos: posibilidad de ordenar la lista alfabéticamente.
 - Eliminar productos: cada producto debe poder eliminarse de forma individual.
 
-## Bonus Tracks
+## Bonus Track
 
 - Habilitar la edición del nombre de un producto ya agregado.
 - Marcar productos como comprados: Permitir marcar/desmarcar productos como comprados (por ejemplo, tachando el texto).

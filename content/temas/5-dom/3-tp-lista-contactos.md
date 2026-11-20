@@ -10,7 +10,7 @@ Construir una lista de contactos, ordenada alfabéticamente, y agregar funcional
 ## Formato de Entrega
 
 - Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
-- Subir el trabajo al repositorio de entregas, en el directorio `/tp-14/`.
+- Subir el trabajo al repositorio de entregas, en el directorio `tp-14/`.
 
 ### HTML Inicial
 

@@ -9,7 +9,7 @@ Practicar el uso de la especificidad en CSS para aplicar estilos de manera preci
 
 ## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `/tp-3/index.html`, con el contenido del HTML inicial.
+- Crear un archivo HTML en la ruta `tp-3/index.html`, con el contenido del HTML inicial.
 - Crear una hoja de estilos CSS vinculada al HTML.
 - Subir ambos archivos al repositorio de entregas.
 
@@ -96,7 +96,7 @@ Practicar el uso de la especificidad en CSS para aplicar estilos de manera preci
 
 ### 1. Crear Archivo CSS
 
-Crear en el repositorio de Github un archivo `style.css` al mismo nivel que el archivo HTML anterior, esto sería en `/tp-3/style.css`.
+Crear en el repositorio de Github un archivo `style.css` al mismo nivel que el archivo HTML anterior, esto sería en `tp-3/style.css`.
 
 ### 2. Agregar estilos CSS
 
@@ -116,7 +116,7 @@ Dentro de este archivo CSS, siempre teniendo en cuenta las reglas ya existentes 
 
 7. Una regla para que los párrafos sin id tengan un color de fondo `rgba(190, 120, 240, 0.6)`. 
 
-### 3. Bonus Track
+## Bonus Track
 
 1. Una regla para que el texto del elemento `p.fuente` tenga color `#000`.
 

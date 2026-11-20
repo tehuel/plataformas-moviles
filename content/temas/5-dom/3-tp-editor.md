@@ -10,7 +10,7 @@ El objetivo de este trabajo práctico es desarrollar un editor de texto básico 
 
 ## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `/tp-12/index.html` con el contenido inicial proporcionado.
+- Crear un archivo HTML en la ruta `tp-12/index.html` con el contenido inicial proporcionado.
 - Subir el archivo al repositorio de entregas.
 
 ### HTML Inicial

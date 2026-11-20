@@ -9,7 +9,7 @@ Crear un archivo HTML estructurado correctamente a partir de un artículo de Wik
 
 ## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `/tp-1/index.html`.
+- Crear un archivo HTML en la ruta `tp-1/index.html`.
 - Subir el archivo al repositorio de entregas de la materia.
 - Comprobar que sea accesible vía GitHub Pages en una dirección de la forma `https://{usuario}.github.io/{repositorio}/tp-1/index.html`.
 
@@ -19,7 +19,7 @@ Crear un archivo HTML estructurado correctamente a partir de un artículo de Wik
 
 Se puede elegir cualquier artículo de interés dentro de la Wikipedia. 
 
-Otra opción es usar este link para navegar hacia un artículo aleatorio: https://es.wikipedia.org/wiki/Special:Random
+Otra opción es usar este link para navegar hacia un [artículo aleatorio](https://es.wikipedia.org/wiki/Special:Random).
 
 ### 2. Copiar el contenido
 

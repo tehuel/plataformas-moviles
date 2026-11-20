@@ -9,8 +9,8 @@ Definir estilos condicionales utilizando media queries para adaptar el diseño a
 
 ## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `/tp-4/index.html`, con el contenido del HTML inicial.
-- Crear una hoja de estilos CSS vinculada al HTML, en la ruta `/tp-4/style.css`.
+- Crear un archivo HTML en la ruta `tp-4/index.html`, con el contenido del HTML inicial.
+- Crear una hoja de estilos CSS vinculada al HTML, en la ruta `tp-4/style.css`.
 - Subir ambos archivos al repositorio de entregas.
 
 ### HTML Inicial

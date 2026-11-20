@@ -10,7 +10,7 @@ Construir un tablero para mostrar y gestionar el puntaje de un partido entre 2 e
 ## Formato de Entrega
 
 - Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
-- Subir el trabajo al repositorio de entregas, en el directorio `/tp-15/`.
+- Subir el trabajo al repositorio de entregas, en el directorio `tp-15/`.
 
 ### HTML Inicial
 

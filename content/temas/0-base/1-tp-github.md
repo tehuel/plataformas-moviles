@@ -9,11 +9,13 @@ El objetivo principal de esta actividad es configurar un repositorio en GitHub q
 
 Además, se busca familiarizar a los estudiantes con el uso de herramienta de colaboración y publicación de contenido web, como lo son GitHub y GitHub Pages.
 
-### Usuario de Github
+## Consigna
+
+### 1. Usuario de Github
 
 Crear usuario en [GitHub](https://github.com) (si es que todavía no tienen).
 
-### Repositorio
+### 2. Repositorio
 
 Crear un nuevo repositorio, con el nombre `plataformas-moviles-entregas`.
 
@@ -38,7 +40,7 @@ Crear un nuevo repositorio, con el nombre `plataformas-moviles-entregas`.
 
 </details>
 
-### Archivo `index.html` dentro del repo
+### 3. Archivo `index.html` dentro del repo
 
 Dentro del repositorio recién creado, agregar un nuevo archivo.
 
@@ -75,7 +77,7 @@ El nombre del archivo debe ser `index.html`, y el contenido puede ser un HTML, p
 ```
 
 
-## Github Pages
+### 4. Github Pages
 
 Activar GitHub Pages.
 
@@ -96,7 +98,7 @@ Si todo salió bien, al volver a entrar a la sección pages se debería ver el l
 
 </details>
 
-### Link en Detalles
+### 5. Link en Detalles
 
 Agregar link a detalles del repositorio.
 
@@ -108,13 +110,13 @@ Agregar link a detalles del repositorio.
 </details>
 
 
-### Resultado
+## Resultado
 
 Si acceden a la URL `http://{usuario}.github.io/plataformas-moviles-entregas` deberian ver la página publicada.
 
 ---
 
-### Posibles Poblemas
+## Posibles Poblemas
 
 Llegar a alguno de los siguientes problemas no es algo negativo, por el contrario, indica que el proyecto ya estaría correctamente configurado.
 

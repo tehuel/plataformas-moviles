@@ -9,10 +9,11 @@ En este trabajo práctico vamos a usar de manera combinada los tipos de datos `l
 
 ## Formato de Entrega
 
-- Subir todos los archivos a un directorio `tp-11` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
-- En el archivo `.js` implementar las funciones solicitadas.
+- Subir todos los archivos a un directorio `tp-11/` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
 
-### HTML Inicial
+### Código Inicial
+
+Archivo `index.html`:
 
 ```html
 <!DOCTYPE html>
@@ -29,6 +30,8 @@ En este trabajo práctico vamos a usar de manera combinada los tipos de datos `l
 </body>
 </html>
 ```
+
+Archivo `listas-y-objetos.js`:
 
 ```js
 var listaPersonasEjemplo = [
@@ -158,7 +161,14 @@ function agregarHeladoFavorito(listaDePersonas, listaDeHelados) {
 console.log("agregarHeladoFavorito()", agregarHeladoFavorito(listaPersonasEjemplo, ["chocolate", "limon", "frutilla"]));
 ```
 
+## Consigna
+
+- En el archivo `.js` implementar las funciones solicitadas.
+
 ## Condiciones
 
 - No modificar el código provisto.
+
+## Bonus Track
+
 - (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
