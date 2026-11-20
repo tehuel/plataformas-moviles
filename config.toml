@@ -5,7 +5,6 @@ title = 'Plataformas Móviles'
 disableKinds = ['taxonomy', 'term']
 theme = ["reveal-hugo"]
 [params]
-	mainSections = ['temas']
 	repository = 'https://github.com/tehuel/plataformas-moviles'
 
 [pagination]
