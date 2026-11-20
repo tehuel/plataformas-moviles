@@ -1,6 +1,8 @@
 ---
-title: "4.2: tp-8 (Funciones)"
-tags: ["tp"]
+title: "TP: Funciones en JavaScript"
+weight: 15
+tipo: "tp"
+opcional: false
 ---
 
 ## Objetivo
@@ -9,7 +11,7 @@ Practicar la definición y el uso de funciones en JavaScript.
 
 ## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `tp-8/index.html`, con el contenido del HTML inicial.
+- Crear un archivo HTML en la ruta `tp-funciones/index.html`, con el contenido del HTML inicial.
 - Subir el archivo al repositorio de entregas.
 
 ### HTML Inicial
@@ -20,7 +22,7 @@ Practicar la definición y el uso de funciones en JavaScript.
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TP-8: Funciones en JavaScript</title>
+	<title>TP: Funciones en JavaScript</title>
 </head>
 <body>
 <p>Completar con la implementación de las funciones correspondientes</p>
@@ -170,7 +172,7 @@ console.log(palabraInvertida("abc"))
 
 ## Consigna
 
-- Implementar dentro del `<script>` las funciones solicitadas
+- Implementar dentro del `<script>` las funciones solicitadas.
 - Usar al menos una vez cada una de las 3 formas distintas de definición de funciones que vimos en clase.
 
 ## Condiciones

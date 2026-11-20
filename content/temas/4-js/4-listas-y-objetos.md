@@ -1,8 +1,11 @@
 ---
-title: "4.5: Listas y Objetos"
+title: "4.4: Listas y Objetos"
+weight: 40
+tipo: "apunte"
+opcional: false
 ---
 
-Queremos almacenar un listado de alumnos. Evaluamos distintas opciones
+Queremos almacenar un listado de alumnos. Evaluamos distintas opciones:
 
 ```js
 // la posición indica a qué alumno refiere en los listados

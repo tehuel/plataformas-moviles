@@ -1,6 +1,8 @@
 ---
-title: "4.3: tp-9 (Listas)"
-tags: ["tp"]
+title: "TP: Listas en JavaScript"
+weight: 25
+tipo: "tp"
+opcional: false
 ---
 
 ## Objetivo
@@ -9,7 +11,7 @@ Definir funciones para el manejo de listas (arrays) dentro del lenguaje JavaScri
 
 ## Formato de Entrega
 
-- Subir todos los archivos a un directorio `tp-9/` en el repositorio de entregas en GitHub. Deberían quedar los 2 archivos (`index.html`, `listas.js`) dentro del mismo directorio.
+- Subir todos los archivos a un directorio `tp-listas/` en el repositorio de entregas en GitHub. Deberían quedar los 2 archivos (`index.html`, `listas.js`) dentro del mismo directorio.
 
 ### Código Inicial
 
@@ -251,7 +253,7 @@ console.log("filtrarSoloPositivos(listaNumerosEjemplo): ", filtrarSoloPositivos(
  * - `listaDeNotas`: una lista (array) de números con valores entre 1 y 10.
  * 
  * Retorna: 
- * - un número, con la cantidad de notas que superan el criterio de aprobación.
+ * - un número, con la cantidad de notas que superan el criterio de aprobación (nota mayor o igual a 7).
  * 
  * Ejemplos:
  * - contarAprobados([10,2,9]) retorna 2

@@ -1,6 +1,8 @@
 ---
-title: "4.5: tp-11 (Listas y Objetos)"
-tags: ["tp"]
+title: "TP: Listas y Objetos"
+weight: 45
+tipo: "tp"
+opcional: false
 ---
 
 ## Objetivo
@@ -9,7 +11,7 @@ Usar de manera combinada los tipos de datos `lista` y `objeto` dentro del lengua
 
 ## Formato de Entrega
 
-- Subir todos los archivos a un directorio `tp-11/` en el repositorio de entregas en GitHub. Deberían quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
+- Subir todos los archivos a un directorio `tp-listas-y-objetos/` en el repositorio de entregas en GitHub. Deberían quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
 
 ### Código Inicial
 
@@ -167,7 +169,7 @@ console.log("agregarHeladoFavorito()", agregarHeladoFavorito(listaPersonasEjempl
 
 ## Condiciones
 
-- No modificar el código provisto.
+- No modificar el código HTML provisto.
 
 ## Bonus Track
 

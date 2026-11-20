@@ -1,5 +1,8 @@
 ---
-title: "4.4: Objetos"
+title: "4.3: Objetos"
+weight: 30
+tipo: "apunte"
+opcional: false
 ---
 
 Los objetos son estructuras que podemos definir para agrupar valores correspondientes a una entidad.
@@ -58,4 +61,3 @@ let objetoConDatosDeDistintosTipos = {
     unValorObjeto: {},
 }
 ```
-

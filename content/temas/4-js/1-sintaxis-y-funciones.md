@@ -1,6 +1,27 @@
 ---
-title: "4.2: Sintaxis Básica"
+title: "4.1: Entornos, Sintaxis y Funciones"
+weight: 10
+tipo: "apunte"
+opcional: false
 ---
+
+## Entornos de JavaScript
+
+### Stack de aplicaciones
+
+- fullstack
+- frontend
+- backend
+
+### Ejecución
+
+- compilado
+- interpretado
+
+### Tipado
+
+- tipado estático
+- tipado dinámico
 
 ## Tipos de Datos (Primitivos)
 

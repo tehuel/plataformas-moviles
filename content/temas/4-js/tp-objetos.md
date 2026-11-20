@@ -1,6 +1,8 @@
 ---
-title: "4.4: tp-10 (Objetos)"
-tags: ["tp"]
+title: "TP: Objetos en JavaScript"
+weight: 35
+tipo: "tp"
+opcional: false
 ---
 
 ## Objetivo
@@ -9,7 +11,7 @@ Usar el tipo de datos `objeto` dentro del lenguaje JavaScript.
 
 ## Formato de Entrega
 
-- Subir todos los archivos a un directorio `tp-10/` en el repositorio de entregas en GitHub. Deberían quedar los archivos (`index.html` y `objetos.js`) dentro del mismo directorio.
+- Subir todos los archivos a un directorio `tp-objetos/` en el repositorio de entregas en GitHub. Deberían quedar los archivos (`index.html` y `objetos.js`) dentro del mismo directorio.
 
 ### Código Inicial
 
@@ -193,4 +195,3 @@ console.log("resultado personaMasGrande: ", personaMasGrande(
 ## Bonus Track
 
 - (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
-
