@@ -1,5 +1,5 @@
 ---
-title: "TP: Lista de Compras"
+title: "Lista de Compras"
 weight: 28
 tipo: "tp"
 opcional: true

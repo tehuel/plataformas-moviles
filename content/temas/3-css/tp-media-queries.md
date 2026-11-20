@@ -1,5 +1,5 @@
 ---
-title: "TP: Media Queries"
+title: "Media Queries"
 weight: 27
 tipo: "tp"
 opcional: true

@@ -1,5 +1,5 @@
 ---
-title: "TP: Artículo estructurado con HTML"
+title: "Artículo estructurado con HTML"
 weight: 20
 tipo: "tp"
 opcional: false

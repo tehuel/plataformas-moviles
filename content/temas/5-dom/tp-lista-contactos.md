@@ -1,5 +1,5 @@
 ---
-title: "TP: Lista de Contactos"
+title: "Lista de Contactos"
 weight: 25
 tipo: "tp"
 opcional: false

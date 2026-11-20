@@ -1,5 +1,5 @@
 ---
-title: "TP: Especificidad CSS"
+title: "Especificidad CSS"
 weight: 18
 tipo: "tp"
 opcional: true

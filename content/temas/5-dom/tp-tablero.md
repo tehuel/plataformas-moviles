@@ -1,5 +1,5 @@
 ---
-title: "TP: Tablero de Puntos"
+title: "Tablero de Puntos"
 weight: 15
 tipo: "tp"
 opcional: false

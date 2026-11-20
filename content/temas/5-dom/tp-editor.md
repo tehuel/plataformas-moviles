@@ -1,5 +1,5 @@
 ---
-title: "TP: Editor de Texto"
+title: "Editor de Texto"
 weight: 18
 tipo: "tp"
 opcional: true

@@ -1,5 +1,5 @@
 ---
-title: "TP: Listas y Objetos"
+title: "Listas y Objetos"
 weight: 45
 tipo: "tp"
 opcional: false

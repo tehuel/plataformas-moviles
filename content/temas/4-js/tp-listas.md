@@ -1,5 +1,5 @@
 ---
-title: "TP: Listas en JavaScript"
+title: "Listas en JavaScript"
 weight: 25
 tipo: "tp"
 opcional: false

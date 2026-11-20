@@ -1,5 +1,5 @@
 ---
-title: "TP: Selectores CSS"
+title: "Selectores CSS"
 weight: 15
 tipo: "tp"
 opcional: false

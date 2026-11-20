@@ -1,5 +1,5 @@
 ---
-title: "Guía: Usar Google Sheets como API"
+title: "Usar Google Sheets como API"
 weight: 60
 tipo: "guia"
 opcional: true

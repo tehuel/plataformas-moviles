@@ -1,5 +1,5 @@
 ---
-title: "TP: Objetos en JavaScript"
+title: "Objetos en JavaScript"
 weight: 35
 tipo: "tp"
 opcional: false

@@ -1,5 +1,5 @@
 ---
-title: "TP: Repositorio y GitHub Pages"
+title: "Repositorio y GitHub Pages"
 weight: 25
 tipo: "tp"
 opcional: false

@@ -1,5 +1,5 @@
 ---
-title: "TP: Aplicación con API externa"
+title: "Aplicación con API externa"
 weight: 50
 tipo: "tp"
 opcional: false

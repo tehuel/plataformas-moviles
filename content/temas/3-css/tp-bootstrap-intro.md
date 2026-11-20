@@ -1,5 +1,5 @@
 ---
-title: "TP: Primeros pasos con Bootstrap"
+title: "Primeros pasos con Bootstrap"
 weight: 38
 tipo: "tp"
 opcional: true

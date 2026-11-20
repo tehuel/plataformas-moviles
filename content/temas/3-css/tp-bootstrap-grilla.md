@@ -1,5 +1,5 @@
 ---
-title: "TP: Grilla responsiva con Bootstrap"
+title: "Grilla responsiva con Bootstrap"
 weight: 25
 tipo: "tp"
 opcional: false

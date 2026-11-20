@@ -30,7 +30,6 @@ opcional: false
 - booleanos
 
 ```js
-// variables y tipos
 let MiVariable;
 MiVariable = 1;
 MiVariable = 1.234;
@@ -41,7 +40,6 @@ MiVariable = true;
 ## Condicionales
 
 ```js
-// condicionales
 if (condicion) {
 
 } else {

@@ -1,5 +1,5 @@
 ---
-title: "TP: Maquetado responsivo desde diseño"
+title: "Maquetado responsivo desde diseño"
 weight: 35
 tipo: "tp"
 opcional: false

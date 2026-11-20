@@ -1,5 +1,5 @@
 ---
-title: "TP: Funciones en JavaScript"
+title: "Funciones en JavaScript"
 weight: 15
 tipo: "tp"
 opcional: false
