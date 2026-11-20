@@ -9,7 +9,7 @@ Los objetos se componen de propiedades con sus respectivos valores. Estas propie
 ## Declaración y creación de Objetos
 
 ```js
-let objetoAlumno = {
+let alumno = {
     nombre: "Juan",
     apellido: "Pérez",
     "edad": 18,
@@ -19,13 +19,13 @@ let objetoAlumno = {
 let objetoVacio = {};
 ```
 
-Acceder los valores dentro de los campos (atributos, claves) de un objeto
+## Acceso a propiedades
 
 ```js
-// acceso por sintáxis de punto
+// acceso por sintaxis de punto
 alumno.edad;
 
-// acceso por sintáxis de corchetes
+// acceso por sintaxis de corchetes
 alumno["edad"]
 alumno["Un.Campo.Apodo"]
 
@@ -36,18 +36,18 @@ campoImportante = "apellido";
 alumno[campoImportante]
 ```
 
-Asignación de valores
+## Asignación de valores
 
 ```js
-// sintaxis de punt
+// sintaxis de punto
 alumno.edad = 19;
 
-// sintáxis de corchetes
+// sintaxis de corchetes
 alumno["edad"] = 18;
 alumno["Un.Campo.Apodo"] = "Juampi";
 ```
 
-Tipos de valores dentro de los campos de un objeto
+## Tipos de valores en un objeto
 
 ```js
 let objetoConDatosDeDistintosTipos = {

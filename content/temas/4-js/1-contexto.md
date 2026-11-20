@@ -2,15 +2,15 @@
 title: "4.1: Entornos de JavaScript"
 ---
 
-Stack de aplicaciones
+## Stack de aplicaciones
 - fullstack
 - frontend
 - backend
 
-Ejecución
+## Ejecución
 - compilado
 - interpretado
 
-Tipado
+## Tipado
 - tipado estático
 - tipado dinámico

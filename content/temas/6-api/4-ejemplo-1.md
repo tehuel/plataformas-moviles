@@ -2,25 +2,25 @@
 title: "6.4: Ejemplo de Conexión con API"
 ---
 
-# API Lorem Picsum
+## API Lorem Picsum
 
-[Lorem Picsum](https://picsum.photos) es una API para obtener imagenes.
+[Lorem Picsum](https://picsum.photos) es una API para obtener imágenes.
 
 La siguiente solicitud, por ejemplo devuelve una imagen al azar de 200x300 píxeles:
 
-```shell
+```bash
 https://picsum.photos/200/300
 ```
 
-Esta API también nos permite pedir una imágen específica, a partir de un id. Por ejemplo, para conseguir la imágen con id #0:
+Esta API también nos permite pedir una imagen específica, a partir de un id. Por ejemplo, para conseguir la imagen con id #0:
 
-```shell
+```bash
 https://picsum.photos/id/0/200/300
 ```
 
 También podemos pedirle que nos devuelva no la imagen, sino sus datos, mediante id:
 
-```shell
+```bash
 https://picsum.photos/id/0/info
 ```
 
@@ -37,9 +37,9 @@ Según la documentación, cada imagen tiene los siguientes atributos:
 }
 ```
 
-Sabiendo esto, podemos hacer un sitio simple que nos permita obtener y mostrar imagenes aleatorias.
+Sabiendo esto, podemos hacer un sitio simple que nos permita obtener y mostrar imágenes aleatorias.
 
-# Conexión desde JS
+## Conexión desde JS
 
 Para obtener datos de una API en JavaScript usamos la función [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Window/fetch) junto con `async/await` (ver [6.3](/temas/6-api/3-api-http/)):
 
@@ -63,9 +63,9 @@ async function obtenerImagenDesdeApi() {
 
 Resultado:
 
-![](/img/ejemplofetch.png "Respuesta de API")
+![Objeto JSON devuelto por Lorem Picsum mostrado en la consola del navegador](/img/ejemplofetch.png "Respuesta de API")
 
-# Obtener imagen aleatoria
+## Obtener imagen aleatoria
 
 Para obtener una imagen aleatoria necesitamos generar un id. Para esto podemos armar una función:
 
@@ -98,7 +98,7 @@ async function obtenerImagenAleatoria() {
 }
 ```
 
-# Mostrar imagen en el DOM
+## Mostrar imagen en el DOM
 
 Para generar la estructura HTML de una imagen y mostrarla en el DOM, podemos armar una función, que reciba un string con la URL de una imagen y genere un elemento `<img>`.
 
@@ -114,10 +114,10 @@ function mostrarImgEnDom(src) {
 }
 ```
 
-# Código Final
+## Código Final
 
 Uniendo todo:
-- Asociamos el evento con `addEventListener()` como vimos en la unidad de eventos.
+- Asociamos el evento con `addEventListener()` como vimos en la [unidad de eventos](/temas/5-dom/3-eventos/).
 - Usamos `try / catch / finally` para que, si una imagen no existe o falla la conexión, mostremos un aviso y el botón se vuelva a activar en el bloque `finally`.
 - Pedimos la imagen en un tamaño reducido (`600/400`) para que cargue rápido.
 

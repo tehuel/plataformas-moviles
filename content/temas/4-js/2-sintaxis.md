@@ -2,7 +2,7 @@
 title: "4.2: Sintaxis Básica"
 ---
 
-Tipos de Datos (Primitivos)
+## Tipos de Datos (Primitivos)
 
 - números (enteros y de punto flotante)
 - strings
@@ -17,7 +17,7 @@ MiVariable = "Hola";
 MiVariable = true;
 ```
 
-Condicionales
+## Condicionales
 
 ```js
 // condicionales
@@ -28,7 +28,7 @@ if (condicion) {
 }
 ```
 
-Bucles
+## Bucles
 
 ```js
 while (condicion) {}
@@ -38,7 +38,7 @@ do {} while (condicion);
 for (inicio; condicion; incremento) {}
 ```
 
-Funciones
+## Funciones
 
 ```js
 // expresión de función
@@ -60,14 +60,14 @@ let MiTercerFuncionSuma = (a, b) => {
 let tercerResultado = MiTercerFuncionSuma(10,20);
 ```
 
-## Concepto de Funciones
+### Concepto de Funciones
 
 Una función (en programación) se puede pensar como una máquina que toma una entrada, realiza un conjunto de operaciones definidas en su interior y produce una salida.
 
 La podemos imaginar como una caja negra con una entrada y una salida, donde el proceso de transformación dentro de la caja (o máquina) está oculto pero produce un resultado predecible basado en la entrada dada.
 
-A su vez, dentro de la caja sólo deberíamos preocuparnos por procesar y transformar la entrada para producir la salida.
+A su vez, dentro de la caja solo deberíamos preocuparnos por procesar y transformar la entrada para producir la salida.
 
-![](/img/FunctionMachine.svg "Pensamos la función como una máquina")
+![Diagrama de una función representada como máquina que transforma una entrada en una salida](/img/FunctionMachine.svg "Pensamos la función como una máquina")
 
-![](/img/FunctionMachinesComposition.svg "La salida de una máquina puede ser la entrada de otra")
+![Diagrama de composición de funciones encadenadas](/img/FunctionMachinesComposition.svg "La salida de una máquina puede ser la entrada de otra")

@@ -1,27 +1,27 @@
 ---
 title: "5.3: tp-14 (Lista de Contactos)"
-tags: "tp"
+tags: ["tp"]
 ---
 
-# Objetivo
+## Objetivo
 
 Construir una lista de contactos, ordenada alfabéticamente, y agregar funcionalidades avanzadas de gestión.
 
-# Formato de Entrega
+## Formato de Entrega
 
 - Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
-- Subir el trabajo al repositorio de entregas, en el directorio `/tp-14/`.
+- Subir el trabajo al repositorio de entregas, en el directorio `tp-14/`.
 
-## HTML Inicial
+### HTML Inicial
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lista de Contactos - DOM y JavaScript</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container my-1 my-sm-2 my-md-4 my-lg-5">
@@ -35,7 +35,7 @@ Construir una lista de contactos, ordenada alfabéticamente, y agregar funcional
                 <hr class="hr">
 
                 <h2>Nuevo Contacto</h2>
-                <form id="form-producto">
+                <form id="form-contacto">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" name="nombre" id="input-nombre" placeholder="Nombre" aria-label="Nombre">
                         <input type="text" class="form-control" name="apellido" id="input-apellido" placeholder="Apellido" aria-label="Apellido">
@@ -46,8 +46,8 @@ Construir una lista de contactos, ordenada alfabéticamente, y agregar funcional
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
         let contactos = [
             {
                 nombre: 'Juan',
@@ -91,7 +91,7 @@ Construir una lista de contactos, ordenada alfabéticamente, y agregar funcional
 </html>
 ```
 
-# Consigna
+## Consigna
 
 Implementar las siguientes funcionalidades:
 
@@ -100,9 +100,9 @@ Implementar las siguientes funcionalidades:
 - Agregar opción de ordenar por nombre o por apellido.
 - Agregar un nuevo campo teléfono al formulario y a la lista de contactos.
 - Agregar la opción de marcar como favorito un contacto.
-- Agregar opción para ver sólo los contactos favoritos.
+- Agregar opción para ver solo los contactos favoritos.
 
-# Bonus Track
+## Bonus Track
 
 - Permitir editar los datos de un contacto ya agregado.
 - Agregar la opción de eliminar contactos individualmente.

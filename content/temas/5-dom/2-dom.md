@@ -7,13 +7,13 @@ Vimos distintas operaciones que podemos realizar conectando con el *Modelo de Ob
 
 Podemos pensar la representación del documento HTML como una estructura de árbol, donde encontramos nodos, ramas y hojas todos partiendo desde un nodo raíz.
 
-![](/img/dom-tree.png)
+![Representación en árbol de los nodos de un documento HTML en el DOM](/img/dom-tree.png)
 
-Fuente: https://en.wikipedia.org/wiki/Document_Object_Model
+Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Document_Object_Model)
 
 ## Buscar Elementos
 
-Para buscar y seleccionar elementos dentro del DOM podemos usar `document.querySelector()` y `document.querySelectorAll()`.
+Para buscar y seleccionar elementos dentro del DOM con [selectores de CSS](/temas/3-css/2-selectores/) podemos usar `document.querySelector()` y `document.querySelectorAll()`.
 
 ```js
 // buscar elementos dentro del documento
@@ -49,7 +49,7 @@ Las búsquedas pueden funcionar para encontrar elementos dentro de otros element
 // podemos buscar un elemento inicial
 let elementoPadre = document.querySelector('div.padre');
 
-// y luego buscamos el elemento hijo sólo dentro del elemento padre
+// y luego buscamos el elemento hijo solo dentro del elemento padre
 let elementoHijo = elementoPadre.querySelector('p.hijo');	
 ```
 
@@ -74,11 +74,11 @@ Algunas posibilidades:
 
 ## Mostrar Elementos
 
-Luego de crear elementos, tenemos que decidir en que parte del arbol del DOM los vamos a mostrar. Para eso podemos agregar nuestro nuevo elemento como un hijo de otro elemento ya existente en el DOM. Para esto podemos usar `.append()` y `.prepend()`.
+Luego de crear elementos, tenemos que decidir en qué parte del árbol del DOM los vamos a mostrar. Para eso podemos agregar nuestro nuevo elemento como un hijo de otro elemento ya existente en el DOM. Para esto podemos usar `.append()` y `.prepend()`.
 
 ```js
 // agregar como primer hijo
-elementoPadre.prepend(elemetoHijo);
+elementoPadre.prepend(elementoHijo);
 
 // agregar como último hijo
 elementoPadre.append(elementoHijo);
@@ -88,7 +88,7 @@ elementoPadre.append(elementoHijo);
 
 Una forma más rápida de crear elementos nuevos es hacerlo a partir de otros elementos ya existentes en el DOM. Para esto podemos usar `.cloneNode()`. 
 
-Si le pasamos como parámetro el valor `true`, esto hace una *clonación profunda* (es decir, copia todos los elementos internos también), de otra manera se hace una *clonación superficial* donde sólo se copia el elemento más externo.
+Si le pasamos como parámetro el valor `true`, esto hace una *clonación profunda* (es decir, copia todos los elementos internos también), de otra manera se hace una *clonación superficial* donde solo se copia el elemento más externo.
 
 ```html
 <!-- Estructura en HTML -->
@@ -100,11 +100,11 @@ Si le pasamos como parámetro el valor `true`, esto hace una *clonación profund
 ```js
 let elementoPadre = document.querySelector('div.padre');
 
-// hacemos una *clonacion superficial* de elementoPadre en nuevoElemento
-let nuevoElemento = elementoPadre.cloneNode();
+// hacemos una *clonación superficial* de elementoPadre en copiaSuperficial
+let copiaSuperficial = elementoPadre.cloneNode();
 
-// hacemos una *clonación profunda* de elementoPadre (y todo su contenido) en nuevoElemento
-let nuevoElemento = elementoPadre.cloneNode(true);
+// hacemos una *clonación profunda* de elementoPadre (y todo su contenido) en copiaProfunda
+let copiaProfunda = elementoPadre.cloneNode(true);
 ```
 
 ## Eliminar Elementos

@@ -8,11 +8,11 @@ outputs:
 
 ---
 
-![](/img/media-query.jpg)
+![Ilustración sobre adaptación responsiva con media queries](/img/media-query.jpg)
 
 ---
 
-![](/img/responsive-clipart.gif)
+![Animación de un diseño web adaptándose a distintos tamaños de pantalla](/img/responsive-clipart.gif)
 
 ---
 

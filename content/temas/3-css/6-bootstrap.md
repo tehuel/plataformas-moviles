@@ -2,13 +2,11 @@
 title: "3.6: Bootstrap"
 ---
 
-## Bootstrap
-
 [Bootstrap](https://getbootstrap.com/) es un framework de desarrollo front-end ampliamente utilizado que proporciona un conjunto de herramientas y estilos predefinidos para agilizar y facilitar la creación de sitios web responsivos con un enfoque *mobile-first*. 
 
-Se basa en HTML, CSS y JavaScript, y ofrece componentes reutilizables, grillas flexibles y otras funcionalidades interactivas que permiten a los desarrolladores construir interfaces de usuario de manera rápida y eficiente.
+Se basa en HTML, CSS y JavaScript, y ofrece [componentes reutilizables](/temas/3-css/62-componentes/), [grillas flexibles](/temas/3-css/61-grilla/) y otras funcionalidades interactivas que permiten a los desarrolladores construir interfaces de usuario de manera rápida y eficiente.
 
-### Separación entre `Contenedor` y `Contenido`
+## Separación entre `Contenedor` y `Contenido`
 
 Al implementar interfaces responsivas con Bootstrap, se aplica una separación clara entre **contenedores** y **contenido**. Esta distinción es fundamental para lograr un diseño flexible. 
 
@@ -32,16 +30,16 @@ En la [documentación oficial](https://getbootstrap.com/docs/5.3/) hay un [ejemp
 
 ```html
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
 ```

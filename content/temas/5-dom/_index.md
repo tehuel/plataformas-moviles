@@ -4,9 +4,9 @@ title: "Unidad 5: DOM"
 
 ## Esquema
 
-- interfaces
-- uso de DOM
-	- navegación
-	- selección
-	- modificación
-	- templates
+- Interfaces y APIs
+- Uso del DOM
+	- Organización en árbol
+	- Búsqueda y selección
+	- Creación, clonación y eliminación
+- Eventos

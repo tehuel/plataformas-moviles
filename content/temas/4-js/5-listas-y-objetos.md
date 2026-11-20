@@ -5,7 +5,7 @@ title: "4.5: Listas y Objetos"
 Queremos almacenar un listado de alumnos. Evaluamos distintas opciones
 
 ```js
-// la posicion indica que alumno refiere en los listados
+// la posición indica a qué alumno refiere en los listados
 let listadoDeNombres = ["Lionel", "Sahid"]
 let listadoDeApellidos = []
 let listaDeEdades = [18, 19, 20]
@@ -87,6 +87,6 @@ console.log("Lista de alumnos actualizada: ", listaDeAlumnos);
 
 ```js
 // accedo a campos dentro de los alumnos, dentro del listado
-let nombreDelAlumno = listaDeAlumnosEjemplo[1].nombre;
-let apellidoDelAlumno = listaDeAlumnosEjemplo[1].apellido;
+let nombreDelAlumno = listaDeAlumnos[1].nombre;
+let apellidoDelAlumno = listaDeAlumnos[1].apellido;
 ```

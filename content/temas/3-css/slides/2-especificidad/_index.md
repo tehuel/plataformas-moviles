@@ -8,7 +8,7 @@ outputs:
 
 ---
 
-![](/img/specificity.png)
+![Diagrama de cálculo de especificidad de selectores CSS](/img/specificity.png)
 
 ---
 
@@ -19,7 +19,7 @@ outputs:
 | elementos (pseudo-elementos)  | `p` |
 | clases, atributos (pseudo-clases) | `.resaltado` |
 | ids | `#primero` |
-| estilos en linea (inline) | `<p style=".">` |
+| estilos en línea (inline) | `<p style=".">` |
 | modificador | `!important` |
 
 ---
@@ -32,6 +32,6 @@ Demo
 
 links
 
-- Epecificidad: https://developer.mozilla.org/es/docs/Web/CSS/Specificity
+- Especificidad: https://developer.mozilla.org/es/docs/Web/CSS/Specificity
 - Especificación W3C: https://www.w3.org/TR/selectors/#specificity-rules
 - Batificity: http://batificity.com/

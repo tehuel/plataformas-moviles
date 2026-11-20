@@ -28,7 +28,7 @@ El objetivo es que vivan un proceso real de trabajo en equipo: planificar, desar
 
 Dentro de los requisitos técnicos que debe cumplir el proyecto se espera: 
 
-- Diseño responsivo: que funcione bien en distintas platafomas (desktop, mobile y tamaños intermedios).
+- Diseño responsivo: que funcione bien en distintas plataformas (desktop, mobile y tamaños intermedios).
 - Consumo de una API externa para mostrar contenido dinámico o realizar acciones.
 - Diseño usable y accesible: la interfaz debe ser clara de usar.
 

@@ -1,33 +1,33 @@
 ---
 title: "4.2: tp-8 (Funciones)"
-tags: "tp"
+tags: ["tp"]
 ---
 
-# Objetivo 
+## Objetivo
 
 Practicar la definición y el uso de funciones en JavaScript.
 
-# Formato de Entrega
+## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `/tp-8/index.html`, con el contenido del HTML inicial.
+- Crear un archivo HTML en la ruta `tp-8/index.html`, con el contenido del HTML inicial.
 - Subir el archivo al repositorio de entregas.
 
-## HTML Inicial
+### HTML Inicial
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TP-7: Funciones en JavaScript</title>
+	<title>TP-8: Funciones en JavaScript</title>
 </head>
 <body>
 <p>Completar con la implementación de las funciones correspondientes</p>
-<script type="text/javascript">
-// Numeros
+<script>
+// Números
 
-// 1- Implementar una función "suma" que retorne la suma de 2 numeros
+// 1- Implementar una función "suma" que retorne la suma de 2 números
 // ejemplo: suma(2,3) retorna 5
 function suma(num1, num2) {
     // return num1 + num2;
@@ -39,7 +39,7 @@ console.log(suma(4,4)); // 8
 console.log(suma(-10,10)); // 0
 
 
-// 2- Implementar una función "elevarAlCubo" que eleve al cubo un numero
+// 2- Implementar una función "elevarAlCubo" que eleve al cubo un número
 // ejemplo: elevarAlCubo(3) retorna 27
 
 console.log("Resultados de elevarAlCubo():")
@@ -56,7 +56,7 @@ console.log(restoDivisionEntera(3,3)); // 0
 console.log(restoDivisionEntera(4,3)); // 1
 
 
-// 4- Implementar una función "numeroPi" para devolver el numero PI
+// 4- Implementar una función "numeroPi" para devolver el número PI
 // ejemplo: numeroPi() retorna 3,14...
 
 console.log("Resultado de numeroPi():")
@@ -137,7 +137,7 @@ console.log(sinPrimeraLetra("hola mundo"))
 console.log(sinPrimeraLetra("abc"))
 
 
-// 13- Implementar una función "primeraLetraMayuscula" que devuelve la cadena de caracteres recibida, pero  con su primera letra en mayúscula
+// 13- Implementar una función "primeraLetraMayuscula" que devuelve la cadena de caracteres recibida, pero con su primera letra en mayúscula
 // ejemplo: primeraLetraMayuscula("plataformas") retorna "Plataformas"
 
 console.log("Resultados de primeraLetraMayuscula():")
@@ -168,15 +168,15 @@ console.log(palabraInvertida("abc"))
 </html>
 ```
 
-# Consigna
+## Consigna
 
 - Implementar dentro del `<script>` las funciones solicitadas
 - Usar al menos una vez cada una de las 3 formas distintas de definición de funciones que vimos en clase.
 
-# Bonus Track (consignas adicionales)
-
-- (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
-
-# Condiciones
+## Condiciones
 
 - No modificar el código provisto.
+
+## Bonus Track
+
+- (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.

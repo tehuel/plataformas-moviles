@@ -16,7 +16,7 @@ outputs:
 
 ---
 
-![](/img/12-grid.png)
+![Esquema del sistema de grilla de 12 columnas de Bootstrap](/img/12-grid.png)
 
 ---
 

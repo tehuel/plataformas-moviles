@@ -16,7 +16,7 @@ outputs:
 ---
 
 # 🖥️
-# ¿Que hace un Navegador?
+# ¿Qué hace un Navegador?
 
 ---
 
@@ -92,7 +92,7 @@ Secuencia de Navegación
 
 ## Monopolio
 
-![](/img/browser-yearly-2009-2025.png)
+![Gráfico de cuota de mercado de navegadores web entre 2009 y 2025](/img/browser-yearly-2009-2025.png)
 
 ---
 

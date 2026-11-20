@@ -8,7 +8,7 @@ Un **framework** en programación es un conjunto de herramientas, bibliotecas y 
 
 Por otro lado, una **librería** es un conjunto de funciones, clases y componentes que se utilizan para abordar tareas específicas en el desarrollo de software. Una librería proporciona funcionalidades especializadas y reutilizables que los desarrolladores pueden incorporar en sus aplicaciones según sea necesario. A diferencia de un framework, una librería no impone una estructura o un flujo de trabajo específico, sino que ofrece herramientas específicas para resolver problemas concretos.
 
-![](/img/framework-librería.jpg)
+![Ilustración comparando la inversión de control entre un framework y una librería](/img/framework-librería.jpg)
 
 La principal diferencia entre un framework y una librería está en la **inversión del control**. En un framework, el flujo de control de la aplicación está predefinido y controlado por el framework, lo que significa que los desarrolladores deben ajustarse a esa estructura establecida. En cambio, con una librería, los desarrolladores tienen el control total del flujo de control de la aplicación y pueden utilizar la librería según sea necesario, sin estar obligados a seguir una estructura específica.
 
@@ -29,13 +29,13 @@ Repasamos las ventajas y desventajas de usar un framework.
 - Tienen una curva de aprendizaje
 - Nos abstraemos del lenguaje de programación
 - Tenemos que adaptar nuestro código a lo que el framework quiere
-- Al encapsular funcionalidad compleja, se vuelve un poco mas difícil solucionar problemas
+- Al encapsular funcionalidad compleja, se vuelve un poco más difícil solucionar problemas
 
 ## Diferentes Opciones
 
 Vemos algunos ejemplos de diferentes frameworks CSS.
 
-- Bootstrap  - [link](https://getbootstrap.com/)
+- Bootstrap - [apunte](/temas/3-css/6-bootstrap/) | [sitio oficial](https://getbootstrap.com/)
 - Tailwind CSS (basado en utilities) - [link](https://tailwindcss.com/)
 - "classless" Frameworks (sin modificar el HTML) - [listado demo](https://dohliam.github.io/dropin-minimal-css/)
 - NES.CSS (estilo particular) - [link](https://nostalgic-css.github.io/NES.css/)

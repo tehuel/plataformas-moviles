@@ -16,7 +16,7 @@ Hypertext Markup Language
 
 ---
 
-![](/img/html-tatoo.jpg)
+![Imagen humorística sobre etiquetas HTML](/img/html-tatoo.jpg)
 
 ---
 
@@ -32,7 +32,7 @@ de un documento
 
 ---
 
-![](/img/etiqueta-html.png)
+![Anatomía de una etiqueta HTML: etiqueta de apertura, contenido y etiqueta de cierre](/img/etiqueta-html.png)
 
 ---
 
@@ -70,7 +70,7 @@ Refiere al significado o la estructura del contenido que se está etiquetando.
 
 ---
 
-![](/img/semantica.png)
+![Comparación entre estructura con etiquetas HTML semánticas y estructura solo con div](/img/semantica.png)
 
 ---
 

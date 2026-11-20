@@ -2,8 +2,6 @@
 title: "3.4: Media Queries"
 ---
 
-## Media Queries
-
 La idea de Media Queries es hacer consultas sobre las características del dispositivo.
 
 Con esto podemos aplicar de forma condicional estilos CSS.
@@ -12,7 +10,7 @@ Con esto podemos aplicar de forma condicional estilos CSS.
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -66,7 +64,7 @@ p {
 </html>
 ```
 
-## Compatibildad de Navegadores
+## Compatibilidad de Navegadores
 
 Hablamos por un momento de los distintos niveles de compatibilidad que presentan las versiones de los navegadores para las diferentes media queries (y para cualquier otra característica de la plataforma web), y que nosotros como programadores vamos a decidir si esa compatibilidad es importante para nuestros proyectos.
 

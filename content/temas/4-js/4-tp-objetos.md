@@ -1,22 +1,23 @@
 ---
 title: "4.4: tp-10 (Objetos)"
-tags: "tp"
+tags: ["tp"]
 ---
 
-# Objetivo
+## Objetivo
 
-En este trabajo práctico vamos a usar el tipo de datos `objeto` dentro del lenguaje JavaScript.
+Usar el tipo de datos `objeto` dentro del lenguaje JavaScript.
 
-# Formato de Entrega
+## Formato de Entrega
 
-- Subir todos los archivos a un directorio `tp-10` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `objetos.js`) dentro del mismo directorio.
-- En el archivo `.js` implementar las funciones solicitadas.
+- Subir todos los archivos a un directorio `tp-10/` en el repositorio de entregas en GitHub. Deberían quedar los archivos (`index.html` y `objetos.js`) dentro del mismo directorio.
 
-## HTML Inicial
+### Código Inicial
+
+Archivo `index.html`:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,8 +31,10 @@ En este trabajo práctico vamos a usar el tipo de datos `objeto` dentro del leng
 </html>
 ```
 
+Archivo `objetos.js`:
+
 ```js
-var personaEjemplo = {
+let personaEjemplo = {
     "apellido": "Perez",
     "nombre": "Juan",
     "edad": 20,
@@ -44,8 +47,8 @@ var personaEjemplo = {
  * Recibe
  * - `nombre`: string, con el nombre.
  * - `apellido`: string, con el apellido.
- * - `edad`: numero entero, con la edad de la persona.
- * - `documento`: numero entero, con el documento de la persona.
+ * - `edad`: número entero, con la edad de la persona.
+ * - `documento`: número entero, con el documento de la persona.
  * 
  * Retorna: 
  * - un objeto, representando una persona, con los campos recibidos.
@@ -179,8 +182,15 @@ console.log("resultado personaMasGrande: ", personaMasGrande(
 ));
 ```
 
-# Condiciones
+## Consigna
+
+- En el archivo `.js` implementar las funciones solicitadas.
+
+## Condiciones
 
 - No modificar el código provisto.
+
+## Bonus Track
+
 - (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
 

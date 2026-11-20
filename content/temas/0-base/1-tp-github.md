@@ -1,32 +1,34 @@
 ---
-title: "0.1: tp-0 (Github)"
-tags: "tp"
+title: "0.1: tp-0 (GitHub)"
+tags: ["tp"]
 ---
 
-# Objetivo
+## Objetivo
 
 El objetivo principal de esta actividad es configurar un repositorio en GitHub que sirva como espacio centralizado para las entregas de los trabajos prácticos de la materia Plataformas Móviles. 
 
-Además, se busca familiarizar a los estudiantes con el uso de herramienta de colaboración y publicación de contenido web, como lo son GitHub y GitHub Pages.
+Además, se busca familiarizar a los estudiantes con el uso de herramientas de colaboración y publicación de contenido web, como lo son GitHub y GitHub Pages.
 
-## Usuario de Github
+## Consigna
+
+### 1. Usuario de GitHub
 
 Crear usuario en [GitHub](https://github.com) (si es que todavía no tienen).
 
-## Repositorio
+### 2. Repositorio
 
 Crear un nuevo repositorio, con el nombre `plataformas-moviles-entregas`.
 
-> Atención al nombre, debe ser exacto:
+> **Atención:** el nombre debe ser exacto:
 > - todo en minúscula
 > - todo en plural
-> - separar con guión medio (`-`)
+> - separar con guion medio (`-`)
 > - sin punto al final
 
 <details>
     <summary>(Screenshot)</summary>
 
-![](/img/github-nuevo-repo.png)
+![Formulario de creación de un nuevo repositorio en GitHub](/img/github-nuevo-repo.png)
 
 </details>
 
@@ -38,21 +40,21 @@ Crear un nuevo repositorio, con el nombre `plataformas-moviles-entregas`.
 
 </details>
 
-## Archivo `index.html` dentro del repo
+### 3. Archivo `index.html` dentro del repo
 
 Dentro del repositorio recién creado, agregar un nuevo archivo.
 
 <details>
     <summary>(Si el repo está vacío)</summary>
 
-![](/img/github-new-file-1.png)
+![Opción para crear un nuevo archivo en un repositorio vacío de GitHub](/img/github-new-file-1.png)
 
 </details>
 
 <details>
     <summary>(Si el repo ya tiene archivos)</summary>
 
-![](/img/github-new-file-2.png)
+![Menú Add file para crear un nuevo archivo en un repositorio de GitHub](/img/github-new-file-2.png)
 
 </details>
 
@@ -60,8 +62,10 @@ El nombre del archivo debe ser `index.html`, y el contenido puede ser un HTML, p
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Hola Mundo!</title>
    </head>
    <body>
@@ -75,7 +79,7 @@ El nombre del archivo debe ser `index.html`, y el contenido puede ser un HTML, p
 ```
 
 
-# Github Pages
+### 4. GitHub Pages
 
 Activar GitHub Pages.
 
@@ -85,38 +89,38 @@ Activar GitHub Pages.
 4. Click en `save` para guardar los cambios.
 5. Esperar unos minutos a que el servicio se active.
 
-![](/img/tp-1-pages.png)
+![Configuración de GitHub Pages seleccionando la rama main y carpeta root](/img/tp-1-pages.png)
 
 Si todo salió bien, al volver a entrar a la sección pages se debería ver el link en un recuadro.
 
 <details>
     <summary>(Screenshot: link en recuadro)</summary>
 
-![](/img/github-pages-link.png)
+![Recuadro con el enlace del sitio publicado en GitHub Pages](/img/github-pages-link.png)
 
 </details>
 
-## Link en Detalles
+### 5. Link en Detalles
 
 Agregar link a detalles del repositorio.
 
 <details>
     <summary>(Screenshot: link en detalles)</summary>
 
-![](/img/github-repo-details.png)
+![Panel About del repositorio en GitHub para configurar el enlace del sitio](/img/github-repo-details.png)
 
 </details>
 
 
 ## Resultado
 
-Si acceden a la URL `http://{usuario}.github.io/plataformas-moviles-entregas` deberian ver la página publicada.
+Si acceden a la URL `https://{usuario}.github.io/plataformas-moviles-entregas` deberían ver la página publicada.
 
 ---
 
-## Posibles Poblemas
+## Posibles Problemas
 
 Llegar a alguno de los siguientes problemas no es algo negativo, por el contrario, indica que el proyecto ya estaría correctamente configurado.
 
-- Error 404: Puede ser que no exista un `index.html` en la raiz del repositorio.
-- Página en blanco: Puede ser que el `index.html` en la raiz del repositorio esté vacío.
+- Error 404: Puede ser que no exista un `index.html` en la raíz del repositorio.
+- Página en blanco: Puede ser que el `index.html` en la raíz del repositorio esté vacío.

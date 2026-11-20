@@ -1,19 +1,19 @@
 ---
 title: "3.4: tp-4 (Media Queries)"
-tags: "tp"
+tags: ["tp"]
 ---
 
-# Objetivo
+## Objetivo
 
 Definir estilos condicionales utilizando media queries para adaptar el diseño a diferentes dispositivos.
 
-# Formato de Entrega
+## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `/tp-4/index.html`, con el contenido del HTML inicial.
-- Crear una hoja de estilos CSS vinculada al HTML, en la ruta `/tp-4/style.css`.
+- Crear un archivo HTML en la ruta `tp-4/index.html`, con el contenido del HTML inicial.
+- Crear una hoja de estilos CSS vinculada al HTML, en la ruta `tp-4/style.css`.
 - Subir ambos archivos al repositorio de entregas.
 
-## HTML Inicial
+### HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -51,25 +51,25 @@ Definir estilos condicionales utilizando media queries para adaptar el diseño a
       <img src="{{< absurl "/img/minecraft.jpg" >}}" alt="Minecraft Cover">
       <figcaption>Portada del Minecraft</figcaption>
     </figure>
-    <p>La película tratará de una adolescente que intentará salvar el <a href="https://minecraft.fandom.com/es/wiki/Superficie">Overwolrd</a> del <a href="https://minecraft.fandom.com/es/wiki/Enderdragón">Enderdragon</a></p>
+    <p>La película tratará de una adolescente que intentará salvar el <a href="https://minecraft.fandom.com/es/wiki/Superficie">Overworld</a> del <a href="https://minecraft.fandom.com/es/wiki/Enderdragón">Enderdragon</a></p>
   </article>
 </body>
 </html>
 ```
 
-# Consigna
+## Consigna
 
 Dentro del archivo CSS creado, implementar las siguientes reglas de estilo, con sus respectivas media queries
 
-1. Define una media query que cambie el color de fondo del `body` a `rgb(40,60,80)` cuando la pantalla tenga más de `400px` de ancho.
+1. Definir una media query que cambie el color de fondo del `body` a `rgb(40,60,80)` cuando la pantalla tenga más de `400px` de ancho.
 
-2. Define una media query que centre el título `h1` cuando la pantalla tenga menos de `800px` de ancho.
+2. Definir una media query que centre el título `h1` cuando la pantalla tenga menos de `800px` de ancho.
 
-3. Define una media query para que el ancho máximo (`max-width`) del `article` sea `50ch` cuando el dispositivo tiene una pantalla orientada en horizontal (más espacio de ancho que de alto).
+3. Definir una media query para que el ancho máximo (`max-width`) del `article` sea `50ch` cuando el dispositivo tiene una pantalla orientada en horizontal (más espacio de ancho que de alto).
 
-4. Define una media query para que cambie el color de fondo del título principal `h1` cuando el alto de la pantalla sea como mínimo `200px`.
+4. Definir una media query para que cambie el color de fondo del título principal `h1` cuando el alto de la pantalla sea como mínimo `200px`.
 
-5. Define una media query para cambiar el estilo del texto de todos los párrafos para que muestren una fuente `font-family: serif;` cuando la página se imprime (en papel).
+5. Definir una media query para cambiar el estilo del texto de todos los párrafos para que muestren una fuente `font-family: serif;` cuando la página se imprime (en papel).
 
 6. Si el usuario prefiere un estilo de colores claros, mostrar los elementos `body` y `h1` con el texto en color `#111` y el fondo en color `#DDD`.
 
@@ -79,4 +79,4 @@ Dentro del archivo CSS creado, implementar las siguientes reglas de estilo, con 
 
 9. Si el dispositivo es una pantalla, y tiene entre `200px` y `400px` de ancho, mostrar la imagen con un alto de `400px`, y con el siguiente estilo: `object-fit: cover;`.
 
-10. Define una query para que el color de fondo del elemento `article` cambie a `#667` cuando el Device Pixel Ratio de la pantalla del dispositivo sea mayor a 2. Ayuda: media query `resolution`, con una unidad expresada en `dppx`.
+10. Definir una query para que el color de fondo del elemento `article` cambie a `#667` cuando el Device Pixel Ratio de la pantalla del dispositivo sea mayor a 2. Ayuda: media query `resolution`, con una unidad expresada en `dppx`.

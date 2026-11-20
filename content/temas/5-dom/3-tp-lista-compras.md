@@ -1,27 +1,27 @@
 ---
 title: "5.3: tp-13 (Lista de Compras)"
-tags: "tp"
+tags: ["tp"]
 ---
 
-# Objetivo
+## Objetivo
 
 Construir una lista de compras donde se puedan agregar productos dinámicamente utilizando JavaScript y el DOM.
 
-# Formato de Entrega
+## Formato de Entrega
 
 - Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
-- Subir el trabajo al repositorio de entregas, en el directorio `/tp-13/`.
+- Subir el trabajo al repositorio de entregas, en el directorio `tp-13/`.
 
-## HTML Inicial
+### HTML Inicial
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lista de Compras - DOM y JavaScript</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container my-1 my-sm-2 my-md-4 my-lg-5">
@@ -47,8 +47,8 @@ Construir una lista de compras donde se puedan agregar productos dinámicamente 
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
         /**
          * agregarProducto()
          * esta función se va a llamar cuando el usuario envía el formulario con el nombre del producto para agregar.
@@ -71,7 +71,7 @@ Construir una lista de compras donde se puedan agregar productos dinámicamente 
 </html>
 ```
 
-# Consigna
+## Consigna
 
 Implementar las siguientes funcionalidades en la lista de compras:
 
@@ -80,7 +80,7 @@ Implementar las siguientes funcionalidades en la lista de compras:
 - Ordenar productos: posibilidad de ordenar la lista alfabéticamente.
 - Eliminar productos: cada producto debe poder eliminarse de forma individual.
 
-# Bonus Tracks
+## Bonus Track
 
 - Habilitar la edición del nombre de un producto ya agregado.
 - Marcar productos como comprados: Permitir marcar/desmarcar productos como comprados (por ejemplo, tachando el texto).

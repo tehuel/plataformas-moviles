@@ -1,28 +1,28 @@
 ---
 title: "5.3: tp-12 (Editor de Texto)"
-tags: "tp"
+tags: ["tp"]
 ---
 
-# Objetivo
+## Objetivo
 
-El objetivo de este trabajo práctico es desarrollar un editor de texto básico que permita aplicar distintos estilos al texto utilizando JavaScript y manipulaciones del DOM.
+Desarrollar un editor de texto básico que permita aplicar distintos estilos al texto utilizando JavaScript y manipulaciones del DOM.
 
 
-# Formato de Entrega
+## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `/tp-12/index.html` con el contenido inicial proporcionado.
+- Crear un archivo HTML en la ruta `tp-12/index.html` con el contenido inicial proporcionado.
 - Subir el archivo al repositorio de entregas.
 
-## HTML Inicial
+### HTML Inicial
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Editor de Texto - DOM y JavaScript</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container my-1 my-sm-2 my-md-4 my-lg-5">
@@ -57,8 +57,8 @@ El objetivo de este trabajo práctico es desarrollar un editor de texto básico 
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
         /**
          * funcionNegrita()
          * Esta función se ejecuta cuando el usuario selecciona la opción Bold (negrita).
@@ -104,7 +104,7 @@ El objetivo de este trabajo práctico es desarrollar un editor de texto básico 
 </html>
 ```
 
-# Consigna
+## Consigna
 
 - Implementar las funciones de estilo que ya están definidas en el HTML inicial: negrita, cursiva y subrayado.
 - Añadir un nuevo botón que aplique un estilo adicional al texto (por ejemplo, cambiar el color del texto).
@@ -112,6 +112,6 @@ El objetivo de este trabajo práctico es desarrollar un editor de texto básico 
 - Mostrar el estado actual de cada estilo en los botones correspondientes. Esto puede hacerse cambiando el color o el texto del botón para indicar si el estilo está activado o no.
 - Agregar una funcionalidad para modificar el tamaño del texto.
 
-# Bonus Track
+## Bonus Track
 
 - (Opcional) Explorar y añadir otras funcionalidades que puedan mejorar la experiencia del editor de texto.

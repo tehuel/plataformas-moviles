@@ -8,7 +8,7 @@ Algunos de los componentes que disponemos son:
 
 ## Card
 
-Las [cards](https://getbootstrap.com/docs/5.3/components/card/) de Bootstrap se utiliza para mostrar contenido variado con un diseño consistente, incluyendo encabezados, pies de página, imágenes y texto.
+Las [cards](https://getbootstrap.com/docs/5.3/components/card/) de Bootstrap se utilizan para mostrar contenido variado con un diseño consistente, incluyendo encabezados, pies de página, imágenes y texto.
 
 ```html
 <div class="card">
@@ -62,7 +62,7 @@ El [carrusel](https://getbootstrap.com/docs/5.3/components/carousel) permite mos
 </div>
 ```
 
-*Tener en cuenta que uno de los slides deberá tener la clase `.active`, sino el carrusel no será visible*
+*Tener en cuenta que uno de los slides deberá tener la clase `.active`, si no el carrusel no será visible*
 
 ## Colores
 

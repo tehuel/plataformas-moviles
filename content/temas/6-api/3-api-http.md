@@ -51,14 +51,14 @@ Muchas veces necesitamos indicarle a la API *qué* queremos exactamente. Para es
 
 **En la ruta**: forman parte del camino de la URL. La documentación los suele indicar entre llaves, como `{id}`.
 
-```shell
+```bash
 https://pokeapi.co/api/v2/pokemon/4
 https://pokeapi.co/api/v2/pokemon/charmander
 ```
 
 **En la *query string***: van al final de la URL, después de un `?`, con el formato `clave=valor`. Si hay más de uno, se separan con `&`.
 
-```shell
+```bash
 https://pokeapi.co/api/v2/pokemon?limit=151
 https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese
 ```
@@ -72,11 +72,11 @@ const id = 4;
 const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
 ```
 
-## Desde el Browser
+## Desde el Navegador
 
-Para acceder desde el browser, visitamos el endpoint en la URL `https://pokeapi.co/api/v2/pokemon/4` y obtenemos una respuesta en formato JSON.
+Para acceder desde el navegador, visitamos el endpoint en la URL `https://pokeapi.co/api/v2/pokemon/4` y obtenemos una respuesta en formato JSON.
 
-![](/img/charmander-pokeapi.png "Vista de JSON interpretado (izquierda) y en crudo (derecha) en Firefox")
+![Respuesta JSON de PokéAPI para Charmander vista en Firefox](/img/charmander-pokeapi.png "Vista de JSON interpretado (izquierda) y en crudo (derecha) en Firefox")
 
 ### Ver el pedido en las herramientas de desarrollo
 
@@ -96,7 +96,7 @@ Para hacer pedidos HTTP desde JavaScript se usa la función [`fetch()`](https://
 
 Un pedido HTTP **no es instantáneo**: viaja por internet hasta el servidor, el servidor lo procesa y la respuesta vuelve. Puede tardar milisegundos o varios segundos.
 
-Por eso `fetch()` no devuelve los datos de inmediato, sino una **promesa** (*Promise*): un valor que va a estar disponible *más adelante*. Es como pedir en un local de comida: te dan un número de pedido y, mientras lo preparan, podés hacer otras cosas. La página tampoco se "congela" mientras espera.
+Por eso `fetch()` no devuelve los datos de inmediato, sino una **promesa** (*Promise*): un valor que va a estar disponible *más adelante*. Es como pedir en un local de comida: nos dan un número de pedido y, mientras lo preparan, podemos hacer otras cosas. La página tampoco se "congela" mientras espera.
 
 Para esperar a que la promesa se cumpla y obtener el resultado se usa **`await`**. Y `await` solo se puede usar dentro de funciones marcadas como **`async`**:
 
@@ -157,7 +157,7 @@ Cuando un endpoint devuelve una lista muy grande (por ejemplo, todos los pokémo
 
 En la PokéAPI, el endpoint `/pokemon` (sin id) devuelve una página de 20 pokémon. Con los parámetros `limit` (cuántos) y `offset` (desde cuál) podemos elegir qué página queremos:
 
-```shell
+```bash
 https://pokeapi.co/api/v2/pokemon?limit=20&offset=0    # del 1 al 20
 https://pokeapi.co/api/v2/pokemon?limit=20&offset=20   # del 21 al 40
 ```
@@ -189,7 +189,7 @@ La forma más común es una **API key**: un código secreto que la API nos da al
 
 Por ejemplo, en las URLs de TheMealDB (`/api/json/v1/1/...`), el `1` es una API key de prueba pública. Para Google Maps, en cambio, hay que registrarse para obtener una.
 
-> **Cuidado**: una API key privada no se debe subir a un repositorio público ni incluir en el código de una página web, porque cualquiera podría verla y usarla.
+> **Cuidado:** una API key privada no se debe subir a un repositorio público ni incluir en el código de una página web, porque cualquiera podría verla y usarla.
 
 </details>
 

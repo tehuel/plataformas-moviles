@@ -4,7 +4,7 @@ title: "0.1: GitHub y Git"
 
 **Git** es un sistema de control de versiones distribuido (DVCS, por sus siglas en inglés) diseñado para rastrear los cambios en el código fuente durante el desarrollo de software. Fue creado por Linus Torvalds en 2005 para gestionar el desarrollo del kernel de Linux. Git permite a los desarrolladores trabajar en un mismo proyecto de forma colaborativa, manteniendo un historial de cambios y versiones de archivos.
 
-**GitHub** es una plataforma en línea que proporciona un servicio de alojamiento para proyectos de desarrollo de software, permitiendo colaborar, compartir y trabajar en proyectos de software de código abierto y privado. Existen otras plataformas similares como GitLab, BitBucket, Codeberg, Gogs, etc.
+**GitHub** es una plataforma en línea que proporciona un servicio de alojamiento para proyectos de desarrollo de software, permitiendo colaborar, compartir y trabajar en proyectos de software de código abierto y privado. Existen otras plataformas similares como GitLab, Bitbucket, Codeberg, Gogs, etc.
 
 Entonces, ¿son lo mismo Git y GitHub?
 
@@ -18,7 +18,7 @@ Para crear un usuario en GitHub deberemos dirigirnos a la opción de `Sign in` (
 
 Uno de los conceptos clave que se trabajan en GitHub es el de los repositorios.
 
-Un repositorio en GitHub es donde se almacena un proyecto de software. Puede contener todo tipo de archivos relacionados con el proyecto, como código, docuumentación, imágenes, etc.
+Un repositorio en GitHub es donde se almacena un proyecto de software. Puede contener todo tipo de archivos relacionados con el proyecto, como código, documentación, imágenes, etc.
 
 Dentro del espacio de la materia emplearemos un repositorio para realizar las entregas de los trabajos prácticos.
 

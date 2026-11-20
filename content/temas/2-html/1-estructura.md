@@ -8,13 +8,13 @@ HTML proporciona una estructura para la creación de documentos web y se utiliza
 
 La estructura básica de un documento HTML se compone de las siguientes etiquetas:
 - `<!DOCTYPE html>`: Define la versión de HTML que se está utilizando. En este caso, se usa HTML5.
-- `<html>`: Representa la raiz de un documento HTML. El resto de elementos descienden de este elemento.
-- `<head>`: Provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos. El usuario no puede interactuar con los elementos dentro de esta etiqueta
-- `<body>`: Representa el contenido de un documento HTML. Contiene textos, enlaces, imagenes, etc.
+- `<html>`: Representa la raíz de un documento HTML. El resto de elementos descienden de este elemento.
+- `<head>`: Provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos. El usuario no puede interactuar con los elementos dentro de esta etiqueta.
+- `<body>`: Representa el contenido de un documento HTML. Contiene textos, enlaces, imágenes, etc.
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Título del sitio</title>
     <!--Aquí suele haber enlaces a elementos externos-->
@@ -31,14 +31,14 @@ La estructura básica de un documento HTML se compone de las siguientes etiqueta
 
 Detalle de cada uno de los componentes de una etiqueta HTML.
 
-![](/img/etiqueta-html.png)
+![Anatomía de una etiqueta HTML: etiqueta de apertura, contenido y etiqueta de cierre](/img/etiqueta-html.png)
 
 ## Elementos del "body"
 
 Dentro de la etiqueta `<body>` se puede incluir el contenido del documento, mediante diferentes etiquetas. Algunos de ellos son
 - `<h1>`, `<h2>` ... `<h6>`: Representan títulos. Se ordenan del más importante (h1) al menos importante (h6).
 - `<p>`: Etiqueta de párrafo.
-- `<div>`: Significa "division" y funciona para seccionar o agrupar contenido.
+- `<div>`: Significa "división" y funciona para seccionar o agrupar contenido.
 - `<span>`: Sirve para aplicar estilo al texto o agrupar elementos en línea.
 - `<a>`: Permite agregar un vínculo o enlace.
 - `<img>`: Permite agregar imágenes.
@@ -63,8 +63,10 @@ Algunos ejemplos son:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Título del sitio</title>
 </head>
 <body>

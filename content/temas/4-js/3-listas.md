@@ -17,7 +17,7 @@ let listaVacia = [];
 
 ## Operaciones sobre listas
 
-Acceder a Valores de una lista
+### Acceder a valores de una lista
 
 ```js
 // acceder a un elemento determinado
@@ -43,10 +43,10 @@ listaDeNumeros.push(nuevoValor);
 listaDeNumeros.unshift(nuevoValor);
 ```
 
-> Info: Existe otra forma de agregar o eliminar elementos usando posiciones, pero puede traer problemas:
+> **Nota:** Existe otra forma de agregar o eliminar elementos usando posiciones, pero puede traer problemas:
 > 
 > ```js
-> // agegar un nuevo elemento al final de la lista
+> // agregar un nuevo elemento al final de la lista
 > let nuevoValor = 42;
 > let nuevaPosicion = listaDeNumeros.length;
 > listaDeNumeros[nuevaPosicion] = nuevoValor;
@@ -73,10 +73,10 @@ listaDeNumeros.unshift(nuevoValor);
 Se pueden usar los métodos `pop()` y `shift()` de listas para eliminar elementos.
 
 ```js
-// remover de la lista el ultimo elemento
+// remover de la lista el último elemento
 listaDeNumeros.pop();
 
-// remover de la lista y obtener el ultimo elemento
+// remover de la lista y obtener el último elemento
 let ultimoNumero = listaDeNumeros.pop();
 
 
@@ -90,12 +90,12 @@ let primerNumero = listaDeNumeros.shift();
 
 ## Recorridos sobre Listas
 
-Calcular la suma de todos los valores de una lista de números
+### Calcular la suma de todos los valores
 
 ```js
 // calcular la suma total de listaDeNumeros
 let sumaTotal = 0;
-for(i = 0; i < listaDeNumeros.length; i++) {
+for (let i = 0; i < listaDeNumeros.length; i++) {
     console.log("Posición: ", i);
     console.log("Valor en posición: ", listaDeNumeros[i]);
     sumaTotal = sumaTotal + listaDeNumeros[i];
@@ -109,10 +109,10 @@ listaDeNumeros.forEach((e) => {sumaTotalv2 += e})
 console.log("Suma total (v2): ", sumaTotalv2);
 ```
 
-Multiplicar todos los valores
+### Multiplicar todos los valores
 
 ```js
-// multiplicar todos los numeros por 5
+// multiplicar todos los números por 5
 let listaPor5 = [];
 for (let i = 0; i < listaDeNumeros.length; i++) {
     // accedo al valor en posición actual y lo multiplico por 5
@@ -131,7 +131,7 @@ console.log("lista resultado v2: ", listaPor5opcion2);
 
 ## Filtrar Listas
 
-Se puede usar el método `filter()` filtrar los elementos de una lista. La función de filtro que recibe `filter()` debe devolver `true` para que el elemento permanezca en la lista resultante y `false` para que sea eliminado de la lista resultante.
+Se puede usar el método `filter()` para filtrar los elementos de una lista. La función de filtro que recibe `filter()` debe devolver `true` para que el elemento permanezca en la lista resultante y `false` para que sea eliminado de la lista resultante.
 
 ```js
 let listaDePreposiciones = ['a', 'ante', 'bajo', 'cabe', 'con', 'contra', 'de', 'desde', 'durante', 'en', 'entre', 'hacia', 'hasta', 'mediante', 'para', 'por', 'según', 'sin', 'so', 'sobre', 'tras', 'versus', 'vía'];
@@ -155,10 +155,10 @@ let listaOrdenada = listaDesordenada.sort();
 console.log("lista ordenada", listaOrdenada)
 ```
 
-Al método [`.sort()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) se le puede pasar como parámetro una función que defina el criterio por el que queremos ordenar la lista. Esta funcion "criterioDeOrdenamiento" recibe 2 elementos de la lista, y devuelve como resultado un número para decidir cual de los 2 elementos debe aparecer antes en la lista.
+Al método [`.sort()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) se le puede pasar como parámetro una función que defina el criterio por el que queremos ordenar la lista. Esta función "criterioDeOrdenamiento" recibe 2 elementos de la lista, y devuelve como resultado un número para decidir cuál de los 2 elementos debe aparecer antes en la lista.
 
 - Si devuelve un número negativo es que los elementos tienen que intercambiar posiciones.
-- Si devuelve un numero positivo es para que los elementos mantengan su posición en la lista.
+- Si devuelve un número positivo es para que los elementos mantengan su posición en la lista.
 
 Con strings la comparación se puede hacer con [`localeCompare()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)
 
@@ -173,7 +173,7 @@ function existeElementoEnLista(elemento, lista) {
 	let encontrado = false;
 	// queremos saber si elemento está en lista
 	for(let i = 0; i < lista.length; i++) {
-		// accedemos a valor en posicion i
+		// accedemos a valor en posición i
 		let valorActual = lista[i];
 
 		// si es el que buscamos
@@ -192,11 +192,13 @@ console.log("Existe 'Lautaro' en lista?", listaDeNombres.includes("Lautaro"));
 
 ---
 
-> Comentario extra: Para intercambiar 2 posiciones de una lista es necesario usar una variable temporal
+> **Nota:** Para intercambiar 2 posiciones de una lista es necesario usar una variable temporal:
 >
->     let temporal = nuevaLista(0);
->     nuevaLista[0] = nuevaLista[1];
->     nuevaLista[1] = temporal;
+> ```js
+> let temporal = nuevaLista[0];
+> nuevaLista[0] = nuevaLista[1];
+> nuevaLista[1] = temporal;
+> ```
 
 ## Listas dentro de listas
 
@@ -216,4 +218,4 @@ Vimos los conceptos de los métodos:
 - `Array.reduce()`
 - `Array.sort()`
 
-También vimos que se puede seguir usando el `for(;;)` de toda la vida, y existe una alternativa `Array.foreach()`.
+También vimos que se puede seguir usando el `for(;;)` de toda la vida, y existe una alternativa `Array.forEach()`.
