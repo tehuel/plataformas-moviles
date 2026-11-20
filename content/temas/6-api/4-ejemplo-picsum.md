@@ -1,5 +1,8 @@
 ---
 title: "6.4: Ejemplo de Conexión con API"
+weight: 40
+tipo: "apunte"
+opcional: false
 ---
 
 ## API Lorem Picsum
@@ -117,7 +120,7 @@ function mostrarImgEnDom(src) {
 ## Código Final
 
 Uniendo todo:
-- Asociamos el evento con `addEventListener()` como vimos en la [unidad de eventos](/temas/5-dom/3-eventos/).
+- Asociamos el evento con `addEventListener()` como vimos en la [unidad de eventos](/temas/5-dom/1-dom-y-eventos/).
 - Usamos `try / catch / finally` para que, si una imagen no existe o falla la conexión, mostremos un aviso y el botón se vuelva a activar en el bloque `finally`.
 - Pedimos la imagen en un tamaño reducido (`600/400`) para que cargue rápido.
 

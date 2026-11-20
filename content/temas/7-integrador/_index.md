@@ -1,5 +1,7 @@
 ---
 title: "Unidad 7: Trabajo Integrador"
+weight: 70
+integrador: true
 ---
 
 Este trabajo reúne **todos los temas vistos durante el año** y se realiza en **equipo**.
@@ -34,7 +36,7 @@ Dentro de los requisitos técnicos que debe cumplir el proyecto se espera:
 
 Queda fuera del alcance:
 
-- Desarrollar un backend o una API propia (salvo que ya exista y se acuerde con los docentes).
+- Desarrollar un backend o una API propia (salvo que ya exista y se acuerde con los docentes). Si necesitan publicar datos propios sin armar un servidor, pueden usar la [Guía: Usar Google Sheets como API](/temas/6-api/ejemplo-google-sheets/).
 - Implementar lógica muy compleja.
 
 ## Seguimiento

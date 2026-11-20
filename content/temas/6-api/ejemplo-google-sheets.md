@@ -1,5 +1,8 @@
 ---
-title: "6.5: Ejemplo API con Google Sheets"
+title: "Guía: Usar Google Sheets como API"
+weight: 60
+tipo: "guia"
+opcional: true
 ---
 
 En este ejemplo se muestra cómo usar Google Sheets como una pequeña base de datos accesible mediante API, transformando su contenido en formato JSON.
@@ -35,7 +38,7 @@ Para obtener los datos en formato JSON puede utilizarse el servicio gratuito [op
 ```bash
 https://opensheet.elk.sh/<ID_DE_LA_PLANILLA>/<NOMBRE_O_NUMERO_DE_LA_HOJA>
 ```
-En donde: 
+En donde:
 
 - `<ID_DE_LA_PLANILLA>` corresponde al ID obtenido en el paso anterior.
 - `<NOMBRE_O_NUMERO_DE_LA_HOJA>` puede ser el nombre de la pestaña o su índice (1 para la primera hoja, 2 para la segunda, etc.).
@@ -87,7 +90,7 @@ Podemos ver un ejemplo completo en funcionamiento que genera una tabla y permite
 <details>
     <summary>Privacidad de la hoja compartida</summary>
 
-Al configurar el permiso como "Cualquier persona con el enlace - Lector", la hoja y todos sus datos quedan disponibles públicamente en internet. 
+Al configurar el permiso como "Cualquier persona con el enlace - Lector", la hoja y todos sus datos quedan disponibles públicamente en internet.
 
 **Nunca** se deben guardar contraseñas, claves secretas ni datos personales sensibles en hojas configuradas de esta manera.
 

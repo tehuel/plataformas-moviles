@@ -1,6 +1,8 @@
 ---
-title: "6.6: tp-16 (APIs)"
-tags: ["tp"]
+title: "TP: Aplicación con API externa"
+weight: 50
+tipo: "tp"
+opcional: false
 ---
 
 ## Objetivo
@@ -9,7 +11,8 @@ Construir una aplicación con HTML + CSS (con Bootstrap) + JS, que consuma recur
 
 ## Formato de Entrega
 
-Para la entrega del trabajo, crear un directorio `tp-16/` en su repositorio de entregas, y subir un archivo como `tp-16/index.html`, junto con los archivos js y css correspondientes.
+- Crear un directorio `tp-api/` en su repositorio de entregas, y subir un archivo `tp-api/index.html`, junto con los archivos js y css correspondientes.
+- Verificar el diseño y el funcionamiento de la aplicación en el modo responsive de las herramientas de desarrollo (DevTools) y abriendo la URL de GitHub Pages desde un celular.
 
 ## Consigna
 
@@ -60,4 +63,3 @@ Para este proyecto deberán crear una aplicación de "Recetario", con la informa
 1. Reemplazar el listado por una grilla de cartas (responsiva), donde cada carta tenga el nombre y su imagen. El botón para mostrar más información debería seguir estando.
 2. Agregar botones que nos permitan ver, además de comida china, recetas italianas y americanas.
 3. Agregar *spinner* para mostrar estado de "loading".
-
