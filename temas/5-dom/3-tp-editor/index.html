@@ -1,0 +1,90 @@
+<!doctype html><html lang=es-AR class=h-100><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.145.0"><title>5.3: tp-12 (Editor de Texto) | Plataformas Móviles</title>
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/cosmo/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=/css/syntax.css rel=stylesheet><style type=text/css>li>p{margin:0}.container{max-width:60rem;margin:0 auto}.container img{max-width:100%}figcaption{text-align:right;font-style:italic;color:var(--bs-gray-600)}blockquote{padding:1em;border-left:3px solid var(--bs-gray-600);background-color:var(--bs-gray-100)}blockquote p:last-child,footer p:last-child{margin:0}.highlight{position:relative}.highlight pre{border:var(--bs-border-width)var(--bs-border-style)var(--bs-gray-500);border-radius:var(--bs-border-radius);padding:1em}.btn-copy-code{position:absolute;right:0;top:-1rem}</style><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5></head><body class="h-100 d-flex flex-column"><nav class="navbar navbar-expand-sm navbar-dark bg-dark"><div class=container><a class=navbar-brand href=/>Plataformas Móviles</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarSupportedContent><ul class="navbar-nav ms-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" href=/temas/>Temas</a></li><li class=nav-item><a class=nav-link href=/trabajos-practicos/>Trabajos Prácticos</a></li><li class=nav-item><a class=nav-link href=/recursos/>Recursos</a></li></ul></div></div></nav><div class="container flex-grow-1 my-3"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/temas/>Temas</a></li><li class=breadcrumb-item><a href=/temas/5-dom/>Unidad 5: DOM</a></li><li class="breadcrumb-item active" aria-current=page>5.3: tp-12 (Editor de Texto)</li></ol></nav><div class="text-center border-bottom mb-4"><h1 class=display-3>5.3: tp-12 (Editor de Texto)</h1></div><h2 id=objetivo>Objetivo</h2><p>Desarrollar un editor de texto básico que permita aplicar distintos estilos al texto utilizando JavaScript y manipulaciones del DOM.</p><h2 id=formato-de-entrega>Formato de Entrega</h2><ul><li>Crear un archivo HTML en la ruta <code>tp-12/index.html</code> con el contenido inicial proporcionado.</li><li>Subir el archivo al repositorio de entregas.</li></ul><h3 id=html-inicial>HTML Inicial</h3><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#00f>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;html lang=<span style=color:#a31515>&#34;es&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;head&gt;
+</span></span><span style=display:flex><span>    &lt;meta charset=<span style=color:#a31515>&#34;utf-8&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;meta name=<span style=color:#a31515>&#34;viewport&#34;</span> content=<span style=color:#a31515>&#34;width=device-width, initial-scale=1&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;title&gt;Editor de Texto - DOM y JavaScript&lt;/title&gt;
+</span></span><span style=display:flex><span>    &lt;link href=<span style=color:#a31515>&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css&#34;</span> rel=<span style=color:#a31515>&#34;stylesheet&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;/head&gt;
+</span></span><span style=display:flex><span>&lt;body&gt;
+</span></span><span style=display:flex><span>    &lt;div class=<span style=color:#a31515>&#34;container my-1 my-sm-2 my-md-4 my-lg-5&#34;</span>&gt;
+</span></span><span style=display:flex><span>        &lt;h1&gt;Editor de Texto&lt;/h1&gt;
+</span></span><span style=display:flex><span>        &lt;div class=<span style=color:#a31515>&#34;card&#34;</span>&gt;
+</span></span><span style=display:flex><span>            &lt;div class=<span style=color:#a31515>&#34;card-body&#34;</span>&gt;
+</span></span><span style=display:flex><span>                &lt;h2&gt;Texto&lt;/h2&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>                &lt;p class=<span style=color:#a31515>&#34;texto&#34;</span> id=<span style=color:#a31515>&#34;texto&#34;</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum auctor libero, vel imperdiet est. Etiam blandit facilisis ex, nec cursus metus pharetra quis. Fusce imperdiet nisl nibh, ac aliquet ante elementum vitae.&lt;/p&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>                &lt;hr class=<span style=color:#a31515>&#34;hr&#34;</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>                &lt;h2&gt;Opciones de Formato&lt;/h2&gt;
+</span></span><span style=display:flex><span>                &lt;div class=<span style=color:#a31515>&#34;row&#34;</span>&gt;
+</span></span><span style=display:flex><span>                    &lt;div class=<span style=color:#a31515>&#34;col-12 col-md-4 my-1&#34;</span>&gt;
+</span></span><span style=display:flex><span>                        &lt;button id=<span style=color:#a31515>&#34;btn-negrita&#34;</span> class=<span style=color:#a31515>&#34;btn d-block w-100 btn-primary&#34;</span> data-formato=<span style=color:#a31515>&#34;negrita&#34;</span>&gt;
+</span></span><span style=display:flex><span>                            Bold (Negrita)
+</span></span><span style=display:flex><span>                        &lt;/button&gt;
+</span></span><span style=display:flex><span>                    &lt;/div&gt;
+</span></span><span style=display:flex><span>                    &lt;div class=<span style=color:#a31515>&#34;col-12 col-md-4 my-1&#34;</span>&gt;
+</span></span><span style=display:flex><span>                        &lt;button id=<span style=color:#a31515>&#34;btn-cursiva&#34;</span> class=<span style=color:#a31515>&#34;btn d-block w-100 btn-primary&#34;</span> data-formato=<span style=color:#a31515>&#34;cursiva&#34;</span>&gt;
+</span></span><span style=display:flex><span>                            Italic (Cursiva)
+</span></span><span style=display:flex><span>                        &lt;/button&gt;
+</span></span><span style=display:flex><span>                    &lt;/div&gt;
+</span></span><span style=display:flex><span>                    &lt;div class=<span style=color:#a31515>&#34;col-12 col-md-4 my-1&#34;</span>&gt;
+</span></span><span style=display:flex><span>                        &lt;button id=<span style=color:#a31515>&#34;btn-subrayado&#34;</span> class=<span style=color:#a31515>&#34;btn d-block w-100 btn-primary&#34;</span> data-formato=<span style=color:#a31515>&#34;subrayado&#34;</span>&gt;
+</span></span><span style=display:flex><span>                            Underline (Subrayado)
+</span></span><span style=display:flex><span>                        &lt;/button&gt;
+</span></span><span style=display:flex><span>                    &lt;/div&gt;
+</span></span><span style=display:flex><span>                &lt;/div&gt;
+</span></span><span style=display:flex><span>            &lt;/div&gt;
+</span></span><span style=display:flex><span>        &lt;/div&gt;
+</span></span><span style=display:flex><span>    &lt;/div&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    &lt;script src=<span style=color:#a31515>&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js&#34;</span>&gt;&lt;/script&gt;
+</span></span><span style=display:flex><span>    &lt;script&gt;
+</span></span><span style=display:flex><span>        <span style=color:green>/**
+</span></span></span><span style=display:flex><span><span style=color:green>         * funcionNegrita()
+</span></span></span><span style=display:flex><span><span style=color:green>         * Esta función se ejecuta cuando el usuario selecciona la opción Bold (negrita).
+</span></span></span><span style=display:flex><span><span style=color:green>         */</span>
+</span></span><span style=display:flex><span>        <span style=color:#00f>function</span> funcionNegrita() {
+</span></span><span style=display:flex><span>            <span style=color:green>// Implementación pendiente
+</span></span></span><span style=display:flex><span><span style=color:green></span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:green>/**
+</span></span></span><span style=display:flex><span><span style=color:green>         * funcionCursiva()
+</span></span></span><span style=display:flex><span><span style=color:green>         * Esta función se ejecuta cuando el usuario selecciona la opción Italic (cursiva).
+</span></span></span><span style=display:flex><span><span style=color:green>         */</span>
+</span></span><span style=display:flex><span>        <span style=color:#00f>function</span> funcionCursiva() {
+</span></span><span style=display:flex><span>            <span style=color:green>// Implementación pendiente
+</span></span></span><span style=display:flex><span><span style=color:green></span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:green>/**
+</span></span></span><span style=display:flex><span><span style=color:green>         * funcionSubrayado()
+</span></span></span><span style=display:flex><span><span style=color:green>         * Esta función se ejecuta cuando el usuario selecciona la opción Underline (subrayado).
+</span></span></span><span style=display:flex><span><span style=color:green>         */</span>
+</span></span><span style=display:flex><span>        <span style=color:#00f>function</span> funcionSubrayado() {
+</span></span><span style=display:flex><span>            <span style=color:green>// Implementación pendiente
+</span></span></span><span style=display:flex><span><span style=color:green></span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#00f>function</span> handlerBoton(e) {
+</span></span><span style=display:flex><span>            <span style=color:green>// Obtiene el valor del atributo &#34;data-formato&#34; del botón que disparó el evento
+</span></span></span><span style=display:flex><span><span style=color:green></span>            <span style=color:#00f>const</span> funcionBoton = e.target.dataset.formato;
+</span></span><span style=display:flex><span>            <span style=color:#00f>switch</span> (funcionBoton) {
+</span></span><span style=display:flex><span>                <span style=color:#00f>case</span> <span style=color:#a31515>&#39;negrita&#39;</span>:
+</span></span><span style=display:flex><span>                    funcionNegrita();
+</span></span><span style=display:flex><span>                    <span style=color:#00f>break</span>;
+</span></span><span style=display:flex><span>                <span style=color:#00f>case</span> <span style=color:#a31515>&#39;cursiva&#39;</span>:
+</span></span><span style=display:flex><span>                    funcionCursiva();
+</span></span><span style=display:flex><span>                    <span style=color:#00f>break</span>;
+</span></span><span style=display:flex><span>                <span style=color:#00f>case</span> <span style=color:#a31515>&#39;subrayado&#39;</span>:
+</span></span><span style=display:flex><span>                    funcionSubrayado();
+</span></span><span style=display:flex><span>                    <span style=color:#00f>break</span>;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        document.querySelectorAll(<span style=color:#a31515>&#39;button.btn&#39;</span>).forEach(e =&gt; e.addEventListener(<span style=color:#a31515>&#39;click&#39;</span>, handlerBoton));
+</span></span><span style=display:flex><span>    &lt;/script&gt;
+</span></span><span style=display:flex><span>&lt;/body&gt;
+</span></span><span style=display:flex><span>&lt;/html&gt;
+</span></span></code></pre></div><h2 id=consigna>Consigna</h2><ul><li>Implementar las funciones de estilo que ya están definidas en el HTML inicial: negrita, cursiva y subrayado.</li><li>Añadir un nuevo botón que aplique un estilo adicional al texto (por ejemplo, cambiar el color del texto).</li><li>Incluir un campo de entrada (input) que permita al usuario editar el texto mostrado.</li><li>Mostrar el estado actual de cada estilo en los botones correspondientes. Esto puede hacerse cambiando el color o el texto del botón para indicar si el estilo está activado o no.</li><li>Agregar una funcionalidad para modificar el tamaño del texto.</li></ul><h2 id=bonus-track>Bonus Track</h2><ul><li>(Opcional) Explorar y añadir otras funcionalidades que puedan mejorar la experiencia del editor de texto.</li></ul></div><footer class="footer py-5 bg-dark text-light"><div class=container><div class=row><div class=col-md><p>2026 | Plataformas Móviles</p></div><div class="col-md text-md-end"><a class=link-light href=https://github.com/tehuel/plataformas-moviles/edit/main/content/temas/5-dom/3-tp-editor.md>Editar en GitHub</a> | <a class=link-light href=https://github.com/tehuel/plataformas-moviles/blob/main/content/temas/5-dom/3-tp-editor.md>Ver Código Fuente</a></div></div></div></footer><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script>function initClipboardForCodeButtons(){if(typeof ClipboardJS=="undefined")return;document.querySelectorAll(".highlight").forEach(function(e,t){var n,o,s=e.querySelector("pre code");if(!s)return;s.id||(s.id="code-block-"+t),n=document.createElement("button"),n.className="btn btn-sm btn-secondary btn-copy-code",n.type="button",n.innerText="Copiar",n.setAttribute("data-clipboard-target","#"+s.id),e.insertBefore(n,e.firstChild),o=document.createElement("div"),o.className="highlight-wrapper",e.parentNode.insertBefore(o,e),o.appendChild(e)});var e=new ClipboardJS(".btn-copy-code");e.on("success",function(e){setCopyStatus(e.trigger,!0),e.clearSelection()}),e.on("error",function(e){setCopyStatus(e.trigger,!1)})}function setCopyStatus(e,t){e.blur(),e.innerText=t?"Copiado":"No se pudo copiar";const n=t?"btn-success":"btn-danger";e.classList.add(n),setTimeout(function(){e.innerText="Copiar",e.classList.remove(n)},2e3)}initClipboardForCodeButtons()</script></body></html>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unidad 6: APIs on Plataformas Móviles</title><link>https://plataformas-moviles.apps.tec4.ar/temas/6-api/</link><description>Recent content in Unidad 6: APIs on Plataformas Móviles</description><generator>Hugo</generator><language>es-AR</language><atom:link href="https://plataformas-moviles.apps.tec4.ar/temas/6-api/index.xml" rel="self" type="application/rss+xml"/><item><title>6.1: Arquitectura</title><link>https://plataformas-moviles.apps.tec4.ar/temas/6-api/1-arquitectura/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/6-api/1-arquitectura/</guid><description>&lt;h2 id="interfaces">Interfaces&lt;/h2>
+&lt;p>Empezamos desde una visión general, definiendo a las &lt;strong>interfaces&lt;/strong> como las &amp;ldquo;reglas&amp;rdquo; o formas de interactuar y comunicarse con un sistema o partes de un sistema.&lt;/p>
+&lt;p>Ejemplos de Interfaces:&lt;/p>
+&lt;ul>
+&lt;li>Volante, Pedales y Tablero de un vehículo.&lt;/li>
+&lt;li>Control Remoto y Botones de la tele.&lt;/li>
+&lt;li>Pantalla Táctil de un celu.&lt;/li>
+&lt;li>Línea de Comandos (CLI) de Linux.&lt;/li>
+&lt;/ul>
+&lt;h2 id="apis">APIs&lt;/h2>
+&lt;p>Dentro de estas interfaces, un grupo más específico son las APIs (interfaz de programación de aplicaciones), que permite una comunicación entre 2 aplicaciones. Las APIs actúan como intermediarios que permiten que las aplicaciones soliciten y utilicen servicios o recursos de otros programas o servicios, todo de manera estructurada y controlada, con un protocolo definido.&lt;/p></description></item><item><title>6.2: Formato JSON</title><link>https://plataformas-moviles.apps.tec4.ar/temas/6-api/2-json/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/6-api/2-json/</guid><description>&lt;p>&lt;strong>JSON&lt;/strong> (JavaScript Object Notation) es un formato de intercambio de datos. Se utiliza para transmitir datos entre un servidor y un cliente web, y compartir información estructurada en sistemas y aplicaciones diferentes (posiblemente en entornos diferentes y hasta construidas con tecnologías diferentes).&lt;/p>
+&lt;h2 id="ejemplo">Ejemplo&lt;/h2>
+&lt;p>Este es un recorte (simplificado) de la información que devuelve la PokéAPI sobre Charmander:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;id&amp;#34;: 4,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;name&amp;#34;: &lt;span style="color:#a31515">&amp;#34;charmander&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;height&amp;#34;: 6,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;is_default&amp;#34;: &lt;span style="color:#00f">true&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;#34;types&amp;#34;: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> { &amp;#34;slot&amp;#34;: 1, &amp;#34;type&amp;#34;: { &amp;#34;name&amp;#34;: &lt;span style="color:#a31515">&amp;#34;fire&amp;#34;&lt;/span> } }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="reglas-básicas">Reglas Básicas&lt;/h2>
+&lt;ul>
+&lt;li>Los datos se organizan en &lt;strong>objetos&lt;/strong> &lt;code>{ }&lt;/code>, con pares &lt;code>&amp;quot;clave&amp;quot;: valor&lt;/code>, y &lt;strong>listas&lt;/strong> &lt;code>[ ]&lt;/code>.&lt;/li>
+&lt;li>Las claves van &lt;strong>siempre entre comillas dobles&lt;/strong> (&lt;code>&amp;quot;name&amp;quot;&lt;/code>, no &lt;code>name&lt;/code> ni &lt;code>'name'&lt;/code>).&lt;/li>
+&lt;li>Los valores pueden ser:
+&lt;ul>
+&lt;li>texto (string), entre comillas dobles: &lt;code>&amp;quot;charmander&amp;quot;&lt;/code>&lt;/li>
+&lt;li>número: &lt;code>4&lt;/code>, &lt;code>8.5&lt;/code>&lt;/li>
+&lt;li>booleano: &lt;code>true&lt;/code> o &lt;code>false&lt;/code>&lt;/li>
+&lt;li>&lt;code>null&lt;/code>&lt;/li>
+&lt;li>otro objeto &lt;code>{ }&lt;/code> o una lista &lt;code>[ ]&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>No puede haber una coma después del último elemento.&lt;/li>
+&lt;/ul>
+&lt;h2 id="json-vs-objetos-de-javascript">JSON vs Objetos de JavaScript&lt;/h2>
+&lt;p>JSON se parece mucho a un objeto de JavaScript, pero hay una diferencia importante: &lt;strong>JSON es texto&lt;/strong> (un string), mientras que un objeto es un valor con el que JavaScript puede trabajar.&lt;/p></description></item><item><title>6.3: API HTTP</title><link>https://plataformas-moviles.apps.tec4.ar/temas/6-api/3-api-http/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/6-api/3-api-http/</guid><description>&lt;p>Para usar una API HTTP, nuestra aplicación hace lo mismo que hace el navegador cuando visitamos un sitio web (ver &lt;a href="https://plataformas-moviles.apps.tec4.ar/temas/1-web/1-navegadores/">1.1: Navegadores&lt;/a>
+): envía un &lt;strong>pedido HTTP&lt;/strong> a un servidor y recibe una &lt;strong>respuesta HTTP&lt;/strong>. La diferencia es que, en lugar de una página en HTML, la respuesta trae datos en JSON.&lt;/p>
+&lt;h2 id="request-y-response">Request y Response&lt;/h2>
+&lt;p>Cada comunicación con la API tiene dos partes:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Pedido&lt;/strong> (&lt;em>request&lt;/em>), lo envía el cliente. Incluye:
+&lt;ul>
+&lt;li>&lt;strong>Método&lt;/strong>: qué queremos hacer. Para pedir datos se usa &lt;code>GET&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>URL&lt;/strong>: a qué recurso queremos acceder.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Respuesta&lt;/strong> (&lt;em>response&lt;/em>), la devuelve el servidor. Incluye:
+&lt;ul>
+&lt;li>&lt;strong>Código de estado&lt;/strong>: un número que indica cómo salió el pedido. Por ejemplo &lt;code>200&lt;/code> (OK), &lt;code>404&lt;/code> (no encontrado) o &lt;code>500&lt;/code> (error en el servidor).&lt;/li>
+&lt;li>&lt;strong>Contenido&lt;/strong> (&lt;em>body&lt;/em>): los datos pedidos, generalmente en JSON.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+
+
+
+&lt;div class="goat svg-container ">
+ 
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ font-family="Menlo,Lucida Console,monospace"
+ 
+ viewBox="0 0 456 185"
+ >
+ &lt;g transform='translate(8,16)'>
+&lt;path d='M 0,0 L 80,0' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 352,0 L 440,0' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 0,32 L 40,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 40,32 L 80,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 352,32 L 392,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 392,32 L 440,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 48,80 L 384,80' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 48,144 L 384,144' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 0,0 L 0,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 40,32 L 40,160' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 80,0 L 80,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 352,0 L 352,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 392,32 L 392,160' fill='none' stroke='currentColor'>&lt;/path>
+&lt;path d='M 440,0 L 440,32' fill='none' stroke='currentColor'>&lt;/path>
+&lt;polygon points='56.000000,144.000000 44.000000,138.399994 44.000000,149.600006' fill='currentColor' transform='rotate(180.000000, 48.000000, 144.000000)'>&lt;/polygon>
+&lt;polygon points='392.000000,80.000000 380.000000,74.400002 380.000000,85.599998' fill='currentColor' transform='rotate(0.000000, 384.000000, 80.000000)'>&lt;/polygon>
+&lt;text text-anchor='middle' x='16' y='20' fill='currentColor' style='font-size:1em'>C&lt;/text>
+&lt;text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'>l&lt;/text>
+&lt;text text-anchor='middle' x='32' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='48' y='20' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='56' y='20' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='64' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='64' y='68' fill='currentColor' style='font-size:1em'>G&lt;/text>
+&lt;text text-anchor='middle' x='64' y='132' fill='currentColor' style='font-size:1em'>{&lt;/text>
+&lt;text text-anchor='middle' x='72' y='68' fill='currentColor' style='font-size:1em'>E&lt;/text>
+&lt;text text-anchor='middle' x='80' y='68' fill='currentColor' style='font-size:1em'>T&lt;/text>
+&lt;text text-anchor='middle' x='80' y='132' fill='currentColor' style='font-size:1em'>"&lt;/text>
+&lt;text text-anchor='middle' x='88' y='132' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='96' y='68' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='96' y='132' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='104' y='68' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='104' y='132' fill='currentColor' style='font-size:1em'>"&lt;/text>
+&lt;text text-anchor='middle' x='112' y='68' fill='currentColor' style='font-size:1em'>t&lt;/text>
+&lt;text text-anchor='middle' x='112' y='132' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='120' y='68' fill='currentColor' style='font-size:1em'>p&lt;/text>
+&lt;text text-anchor='middle' x='128' y='68' fill='currentColor' style='font-size:1em'>s&lt;/text>
+&lt;text text-anchor='middle' x='128' y='132' fill='currentColor' style='font-size:1em'>4&lt;/text>
+&lt;text text-anchor='middle' x='136' y='68' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='136' y='132' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='144' y='68' fill='currentColor' style='font-size:1em'>/&lt;/text>
+&lt;text text-anchor='middle' x='152' y='68' fill='currentColor' style='font-size:1em'>/&lt;/text>
+&lt;text text-anchor='middle' x='152' y='132' fill='currentColor' style='font-size:1em'>"&lt;/text>
+&lt;text text-anchor='middle' x='160' y='68' fill='currentColor' style='font-size:1em'>p&lt;/text>
+&lt;text text-anchor='middle' x='160' y='132' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='168' y='68' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='168' y='132' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='176' y='68' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='176' y='132' fill='currentColor' style='font-size:1em'>m&lt;/text>
+&lt;text text-anchor='middle' x='184' y='68' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='184' y='132' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='192' y='68' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='192' y='116' fill='currentColor' style='font-size:1em'>2&lt;/text>
+&lt;text text-anchor='middle' x='192' y='132' fill='currentColor' style='font-size:1em'>"&lt;/text>
+&lt;text text-anchor='middle' x='200' y='68' fill='currentColor' style='font-size:1em'>p&lt;/text>
+&lt;text text-anchor='middle' x='200' y='116' fill='currentColor' style='font-size:1em'>0&lt;/text>
+&lt;text text-anchor='middle' x='200' y='132' fill='currentColor' style='font-size:1em'>:&lt;/text>
+&lt;text text-anchor='middle' x='208' y='68' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='208' y='116' fill='currentColor' style='font-size:1em'>0&lt;/text>
+&lt;text text-anchor='middle' x='216' y='68' fill='currentColor' style='font-size:1em'>.&lt;/text>
+&lt;text text-anchor='middle' x='216' y='132' fill='currentColor' style='font-size:1em'>"&lt;/text>
+&lt;text text-anchor='middle' x='224' y='68' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='224' y='116' fill='currentColor' style='font-size:1em'>O&lt;/text>
+&lt;text text-anchor='middle' x='224' y='132' fill='currentColor' style='font-size:1em'>c&lt;/text>
+&lt;text text-anchor='middle' x='232' y='68' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='232' y='116' fill='currentColor' style='font-size:1em'>K&lt;/text>
+&lt;text text-anchor='middle' x='232' y='132' fill='currentColor' style='font-size:1em'>h&lt;/text>
+&lt;text text-anchor='middle' x='240' y='68' fill='currentColor' style='font-size:1em'>/&lt;/text>
+&lt;text text-anchor='middle' x='240' y='132' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='248' y='68' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='248' y='132' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='256' y='68' fill='currentColor' style='font-size:1em'>p&lt;/text>
+&lt;text text-anchor='middle' x='256' y='132' fill='currentColor' style='font-size:1em'>m&lt;/text>
+&lt;text text-anchor='middle' x='264' y='68' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='264' y='132' fill='currentColor' style='font-size:1em'>a&lt;/text>
+&lt;text text-anchor='middle' x='272' y='68' fill='currentColor' style='font-size:1em'>/&lt;/text>
+&lt;text text-anchor='middle' x='272' y='132' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='280' y='68' fill='currentColor' style='font-size:1em'>v&lt;/text>
+&lt;text text-anchor='middle' x='280' y='132' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='288' y='68' fill='currentColor' style='font-size:1em'>2&lt;/text>
+&lt;text text-anchor='middle' x='288' y='132' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='296' y='68' fill='currentColor' style='font-size:1em'>/&lt;/text>
+&lt;text text-anchor='middle' x='296' y='132' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='304' y='68' fill='currentColor' style='font-size:1em'>p&lt;/text>
+&lt;text text-anchor='middle' x='304' y='132' fill='currentColor' style='font-size:1em'>"&lt;/text>
+&lt;text text-anchor='middle' x='312' y='68' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='312' y='132' fill='currentColor' style='font-size:1em'>,&lt;/text>
+&lt;text text-anchor='middle' x='320' y='68' fill='currentColor' style='font-size:1em'>k&lt;/text>
+&lt;text text-anchor='middle' x='328' y='68' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='336' y='68' fill='currentColor' style='font-size:1em'>m&lt;/text>
+&lt;text text-anchor='middle' x='344' y='68' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='352' y='68' fill='currentColor' style='font-size:1em'>n&lt;/text>
+&lt;text text-anchor='middle' x='360' y='68' fill='currentColor' style='font-size:1em'>/&lt;/text>
+&lt;text text-anchor='middle' x='360' y='132' fill='currentColor' style='font-size:1em'>}&lt;/text>
+&lt;text text-anchor='middle' x='368' y='20' fill='currentColor' style='font-size:1em'>S&lt;/text>
+&lt;text text-anchor='middle' x='368' y='68' fill='currentColor' style='font-size:1em'>4&lt;/text>
+&lt;text text-anchor='middle' x='376' y='20' fill='currentColor' style='font-size:1em'>e&lt;/text>
+&lt;text text-anchor='middle' x='384' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;text text-anchor='middle' x='392' y='20' fill='currentColor' style='font-size:1em'>v&lt;/text>
+&lt;text text-anchor='middle' x='400' y='20' fill='currentColor' style='font-size:1em'>i&lt;/text>
+&lt;text text-anchor='middle' x='408' y='20' fill='currentColor' style='font-size:1em'>d&lt;/text>
+&lt;text text-anchor='middle' x='416' y='20' fill='currentColor' style='font-size:1em'>o&lt;/text>
+&lt;text text-anchor='middle' x='424' y='20' fill='currentColor' style='font-size:1em'>r&lt;/text>
+&lt;/g>
+
+ &lt;/svg>
+ 
+&lt;/div>
+&lt;h2 id="endpoint">Endpoint&lt;/h2>
+&lt;p>Una API ofrece distintas URLs, una para cada tipo de recurso o acción. Cada una de esas URLs se llama &lt;strong>endpoint&lt;/strong>.&lt;/p></description></item><item><title>6.4: Ejemplo de Conexión con API</title><link>https://plataformas-moviles.apps.tec4.ar/temas/6-api/4-ejemplo-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/6-api/4-ejemplo-1/</guid><description>&lt;h2 id="api-lorem-picsum">API Lorem Picsum&lt;/h2>
+&lt;p>&lt;a href="https://picsum.photos">Lorem Picsum&lt;/a>
+ es una API para obtener imágenes.&lt;/p>
+&lt;p>La siguiente solicitud, por ejemplo devuelve una imagen al azar de 200x300 píxeles:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>https://picsum.photos/200/300
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Esta API también nos permite pedir una imagen específica, a partir de un id. Por ejemplo, para conseguir la imagen con id #0:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>https://picsum.photos/id/0/200/300
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>También podemos pedirle que nos devuelva no la imagen, sino sus datos, mediante id:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>https://picsum.photos/id/0/info
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Según la documentación, cada imagen tiene los siguientes atributos:&lt;/p></description></item><item><title>6.5: Ejemplo API con Google Sheets</title><link>https://plataformas-moviles.apps.tec4.ar/temas/6-api/4-ejemplo-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/6-api/4-ejemplo-2/</guid><description>&lt;p>En este ejemplo se muestra cómo usar Google Sheets como una pequeña base de datos accesible mediante API, transformando su contenido en formato JSON.&lt;/p>
+&lt;p>Google Sheets es una opción muy conveniente para almacenar y publicar datos porque permite editarlos desde cualquier navegador o dispositivo, sin necesidad de configurar servidores ni bases de datos propias.&lt;/p>
+&lt;h2 id="1-crear-la-hoja-de-cálculo">1. Crear la hoja de cálculo&lt;/h2>
+&lt;ul>
+&lt;li>Crear una nueva hoja en Google Sheets (puede ser usando &lt;a href="https://sheets.new">sheets.new&lt;/a>
+).&lt;/li>
+&lt;li>Utilizar la primera fila para definir los nombres de los campos (por ejemplo: nombre, email, teléfono).&lt;/li>
+&lt;li>Abrir el menú “Compartir” y configurar la opción “Cualquier persona con el enlace” - “Lector” para permitir el acceso a la hoja.&lt;/li>
+&lt;/ul>
+&lt;figure>
+ &lt;img src="https://plataformas-moviles.apps.tec4.ar/img/compartir-planilla.png" alt="Opciones para compartir una planilla de Google Sheets con acceso público de lector">&lt;/figure>&lt;h2 id="2-obtener-el-id-de-la-hoja">2. Obtener el ID de la hoja&lt;/h2>
+&lt;p>El ID de la hoja es la parte central de la URL de Google Sheets:&lt;/p></description></item><item><title>6.6: tp-16 (APIs)</title><link>https://plataformas-moviles.apps.tec4.ar/temas/6-api/5-tp-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/6-api/5-tp-api/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Construir una aplicación con HTML + CSS (con Bootstrap) + JS, que consuma recursos de alguna API.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;p>Para la entrega del trabajo, crear un directorio &lt;code>tp-16/&lt;/code> en su repositorio de entregas, y subir un archivo como &lt;code>tp-16/index.html&lt;/code>, junto con los archivos js y css correspondientes.&lt;/p>
+&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;p>Para este trabajo deben elegir una de las siguientes dos opciones:&lt;/p>
+&lt;ol>
+&lt;li>Usar la &lt;a href="https://pokeapi.co/docs/v2">PokéAPI&lt;/a>
+&lt;/li>
+&lt;li>Usar &lt;a href="https://www.themealdb.com/api.php">TheMealDB&lt;/a>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="opción-1-pokéapi">Opción 1: PokéAPI&lt;/h3>
+&lt;p>La &lt;a href="https://pokeapi.co/docs/v2">PokéAPI&lt;/a>
+ es una API de Pokémon que permite obtener información sobre Pokémon, sus movimientos, sus tipos, etc.&lt;/p></description></item></channel></rss>

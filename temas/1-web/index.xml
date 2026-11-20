@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unidad 1: Web on Plataformas Móviles</title><link>https://plataformas-moviles.apps.tec4.ar/temas/1-web/</link><description>Recent content in Unidad 1: Web on Plataformas Móviles</description><generator>Hugo</generator><language>es-AR</language><atom:link href="https://plataformas-moviles.apps.tec4.ar/temas/1-web/index.xml" rel="self" type="application/rss+xml"/><item><title>1.1: Navegadores</title><link>https://plataformas-moviles.apps.tec4.ar/temas/1-web/1-navegadores/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/1-web/1-navegadores/</guid><description>&lt;p>Queremos usar la plataforma web para desarrollar nuestras aplicaciones. Para arrancar a trabajar con la plataforma web es necesario entender el proceso que permite el funcionamiento de la web.&lt;/p>
+&lt;h2 id="cómo-funciona-un-navegador">Cómo funciona un navegador&lt;/h2>
+&lt;p>¿Qué pasa cuando accedemos desde un navegador a un sitio web?:&lt;/p>
+&lt;ul>
+&lt;li>Escribimos la URL.&lt;/li>
+&lt;li>El navegador consulta al DNS por la IP asociada a esa URL.&lt;/li>
+&lt;li>El navegador consulta al servidor web en la IP por el contenido en esa URL, a través de HTTP.&lt;/li>
+&lt;li>El servidor web responde la consulta HTTP con el contenido del sitio, generalmente en HTML.&lt;/li>
+&lt;li>El navegador procesa, interpreta y muestra ese contenido.&lt;/li>
+&lt;/ul>
+&lt;p>Este proceso se puede ver en navegadores de hace 30 años como en navegadores actuales.&lt;/p></description></item><item><title>1.2: Historia</title><link>https://plataformas-moviles.apps.tec4.ar/temas/1-web/2-historia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/1-web/2-historia/</guid><description>&lt;p>Recorremos la historia de los navegadores.&lt;/p>
+&lt;p>Problemáticas que puede tener un monopolio en el territorio de los navegadores:&lt;/p>
+&lt;ul>
+&lt;li>Hace que la web deje de ser estándar.&lt;/li>
+&lt;li>Hace que los sitios dejen de funcionar en todos los navegadores.&lt;/li>
+&lt;li>Hace que las empresas &amp;ldquo;sean dueñas&amp;rdquo; de internet.&lt;/li>
+&lt;/ul></description></item><item><title>1.3: Especificaciones</title><link>https://plataformas-moviles.apps.tec4.ar/temas/1-web/3-especificaciones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/1-web/3-especificaciones/</guid><description>&lt;p>Todas las tecnologías que componen la web están definidas por estándares, y eso permite la inter-operabilidad, la compatibilidad.&lt;/p>
+&lt;h2 id="ejemplos-cotidianos">Ejemplos cotidianos&lt;/h2>
+&lt;h3 id="fichas-de-enchufes">Fichas de Enchufes&lt;/h3>
+&lt;figure>
+ &lt;img src="https://elordenmundial.com/wp-content/uploads/2021/11/Mapa-enchufes-mundo.png" alt="Mapa mundial de los distintos tipos de fichas y enchufes eléctricos">&lt;/figure>&lt;p>&lt;a href="https://elordenmundial.com/mapas-y-graficos/el-mapa-de-los-enchufes-en-el-mundo/">Fuente&lt;/a>
+&lt;/p>
+&lt;h3 id="talles-de-zapatillas">Talles de Zapatillas&lt;/h3>
+&lt;figure>
+ &lt;img src="https://fitzrovia.com.ar/img/cms/talles%20reebok.jpg" alt="Tabla comparativa de talles de zapatillas en distintos sistemas">&lt;/figure>&lt;p>&lt;a href="https://fitzrovia.com.ar/info/13-guia-de-talles">Fuente&lt;/a>
+&lt;/p>
+&lt;h3 id="husos-horarios">Husos Horarios&lt;/h3>
+&lt;figure>
+ &lt;img src="https://proyectoviajero.com/wp-content/uploads/2022/11/husos_horarios_mundo-XL.jpg" alt="Mapa mundial de husos horarios">&lt;/figure>&lt;p>&lt;a href="https://proyectoviajero.com/mapas-mundo/mapa-de-los-husos-horarios/">Fuente&lt;/a>
+&lt;/p>
+&lt;h3 id="tamaño-de-papel">Tamaño de Papel&lt;/h3>
+&lt;figure>
+ &lt;img src="https://i0.wp.com/vemployed.com/wp-content/uploads/2015/03/tamanosdelpapel.jpg" alt="Comparativa de tamaños de papel estándar">&lt;/figure>&lt;p>&lt;a href="https://vemployed.com/tamanos-del-papel/">Fuente&lt;/a>
+&lt;/p></description></item></channel></rss>

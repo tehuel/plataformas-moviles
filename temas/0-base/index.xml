@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unidad 0: Conceptos Base on Plataformas Móviles</title><link>https://plataformas-moviles.apps.tec4.ar/temas/0-base/</link><description>Recent content in Unidad 0: Conceptos Base on Plataformas Móviles</description><generator>Hugo</generator><language>es-AR</language><atom:link href="https://plataformas-moviles.apps.tec4.ar/temas/0-base/index.xml" rel="self" type="application/rss+xml"/><item><title>0.0: Conceptos Base</title><link>https://plataformas-moviles.apps.tec4.ar/temas/0-base/0-conceptos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/0-base/0-conceptos/</guid><description>&lt;h2 id="plataformas-móviles">Plataformas Móviles&lt;/h2>
+&lt;p>¿Cómo definimos qué es y qué no es una plataforma móvil?&lt;/p>
+&lt;p>¿Cómo clasificamos celulares y computadoras? ¿Qué criterio podemos utilizar?&lt;/p>
+&lt;blockquote>
+&lt;p>Clasificar se define en el diccionario de la Real Academia Española como “disponer por clases algo”, o sea, organizar y dividir un conjunto de elementos según un criterio.&lt;/p>&lt;/blockquote>
+&lt;p>¿Qué herramientas necesitamos para crear aplicaciones para cada plataforma?&lt;/p>
+&lt;ul>
+&lt;li>Windows
+&lt;ul>
+&lt;li>C, C++&lt;/li>
+&lt;li>C#&lt;/li>
+&lt;li>DirectX, OpenGL&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Linux
+&lt;ul>
+&lt;li>C, C++&lt;/li>
+&lt;li>OpenGL&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>macOS
+&lt;ul>
+&lt;li>Xcode&lt;/li>
+&lt;li>Swift, SwiftUI&lt;/li>
+&lt;li>Metal&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Android
+&lt;ul>
+&lt;li>Android Studio&lt;/li>
+&lt;li>Java&lt;/li>
+&lt;li>Kotlin&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>iOS
+&lt;ul>
+&lt;li>Xcode&lt;/li>
+&lt;li>Swift, SwiftUI&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>0.0: TP Diagnóstico</title><link>https://plataformas-moviles.apps.tec4.ar/temas/0-base/0-tp-diagnostico/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/0-base/0-tp-diagnostico/</guid><description>&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;p>Contestar y definir, con sus palabras, las siguientes preguntas.&lt;/p>
+&lt;p>Es válido investigar en internet o en distintos medios, pero por favor no copien y peguen
+definiciones (Prohibido ChatGPT). El objetivo de la actividad no es llenar páginas y páginas de texto, sino poder evaluar cuánto conocen del tema.&lt;/p>
+&lt;blockquote>
+&lt;p>El Trabajo Práctico es individual.&lt;/p>&lt;/blockquote>
+&lt;h3 id="plataformas-móviles">Plataformas Móviles&lt;/h3>
+&lt;ol>
+&lt;li>¿Qué diferencias hay entre un smartphone y un feature phone (o dumb phone)?&lt;/li>
+&lt;li>¿Qué diferencias encuentran entre un teléfono móvil (smartphone) y una computadora? ¿Y qué similitudes?&lt;/li>
+&lt;li>¿Qué sistema(s) operativo(s) de computadora conocen? ¿Y de smartphones?&lt;/li>
+&lt;li>¿Qué es la arquitectura o juego de instrucciones de un procesador?&lt;/li>
+&lt;li>¿Cuál es la diferencia entre un lenguaje de programación compilado y un lenguaje de programación interpretado?&lt;/li>
+&lt;li>¿Conocen la diferencia entre tipado estático y tipado dinámico de datos?&lt;/li>
+&lt;li>¿Conocen la diferencia entre error semántico y error sintáctico?&lt;/li>
+&lt;/ol>
+&lt;h3 id="tecnologías-web">Tecnologías Web&lt;/h3>
+&lt;ol>
+&lt;li>¿Qué es HTML? ¿Para qué sirve?&lt;/li>
+&lt;li>¿Qué es CSS? ¿Para qué sirve?&lt;/li>
+&lt;li>¿Cómo se relacionan CSS y HTML?&lt;/li>
+&lt;li>¿Qué es JavaScript?&lt;/li>
+&lt;li>¿Qué relación hay entre JavaScript y Java?&lt;/li>
+&lt;li>¿Qué es un paradigma en un lenguaje de programación?
+&lt;ul>
+&lt;li>a. ¿Qué lenguajes de programación conocen?&lt;/li>
+&lt;li>b. ¿Pueden asociar esos lenguajes con su(s) paradigma(s)?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>¿Qué es un estándar o especificación? Dar algunos ejemplos.&lt;/li>
+&lt;li>¿Conocen Git? ¿Qué diferencia hay entre Git y GitHub?&lt;/li>
+&lt;/ol></description></item><item><title>0.1: GitHub y Git</title><link>https://plataformas-moviles.apps.tec4.ar/temas/0-base/1-github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/0-base/1-github/</guid><description>&lt;p>&lt;strong>Git&lt;/strong> es un sistema de control de versiones distribuido (DVCS, por sus siglas en inglés) diseñado para rastrear los cambios en el código fuente durante el desarrollo de software. Fue creado por Linus Torvalds en 2005 para gestionar el desarrollo del kernel de Linux. Git permite a los desarrolladores trabajar en un mismo proyecto de forma colaborativa, manteniendo un historial de cambios y versiones de archivos.&lt;/p>
+&lt;p>&lt;strong>GitHub&lt;/strong> es una plataforma en línea que proporciona un servicio de alojamiento para proyectos de desarrollo de software, permitiendo colaborar, compartir y trabajar en proyectos de software de código abierto y privado. Existen otras plataformas similares como GitLab, Bitbucket, Codeberg, Gogs, etc.&lt;/p></description></item><item><title>0.1: tp-0 (GitHub)</title><link>https://plataformas-moviles.apps.tec4.ar/temas/0-base/1-tp-github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://plataformas-moviles.apps.tec4.ar/temas/0-base/1-tp-github/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>El objetivo principal de esta actividad es configurar un repositorio en GitHub que sirva como espacio centralizado para las entregas de los trabajos prácticos de la materia Plataformas Móviles.&lt;/p>
+&lt;p>Además, se busca familiarizar a los estudiantes con el uso de herramientas de colaboración y publicación de contenido web, como lo son GitHub y GitHub Pages.&lt;/p>
+&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;h3 id="1-usuario-de-github">1. Usuario de GitHub&lt;/h3>
+&lt;p>Crear usuario en &lt;a href="https://github.com">GitHub&lt;/a>
+ (si es que todavía no tienen).&lt;/p></description></item></channel></rss>
