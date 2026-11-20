@@ -31,7 +31,7 @@ La estructura básica de un documento HTML se compone de las siguientes etiqueta
 
 Detalle de cada uno de los componentes de una etiqueta HTML.
 
-![](/img/etiqueta-html.png)
+![Anatomía de una etiqueta HTML: etiqueta de apertura, contenido y etiqueta de cierre](/img/etiqueta-html.png)
 
 ## Elementos del "body"
 

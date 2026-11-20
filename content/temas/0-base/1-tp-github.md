@@ -28,7 +28,7 @@ Crear un nuevo repositorio, con el nombre `plataformas-moviles-entregas`.
 <details>
     <summary>(Screenshot)</summary>
 
-![](/img/github-nuevo-repo.png)
+![Formulario de creación de un nuevo repositorio en GitHub](/img/github-nuevo-repo.png)
 
 </details>
 
@@ -47,14 +47,14 @@ Dentro del repositorio recién creado, agregar un nuevo archivo.
 <details>
     <summary>(Si el repo está vacío)</summary>
 
-![](/img/github-new-file-1.png)
+![Opción para crear un nuevo archivo en un repositorio vacío de GitHub](/img/github-new-file-1.png)
 
 </details>
 
 <details>
     <summary>(Si el repo ya tiene archivos)</summary>
 
-![](/img/github-new-file-2.png)
+![Menú Add file para crear un nuevo archivo en un repositorio de GitHub](/img/github-new-file-2.png)
 
 </details>
 
@@ -87,14 +87,14 @@ Activar GitHub Pages.
 4. Click en `save` para guardar los cambios.
 5. Esperar unos minutos a que el servicio se active.
 
-![](/img/tp-1-pages.png)
+![Configuración de GitHub Pages seleccionando la rama main y carpeta root](/img/tp-1-pages.png)
 
 Si todo salió bien, al volver a entrar a la sección pages se debería ver el link en un recuadro.
 
 <details>
     <summary>(Screenshot: link en recuadro)</summary>
 
-![](/img/github-pages-link.png)
+![Recuadro con el enlace del sitio publicado en GitHub Pages](/img/github-pages-link.png)
 
 </details>
 
@@ -105,7 +105,7 @@ Agregar link a detalles del repositorio.
 <details>
     <summary>(Screenshot: link en detalles)</summary>
 
-![](/img/github-repo-details.png)
+![Panel About del repositorio en GitHub para configurar el enlace del sitio](/img/github-repo-details.png)
 
 </details>
 

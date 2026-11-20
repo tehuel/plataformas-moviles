@@ -14,7 +14,7 @@ Vimos distintas maneras de incluir CSS en un archivo HTML:
 
 Sintaxis de CSS, con los nombres apropiados:
 
-![](/img/regla-css.png)
+![Anatomía de una regla CSS: selector, declaración, propiedad y valor](/img/regla-css.png)
 
 Comentamos que el procesamiento de CSS se hace en orden, lo que se escribe último pisa a lo que se escribe primero. 
 

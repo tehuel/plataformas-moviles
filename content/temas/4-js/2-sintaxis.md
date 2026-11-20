@@ -68,6 +68,6 @@ La podemos imaginar como una caja negra con una entrada y una salida, donde el p
 
 A su vez, dentro de la caja sólo deberíamos preocuparnos por procesar y transformar la entrada para producir la salida.
 
-![](/img/FunctionMachine.svg "Pensamos la función como una máquina")
+![Diagrama de una función representada como máquina que transforma una entrada en una salida](/img/FunctionMachine.svg "Pensamos la función como una máquina")
 
-![](/img/FunctionMachinesComposition.svg "La salida de una máquina puede ser la entrada de otra")
+![Diagrama de composición de funciones encadenadas](/img/FunctionMachinesComposition.svg "La salida de una máquina puede ser la entrada de otra")

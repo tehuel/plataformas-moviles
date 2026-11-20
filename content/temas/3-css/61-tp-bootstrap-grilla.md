@@ -69,15 +69,15 @@ Para cada layout, realizar las modificaciones necesarias al HTML inicial para qu
 
 ### 1. Layout 1
 
-![](/img/layout-1.png)
+![Diseño objetivo del Layout 1 con grilla de Bootstrap en distintos tamaños de pantalla](/img/layout-1.png)
 
 ### 2. Layout 2
 
-![](/img/layout-2.png)
+![Diseño objetivo del Layout 2 con grilla de Bootstrap en distintos tamaños de pantalla](/img/layout-2.png)
 
 ### 3. Layout 3
 
-![](/img/layout-3.png)
+![Diseño objetivo del Layout 3 con grilla de Bootstrap en distintos tamaños de pantalla](/img/layout-3.png)
 
 ### 4. Índice
 

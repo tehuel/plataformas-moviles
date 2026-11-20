@@ -20,7 +20,7 @@ Por ejemplo, si se tuviese definido un estilo para todas las imágenes de un sit
 
 ### Cálculo de Especificidad
 
-![](/img/specificity.png)
+![Diagrama de cálculo de especificidad de selectores CSS](/img/specificity.png)
 
 ### Batificity
 

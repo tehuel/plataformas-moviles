@@ -23,4 +23,4 @@ Dentro de las etiquetas HTML semánticas podemos incluir:
 - `<samp>`: Representa la salida de un programa o sistema.
 - `<abbr>`: Define abreviaciones o acrónimos, permitiendo mostrar su significado completo al pasar el cursor sobre ellos.
 
-![](/img/semantica.png "HTML semantico / HTML no semántico")
+![Comparación entre estructura con etiquetas HTML semánticas y estructura solo con div](/img/semantica.png "HTML semantico / HTML no semántico")

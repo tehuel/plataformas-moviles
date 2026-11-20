@@ -63,7 +63,7 @@ async function obtenerImagenDesdeApi() {
 
 Resultado:
 
-![](/img/ejemplofetch.png "Respuesta de API")
+![Objeto JSON devuelto por Lorem Picsum mostrado en la consola del navegador](/img/ejemplofetch.png "Respuesta de API")
 
 ## Obtener imagen aleatoria
 

@@ -16,7 +16,7 @@ Cascading Style Sheets
 
 ---
 
-![](/img/css-peter.gif)
+![Animación humorística sobre ajustar estilos en CSS](/img/css-peter.gif)
 
 ---
 
@@ -56,7 +56,7 @@ Agregando (inline) el atributo `style=""`
 
 ---
 
-![](/img/regla-css.png)
+![Anatomía de una regla CSS: selector, declaración, propiedad y valor](/img/regla-css.png)
 
 ---
 

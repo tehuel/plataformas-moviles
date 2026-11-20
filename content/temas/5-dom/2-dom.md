@@ -7,7 +7,7 @@ Vimos distintas operaciones que podemos realizar conectando con el *Modelo de Ob
 
 Podemos pensar la representación del documento HTML como una estructura de árbol, donde encontramos nodos, ramas y hojas todos partiendo desde un nodo raíz.
 
-![](/img/dom-tree.png)
+![Representación en árbol de los nodos de un documento HTML en el DOM](/img/dom-tree.png)
 
 Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Document_Object_Model)
 

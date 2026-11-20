@@ -76,7 +76,7 @@ const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
 
 Para acceder desde el browser, visitamos el endpoint en la URL `https://pokeapi.co/api/v2/pokemon/4` y obtenemos una respuesta en formato JSON.
 
-![](/img/charmander-pokeapi.png "Vista de JSON interpretado (izquierda) y en crudo (derecha) en Firefox")
+![Respuesta JSON de PokéAPI para Charmander vista en Firefox](/img/charmander-pokeapi.png "Vista de JSON interpretado (izquierda) y en crudo (derecha) en Firefox")
 
 ### Ver el pedido en las herramientas de desarrollo
 

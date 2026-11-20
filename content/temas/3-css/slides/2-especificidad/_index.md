@@ -8,7 +8,7 @@ outputs:
 
 ---
 
-![](/img/specificity.png)
+![Diagrama de cálculo de especificidad de selectores CSS](/img/specificity.png)
 
 ---
 
