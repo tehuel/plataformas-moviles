@@ -23,17 +23,7 @@
 			{{ range .RegularPages.ByWeight }}
 				<h2 class="h4 mb-3">
 					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-					{{ if .Params.opcional }}
-						{{ $badgeText := "Opcional" }}
-						{{ $badgeClass := "text-bg-secondary" }}
-						{{ if eq .Params.tipo "actividad" }}
-							{{ $badgeText = "Actividad en clase" }}
-							{{ $badgeClass = "text-bg-info" }}
-						{{ else if eq .Params.tipo "guia" }}
-							{{ $badgeText = "Guía opcional" }}
-						{{ end }}
-						<span class="badge {{ $badgeClass }} ms-2">{{ $badgeText }}</span>
-					{{ end }}
+					{{ partial "badges.html" . }}
 				</h2>
 			{{ end }}
 		</div>

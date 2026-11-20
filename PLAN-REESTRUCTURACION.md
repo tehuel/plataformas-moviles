@@ -158,7 +158,7 @@ Tomando como norte el **Trabajo Integrador** y el enfoque de **Plataformas Móvi
 *(A detallar e implementar una vez cerradas las decisiones de contenido.)*
 
 - **Frontmatter unificado**: incorporar `weight`, `tipo` (`"apunte"` | `"tp"` | `"actividad"`) y `opcional: true | false` en las páginas de `content/temas/` para dejar de depender de prefijos en nombres de archivo o en el título.
-- **`layouts/_default/list.html`**: botón a Presentaciones (si existen) y un único listado por unidad, ordenado por `weight` según el orden de las clases (tema → TP del tema → opcionales del tema → siguiente tema), con badges en los opcionales.
+- **`layouts/_default/list.html` y `layouts/partials/badges.html`**: botón a Presentaciones (si existen) y un único listado por unidad ordenado por `weight` según el orden de las clases (tema → TP del tema → opcionales del tema → siguiente tema), con badges separados para el tipo (`TP`, `Actividad en clase`, `Guía`) y para la opcionalidad (`Opcional`).
 - **`layouts/trabajos-practicos/list.html`**: ordenar por unidad/`weight` y separar **Obligatorios (+ Trabajo Integrador)** de **Opcionales**.
 - **Limpiezas puntuales detectadas durante la revisión**:
   - `content/temas/3-css/4-media-queries.md`: quitar las reglas de especificidad pegadas al final del bloque `<style>` del ejemplo.

@@ -1,0 +1,10 @@
+{{- if eq .Params.tipo "tp" -}}
+	<span class="badge text-bg-primary ms-1">TP</span>
+{{- else if eq .Params.tipo "actividad" -}}
+	<span class="badge text-bg-info ms-1">Actividad en clase</span>
+{{- else if eq .Params.tipo "guia" -}}
+	<span class="badge text-bg-info ms-1">Guía</span>
+{{- end -}}
+{{- if .Params.opcional -}}
+	<span class="badge text-bg-secondary ms-1">Opcional</span>
+{{- end -}}

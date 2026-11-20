@@ -4,17 +4,10 @@
 
 	<div class="text-center border-bottom mb-4">
 		<h1 class="display-3">{{ .Title }}</h1>
-		{{ if .Params.opcional }}
-			{{ $badgeText := "Opcional" }}
-			{{ $badgeClass := "text-bg-secondary" }}
-			{{ if eq .Params.tipo "actividad" }}
-				{{ $badgeText = "Actividad en clase" }}
-				{{ $badgeClass = "text-bg-info" }}
-			{{ else if eq .Params.tipo "guia" }}
-				{{ $badgeText = "Guía opcional" }}
-			{{ end }}
+		{{ $badges := partial "badges.html" . }}
+		{{ if $badges }}
 			<p class="mb-2">
-				<span class="badge {{ $badgeClass }}">{{ $badgeText }}</span>
+				{{ $badges }}
 			</p>
 		{{ end }}
 		{{ with .Date }}
