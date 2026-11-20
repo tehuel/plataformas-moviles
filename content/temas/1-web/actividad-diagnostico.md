@@ -1,16 +1,19 @@
 ---
-title: "0.0: TP Diagnóstico"
-tags: ["tp"]
+title: "Diagnóstico Inicial"
+weight: 15
+tipo: "actividad"
+opcional: true
 ---
+
+> Esta es una actividad diagnóstica inicial para realizar en clase; no requiere entrega en el repositorio de GitHub Pages.
 
 ## Consigna
 
 Contestar y definir, con sus palabras, las siguientes preguntas.
 
-Es válido investigar en internet o en distintos medios, pero por favor no copien y peguen
-definiciones (Prohibido ChatGPT). El objetivo de la actividad no es llenar páginas y páginas de texto, sino poder evaluar cuánto conocen del tema. 
+Es válido investigar en internet o en distintos medios, pero por favor no copien y peguen definiciones (Prohibido ChatGPT). El objetivo de la actividad no es llenar páginas y páginas de texto, sino poder evaluar cuánto conocen del tema.
 
-> El Trabajo Práctico es individual.
+> La actividad es individual.
 
 ### Plataformas Móviles
 

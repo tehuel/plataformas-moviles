@@ -1,11 +1,13 @@
 ---
-title: "0.1: tp-0 (GitHub)"
-tags: ["tp"]
+title: "TP: Repositorio y GitHub Pages"
+weight: 25
+tipo: "tp"
+opcional: false
 ---
 
 ## Objetivo
 
-El objetivo principal de esta actividad es configurar un repositorio en GitHub que sirva como espacio centralizado para las entregas de los trabajos prácticos de la materia Plataformas Móviles. 
+El objetivo principal de esta actividad es configurar un repositorio en GitHub que sirva como espacio centralizado para las entregas de los trabajos prácticos de la materia Plataformas Móviles.
 
 Además, se busca familiarizar a los estudiantes con el uso de herramientas de colaboración y publicación de contenido web, como lo son GitHub y GitHub Pages.
 
@@ -72,7 +74,7 @@ El nombre del archivo debe ser `index.html`, y el contenido puede ser un HTML, p
      <h1>Trabajos Prácticos</h1>
      <p>Listado de trabajos prácticos para la materia Plataformas Móviles</p>
      <ul>
-       <li><a href="tp-1/">Primer Trabajo</a></li>
+       <li><a href="tp-html/">TP HTML</a></li>
      </ul>
    </body>
 </html>

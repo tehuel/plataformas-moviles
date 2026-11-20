@@ -1,5 +1,8 @@
 ---
-title: "0.1: GitHub y Git"
+title: "1.2: Git, GitHub y GitHub Pages"
+weight: 20
+tipo: "apunte"
+opcional: false
 ---
 
 **Git** es un sistema de control de versiones distribuido (DVCS, por sus siglas en inglés) diseñado para rastrear los cambios en el código fuente durante el desarrollo de software. Fue creado por Linus Torvalds en 2005 para gestionar el desarrollo del kernel de Linux. Git permite a los desarrolladores trabajar en un mismo proyecto de forma colaborativa, manteniendo un historial de cambios y versiones de archivos.
