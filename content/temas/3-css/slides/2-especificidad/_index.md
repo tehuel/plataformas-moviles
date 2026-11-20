@@ -1,5 +1,6 @@
 ---
 title: "2 - Especificidad en CSS"
+weight: 20
 outputs:
   - "Reveal"
 ---

@@ -1,21 +1,45 @@
 {{- define "main" }}
 
 	{{ partial "breadcrumb.html" . }}
-	
+
 	<div class="text-center border-bottom mb-4">
 		<h1 class="display-3">{{ .Title }}</h1>
 	</div>
 
-	<div class="content my-4">
-		{{ .Content }}		
-	</div>
+	{{ with .Content }}
+		<div class="content my-4">
+			{{ . }}
+		</div>
+	{{ end }}
 
-    {{ range where .Site.Pages "Params.tags" "intersect" (slice "tp") }}
-        <h2>
-            <a href="{{ .RelPermalink }}">
-                {{ .Title }}
-            </a>
-        </h2>
-    {{ end }}
+	{{ with .Site.GetPage "/temas" }}
+		{{ range .Sections.ByWeight }}
+			{{ $unidad := . }}
+			{{ $items := slice }}
+			{{ range $unidad.RegularPages.ByWeight }}
+				{{ if eq .Params.tipo "tp" }}
+					{{ $items = $items | append . }}
+				{{ end }}
+			{{ end }}
+
+			{{ if or (gt (len $items) 0) $unidad.Params.integrador }}
+				<section class="my-4">
+					<h2 class="h4 text-muted border-bottom pb-2 mb-3">{{ $unidad.Title }}</h2>
+					{{ range $items }}
+						<h3 class="h4 mb-3">
+							<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+							{{ partial "badges.html" . }}
+						</h3>
+					{{ end }}
+					{{ if $unidad.Params.integrador }}
+						<h3 class="h4 mb-3">
+							<a href="{{ $unidad.RelPermalink }}">Trabajo Integrador</a>
+							<span class="badge text-bg-primary ms-1">TP</span>
+						</h3>
+					{{ end }}
+				</section>
+			{{ end }}
+		{{ end }}
+	{{ end }}
 
 {{- end }}

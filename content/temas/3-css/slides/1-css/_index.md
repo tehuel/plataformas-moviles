@@ -1,5 +1,6 @@
 ---
 title: "1 - CSS"
+weight: 10
 outputs:
   - "Reveal"
 ---

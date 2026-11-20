@@ -1,0 +1,95 @@
+---
+title: "4.4: Listas y Objetos"
+weight: 40
+tipo: "apunte"
+opcional: false
+---
+
+Queremos almacenar un listado de alumnos. Evaluamos distintas opciones:
+
+```js
+// la posición indica a qué alumno refiere en los listados
+let listadoDeNombres = ["Lionel", "Sahid"]
+let listadoDeApellidos = []
+let listaDeEdades = [18, 19, 20]
+```
+
+```js
+// objeto con todos los alumnos
+let objetoDeAlumnos = {
+    nombre_1: "Lionel",
+    apellido_1: "",
+    edad_1: 18,
+
+    nombre_2: "Sahid",
+    apellido_2: "",
+    edad_2: 19,
+}
+```
+
+```js
+// Un objeto para cada alumno, dentro de otro objeto.
+let objetoListaAlumnos = {
+    alumno_1: {
+        nombre: "Lionel",
+        apellido: "",
+        edad: 18,
+    },
+    alumno_2: {
+        nombre: "Sahid",
+        apellido: "",
+        edad: 19,
+    }
+}
+```
+
+```js
+// un objeto para cada alumno, una lista para contener a todos los alumnos
+let listaDeAlumnos = [
+    {
+        nombre: "Lionel",
+        apellido: "",
+        edad: 18,
+    },
+    {
+        nombre: "Sahid",
+        apellido: "",
+        edad: 19,
+    },
+]
+```
+
+## Agregar nuevos valores
+
+```js
+// Agrego un nuevo alumno como objeto
+listaDeAlumnos.push({
+    nombre: "Agustin",
+    apellido: "",
+    edad: 19,
+});
+
+// Agrego otro nuevo alumno desde variable
+let otroNuevoAlumno = {
+    nombre: "Camila",
+    apellido: "",
+    edad: 19,
+};
+listaDeAlumnos.push(otroNuevoAlumno);
+
+// Agrego un alumno creado desde una función
+let resultadoDeCrearNuevoAlumno = crearNuevoAlumno("Fabian", "", 20);
+listaDeAlumnos.push(resultadoDeCrearNuevoAlumno);
+
+//...
+
+console.log("Lista de alumnos actualizada: ", listaDeAlumnos);
+```
+
+## Accediendo a valores dentro de una lista de objetos
+
+```js
+// accedo a campos dentro de los alumnos, dentro del listado
+let nombreDelAlumno = listaDeAlumnos[1].nombre;
+let apellidoDelAlumno = listaDeAlumnos[1].apellido;
+```

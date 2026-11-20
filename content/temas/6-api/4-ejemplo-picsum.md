@@ -1,0 +1,212 @@
+---
+title: "6.4: Ejemplo de Conexión con API"
+weight: 40
+tipo: "apunte"
+opcional: false
+---
+
+## API Lorem Picsum
+
+[Lorem Picsum](https://picsum.photos) es una API para obtener imágenes.
+
+La siguiente solicitud, por ejemplo devuelve una imagen al azar de 200x300 píxeles:
+
+```bash
+https://picsum.photos/200/300
+```
+
+Esta API también nos permite pedir una imagen específica, a partir de un id. Por ejemplo, para conseguir la imagen con id #0:
+
+```bash
+https://picsum.photos/id/0/200/300
+```
+
+También podemos pedirle que nos devuelva no la imagen, sino sus datos, mediante id:
+
+```bash
+https://picsum.photos/id/0/info
+```
+
+Según la documentación, cada imagen tiene los siguientes atributos:
+
+```json
+{
+    "id":"0",
+    "author":"Alejandro Escamilla",
+    "width":5000,
+    "height":3333,
+    "url":"https://unsplash.com/photos/yC-Yzbqy7PY",
+    "download_url":"https://picsum.photos/id/0/5000/3333"
+}
+```
+
+Sabiendo esto, podemos hacer un sitio simple que nos permita obtener y mostrar imágenes aleatorias.
+
+## Conexión desde JS
+
+Para obtener datos de una API en JavaScript usamos la función [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Window/fetch) junto con `async/await` (ver [6.3](/temas/6-api/3-api-http/)):
+
+```js
+async function obtenerDatos(url) {
+    const response = await fetch(url);     // envía el pedido y espera la respuesta
+    const data = await response.json();    // convierte el contenido de JSON a objeto
+    console.log(data);                     // ya podemos usar los datos
+}
+```
+
+Entonces, por ejemplo, si usamos la URL `https://picsum.photos/id/0/info`, obtenemos todos los datos de la imagen `0`:
+
+```js
+async function obtenerImagenDesdeApi() {
+    const response = await fetch(`https://picsum.photos/id/0/info`);
+    const data = await response.json();
+    console.log(data);
+}
+```
+
+Resultado:
+
+![Objeto JSON devuelto por Lorem Picsum mostrado en la consola del navegador](/img/ejemplofetch.png "Respuesta de API")
+
+## Obtener imagen aleatoria
+
+Para obtener una imagen aleatoria necesitamos generar un id. Para esto podemos armar una función:
+
+```js
+function generarNumeroAleatorio(limite) {
+    return Math.floor(Math.random() * limite);
+}
+```
+
+Para pedir a la API una imagen usando un id, es necesario modificar la función de conexión para que acepte un id como parámetro. Además, verificamos con `response.ok` si el pedido fue exitoso:
+
+```js
+async function obtenerImagenDesdeApi(id) {
+    const response = await fetch(`https://picsum.photos/id/${id}/info`);
+    if (!response.ok) {
+        throw new Error(`Error en el pedido: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+}
+```
+
+Combinando ambas funciones (dentro de otra función `async`), podemos conseguir los `datosDeImagen`:
+
+```js
+async function obtenerImagenAleatoria() {
+    const idAleatorio = generarNumeroAleatorio(100);
+    const datosDeImagen = await obtenerImagenDesdeApi(idAleatorio);
+    return datosDeImagen;
+}
+```
+
+## Mostrar imagen en el DOM
+
+Para generar la estructura HTML de una imagen y mostrarla en el DOM, podemos armar una función, que reciba un string con la URL de una imagen y genere un elemento `<img>`.
+
+```js
+function mostrarImgEnDom(src) {
+    // creo un nuevo elemento <img>
+    const elementoImg = document.createElement('img');
+    elementoImg.src = src;
+    elementoImg.classList.add('img-fluid', 'my-2'); // clases de bootstrap
+
+    // agrego el elemento <img> al DOM
+    document.querySelector('#contenedorImagenes').appendChild(elementoImg);
+}
+```
+
+## Código Final
+
+Uniendo todo:
+- Asociamos el evento con `addEventListener()` como vimos en la [unidad de eventos](/temas/5-dom/1-dom-y-eventos/).
+- Usamos `try / catch / finally` para que, si una imagen no existe o falla la conexión, mostremos un aviso y el botón se vuelva a activar en el bloque `finally`.
+- Pedimos la imagen en un tamaño reducido (`600/400`) para que cargue rápido.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Ejemplo Lorem Picsum</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center">Ejemplo Lorem Picsum</h1>
+
+        <button id="botonObtenerImagen" class="btn btn-primary my-3">   
+            Obtener Imagen
+        </button>
+
+        <div id="contenedorImagenes"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function generarNumeroAleatorio(limite) {
+            return Math.floor(Math.random() * limite);
+        }
+
+        async function obtenerImagenDesdeApi(id) {
+            const response = await fetch(`https://picsum.photos/id/${id}/info`);
+            if (!response.ok) {
+                throw new Error(`Error en el pedido: ${response.status}`);
+            }
+            const data = await response.json();
+            return data;
+        }
+
+        function mostrarImgEnDom(src) {
+            const elementoImg = document.createElement('img');
+            elementoImg.src = src;
+            elementoImg.classList.add('img-fluid', 'my-2');
+
+            document.querySelector('#contenedorImagenes').appendChild(elementoImg);
+        }
+
+        async function handlerBoton() {
+            const boton = document.querySelector('#botonObtenerImagen');
+            boton.disabled = true; // desactivo el botón mientras se realiza el pedido
+
+            try {
+                const idAleatorio = generarNumeroAleatorio(100);
+                const datosDeImagen = await obtenerImagenDesdeApi(idAleatorio);
+                // Usamos el id para pedir una imagen redimensionada a 600x400
+                const urlDeImagen = `https://picsum.photos/id/${datosDeImagen.id}/600/400`;
+                mostrarImgEnDom(urlDeImagen);
+            } catch (error) {
+                console.error("Error al obtener imagen:", error);
+                alert("No se pudo cargar la imagen. Probá nuevamente.");
+            } finally {
+                boton.disabled = false; // vuelvo a activar el botón siempre
+            }
+        }
+
+        document.querySelector('#botonObtenerImagen').addEventListener('click', handlerBoton);
+    </script>
+</body>
+</html>
+```
+
+---
+
+## Detalles adicionales
+
+<details>
+    <summary>El mismo pedido con <code>.then()</code></summary>
+
+En internet es común encontrar este mismo código escrito con `.then()` en lugar de `async/await`. Hacen lo mismo:
+
+```js
+fetch(`https://picsum.photos/id/0/info`)
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+    });
+```
+
+Más detalles en [6.3: Detalles adicionales](/temas/6-api/3-api-http/#detalles-adicionales).
+
+</details>

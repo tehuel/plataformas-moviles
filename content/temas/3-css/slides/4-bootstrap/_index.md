@@ -1,5 +1,6 @@
 ---
 title: "4 - Frameworks CSS - Bootstrap"
+weight: 40
 outputs:
   - "Reveal"
 ---

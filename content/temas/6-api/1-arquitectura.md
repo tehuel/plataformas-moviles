@@ -1,5 +1,8 @@
 ---
 title: "6.1: Arquitectura"
+weight: 10
+tipo: "apunte"
+opcional: false
 ---
 
 ## Interfaces

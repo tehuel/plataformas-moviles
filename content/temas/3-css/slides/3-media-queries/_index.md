@@ -1,5 +1,6 @@
 ---
 title: "3 - CSS Media Queries"
+weight: 30
 outputs:
   - "Reveal"
 ---

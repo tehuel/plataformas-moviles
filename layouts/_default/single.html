@@ -4,6 +4,12 @@
 
 	<div class="text-center border-bottom mb-4">
 		<h1 class="display-3">{{ .Title }}</h1>
+		{{ $badges := partial "badges.html" . }}
+		{{ if $badges }}
+			<p class="mb-2">
+				{{ $badges }}
+			</p>
+		{{ end }}
 		{{ with .Date }}
 			<time class="text-muted">{{ . | time.Format ":date_full" }}</time>
 		{{ end }}
