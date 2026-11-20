@@ -12,56 +12,34 @@
 		</div>
 	{{ end }}
 
-	{{ $obligatorios := slice }}
-	{{ $opcionales := slice }}
-
 	{{ with .Site.GetPage "/temas" }}
 		{{ range .Sections.ByWeight }}
 			{{ $unidad := . }}
-			{{ if $unidad.Params.integrador }}
-				{{ $obligatorios = $obligatorios | append (dict "page" $unidad "unidad" $unidad.Title) }}
-			{{ end }}
+			{{ $items := slice }}
 			{{ range $unidad.RegularPages.ByWeight }}
-				{{ if or (eq .Params.tipo "tp") (eq .Params.tipo "actividad") }}
-					{{ $item := dict "page" . "unidad" $unidad.Title }}
-					{{ if .Params.opcional }}
-						{{ $opcionales = $opcionales | append $item }}
-					{{ else }}
-						{{ $obligatorios = $obligatorios | append $item }}
-					{{ end }}
+				{{ if eq .Params.tipo "tp" }}
+					{{ $items = $items | append . }}
 				{{ end }}
 			{{ end }}
+
+			{{ if or (gt (len $items) 0) $unidad.Params.integrador }}
+				<section class="my-4">
+					<h2 class="h4 text-muted border-bottom pb-2 mb-3">{{ $unidad.Title }}</h2>
+					{{ range $items }}
+						<h3 class="h4 mb-3">
+							<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+							{{ partial "badges.html" . }}
+						</h3>
+					{{ end }}
+					{{ if $unidad.Params.integrador }}
+						<h3 class="h4 mb-3">
+							<a href="{{ $unidad.RelPermalink }}">Trabajo Integrador</a>
+							<span class="badge text-bg-primary ms-1">TP</span>
+						</h3>
+					{{ end }}
+				</section>
+			{{ end }}
 		{{ end }}
-	{{ end }}
-
-	{{ with $obligatorios }}
-		<section class="my-4">
-			<h2 class="h4 text-muted border-bottom pb-2 mb-3">Camino principal</h2>
-			{{ range . }}
-				<div class="mb-3">
-					<small class="text-muted d-block">{{ .unidad }}</small>
-					<h3 class="h4 mb-0">
-						<a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a>
-						{{ partial "badges.html" .page }}
-					</h3>
-				</div>
-			{{ end }}
-		</section>
-	{{ end }}
-
-	{{ with $opcionales }}
-		<section class="my-4">
-			<h2 class="h4 text-muted border-bottom pb-2 mb-3">Opcionales y práctica extra</h2>
-			{{ range . }}
-				<div class="mb-3">
-					<small class="text-muted d-block">{{ .unidad }}</small>
-					<h3 class="h5 mb-0">
-						<a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a>
-						{{ partial "badges.html" .page }}
-					</h3>
-				</div>
-			{{ end }}
-		</section>
 	{{ end }}
 
 {{- end }}
