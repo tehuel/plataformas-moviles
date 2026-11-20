@@ -1,6 +1,6 @@
 ---
 title: "6.6: tp-16 (APIs)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 El objetivo es construir una aplicación con HTML + CSS (con Bootstrap) + JS, que consuma recursos de alguna API.

@@ -1,6 +1,6 @@
 ---
 title: "0.1: tp-0 (GitHub)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

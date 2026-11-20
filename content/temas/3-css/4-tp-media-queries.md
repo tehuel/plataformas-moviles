@@ -1,6 +1,6 @@
 ---
 title: "3.4: tp-4 (Media Queries)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

@@ -1,6 +1,6 @@
 ---
 title: "4.5: tp-11 (Listas y Objetos)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

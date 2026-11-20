@@ -1,6 +1,6 @@
 ---
 title: "5.3: tp-12 (Editor de Texto)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

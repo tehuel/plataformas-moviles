@@ -1,6 +1,6 @@
 ---
 title: "5.3: tp-13 (Lista de Compras)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

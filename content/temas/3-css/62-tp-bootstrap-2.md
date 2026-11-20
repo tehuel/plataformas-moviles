@@ -1,6 +1,6 @@
 ---
 title: "3.6.2: tp-7 (Bootstrap 2)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

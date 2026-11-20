@@ -1,6 +1,6 @@
 ---
 title: "5.3: tp-14 (Lista de Contactos)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

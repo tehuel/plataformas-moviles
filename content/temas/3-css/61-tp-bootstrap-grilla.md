@@ -1,6 +1,6 @@
 ---
 title: "3.6.1: tp-6 (Grilla Bootstrap)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

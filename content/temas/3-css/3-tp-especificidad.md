@@ -1,6 +1,6 @@
 ---
 title: "3.3: tp-3 (Especificidad)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

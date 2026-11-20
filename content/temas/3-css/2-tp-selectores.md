@@ -1,6 +1,6 @@
 ---
 title: "3.2: tp-2 (Selectores)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

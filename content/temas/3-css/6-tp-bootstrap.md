@@ -1,6 +1,6 @@
 ---
 title: "3.6: tp-5 (Bootstrap)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

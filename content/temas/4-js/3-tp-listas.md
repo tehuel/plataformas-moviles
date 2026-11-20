@@ -1,6 +1,6 @@
 ---
 title: "4.3: tp-9 (Listas)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

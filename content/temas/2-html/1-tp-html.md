@@ -1,6 +1,6 @@
 ---
 title: "2.1: tp-1 (HTML)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

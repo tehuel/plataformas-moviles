@@ -1,6 +1,6 @@
 ---
 title: "4.2: tp-8 (Funciones)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo 

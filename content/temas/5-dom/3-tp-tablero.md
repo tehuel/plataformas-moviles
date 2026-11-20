@@ -1,6 +1,6 @@
 ---
 title: "5.3: tp-15 (Tablero de Puntos)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

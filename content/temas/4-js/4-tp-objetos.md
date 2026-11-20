@@ -1,6 +1,6 @@
 ---
 title: "4.4: tp-10 (Objetos)"
-tags: "tp"
+tags: ["tp"]
 ---
 
 # Objetivo

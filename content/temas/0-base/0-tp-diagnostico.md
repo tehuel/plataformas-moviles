@@ -1,5 +1,6 @@
 ---
 title: "0.0: TP Diagnóstico"
+tags: ["tp"]
 ---
 
 Contestá y definí, con tus palabras, las siguientes preguntas.
