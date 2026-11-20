@@ -17,7 +17,7 @@ Archivo `index.html`:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,7 +34,7 @@ Archivo `index.html`:
 Archivo `listas-y-objetos.js`:
 
 ```js
-var listaPersonasEjemplo = [
+let listaPersonasEjemplo = [
     {
         "apellido": "Perez",
         "nombre": "Juan",

@@ -8,19 +8,19 @@ title: "6.4: Ejemplo de Conexión con API"
 
 La siguiente solicitud, por ejemplo devuelve una imagen al azar de 200x300 píxeles:
 
-```shell
+```bash
 https://picsum.photos/200/300
 ```
 
 Esta API también nos permite pedir una imágen específica, a partir de un id. Por ejemplo, para conseguir la imágen con id #0:
 
-```shell
+```bash
 https://picsum.photos/id/0/200/300
 ```
 
 También podemos pedirle que nos devuelva no la imagen, sino sus datos, mediante id:
 
-```shell
+```bash
 https://picsum.photos/id/0/info
 ```
 

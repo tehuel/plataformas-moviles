@@ -51,14 +51,14 @@ Muchas veces necesitamos indicarle a la API *qué* queremos exactamente. Para es
 
 **En la ruta**: forman parte del camino de la URL. La documentación los suele indicar entre llaves, como `{id}`.
 
-```shell
+```bash
 https://pokeapi.co/api/v2/pokemon/4
 https://pokeapi.co/api/v2/pokemon/charmander
 ```
 
 **En la *query string***: van al final de la URL, después de un `?`, con el formato `clave=valor`. Si hay más de uno, se separan con `&`.
 
-```shell
+```bash
 https://pokeapi.co/api/v2/pokemon?limit=151
 https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese
 ```
@@ -157,7 +157,7 @@ Cuando un endpoint devuelve una lista muy grande (por ejemplo, todos los pokémo
 
 En la PokéAPI, el endpoint `/pokemon` (sin id) devuelve una página de 20 pokémon. Con los parámetros `limit` (cuántos) y `offset` (desde cuál) podemos elegir qué página queremos:
 
-```shell
+```bash
 https://pokeapi.co/api/v2/pokemon?limit=20&offset=0    # del 1 al 20
 https://pokeapi.co/api/v2/pokemon?limit=20&offset=20   # del 21 al 40
 ```

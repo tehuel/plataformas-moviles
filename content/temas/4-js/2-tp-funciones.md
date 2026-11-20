@@ -16,15 +16,15 @@ Practicar la definición y el uso de funciones en JavaScript.
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TP-7: Funciones en JavaScript</title>
+	<title>TP-8: Funciones en JavaScript</title>
 </head>
 <body>
 <p>Completar con la implementación de las funciones correspondientes</p>
-<script type="text/javascript">
+<script>
 // Numeros
 
 // 1- Implementar una función "suma" que retorne la suma de 2 numeros

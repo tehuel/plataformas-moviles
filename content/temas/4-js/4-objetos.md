@@ -9,7 +9,7 @@ Los objetos se componen de propiedades con sus respectivos valores. Estas propie
 ## Declaración y creación de Objetos
 
 ```js
-let objetoAlumno = {
+let alumno = {
     nombre: "Juan",
     apellido: "Pérez",
     "edad": 18,

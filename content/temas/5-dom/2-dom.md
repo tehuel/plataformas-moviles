@@ -78,7 +78,7 @@ Luego de crear elementos, tenemos que decidir en que parte del arbol del DOM los
 
 ```js
 // agregar como primer hijo
-elementoPadre.prepend(elemetoHijo);
+elementoPadre.prepend(elementoHijo);
 
 // agregar como último hijo
 elementoPadre.append(elementoHijo);
@@ -100,11 +100,11 @@ Si le pasamos como parámetro el valor `true`, esto hace una *clonación profund
 ```js
 let elementoPadre = document.querySelector('div.padre');
 
-// hacemos una *clonacion superficial* de elementoPadre en nuevoElemento
-let nuevoElemento = elementoPadre.cloneNode();
+// hacemos una *clonacion superficial* de elementoPadre en copiaSuperficial
+let copiaSuperficial = elementoPadre.cloneNode();
 
-// hacemos una *clonación profunda* de elementoPadre (y todo su contenido) en nuevoElemento
-let nuevoElemento = elementoPadre.cloneNode(true);
+// hacemos una *clonación profunda* de elementoPadre (y todo su contenido) en copiaProfunda
+let copiaProfunda = elementoPadre.cloneNode(true);
 ```
 
 ## Eliminar Elementos

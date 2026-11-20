@@ -14,7 +14,7 @@ La estructura básica de un documento HTML se compone de las siguientes etiqueta
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Título del sitio</title>
     <!--Aquí suele haber enlaces a elementos externos-->
@@ -63,8 +63,10 @@ Algunos ejemplos son:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Título del sitio</title>
 </head>
 <body>

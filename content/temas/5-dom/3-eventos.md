@@ -88,20 +88,24 @@ Algunos ejemplos de cómo usar diferentes eventos en elementos HTML.
 Las funciones que se usan como manejadoras de eventos reciben como parámetro un objeto `Event` con detalles del evento que se ejecutó.
 
 ```html
-<form id="miFormulario" onsubmit="handlerFormulario">
+<form id="miFormulario">
   <input type="text" name="nombre" placeholder="Nombre" required>
   <input type="email" name="correo" placeholder="Correo">
   <button type="submit">Enviar</button>
 </form>
 
 <script>
+  const form = document.querySelector('#miFormulario');
+
   function handlerFormulario(objetoEvent) {
     objetoEvent.preventDefault(); // Evitar recargar la página
     const datos = new FormData(form); // Crear objeto FormData con los valores del formulario
 
     console.log("Nombre:", datos.get("nombre"));
     console.log("Correo:", datos.get("correo"));
-  };
+  }
+
+  form.addEventListener('submit', handlerFormulario);
 </script>
 ```
 

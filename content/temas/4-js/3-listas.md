@@ -95,7 +95,7 @@ let primerNumero = listaDeNumeros.shift();
 ```js
 // calcular la suma total de listaDeNumeros
 let sumaTotal = 0;
-for(i = 0; i < listaDeNumeros.length; i++) {
+for (let i = 0; i < listaDeNumeros.length; i++) {
     console.log("Posición: ", i);
     console.log("Valor en posición: ", listaDeNumeros[i]);
     sumaTotal = sumaTotal + listaDeNumeros[i];
@@ -194,7 +194,7 @@ console.log("Existe 'Lautaro' en lista?", listaDeNombres.includes("Lautaro"));
 
 > Comentario extra: Para intercambiar 2 posiciones de una lista es necesario usar una variable temporal
 >
->     let temporal = nuevaLista(0);
+>     let temporal = nuevaLista[0];
 >     nuevaLista[0] = nuevaLista[1];
 >     nuevaLista[1] = temporal;
 
@@ -216,4 +216,4 @@ Vimos los conceptos de los métodos:
 - `Array.reduce()`
 - `Array.sort()`
 
-También vimos que se puede seguir usando el `for(;;)` de toda la vida, y existe una alternativa `Array.foreach()`.
+También vimos que se puede seguir usando el `for(;;)` de toda la vida, y existe una alternativa `Array.forEach()`.

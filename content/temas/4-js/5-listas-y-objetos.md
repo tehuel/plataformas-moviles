@@ -87,6 +87,6 @@ console.log("Lista de alumnos actualizada: ", listaDeAlumnos);
 
 ```js
 // accedo a campos dentro de los alumnos, dentro del listado
-let nombreDelAlumno = listaDeAlumnosEjemplo[1].nombre;
-let apellidoDelAlumno = listaDeAlumnosEjemplo[1].apellido;
+let nombreDelAlumno = listaDeAlumnos[1].nombre;
+let apellidoDelAlumno = listaDeAlumnos[1].apellido;
 ```
