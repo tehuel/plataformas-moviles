@@ -1,5 +1,6 @@
 ---
 title: "Unidad 2: HTML"
+weight: 20
 ---
 
 ## Esquema
@@ -9,4 +10,4 @@ title: "Unidad 2: HTML"
 	- Contenido
 	- Atributos (nombre y valor)
 - HTML Semántico
-- Accesibilidad (borrador)
+- Accesibilidad básica

@@ -1,6 +1,8 @@
 ---
-title: "2.1: tp-1 (HTML)"
-tags: ["tp"]
+title: "TP: Artículo estructurado con HTML"
+weight: 20
+tipo: "tp"
+opcional: false
 ---
 
 ## Objetivo
@@ -9,15 +11,15 @@ Crear un archivo HTML estructurado correctamente a partir de un artículo de Wik
 
 ## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `tp-1/index.html`.
-- Subir el archivo al repositorio de entregas de la materia.
-- Comprobar que sea accesible vía GitHub Pages en una dirección de la forma `https://{usuario}.github.io/{repositorio}/tp-1/index.html`.
+- Crear un archivo HTML en la ruta `tp-html/index.html`.
+- Subir el archivo al repositorio de entregas de la materia y agregar un enlace al trabajo en el `index.html` de la raíz del repositorio.
+- Comprobar que sea accesible vía GitHub Pages en una dirección de la forma `https://{usuario}.github.io/{repositorio}/tp-html/index.html`.
 
 ## Consigna
 
 ### 1. Seleccionar un Artículo de la Wikipedia
 
-Se puede elegir cualquier artículo de interés dentro de la Wikipedia. 
+Se puede elegir cualquier artículo de interés dentro de la Wikipedia.
 
 Otra opción es usar este link para navegar hacia un [artículo aleatorio](https://es.wikipedia.org/wiki/Special:Random).
 
@@ -31,10 +33,10 @@ Pegar el contenido como texto plano en el archivo HTML creado.
 
 - Agregar las etiquetas HTML adecuadas para mantener la jerarquía y semántica adecuada al documento:
   - **Encabezados**: Usar etiquetas [`<h1>` a `<h6>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/Heading_Elements), según corresponda.
-  - **Resaltados**: Conservar los énfasis y resaltados originales con [`<strong>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/strong) y [`<em>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/em). 
+  - **Resaltados**: Conservar los énfasis y resaltados originales con [`<strong>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/strong) y [`<em>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/em).
   - **Variedad de Etiquetas**: No limitarse a `<p>`s y `<h1>`s, intentar incluir elementos como:
     - Enlaces (`<a>`) para referencias o secciones internas.
-    - Imágenes (`<img>`) si el artículo original las tiene.
+    - Imágenes (`<img>`) con su atributo `alt` si el artículo original las tiene.
     - Listas (`<ul>`, `<ol>`, `<dl>`) si hay información en formato de lista.
     - Tablas (`<table>`) si el artículo contiene datos tabulares.
     - Otros elementos semánticos adecuados (`<blockquote>`, `<cite>`, `<code>`, etc.).
