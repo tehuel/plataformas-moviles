@@ -18,12 +18,12 @@ El sitio se encuentra publicado en:
 
 Descargar y alojar localmente en `static/img/` las siguientes imágenes referenciadas desde dominios externos:
 
-- `content/temas/1-web/3-especificaciones.md`:
+- `content/temas/1-web/1-plataforma-web.md`:
   - `https://elordenmundial.com/wp-content/uploads/2021/11/Mapa-enchufes-mundo.png`
   - `https://fitzrovia.com.ar/img/cms/talles%20reebok.jpg`
   - `https://proyectoviajero.com/wp-content/uploads/2022/11/husos_horarios_mundo-XL.jpg`
   - `https://i0.wp.com/vemployed.com/wp-content/uploads/2015/03/tamanosdelpapel.jpg`
-- `content/temas/2-html/1-estructura.md` (ejemplo HTML):
+- `content/temas/2-html/1-html.md` (ejemplo HTML):
   - `https://i.pinimg.com/736x/ce/27/da/ce27daa6646f005c7cfb8cfe88ba7f27.jpg`
 
 ### Imágenes sin referencias en `static/img/`

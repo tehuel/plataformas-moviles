@@ -158,7 +158,7 @@ Tomando como norte el **Trabajo Integrador** y el enfoque de **Plataformas Móvi
 *(A detallar e implementar una vez cerradas las decisiones de contenido.)*
 
 - **Frontmatter unificado**: incorporar `weight`, `tipo` (`"apunte"` | `"tp"` | `"actividad"`) y `opcional: true | false` en las páginas de `content/temas/` para dejar de depender de prefijos en nombres de archivo o en el título.
-- **`layouts/_default/list.html`**: renderizar bloques diferenciados dentro de cada unidad (Presentaciones si existen · Apuntes · Trabajos Prácticos · Opcionales).
+- **`layouts/_default/list.html`**: botón a Presentaciones (si existen) y un único listado por unidad, ordenado por `weight` según el orden de las clases (tema → TP del tema → opcionales del tema → siguiente tema), con badges en los opcionales.
 - **`layouts/trabajos-practicos/list.html`**: ordenar por unidad/`weight` y separar **Obligatorios (+ Trabajo Integrador)** de **Opcionales**.
 - **Limpiezas puntuales detectadas durante la revisión**:
   - `content/temas/3-css/4-media-queries.md`: quitar las reglas de especificidad pegadas al final del bloque `<style>` del ejemplo.
@@ -168,11 +168,11 @@ Tomando como norte el **Trabajo Integrador** y el enfoque de **Plataformas Móvi
 
 ---
 
-## 6. Decisiones abiertas para seguir ajustando
+## 6. Decisiones resueltas e implementadas
 
-- [ ] **Carpetas de entrega de los alumnos**: renumerar de forma correlativa (`tp-1/`..`tp-12/` o `tp-0/`..`tp-11/`) vs. pasar a nombres semánticos (`tp-github/`, `tp-html/`, `tp-selectores/`, etc.) para evitar renumerar en futuros cambios.
-- [ ] **Extensión de los TPs de JavaScript**: mantener todas las funciones actuales de `tp-8` (15) y `tp-9` (14) o acotarlas a ~8 funciones clave moviendo el resto a un banco de práctica opcional.
-- [ ] **Unidad 6 (APIs en 2 clases)**: definir si la Clase 13 tiene un hito entregable corto (Parte 1) o funciona como práctica guiada con Lorem Picsum antes de entregar el TP completo en la Clase 14.
-- [ ] **HTML (Clase 3)**: mantener Estructura + Semántica + Accesibilidad en un único apunte/clase o dividirlo en dos apuntes compartiendo el mismo TP.
-- [ ] **Ubicación física de opcionales**: mantener cada opcional dentro de su unidad con `opcional: true` (opción recomendada) o moverlos a una sección aparte `/opcionales/`.
-- [ ] **Enlace desde `README.md`**: definir si conviene referenciar `PLAN-REESTRUCTURACION.md` en `README.md` mientras dure el proceso de reestructuración.
+- [x] **Carpetas de entrega de los alumnos**: se adoptaron nombres semánticos (`tp-html/`, `tp-selectores/`, `tp-bootstrap-grilla/`, `tp-bootstrap-layout/`, `tp-funciones/`, `tp-listas/`, `tp-objetos/`, `tp-listas-y-objetos/`, `tp-tablero/`, `tp-lista-contactos/`, `tp-api/`, y los opcionales `tp-especificidad/`, `tp-media-queries/`, `tp-bootstrap-intro/`, `tp-editor/`, `tp-lista-compras/`) para evitar colisiones y futuras renumeraciones.
+- [x] **Extensión de los TPs de JavaScript**: se conservaron completas las funciones y casos de prueba de los 4 TPs (`tp-funciones`, `tp-listas`, `tp-objetos`, `tp-listas-y-objetos`), explicitando en `contarAprobados` que la aprobación es con nota mayor o igual a 7.
+- [x] **Unidad 6 (APIs en 2 clases)**: se conservaron los 4 apuntes existentes (`1-arquitectura`, `2-json`, `3-api-http`, `4-ejemplo-picsum`), Google Sheets quedó como guía opcional (`ejemplo-google-sheets.md`, `tipo: "guia"`, `opcional: true`) y `tp-api.md` como TP único, indicando en el esquema de la unidad la distribución sugerida en 2 clases.
+- [x] **HTML (Clase 3)**: se consolidó Estructura + Semántica + Accesibilidad básica en un único apunte (`content/temas/2-html/1-html.md`), reemplazando el borrador vacío de accesibilidad.
+- [x] **Ubicación física de opcionales**: se ubicaron dentro de su unidad correspondiente con `opcional: true` en el frontmatter y separación visual en los templates de unidad y de `/trabajos-practicos/`.
+- [x] **Enlace desde `README.md`**: se mantuvo `PLAN-REESTRUCTURACION.md` en la raíz sin referenciarlo desde `README.md` para no mezclar el plan de trabajo con la documentación operativa del sitio.
