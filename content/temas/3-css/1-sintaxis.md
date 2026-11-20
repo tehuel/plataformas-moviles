@@ -1,5 +1,5 @@
 ---
-title: "3.1: Sintáxis"
+title: "3.1: Sintaxis"
 ---
 
 ## Puesta en Marcha
