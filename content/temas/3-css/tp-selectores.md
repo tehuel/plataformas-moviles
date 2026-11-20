@@ -1,6 +1,8 @@
 ---
-title: "3.2: tp-2 (Selectores)"
-tags: ["tp"]
+title: "TP: Selectores CSS"
+weight: 15
+tipo: "tp"
+opcional: false
 ---
 
 ## Objetivo
@@ -9,7 +11,7 @@ Aplicar estilos básicos a un documento HTML utilizando selectores CSS.
 
 ## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `tp-2/index.html`, con el contenido del HTML inicial.
+- Crear un archivo HTML en la ruta `tp-selectores/index.html`, con el contenido del HTML inicial.
 - Agregar estilos CSS al documento HTML (usando un archivo `.css` externo o una etiqueta `<style>` dentro del documento).
 - Subir todo al repositorio de entregas en GitHub.
 
@@ -21,7 +23,7 @@ Aplicar estilos básicos a un documento HTML utilizando selectores CSS.
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TP2 - Selectores CSS</title>
+    <title>TP: Selectores CSS</title>
 </head>
 <body>
     <h1>Star Wars</h1>
@@ -51,7 +53,7 @@ Aplicar estilos básicos a un documento HTML utilizando selectores CSS.
 </html>
 ```
 
-> **Nota:** Sería buena idea recordar también modificar el archivo `index.html` (en la raíz del repositorio) para incluir un link a este nuevo `tp-2/index.html` recién creado.
+> **Nota:** Recordar actualizar el archivo `index.html` (en la raíz del repositorio) para incluir un link a este nuevo `tp-selectores/index.html`.
 
 ## Consigna
 
@@ -87,7 +89,7 @@ Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 16. Mostrar de manera alternada el color de fondo de cada uno de los elementos de los listados de películas entre `#111` y `#333`.
 
 > **Atención:**
-> 
+>
 > - No está permitido el uso de estilos *inline*.
 > - No modificar la estructura de las etiquetas HTML ya existentes.
 > - No está permitido el uso de `!important`.

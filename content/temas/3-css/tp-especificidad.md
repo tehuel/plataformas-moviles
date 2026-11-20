@@ -1,6 +1,8 @@
 ---
-title: "3.3: tp-3 (Especificidad)"
-tags: ["tp"]
+title: "TP: Especificidad CSS"
+weight: 18
+tipo: "tp"
+opcional: true
 ---
 
 ## Objetivo
@@ -9,7 +11,7 @@ Practicar el uso de la especificidad en CSS para aplicar estilos de manera preci
 
 ## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `tp-3/index.html`, con el contenido del HTML inicial.
+- Crear un archivo HTML en la ruta `tp-especificidad/index.html`, con el contenido del HTML inicial.
 - Crear una hoja de estilos CSS vinculada al HTML.
 - Subir ambos archivos al repositorio de entregas.
 
@@ -21,7 +23,7 @@ Practicar el uso de la especificidad en CSS para aplicar estilos de manera preci
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TP3 - Especificidad CSS</title>
+	<title>TP: Especificidad CSS</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css">
 		body {
@@ -75,11 +77,11 @@ Practicar el uso de la especificidad en CSS para aplicar estilos de manera preci
 <body>
 	<article id="contenedor">
 		<h1 class="titulo">Gandalf</h1>
-		
+
 		<p id="primer-parrafo" class="importante parrafo">
 			Gandalf es un personaje ficticio perteneciente al <em>legendarium</em> del escritor británico <a href="https://es.wikipedia.org/wiki/J._R._R._Tolkien">J. R. R. Tolkien.</a>
 		</p>
-		
+
 		<p class="novelas parrafo">
 			Es uno de los principales personajes de las novelas <a href="https://es.wikipedia.org/wiki/El_hobbit">El hobbit</a> y <a href="https://es.wikipedia.org/wiki/El_Señor_de_los_Anillos">El Señor de los Anillos</a>, aunque también aparece en <span class="complicado" style="color: #622">El Silmarillion</span>, donde se narran sus orígenes.
 		</p>
@@ -96,7 +98,7 @@ Practicar el uso de la especificidad en CSS para aplicar estilos de manera preci
 
 ### 1. Crear Archivo CSS
 
-Crear en el repositorio de GitHub un archivo `style.css` al mismo nivel que el archivo HTML anterior, esto sería en `tp-3/style.css`.
+Crear en el repositorio de GitHub un archivo `style.css` al mismo nivel que el archivo HTML anterior, esto sería en `tp-especificidad/style.css`.
 
 ### 2. Agregar estilos CSS
 
@@ -114,7 +116,7 @@ Dentro de este archivo CSS, siempre teniendo en cuenta las reglas ya existentes 
 
 6. Una regla para que el texto `p.fuente` tenga su opacidad en 100% (se puede usar la declaración `opacity: 100%;`).
 
-7. Una regla para que los párrafos sin id tengan un color de fondo `rgba(190, 120, 240, 0.6)`. 
+7. Una regla para que los párrafos sin id tengan un color de fondo `rgba(190, 120, 240, 0.6)`.
 
 ## Bonus Track
 
@@ -123,6 +125,6 @@ Dentro de este archivo CSS, siempre teniendo en cuenta las reglas ya existentes 
 2. Una regla para que el elemento con la clase `.complicado` aparezca en negrita y con color `#C62`.
 
 > **Atención:**
-> 
+>
 > - No modificar la estructura de las etiquetas HTML ya existentes.
 > - Antes de utilizar `!important`, asegurarse de que no exista otra alternativa.

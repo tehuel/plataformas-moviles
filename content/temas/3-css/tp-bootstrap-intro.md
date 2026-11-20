@@ -1,6 +1,8 @@
 ---
-title: "3.6: tp-5 (Bootstrap)"
-tags: ["tp"]
+title: "TP: Primeros pasos con Bootstrap"
+weight: 38
+tipo: "tp"
+opcional: true
 ---
 
 ## Objetivo
@@ -9,7 +11,7 @@ Integrar el framework Bootstrap para mejorar la presentación y la funcionalidad
 
 ## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `tp-5/index.html` con el contenido del HTML inicial.
+- Crear un archivo HTML en la ruta `tp-bootstrap-intro/index.html` con el contenido del HTML inicial.
 - Subir el archivo HTML junto con todos los recursos que consideren necesarios al repositorio de entregas de la materia.
 
 ### HTML Inicial
@@ -41,7 +43,7 @@ Integrar el framework Bootstrap para mejorar la presentación y la funcionalidad
     </ul>
 
     <h2>Comparación con otros sistemas</h2>
-    <table class="table">
+    <table>
         <thead>
             <tr>
                 <th>Sistema</th>
@@ -76,19 +78,19 @@ Integrar el framework Bootstrap para mejorar la presentación y la funcionalidad
     <h2>¿Ya usaste Git?</h2>
     <p>Completá el siguiente formulario para compartir tu experiencia:</p>
 
-    <form class="form">
+    <form>
         <label for="nombre">Tu nombre:</label>
-        <input type="text" id="nombre" name="nombre" class="form-control">
+        <input type="text" id="nombre" name="nombre">
 
         <label for="experiencia">¿Qué usás más?</label><br>
-        <select id="experiencia" name="experiencia" class="form-select">
+        <select id="experiencia" name="experiencia">
             <option value="git">Git</option>
             <option value="github">Git + GitHub</option>
             <option value="otro">Otro sistema</option>
             <option value="ninguno">Todavía no uso ninguno</option>
         </select>
 
-        <input type="submit" value="Enviar" class="btn btn-primary mt-2">
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
@@ -109,8 +111,8 @@ Aplicar las siguientes modificaciones utilizando clases de Bootstrap:
 
 - Centrar el título `<h1>`.
 - Cambiar el tamaño del primer párrafo para que sea más grande.
-- Cambiar el estilo del botón de envío del formulario.
-- Cambiar el estilo y color de la tabla.
+- Estilizar los controles del formulario y el botón de envío.
+- Aplicar las clases correspondientes a la tabla para mejorar su estilo y color.
 - Agregar márgenes y sombra al listado de comandos.
 
 ### 3. Usar Componentes de Bootstrap
@@ -120,9 +122,9 @@ Agregar al menos **dos componentes** de Bootstrap a la página. Algunas sugerenc
 - **Cards**: Contener alguno de los elementos actuales en una tarjeta.
 - **List Group**: Para mostrar listados de una forma estilizada.
 - **Navbar**: Agregar una barra de navegación en la parte superior de la página.
-- **Accordion**: Para mostrar componentes o secciones de una a la vez
+- **Accordion**: Para mostrar componentes o secciones de una a la vez.
 - **Carousel**: Incluir un carrusel de imágenes.
-- **Container**: Para agregar un espaciado a todo el documento
+- **Container**: Para agregar un espaciado a todo el documento.
 
 ## Bonus Track
 

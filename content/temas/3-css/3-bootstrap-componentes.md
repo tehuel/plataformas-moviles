@@ -1,5 +1,8 @@
 ---
-title: "3.6.2: Componentes de Bootstrap"
+title: "3.3: Componentes de Bootstrap"
+weight: 30
+tipo: "apunte"
+opcional: false
 ---
 
 Los componentes de Bootstrap permiten crear interfaces de usuario responsivas de manera sencilla.

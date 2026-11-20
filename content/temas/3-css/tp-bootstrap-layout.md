@@ -1,6 +1,8 @@
 ---
-title: "3.6.2: tp-7 (Bootstrap 2)"
-tags: ["tp"]
+title: "TP: Maquetado responsivo desde diseño"
+weight: 35
+tipo: "tp"
+opcional: false
 ---
 
 ## Objetivo
@@ -11,7 +13,8 @@ Usar Bootstrap para reconstruir "la estructura" de un sitio web, partiendo de un
 
 ## Formato de Entrega
 
-- Crear un archivo `tp-7/index.html` en el repositorio de entregas de la materia, en GitHub.
+- Crear un archivo `tp-bootstrap-layout/index.html` en el repositorio de entregas de la materia, en GitHub.
+- Verificar el comportamiento en los distintos breakpoints usando el modo responsive de las herramientas de desarrollo (DevTools) y abriendo el sitio publicado en GitHub Pages desde un celular.
 
 ## Consigna
 
@@ -20,8 +23,8 @@ Usar Bootstrap para reconstruir "la estructura" de un sitio web, partiendo de un
 ## Condiciones
 
 - Usar la última versión de Bootstrap.
-- Usar la grilla y las columnas para armar la estructura
+- Usar la grilla y las columnas para armar la estructura.
 - Incluir los componentes de Bootstrap (como Card, Navbar, Button, etc...) que consideren necesarios.
 - Replicar "la estructura" del sitio, sin preocuparse en el aspecto visual o el diseño, sino dando prioridad al comportamiento en diferentes breakpoints.
 
-> **Nota:** El tema o contenido del trabajo es libre. En caso de querer generar texto de relleno, una práctica común es usar [Lorem Ipsum](https://www.lipsum.com/)
+> **Nota:** El tema o contenido del trabajo es libre. En caso de querer generar texto de relleno, una práctica común es usar [Lorem Ipsum](https://www.lipsum.com/).

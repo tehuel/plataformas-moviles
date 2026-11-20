@@ -1,6 +1,8 @@
 ---
-title: "3.4: tp-4 (Media Queries)"
-tags: ["tp"]
+title: "TP: Media Queries"
+weight: 27
+tipo: "tp"
+opcional: true
 ---
 
 ## Objetivo
@@ -9,8 +11,8 @@ Definir estilos condicionales utilizando media queries para adaptar el diseño a
 
 ## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `tp-4/index.html`, con el contenido del HTML inicial.
-- Crear una hoja de estilos CSS vinculada al HTML, en la ruta `tp-4/style.css`.
+- Crear un archivo HTML en la ruta `tp-media-queries/index.html`, con el contenido del HTML inicial.
+- Crear una hoja de estilos CSS vinculada al HTML, en la ruta `tp-media-queries/style.css`.
 - Subir ambos archivos al repositorio de entregas.
 
 ### HTML Inicial
@@ -22,7 +24,7 @@ Definir estilos condicionales utilizando media queries para adaptar el diseño a
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TP4 - CSS Media Queries</title>
+  <title>TP: CSS Media Queries</title>
   <link rel="stylesheet" href="style.css">
   <style>
     * {margin: 0; padding: 0;}
@@ -59,7 +61,7 @@ Definir estilos condicionales utilizando media queries para adaptar el diseño a
 
 ## Consigna
 
-Dentro del archivo CSS creado, implementar las siguientes reglas de estilo, con sus respectivas media queries
+Dentro del archivo CSS creado, implementar las siguientes reglas de estilo, con sus respectivas media queries:
 
 1. Definir una media query que cambie el color de fondo del `body` a `rgb(40,60,80)` cuando la pantalla tenga más de `400px` de ancho.
 
