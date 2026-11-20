@@ -66,7 +66,7 @@ Para este nuevo archivo HTML creado, agregar una hoja de estilos CSS de alguna d
 
 Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 
-1. Mostrar todos los parrafos con una fuente `sans-serif`.
+1. Mostrar todos los párrafos con una fuente `sans-serif`.
 2. Agregar una regla para definir el color de fondo del documento en `rgb(34, 34, 34)`, y el color del texto en `rgb(238, 238, 102)`.
 3. Mostrar centrado el título principal del documento.
 4. Agregar una regla para mostrar en color `#eee` todos los títulos del documento.
@@ -82,7 +82,7 @@ Dentro de CSS, implementar las definiciones para aplicar los siguientes estilos:
 11. Agregar `margin-left` al segundo listado de películas.
 12. Agregar `margin-top` al último elemento del tercer listado de películas.
 13. Hacer que todos los títulos muestren su texto en mayúscula.
-14. Hacer que la primera linea del primer párrafo se muestre color `rgb(238, 255, 238)`.
+14. Hacer que la primera línea del primer párrafo se muestre color `rgb(238, 255, 238)`.
 15. Mostrar los links sin atributo `href` en cursiva.
 16. Mostrar de manera alternada el color de fondo de cada uno de los elementos de los listados de películas entre `#111` y `#333`.
 
