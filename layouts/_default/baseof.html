@@ -85,16 +85,17 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
-              {{- $menuItemUrl := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
-              {{- $pageUrl := $currentPage.Permalink | absLangURL }}
-              {{ $isSameUrl := eq $menuItemUrl $pageUrl }}
-
-              {{ $isMenuCurrent := or ($currentPage.IsMenuCurrent "nav" .) ($currentPage.HasMenuCurrent "nav" .) }}
-
-              {{ $active := or $isSameUrl $isMenuCurrent}}
+              {{- $isCurrent := $currentPage.IsMenuCurrent "main" . -}}
+              {{- $isDescendant := false -}}
+              {{- with .Page -}}
+                {{- if not .IsHome -}}
+                  {{- $isDescendant = $currentPage.IsDescendant . -}}
+                {{- end -}}
+              {{- end -}}
+              {{- $active := or $isCurrent ($currentPage.HasMenuCurrent "main" .) $isDescendant -}}
 
               <li class="nav-item">
-                <a class="nav-link{{ if $active }} active{{ end}}" aria-current="page" href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
+                <a class="nav-link{{ if $active }} active{{ end }}" aria-current="page" href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
               </li>
             {{ end }}
           </ul>
