@@ -3,17 +3,17 @@ title: "3.4: tp-4 (Media Queries)"
 tags: ["tp"]
 ---
 
-# Objetivo
+## Objetivo
 
 Definir estilos condicionales utilizando media queries para adaptar el diseño a diferentes dispositivos.
 
-# Formato de Entrega
+## Formato de Entrega
 
 - Crear un archivo HTML en la ruta `/tp-4/index.html`, con el contenido del HTML inicial.
 - Crear una hoja de estilos CSS vinculada al HTML, en la ruta `/tp-4/style.css`.
 - Subir ambos archivos al repositorio de entregas.
 
-## HTML Inicial
+### HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -57,7 +57,7 @@ Definir estilos condicionales utilizando media queries para adaptar el diseño a
 </html>
 ```
 
-# Consigna
+## Consigna
 
 Dentro del archivo CSS creado, implementar las siguientes reglas de estilo, con sus respectivas media queries
 

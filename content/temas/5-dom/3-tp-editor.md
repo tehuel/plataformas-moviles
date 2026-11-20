@@ -3,17 +3,17 @@ title: "5.3: tp-12 (Editor de Texto)"
 tags: ["tp"]
 ---
 
-# Objetivo
+## Objetivo
 
 El objetivo de este trabajo práctico es desarrollar un editor de texto básico que permita aplicar distintos estilos al texto utilizando JavaScript y manipulaciones del DOM.
 
 
-# Formato de Entrega
+## Formato de Entrega
 
 - Crear un archivo HTML en la ruta `/tp-12/index.html` con el contenido inicial proporcionado.
 - Subir el archivo al repositorio de entregas.
 
-## HTML Inicial
+### HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -104,7 +104,7 @@ El objetivo de este trabajo práctico es desarrollar un editor de texto básico 
 </html>
 ```
 
-# Consigna
+## Consigna
 
 - Implementar las funciones de estilo que ya están definidas en el HTML inicial: negrita, cursiva y subrayado.
 - Añadir un nuevo botón que aplique un estilo adicional al texto (por ejemplo, cambiar el color del texto).
@@ -112,6 +112,6 @@ El objetivo de este trabajo práctico es desarrollar un editor de texto básico 
 - Mostrar el estado actual de cada estilo en los botones correspondientes. Esto puede hacerse cambiando el color o el texto del botón para indicar si el estilo está activado o no.
 - Agregar una funcionalidad para modificar el tamaño del texto.
 
-# Bonus Track
+## Bonus Track
 
 - (Opcional) Explorar y añadir otras funcionalidades que puedan mejorar la experiencia del editor de texto.

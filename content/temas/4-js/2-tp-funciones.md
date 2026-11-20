@@ -3,16 +3,16 @@ title: "4.2: tp-8 (Funciones)"
 tags: ["tp"]
 ---
 
-# Objetivo 
+## Objetivo
 
 Practicar la definición y el uso de funciones en JavaScript.
 
-# Formato de Entrega
+## Formato de Entrega
 
 - Crear un archivo HTML en la ruta `/tp-8/index.html`, con el contenido del HTML inicial.
 - Subir el archivo al repositorio de entregas.
 
-## HTML Inicial
+### HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -168,15 +168,15 @@ console.log(palabraInvertida("abc"))
 </html>
 ```
 
-# Consigna
+## Consigna
 
 - Implementar dentro del `<script>` las funciones solicitadas
 - Usar al menos una vez cada una de las 3 formas distintas de definición de funciones que vimos en clase.
 
-# Bonus Track (consignas adicionales)
+## Bonus Track (consignas adicionales)
 
 - (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.
 
-# Condiciones
+## Condiciones
 
 - No modificar el código provisto.

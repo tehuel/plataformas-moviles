@@ -3,16 +3,16 @@ title: "4.3: tp-9 (Listas)"
 tags: ["tp"]
 ---
 
-# Objetivo
+## Objetivo
 
 Definir funciones para el manejo de listas (arrays) dentro del lenguaje JavaScript.
 
-# Formato de Entrega
+## Formato de Entrega
 
 - Subir todos los archivos a un directorio `tp-9` en el repositorio de entregas en GitHub. Deberian quedar los 2 archivos (`index.html`, `listas.js`) dentro del mismo directorio.
 - En el archivo `.js` implementar las funciones solicitadas.
 
-## HTML Inicial
+### HTML Inicial
 
 Archivo `index.html`:
 
@@ -298,7 +298,7 @@ function enumerarLista(listaDePalabras) {
 console.log("enumerarLista(): ", enumerarLista(["Han", "Leia", "Luke", "Yoda"]))
 ```
 
-# Condiciones
+## Condiciones
 
 - No modificar el código HTML provisto.
 - (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.

@@ -3,16 +3,16 @@ title: "4.5: tp-11 (Listas y Objetos)"
 tags: ["tp"]
 ---
 
-# Objetivo
+## Objetivo
 
 En este trabajo práctico vamos a usar de manera combinada los tipos de datos `lista` y `objeto` dentro del lenguaje JavaScript.
 
-# Formato de Entrega
+## Formato de Entrega
 
 - Subir todos los archivos a un directorio `tp-11` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
 - En el archivo `.js` implementar las funciones solicitadas.
 
-## HTML Inicial
+### HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -158,7 +158,7 @@ function agregarHeladoFavorito(listaDePersonas, listaDeHelados) {
 console.log("agregarHeladoFavorito()", agregarHeladoFavorito(listaPersonasEjemplo, ["chocolate", "limon", "frutilla"]));
 ```
 
-# Condiciones
+## Condiciones
 
 - No modificar el código provisto.
 - (Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.

@@ -3,16 +3,16 @@ title: "5.3: tp-14 (Lista de Contactos)"
 tags: ["tp"]
 ---
 
-# Objetivo
+## Objetivo
 
 Construir una lista de contactos, ordenada alfabéticamente, y agregar funcionalidades avanzadas de gestión.
 
-# Formato de Entrega
+## Formato de Entrega
 
 - Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
 - Subir el trabajo al repositorio de entregas, en el directorio `/tp-14/`.
 
-## HTML Inicial
+### HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -91,7 +91,7 @@ Construir una lista de contactos, ordenada alfabéticamente, y agregar funcional
 </html>
 ```
 
-# Consigna
+## Consigna
 
 Implementar las siguientes funcionalidades:
 
@@ -102,7 +102,7 @@ Implementar las siguientes funcionalidades:
 - Agregar la opción de marcar como favorito un contacto.
 - Agregar opción para ver sólo los contactos favoritos.
 
-# Bonus Track
+## Bonus Track
 
 - Permitir editar los datos de un contacto ya agregado.
 - Agregar la opción de eliminar contactos individualmente.

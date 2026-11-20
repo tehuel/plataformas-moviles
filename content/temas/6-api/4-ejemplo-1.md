@@ -2,7 +2,7 @@
 title: "6.4: Ejemplo de Conexión con API"
 ---
 
-# API Lorem Picsum
+## API Lorem Picsum
 
 [Lorem Picsum](https://picsum.photos) es una API para obtener imagenes.
 
@@ -39,7 +39,7 @@ Según la documentación, cada imagen tiene los siguientes atributos:
 
 Sabiendo esto, podemos hacer un sitio simple que nos permita obtener y mostrar imagenes aleatorias.
 
-# Conexión desde JS
+## Conexión desde JS
 
 Para obtener datos de una API en JavaScript usamos la función [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Window/fetch) junto con `async/await` (ver [6.3](/temas/6-api/3-api-http/)):
 
@@ -65,7 +65,7 @@ Resultado:
 
 ![](/img/ejemplofetch.png "Respuesta de API")
 
-# Obtener imagen aleatoria
+## Obtener imagen aleatoria
 
 Para obtener una imagen aleatoria necesitamos generar un id. Para esto podemos armar una función:
 
@@ -98,7 +98,7 @@ async function obtenerImagenAleatoria() {
 }
 ```
 
-# Mostrar imagen en el DOM
+## Mostrar imagen en el DOM
 
 Para generar la estructura HTML de una imagen y mostrarla en el DOM, podemos armar una función, que reciba un string con la URL de una imagen y genere un elemento `<img>`.
 
@@ -114,7 +114,7 @@ function mostrarImgEnDom(src) {
 }
 ```
 
-# Código Final
+## Código Final
 
 Uniendo todo:
 - Asociamos el evento con `addEventListener()` como vimos en la unidad de eventos.

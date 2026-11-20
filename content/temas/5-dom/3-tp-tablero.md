@@ -3,16 +3,16 @@ title: "5.3: tp-15 (Tablero de Puntos)"
 tags: ["tp"]
 ---
 
-# Objetivo
+## Objetivo
 
 Construir un tablero para mostrar y gestionar el puntaje de un partido entre 2 equipos.
 
-# Formato de Entrega
+## Formato de Entrega
 
 - Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
 - Subir el trabajo al repositorio de entregas, en el directorio `/tp-15/`.
 
-## HTML Inicial
+### HTML Inicial
 
 ```html
 <!DOCTYPE html>
@@ -72,7 +72,7 @@ Construir un tablero para mostrar y gestionar el puntaje de un partido entre 2 e
 </html>
 ```
 
-# Consigna
+## Consigna
 
 Implementar las siguientes funcionalidades:
 
@@ -80,7 +80,7 @@ Implementar las siguientes funcionalidades:
 - Agregar la acción de invertir puntaje, para intercambiar los puntos entre el equipo local y el equipo visitante.
 - Agregar la acción de finalizar partido, que deshabilita los botones de puntaje, para que ya no se puedan sumar puntos. Los botones se deben volver a habilitar cuando se reinicia el tablero.
 
-# Bonus Track
+## Bonus Track
 
 - Permitir cambiar los nombres de los equipos.
 - Personalización de colores: Permitir cambiar el color de fondo o los colores de los equipos.
