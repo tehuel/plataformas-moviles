@@ -4,14 +4,15 @@ title: "Unidad 3: CSS"
 
 ## Esquema
 
+- Sintaxis CSS
 - Selectores
-    - Tipos de Selectores
-    - Cascada CSS
-    - Especificidad
-- Diseño Responsive
-    - Media Queries
-    - Frameworks CSS
-        - Bootstrap
-            - Layout
-            - Grid / Grilla
-            - Componentes
+	- Tipos de selectores
+	- Cascada CSS
+	- Especificidad
+- Diseño Responsivo
+	- Media Queries
+	- Frameworks CSS
+		- Bootstrap
+			- Instalación
+			- Grilla
+			- Componentes
