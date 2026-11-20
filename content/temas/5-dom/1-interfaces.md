@@ -4,7 +4,7 @@ title: "5.1: Interfaces"
 
 Vimos algunos conceptos antes de arrancar con código.
 
-## Interface
+## Interfaz
 
 > Interfaz (del inglés Interface)
 > : Conexión o frontera común entre dos aparatos o sistemas independientes.

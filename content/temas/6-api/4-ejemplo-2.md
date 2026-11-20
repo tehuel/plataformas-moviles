@@ -9,7 +9,7 @@ Google Sheets es una opción muy conveniente para almacenar y publicar datos por
 ## 1. Crear la hoja de cálculo
 
 - Crear una nueva hoja en Google Sheets (puede ser usando [sheets.new](https://sheets.new)).
-- Utilizar la primera fila para definir los nombres de los campos (por ejemplo: nombre, email, telefono).
+- Utilizar la primera fila para definir los nombres de los campos (por ejemplo: nombre, email, teléfono).
 - Abrir el menú “Compartir” y configurar la opción “Cualquier persona con el enlace” - “Lector” para permitir el acceso a la hoja.
 
 ![Opciones para compartir una planilla de Google Sheets con acceso público de lector](/img/compartir-planilla.png)

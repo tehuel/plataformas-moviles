@@ -4,7 +4,7 @@ title: "0.0: Conceptos Base"
 
 ## Plataformas Móviles
 
-¿Cómo definimos que es y que no es una plataforma móvil?
+¿Cómo definimos qué es y qué no es una plataforma móvil?
 
 ¿Cómo clasificamos celulares y computadoras? ¿Qué criterio podemos utilizar?
 
@@ -20,7 +20,7 @@ title: "0.0: Conceptos Base"
 	- C, C++
 	- OpenGL
 - macOS
-	- XCode
+	- Xcode
 	- Swift, SwiftUI
 	- Metal
 - Android
@@ -28,5 +28,5 @@ title: "0.0: Conceptos Base"
 	- Java
 	- Kotlin
 - iOS
-	- XCode
+	- Xcode
 	- Swift, SwiftUI

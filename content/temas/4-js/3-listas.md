@@ -46,7 +46,7 @@ listaDeNumeros.unshift(nuevoValor);
 > **Nota:** Existe otra forma de agregar o eliminar elementos usando posiciones, pero puede traer problemas:
 > 
 > ```js
-> // agegar un nuevo elemento al final de la lista
+> // agregar un nuevo elemento al final de la lista
 > let nuevoValor = 42;
 > let nuevaPosicion = listaDeNumeros.length;
 > listaDeNumeros[nuevaPosicion] = nuevoValor;
@@ -73,10 +73,10 @@ listaDeNumeros.unshift(nuevoValor);
 Se pueden usar los métodos `pop()` y `shift()` de listas para eliminar elementos.
 
 ```js
-// remover de la lista el ultimo elemento
+// remover de la lista el último elemento
 listaDeNumeros.pop();
 
-// remover de la lista y obtener el ultimo elemento
+// remover de la lista y obtener el último elemento
 let ultimoNumero = listaDeNumeros.pop();
 
 
@@ -112,7 +112,7 @@ console.log("Suma total (v2): ", sumaTotalv2);
 ### Multiplicar todos los valores
 
 ```js
-// multiplicar todos los numeros por 5
+// multiplicar todos los números por 5
 let listaPor5 = [];
 for (let i = 0; i < listaDeNumeros.length; i++) {
     // accedo al valor en posición actual y lo multiplico por 5
@@ -131,7 +131,7 @@ console.log("lista resultado v2: ", listaPor5opcion2);
 
 ## Filtrar Listas
 
-Se puede usar el método `filter()` filtrar los elementos de una lista. La función de filtro que recibe `filter()` debe devolver `true` para que el elemento permanezca en la lista resultante y `false` para que sea eliminado de la lista resultante.
+Se puede usar el método `filter()` para filtrar los elementos de una lista. La función de filtro que recibe `filter()` debe devolver `true` para que el elemento permanezca en la lista resultante y `false` para que sea eliminado de la lista resultante.
 
 ```js
 let listaDePreposiciones = ['a', 'ante', 'bajo', 'cabe', 'con', 'contra', 'de', 'desde', 'durante', 'en', 'entre', 'hacia', 'hasta', 'mediante', 'para', 'por', 'según', 'sin', 'so', 'sobre', 'tras', 'versus', 'vía'];
@@ -155,10 +155,10 @@ let listaOrdenada = listaDesordenada.sort();
 console.log("lista ordenada", listaOrdenada)
 ```
 
-Al método [`.sort()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) se le puede pasar como parámetro una función que defina el criterio por el que queremos ordenar la lista. Esta funcion "criterioDeOrdenamiento" recibe 2 elementos de la lista, y devuelve como resultado un número para decidir cual de los 2 elementos debe aparecer antes en la lista.
+Al método [`.sort()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) se le puede pasar como parámetro una función que defina el criterio por el que queremos ordenar la lista. Esta función "criterioDeOrdenamiento" recibe 2 elementos de la lista, y devuelve como resultado un número para decidir cuál de los 2 elementos debe aparecer antes en la lista.
 
 - Si devuelve un número negativo es que los elementos tienen que intercambiar posiciones.
-- Si devuelve un numero positivo es para que los elementos mantengan su posición en la lista.
+- Si devuelve un número positivo es para que los elementos mantengan su posición en la lista.
 
 Con strings la comparación se puede hacer con [`localeCompare()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)
 
@@ -173,7 +173,7 @@ function existeElementoEnLista(elemento, lista) {
 	let encontrado = false;
 	// queremos saber si elemento está en lista
 	for(let i = 0; i < lista.length; i++) {
-		// accedemos a valor en posicion i
+		// accedemos a valor en posición i
 		let valorActual = lista[i];
 
 		// si es el que buscamos

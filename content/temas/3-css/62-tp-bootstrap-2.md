@@ -11,7 +11,7 @@ Usar Bootstrap para reconstruir "la estructura" de un sitio web, partiendo de un
 
 ## Formato de Entrega
 
-- Crear un archivo `tp-7/index.html` en el repositorio de entregas de la materia, en Github.
+- Crear un archivo `tp-7/index.html` en el repositorio de entregas de la materia, en GitHub.
 
 ## Consigna
 

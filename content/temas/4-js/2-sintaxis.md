@@ -66,7 +66,7 @@ Una función (en programación) se puede pensar como una máquina que toma una e
 
 La podemos imaginar como una caja negra con una entrada y una salida, donde el proceso de transformación dentro de la caja (o máquina) está oculto pero produce un resultado predecible basado en la entrada dada.
 
-A su vez, dentro de la caja sólo deberíamos preocuparnos por procesar y transformar la entrada para producir la salida.
+A su vez, dentro de la caja solo deberíamos preocuparnos por procesar y transformar la entrada para producir la salida.
 
 ![Diagrama de una función representada como máquina que transforma una entrada en una salida](/img/FunctionMachine.svg "Pensamos la función como una máquina")
 

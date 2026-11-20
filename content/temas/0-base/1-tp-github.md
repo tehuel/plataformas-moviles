@@ -7,11 +7,11 @@ tags: ["tp"]
 
 El objetivo principal de esta actividad es configurar un repositorio en GitHub que sirva como espacio centralizado para las entregas de los trabajos prácticos de la materia Plataformas Móviles. 
 
-Además, se busca familiarizar a los estudiantes con el uso de herramienta de colaboración y publicación de contenido web, como lo son GitHub y GitHub Pages.
+Además, se busca familiarizar a los estudiantes con el uso de herramientas de colaboración y publicación de contenido web, como lo son GitHub y GitHub Pages.
 
 ## Consigna
 
-### 1. Usuario de Github
+### 1. Usuario de GitHub
 
 Crear usuario en [GitHub](https://github.com) (si es que todavía no tienen).
 
@@ -22,7 +22,7 @@ Crear un nuevo repositorio, con el nombre `plataformas-moviles-entregas`.
 > **Atención:** el nombre debe ser exacto:
 > - todo en minúscula
 > - todo en plural
-> - separar con guión medio (`-`)
+> - separar con guion medio (`-`)
 > - sin punto al final
 
 <details>
@@ -79,7 +79,7 @@ El nombre del archivo debe ser `index.html`, y el contenido puede ser un HTML, p
 ```
 
 
-### 4. Github Pages
+### 4. GitHub Pages
 
 Activar GitHub Pages.
 
@@ -114,13 +114,13 @@ Agregar link a detalles del repositorio.
 
 ## Resultado
 
-Si acceden a la URL `http://{usuario}.github.io/plataformas-moviles-entregas` deberian ver la página publicada.
+Si acceden a la URL `https://{usuario}.github.io/plataformas-moviles-entregas` deberían ver la página publicada.
 
 ---
 
-## Posibles Poblemas
+## Posibles Problemas
 
 Llegar a alguno de los siguientes problemas no es algo negativo, por el contrario, indica que el proyecto ya estaría correctamente configurado.
 
-- Error 404: Puede ser que no exista un `index.html` en la raiz del repositorio.
-- Página en blanco: Puede ser que el `index.html` en la raiz del repositorio esté vacío.
+- Error 404: Puede ser que no exista un `index.html` en la raíz del repositorio.
+- Página en blanco: Puede ser que el `index.html` en la raíz del repositorio esté vacío.

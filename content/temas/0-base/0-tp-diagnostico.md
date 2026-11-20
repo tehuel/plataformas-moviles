@@ -14,11 +14,11 @@ definiciones (Prohibido ChatGPT). El objetivo de la actividad no es llenar pági
 
 ### Plataformas Móviles
 
-1. ¿Que diferencias hay entre un smartphone y un feature phone (o dumb phone)?
+1. ¿Qué diferencias hay entre un smartphone y un feature phone (o dumb phone)?
 1. ¿Qué diferencias encontrás entre un teléfono móvil (smartphone) y una computadora? ¿Y qué similitudes?
-1. ¿Que sistema(s) operativo(s) de computadora conocés?¿Y de smartphones?
-1. ¿Que es la arquitectura o juego de instrucciones de un procesador?
-1. ¿Cual es la diferencia entre un lenguaje de programación compilado y un lenguaje de programación interpretado?
+1. ¿Qué sistema(s) operativo(s) de computadora conocés? ¿Y de smartphones?
+1. ¿Qué es la arquitectura o juego de instrucciones de un procesador?
+1. ¿Cuál es la diferencia entre un lenguaje de programación compilado y un lenguaje de programación interpretado?
 1. ¿Conocés la diferencia entre tipado estático y tipado dinámico de datos?
 1. ¿Conocés la diferencia entre error semántico y error sintáctico?
 
@@ -29,8 +29,8 @@ definiciones (Prohibido ChatGPT). El objetivo de la actividad no es llenar pági
 1. ¿Cómo se relacionan CSS y HTML?
 1. ¿Qué es JavaScript?
 1. ¿Qué relación hay entre JavaScript y Java?
-1. ¿Que es un paradigma en un lenguaje de programación?
+1. ¿Qué es un paradigma en un lenguaje de programación?
     - a. ¿Qué lenguajes de programación conocés?
-    - b. ¿Podes asociar esos lenguajes con su(s) paradigma(s)?
-1. ¿Que es un estándar o especificación? Dar algunos ejemplos.
-1. ¿Conocés git? ¿Qué diferencia hay entre git y github?
+    - b. ¿Podés asociar esos lenguajes con su(s) paradigma(s)?
+1. ¿Qué es un estándar o especificación? Dar algunos ejemplos.
+1. ¿Conocés Git? ¿Qué diferencia hay entre Git y GitHub?

@@ -29,7 +29,7 @@ Repasamos las ventajas y desventajas de usar un framework.
 - Tienen una curva de aprendizaje
 - Nos abstraemos del lenguaje de programación
 - Tenemos que adaptar nuestro código a lo que el framework quiere
-- Al encapsular funcionalidad compleja, se vuelve un poco mas difícil solucionar problemas
+- Al encapsular funcionalidad compleja, se vuelve un poco más difícil solucionar problemas
 
 ## Diferentes Opciones
 

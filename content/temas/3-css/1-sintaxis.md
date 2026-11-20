@@ -8,7 +8,7 @@ Vimos distintas maneras de incluir CSS en un archivo HTML:
 
 - Usando una etiqueta `<link>` dentro del `<head>` de un documento HTML.
 - Usando una etiqueta `<style>` dentro del `<head>` o del `<body>` de un documento HTML.
-- Agregando un atributo `style=""` a una etiqueta HTML directamente, esto se conoce como estilo *inline* (en linea)
+- Agregando un atributo `style=""` a una etiqueta HTML directamente, esto se conoce como estilo *inline* (en línea)
 
 ## Lenguaje CSS
 

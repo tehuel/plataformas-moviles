@@ -65,7 +65,7 @@ Practicar el uso del sistema de grillas de Bootstrap para construir diferentes l
 
 ## Consigna
 
-Para cada layout, realizar las modificaciones necesarias al HTML inicial para que el sistema de grilla se comporte de la misma forma que se ve en las imagenes. Esto incluye realizar las modificaciones necesarias para instalar bootstrap en cada uno de los documentos.
+Para cada layout, realizar las modificaciones necesarias al HTML inicial para que el sistema de grilla se comporte de la misma forma que se ve en las imágenes. Esto incluye realizar las modificaciones necesarias para instalar Bootstrap en cada uno de los documentos.
 
 ### 1. Layout 1
 

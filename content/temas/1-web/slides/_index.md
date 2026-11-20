@@ -16,7 +16,7 @@ outputs:
 ---
 
 # 🖥️
-# ¿Que hace un Navegador?
+# ¿Qué hace un Navegador?
 
 ---
 

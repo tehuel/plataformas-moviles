@@ -47,16 +47,16 @@ p {
 Podemos unir varios selectores para combinar su funcionamiento. Por ejemplo, para seleccionar todos los párrafos que tengan la clase "resaltado", podemos hacer:
 
 ```css
-/* selecciona todos los párrafos que tengan la case "resaltado" */
+/* selecciona todos los párrafos que tengan la clase "resaltado" */
 p.resaltado {
     /**/
 }
 ```
 
-Si unimos con un espacio varios selectores, estamos pidiendo que exista una relación de parentezco entre los elementos. Podemos, por ejemplo, seleccionar todos los párrafos `<p>` que sean descendientes de algún elemento `<div>`.
+Si unimos con un espacio varios selectores, estamos pidiendo que exista una relación de parentesco entre los elementos. Podemos, por ejemplo, seleccionar todos los párrafos `<p>` que sean descendientes de algún elemento `<div>`.
 
 ```css
-/* selecciona todos los párrafos que tengan algun ancestro div */
+/* selecciona todos los párrafos que tengan algún ancestro div */
 div p {
     /**/
 }
@@ -64,7 +64,7 @@ div p {
 
 Para más detalles se puede consultar la documentación de [Combinadores de CSS](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Combinators) en MDN
 
-## Pseudo Clases
+## Pseudoclases
 
 Existen selectores que trabajan sobre otros selectores, para funcionar en casos y estados específicos.
 

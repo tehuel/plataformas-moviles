@@ -9,7 +9,7 @@ En este trabajo práctico vamos a usar de manera combinada los tipos de datos `l
 
 ## Formato de Entrega
 
-- Subir todos los archivos a un directorio `tp-11/` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
+- Subir todos los archivos a un directorio `tp-11/` en el repositorio de entregas en GitHub. Deberían quedar los archivos (`index.html` y `listas-y-objetos.js`) dentro del mismo directorio.
 
 ### Código Inicial
 
@@ -82,7 +82,7 @@ console.log("ordenarPorApellido()", ordenarPorApellido(listaPersonasEjemplo));
  * - `listaDePersonas`: una lista, array, con objetos de la forma `persona`
  * 
  * Retorna: 
- * - una lista de strings, con sólo los nombres de las personas
+ * - una lista de strings, con solo los nombres de las personas
  */
 function soloNombres(listaDePersonas) {
     // 
@@ -96,7 +96,7 @@ console.log("soloNombres()", soloNombres(listaPersonasEjemplo));
  * - `listaDePersonas`: una lista, array, con objetos de la forma `persona`
  * 
  * Retorna: 
- * - un numero, con el cálculo del promedio de las edades
+ * - un número, con el cálculo del promedio de las edades
  */
 function promedioEdades(listaDePersonas) {
     //
@@ -138,7 +138,7 @@ console.log("soloMayoresDeEdad()", soloMayoresDeEdad(listaPersonasEjemplo));
  * - `listaDePersonas`: una lista, array, con objetos de la forma `persona`
  * 
  * Retorna: 
- * - una objeto con la persona de mayor edad en todo el listado. En caso de que hayan 2 personas con la misma edad, se puede retornar la primera que aparezca en el listado.
+ * - un objeto con la persona de mayor edad en todo el listado. En caso de que haya 2 personas con la misma edad, se puede retornar la primera que aparezca en el listado.
  */
 function laPersonaMayor(listaDePersonas) {
     //
@@ -158,7 +158,7 @@ console.log("laPersonaMayor()", laPersonaMayor(listaPersonasEjemplo));
 function agregarHeladoFavorito(listaDePersonas, listaDeHelados) {
     // 
 }
-console.log("agregarHeladoFavorito()", agregarHeladoFavorito(listaPersonasEjemplo, ["chocolate", "limon", "frutilla"]));
+console.log("agregarHeladoFavorito()", agregarHeladoFavorito(listaPersonasEjemplo, ["chocolate", "limón", "frutilla"]));
 ```
 
 ## Consigna

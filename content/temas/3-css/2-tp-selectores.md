@@ -51,7 +51,7 @@ Aplicar estilos básicos a un documento HTML utilizando selectores CSS.
 </html>
 ```
 
-> **Nota:** Sería buena idea recordar también modificar el archivo `index.html` (en la raiz del repositorio) para incluir un link a este nuevo `tp-2/index.html` recién creado.
+> **Nota:** Sería buena idea recordar también modificar el archivo `index.html` (en la raíz del repositorio) para incluir un link a este nuevo `tp-2/index.html` recién creado.
 
 ## Consigna
 

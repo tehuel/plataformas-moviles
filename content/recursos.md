@@ -15,7 +15,7 @@ Listado de recursos generales que acompañan a la materia.
 - [Referencia CSS](https://cssreference.io/) (en inglés)
 - [Documentación Git](https://git-scm.com/docs/git/es)
 
-## API's ⚙️
+## APIs ⚙️
 - Listados de APIs: [github.com/public-apis](https://github.com/public-apis/public-apis), [publicapis.dev](https://publicapis.dev/), [publicapis.io](https://publicapis.io/)
 - [Listado de APIs públicas sin autorización](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/)
 - [API de APIs](https://api.apis.guru/v2/list.json)
@@ -23,13 +23,13 @@ Listado de recursos generales que acompañan a la materia.
 - [PokeAPI](https://pokeapi.co/)
 - [API Google Maps](https://developers.google.com/maps/documentation)
 - [API MercadoPago](https://www.mercadopago.com.ar/developers/es/reference)
-- [API Http Cat's](https://http.cat)
+- [API HTTP Cats](https://http.cat)
 - [API de Star Wars](https://swapi.dev/)
-- [API de Emoji's](https://emoji-api.com/)
+- [API de Emojis](https://emoji-api.com/)
 - APIs de Contadores: [letscountapi.com](https://letscountapi.com/), [counterapi.dev](https://counterapi.dev/api/endpoints.html)
 
 ## Hosting
-- [Github Pages](https://docs.github.com/es/pages/quickstart) Frontend (estático)
+- [GitHub Pages](https://docs.github.com/es/pages/quickstart) Frontend (estático)
 - [Vercel](https://vercel.com/docs/deployments/overview) Fullstack
 - [Surge.sh](https://surge.sh/) Frontend
 - [Railway](https://railway.app/) Fullstack
@@ -39,7 +39,7 @@ Listado de recursos generales que acompañan a la materia.
 - [InfinityFree](https://www.infinityfree.com/) Fullstack (PHP + MySQL)
 
 ## Herramientas 🛠
-- [Usar Google Sheet como API json](https://benborgers.com/posts/google-sheets-json)
+- [Usar Google Sheets como API JSON](https://benborgers.com/posts/google-sheets-json)
 - [Caniuse](https://caniuse.com/) (página para chequear el soporte de los navegadores con JS y otras herramientas.)
 - [Lipsum](https://lipsum.com/) (contenido de relleno)
 - [Picsum Fotos](https://picsum.photos/) (contenido de relleno, pero para fotos)
@@ -47,5 +47,5 @@ Listado de recursos generales que acompañan a la materia.
 
 ## Extra 🤩
 - [Developer Roadmap](https://roadmap.sh/)
-- [DevDocs](https://devdocs.io) (documentación de muchos lenguajes, frameworks, etc. Pero esta en inglés.)
-- [Scripts js para DOM](https://phuoc.ng/collection/html-dom/) (un montón de scripts para resolver distintos problemas del DOM.)
+- [DevDocs](https://devdocs.io) (documentación de muchos lenguajes, frameworks, etc., pero está en inglés.)
+- [Scripts JS para DOM](https://phuoc.ng/collection/html-dom/) (un montón de scripts para resolver distintos problemas del DOM.)

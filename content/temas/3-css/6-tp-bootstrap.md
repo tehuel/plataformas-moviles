@@ -111,7 +111,7 @@ Aplicar las siguientes modificaciones utilizando clases de Bootstrap:
 - Cambiar el tamaño del primer párrafo para que sea más grande.
 - Cambiar el estilo del botón de envío del formulario.
 - Cambiar el estilo y color de la tabla.
-- Agregar margenes y sombra al listado de comandos.
+- Agregar márgenes y sombra al listado de comandos.
 
 ### 3. Usar Componentes de Bootstrap
 

@@ -100,7 +100,7 @@ Implementar las siguientes funcionalidades:
 - Agregar opción de ordenar por nombre o por apellido.
 - Agregar un nuevo campo teléfono al formulario y a la lista de contactos.
 - Agregar la opción de marcar como favorito un contacto.
-- Agregar opción para ver sólo los contactos favoritos.
+- Agregar opción para ver solo los contactos favoritos.
 
 ## Bonus Track
 

@@ -9,7 +9,7 @@ En este trabajo práctico vamos a usar el tipo de datos `objeto` dentro del leng
 
 ## Formato de Entrega
 
-- Subir todos los archivos a un directorio `tp-10/` en el repositorio de entregas en GitHub. Deberian quedar los archivos (`index.html` y `objetos.js`) dentro del mismo directorio.
+- Subir todos los archivos a un directorio `tp-10/` en el repositorio de entregas en GitHub. Deberían quedar los archivos (`index.html` y `objetos.js`) dentro del mismo directorio.
 
 ### Código Inicial
 
@@ -47,8 +47,8 @@ let personaEjemplo = {
  * Recibe
  * - `nombre`: string, con el nombre.
  * - `apellido`: string, con el apellido.
- * - `edad`: numero entero, con la edad de la persona.
- * - `documento`: numero entero, con el documento de la persona.
+ * - `edad`: número entero, con la edad de la persona.
+ * - `documento`: número entero, con el documento de la persona.
  * 
  * Retorna: 
  * - un objeto, representando una persona, con los campos recibidos.

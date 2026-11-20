@@ -55,7 +55,7 @@ Algunos ejemplos de cómo usar diferentes eventos en elementos HTML.
 <button id="boton">Hacé click</button>
 
 <script>
-  // la funcion que quiero ejecutar al hacer click
+  // la función que quiero ejecutar al hacer click
   function clickHandler() {
     alert("Hiciste click en el botón!");
   }
@@ -76,7 +76,7 @@ Algunos ejemplos de cómo usar diferentes eventos en elementos HTML.
   const campoTexto = document.querySelector('#nombre');
   const parrafoSaludo = document.querySelector('#saludo');
 
-  // puedo definir la función hander directamente
+  // puedo definir la función handler directamente
   campoTexto.addEventListener("input", () => {
     parrafoSaludo.textContent = "Hola, " + campoTexto.value;
   });

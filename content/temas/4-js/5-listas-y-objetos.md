@@ -5,7 +5,7 @@ title: "4.5: Listas y Objetos"
 Queremos almacenar un listado de alumnos. Evaluamos distintas opciones
 
 ```js
-// la posicion indica que alumno refiere en los listados
+// la posición indica a qué alumno refiere en los listados
 let listadoDeNombres = ["Lionel", "Sahid"]
 let listadoDeApellidos = []
 let listaDeEdades = [18, 19, 20]

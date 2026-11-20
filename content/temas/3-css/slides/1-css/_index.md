@@ -135,7 +135,7 @@ div p {
 {{% /fragment %}}
 
 {{% fragment %}}
-selecciona todos los párrafos que tengan algun ancestro div
+selecciona todos los párrafos que tengan algún ancestro div
 {{% /fragment %}}
 
 

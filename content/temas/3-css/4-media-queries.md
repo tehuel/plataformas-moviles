@@ -64,7 +64,7 @@ p {
 </html>
 ```
 
-## Compatibildad de Navegadores
+## Compatibilidad de Navegadores
 
 Hablamos por un momento de los distintos niveles de compatibilidad que presentan las versiones de los navegadores para las diferentes media queries (y para cualquier otra característica de la plataforma web), y que nosotros como programadores vamos a decidir si esa compatibilidad es importante para nuestros proyectos.
 

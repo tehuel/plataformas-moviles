@@ -15,12 +15,12 @@ Para la entrega del trabajo, crear un directorio `tp-16/` en su repositorio de e
 
 Para este trabajo deben elegir una de las siguientes dos opciones:
 
-1. Usar la [PokeApi](https://pokeapi.co/docs/v2)
+1. Usar la [PokéAPI](https://pokeapi.co/docs/v2)
 2. Usar [TheMealDB](https://www.themealdb.com/api.php)
 
-### Opción 1: PokeApi
+### Opción 1: PokéAPI
 
-La [PokeApi](https://pokeapi.co/docs/v2) es una API de Pokemon que permite obtener información sobre Pokemon, sus movimientos, sus tipos, etc.
+La [PokéAPI](https://pokeapi.co/docs/v2) es una API de Pokémon que permite obtener información sobre Pokémon, sus movimientos, sus tipos, etc.
 
 Para este proyecto deberán crear una "[PokéDex](https://pokemon.fandom.com/es/wiki/Pok%C3%A9dex)", con la información que podemos obtener a partir de la API.
 
@@ -35,7 +35,7 @@ Para este proyecto deberán crear una "[PokéDex](https://pokemon.fandom.com/es/
 #### Bonus Track
 
 1. Reemplazar el listado por una grilla de cartas (responsiva), donde cada carta tenga el nombre, la imagen y los tipos del pokémon. El botón para mostrar más información debería seguir estando.
-2. Agregar un botón al final del listado que nos permita visualizar más pokemon, ademas de los 151 mostrados inicialmente.
+2. Agregar un botón al final del listado que nos permita visualizar más pokémon, además de los 151 mostrados inicialmente.
 3. Agregar *spinner* para mostrar estado de "loading".
 
 ### Opción 2: TheMealDB

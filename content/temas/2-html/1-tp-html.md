@@ -46,4 +46,4 @@ Pegar el contenido como texto plano en el archivo HTML creado.
 
 ### 5. Agregar un enlace al artículo original
 
-Al final del documento incluir un enlace `<a>` que apunte hacia el articulo de wikipdia usado como fuente.
+Al final del documento incluir un enlace `<a>` que apunte hacia el artículo de Wikipedia usado como fuente.

@@ -51,7 +51,7 @@ Definir estilos condicionales utilizando media queries para adaptar el diseño a
       <img src="{{< absurl "/img/minecraft.jpg" >}}" alt="Minecraft Cover">
       <figcaption>Portada del Minecraft</figcaption>
     </figure>
-    <p>La película tratará de una adolescente que intentará salvar el <a href="https://minecraft.fandom.com/es/wiki/Superficie">Overwolrd</a> del <a href="https://minecraft.fandom.com/es/wiki/Enderdragón">Enderdragon</a></p>
+    <p>La película tratará de una adolescente que intentará salvar el <a href="https://minecraft.fandom.com/es/wiki/Superficie">Overworld</a> del <a href="https://minecraft.fandom.com/es/wiki/Enderdragón">Enderdragon</a></p>
   </article>
 </body>
 </html>

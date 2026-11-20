@@ -96,7 +96,7 @@ Practicar el uso de la especificidad en CSS para aplicar estilos de manera preci
 
 ### 1. Crear Archivo CSS
 
-Crear en el repositorio de Github un archivo `style.css` al mismo nivel que el archivo HTML anterior, esto sería en `tp-3/style.css`.
+Crear en el repositorio de GitHub un archivo `style.css` al mismo nivel que el archivo HTML anterior, esto sería en `tp-3/style.css`.
 
 ### 2. Agregar estilos CSS
 

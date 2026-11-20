@@ -6,7 +6,7 @@ Queremos usar la plataforma web para desarrollar nuestras aplicaciones. Para arr
 
 ## Cómo funciona un navegador
 
-Que pasa cuando accedemos desde un browser a un sitio web:
+¿Qué pasa cuando accedemos desde un navegador a un sitio web?:
 
 - Escribimos la URL.
 - El navegador consulta al DNS por la IP asociada a esa URL.

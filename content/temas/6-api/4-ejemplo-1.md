@@ -4,7 +4,7 @@ title: "6.4: Ejemplo de Conexión con API"
 
 ## API Lorem Picsum
 
-[Lorem Picsum](https://picsum.photos) es una API para obtener imagenes.
+[Lorem Picsum](https://picsum.photos) es una API para obtener imágenes.
 
 La siguiente solicitud, por ejemplo devuelve una imagen al azar de 200x300 píxeles:
 
@@ -12,7 +12,7 @@ La siguiente solicitud, por ejemplo devuelve una imagen al azar de 200x300 píxe
 https://picsum.photos/200/300
 ```
 
-Esta API también nos permite pedir una imágen específica, a partir de un id. Por ejemplo, para conseguir la imágen con id #0:
+Esta API también nos permite pedir una imagen específica, a partir de un id. Por ejemplo, para conseguir la imagen con id #0:
 
 ```bash
 https://picsum.photos/id/0/200/300
@@ -37,7 +37,7 @@ Según la documentación, cada imagen tiene los siguientes atributos:
 }
 ```
 
-Sabiendo esto, podemos hacer un sitio simple que nos permita obtener y mostrar imagenes aleatorias.
+Sabiendo esto, podemos hacer un sitio simple que nos permita obtener y mostrar imágenes aleatorias.
 
 ## Conexión desde JS
 

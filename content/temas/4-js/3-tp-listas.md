@@ -9,7 +9,7 @@ Definir funciones para el manejo de listas (arrays) dentro del lenguaje JavaScri
 
 ## Formato de Entrega
 
-- Subir todos los archivos a un directorio `tp-9/` en el repositorio de entregas en GitHub. Deberian quedar los 2 archivos (`index.html`, `listas.js`) dentro del mismo directorio.
+- Subir todos los archivos a un directorio `tp-9/` en el repositorio de entregas en GitHub. Deberían quedar los 2 archivos (`index.html`, `listas.js`) dentro del mismo directorio.
 
 ### Código Inicial
 
@@ -62,7 +62,7 @@ console.log("invertirLista([2,3,4]): ", invertirLista([2,3,4]))
  * - `listaDeNumeros`: una lista (array) de números.
  * 
  * Retorna: 
- * - un numero con el resultado de la suma de todos los elementos de la lista.
+ * - un número con el resultado de la suma de todos los elementos de la lista.
  * 
  * Ejemplos:
  * - sumarLista([2,3,4]) retorna 9
@@ -80,7 +80,7 @@ console.log("sumarLista([2,3,4]): ", sumarLista([2,3,4]))
  * - `listaDeNumeros`: una lista (array) de números.
  * 
  * Retorna: 
- * - un numero con la cantidad de elementos contenidos dentro de la lista.
+ * - un número con la cantidad de elementos contenidos dentro de la lista.
  * 
  * Ejemplos:
  * - contarElementosLista([2,3,4]) retorna 3
@@ -100,7 +100,7 @@ console.log("contarElementosLista([2,3,4]): ", contarElementosLista([2,3,4]))
  * - `listaDeNumeros`: una lista (array) de números.
  * 
  * Retorna: 
- * - un numero, con el valor calculado de promedio para los números en la lista recibida.
+ * - un número, con el valor calculado de promedio para los números en la lista recibida.
  * 
  * Ejemplos:
  * - calcularPromedio([2,3,4]) retorna 3
@@ -177,7 +177,7 @@ console.log("ordenarDeMayorAMenor(listaNumerosEjemplo): ", ordenarDeMayorAMenor(
  * - `listaDeNumeros`: una lista (array) de números.
  * 
  * Retorna: 
- * - un numero, con el valor del numero más grande contenido en la lista recibida.
+ * - un número, con el valor del número más grande contenido en la lista recibida.
  * 
  * Ejemplos:
  * - encontrarNumeroMayor([2,3,4]) retorna 4
@@ -214,7 +214,7 @@ console.log("ordenarPalabrasPorLongitud(['abc', 'a', 'ab']): ", ordenarPalabrasP
  * - `listaDePalabras`: una lista (array) de palabras (string).
  * 
  * Retorna: 
- * - una palabras (string) que dentro del listado tenga la menor cantidad de caracteres de longitud. En caso de que haya varias palabras con la misma longitud, se puede devolver la primera encontrada.
+ * - una palabra (string) que dentro del listado tenga la menor cantidad de caracteres de longitud. En caso de que haya varias palabras con la misma longitud, se puede devolver la primera encontrada.
  * 
  * Ejemplos:
  * - encontrarPalabraMasCorta(['abc', 'a', 'ab', 'c']) retorna 'a'
@@ -232,7 +232,7 @@ console.log("encontrarPalabraMasCorta(['abc', 'a', 'ab']): ", encontrarPalabraMa
  * - `listaDeNumeros`: una lista (array) de números.
  * 
  * Retorna: 
- * - una lista (array) de números, conteniendo sólo los valores positivos de la lista de números recibida.
+ * - una lista (array) de números, conteniendo solo los valores positivos de la lista de números recibida.
  * 
  * Ejemplos:
  * - filtrarSoloPositivos([1,-1,2]) retorna [1,2]
@@ -251,7 +251,7 @@ console.log("filtrarSoloPositivos(listaNumerosEjemplo): ", filtrarSoloPositivos(
  * - `listaDeNotas`: una lista (array) de números con valores entre 1 y 10.
  * 
  * Retorna: 
- * - un numero, con la cantidad de notas que superan el criterio de aprobación.
+ * - un número, con la cantidad de notas que superan el criterio de aprobación.
  * 
  * Ejemplos:
  * - contarAprobados([10,2,9]) retorna 2
@@ -269,7 +269,7 @@ console.log("contarAprobados([10, 4, 6, 7, 1, 9]): ", contarAprobados([10, 4, 6,
  * - `listaDeValores`: una lista (array) de valores de distintos tipos.
  * 
  * Retorna: 
- * - una lista (array) conteniendo sólo los valores que son considerados 'truthy' por el lenguaje JavaScript
+ * - una lista (array) conteniendo solo los valores que son considerados 'truthy' por el lenguaje JavaScript
  * 
  * Ejemplos:
  * - filtrarSoloTruthy(["Hola", "", 0, 1]) retorna ["Hola", 1]
@@ -286,7 +286,7 @@ console.log("filtrarSoloTruthy(): ", filtrarSoloTruthy(["Hola", "", null, 1, 0, 
  * 
  * Retorna: 
  * - Una oración (string), donde se enumeran cada una de las palabras recibidas en la lista.
- * - Bonus: una oración correctamente formada debería empezar en mayúscula, terminar con punto, y además el ultimo elemento de enumeración deberia estar separado con "y".
+ * - Bonus: una oración correctamente formada debería empezar en mayúscula, terminar con punto, y además el último elemento de enumeración debería estar separado con "y".
  * 
  * Ejemplos:
  * - enumerarLista(["Han", "Leia", "Luke", "Yoda"]) "Han, Leia, Luke y Yoda."

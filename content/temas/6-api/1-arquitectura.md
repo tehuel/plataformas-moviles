@@ -11,7 +11,7 @@ Ejemplos de Interfaces:
 - Volante, Pedales y Tablero de un vehículo.
 - Control Remoto y Botones de la tele.
 - Pantalla Táctil de un celu.
-- Linea de Comandos (CLI) de Linux.
+- Línea de Comandos (CLI) de Linux.
 
 ## APIs
 
@@ -35,7 +35,7 @@ Ejemplos de APIs HTTP:
 
 ## Diagrama
 
-Yendo desde lo más general hacia lo más específico, podemos pensar la relación entre Interfaces, APIs y APIs HTTP como se ven en el diagrama
+Yendo desde lo más general hacia lo más específico, podemos pensar la relación entre Interfaces, APIs y APIs HTTP como se ve en el diagrama
 
 ```goat
 +---------------------------------------+

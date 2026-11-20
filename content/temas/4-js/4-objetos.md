@@ -22,10 +22,10 @@ let objetoVacio = {};
 ## Acceso a propiedades
 
 ```js
-// acceso por sintáxis de punto
+// acceso por sintaxis de punto
 alumno.edad;
 
-// acceso por sintáxis de corchetes
+// acceso por sintaxis de corchetes
 alumno["edad"]
 alumno["Un.Campo.Apodo"]
 
@@ -39,10 +39,10 @@ alumno[campoImportante]
 ## Asignación de valores
 
 ```js
-// sintaxis de punt
+// sintaxis de punto
 alumno.edad = 19;
 
-// sintáxis de corchetes
+// sintaxis de corchetes
 alumno["edad"] = 18;
 alumno["Un.Campo.Apodo"] = "Juampi";
 ```
