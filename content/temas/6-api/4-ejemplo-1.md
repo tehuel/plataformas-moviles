@@ -117,7 +117,7 @@ function mostrarImgEnDom(src) {
 ## Código Final
 
 Uniendo todo:
-- Asociamos el evento con `addEventListener()` como vimos en la unidad de eventos.
+- Asociamos el evento con `addEventListener()` como vimos en la [unidad de eventos](/temas/5-dom/3-eventos/).
 - Usamos `try / catch / finally` para que, si una imagen no existe o falla la conexión, mostremos un aviso y el botón se vuelva a activar en el bloque `finally`.
 - Pedimos la imagen en un tamaño reducido (`600/400`) para que cargue rápido.
 

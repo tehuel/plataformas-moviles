@@ -35,7 +35,7 @@ Repasamos las ventajas y desventajas de usar un framework.
 
 Vemos algunos ejemplos de diferentes frameworks CSS.
 
-- Bootstrap  - [link](https://getbootstrap.com/)
+- Bootstrap - [apunte](/temas/3-css/6-bootstrap/) | [sitio oficial](https://getbootstrap.com/)
 - Tailwind CSS (basado en utilities) - [link](https://tailwindcss.com/)
 - "classless" Frameworks (sin modificar el HTML) - [listado demo](https://dohliam.github.io/dropin-minimal-css/)
 - NES.CSS (estilo particular) - [link](https://nostalgic-css.github.io/NES.css/)

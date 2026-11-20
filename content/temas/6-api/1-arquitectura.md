@@ -29,9 +29,9 @@ De forma más específica todavía, dentro de las APIs, una API HTTP es un tipo 
 
 Ejemplos de APIs HTTP:
 
-- PokéAPI (API de Pokémon): https://pokeapi.co/
-- API de Google Maps: https://developers.google.com/maps/documentation
-- API de Mercado Pago: https://www.mercadopago.com.ar/developers/es/reference
+- [PokéAPI (API de Pokémon)](https://pokeapi.co/)
+- [API de Google Maps](https://developers.google.com/maps/documentation)
+- [API de Mercado Pago](https://www.mercadopago.com.ar/developers/es/reference)
 
 ## Diagrama
 

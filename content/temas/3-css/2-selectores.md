@@ -4,7 +4,9 @@ title: "3.2: Selectores"
 
 Vimos algunos de los selectores que se pueden usar en CSS:
 
-Selector de Etiqueta
+## Selectores Básicos
+
+### Selector de Etiqueta
 
 ```css
 /* selecciona todos los elementos <p> del documento html */
@@ -13,7 +15,7 @@ p {
 }
 ```
 
-Selector de Clase
+### Selector de Clase
 
 ```css
 /* selecciona todos los elementos del documento html con la clase "elemento" */
@@ -22,7 +24,7 @@ Selector de Clase
 }
 ```
 
-Selector de ID
+### Selector de ID
 
 ```css
 /* selecciona todos los elementos con el id "elemento" */
@@ -31,7 +33,7 @@ Selector de ID
 }
 ```
 
-Selector Universal
+### Selector Universal
 
 ```css
 /* selecciona todos los elementos */

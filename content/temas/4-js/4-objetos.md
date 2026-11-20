@@ -19,7 +19,7 @@ let objetoAlumno = {
 let objetoVacio = {};
 ```
 
-Acceder los valores dentro de los campos (atributos, claves) de un objeto
+## Acceso a propiedades
 
 ```js
 // acceso por sintáxis de punto
@@ -36,7 +36,7 @@ campoImportante = "apellido";
 alumno[campoImportante]
 ```
 
-Asignación de valores
+## Asignación de valores
 
 ```js
 // sintaxis de punt
@@ -47,7 +47,7 @@ alumno["edad"] = 18;
 alumno["Un.Campo.Apodo"] = "Juampi";
 ```
 
-Tipos de valores dentro de los campos de un objeto
+## Tipos de valores en un objeto
 
 ```js
 let objetoConDatosDeDistintosTipos = {

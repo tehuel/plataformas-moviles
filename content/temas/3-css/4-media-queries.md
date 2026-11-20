@@ -2,8 +2,6 @@
 title: "3.4: Media Queries"
 ---
 
-## Media Queries
-
 La idea de Media Queries es hacer consultas sobre las características del dispositivo.
 
 Con esto podemos aplicar de forma condicional estilos CSS.

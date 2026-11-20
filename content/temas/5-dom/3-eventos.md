@@ -107,5 +107,5 @@ Las funciones que se usan como manejadoras de eventos reciben como parámetro un
 
 ---
 
-- Referencia de Eventos en MDN: https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Events
-- `addEventListener()` en MDN: https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener
+- [Referencia de Eventos en MDN](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Events)
+- [`addEventListener()` en MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)

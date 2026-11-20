@@ -9,11 +9,11 @@ Podemos pensar la representación del documento HTML como una estructura de árb
 
 ![](/img/dom-tree.png)
 
-Fuente: https://en.wikipedia.org/wiki/Document_Object_Model
+Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Document_Object_Model)
 
 ## Buscar Elementos
 
-Para buscar y seleccionar elementos dentro del DOM podemos usar `document.querySelector()` y `document.querySelectorAll()`.
+Para buscar y seleccionar elementos dentro del DOM con [selectores de CSS](/temas/3-css/2-selectores/) podemos usar `document.querySelector()` y `document.querySelectorAll()`.
 
 ```js
 // buscar elementos dentro del documento

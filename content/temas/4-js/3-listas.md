@@ -17,7 +17,7 @@ let listaVacia = [];
 
 ## Operaciones sobre listas
 
-Acceder a Valores de una lista
+### Acceder a valores de una lista
 
 ```js
 // acceder a un elemento determinado
@@ -90,7 +90,7 @@ let primerNumero = listaDeNumeros.shift();
 
 ## Recorridos sobre Listas
 
-Calcular la suma de todos los valores de una lista de números
+### Calcular la suma de todos los valores
 
 ```js
 // calcular la suma total de listaDeNumeros
@@ -109,7 +109,7 @@ listaDeNumeros.forEach((e) => {sumaTotalv2 += e})
 console.log("Suma total (v2): ", sumaTotalv2);
 ```
 
-Multiplicar todos los valores
+### Multiplicar todos los valores
 
 ```js
 // multiplicar todos los numeros por 5

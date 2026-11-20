@@ -2,7 +2,7 @@
 title: "4.2: Sintaxis Básica"
 ---
 
-Tipos de Datos (Primitivos)
+## Tipos de Datos (Primitivos)
 
 - números (enteros y de punto flotante)
 - strings
@@ -17,7 +17,7 @@ MiVariable = "Hola";
 MiVariable = true;
 ```
 
-Condicionales
+## Condicionales
 
 ```js
 // condicionales
@@ -28,7 +28,7 @@ if (condicion) {
 }
 ```
 
-Bucles
+## Bucles
 
 ```js
 while (condicion) {}
@@ -38,7 +38,7 @@ do {} while (condicion);
 for (inicio; condicion; incremento) {}
 ```
 
-Funciones
+## Funciones
 
 ```js
 // expresión de función
@@ -60,7 +60,7 @@ let MiTercerFuncionSuma = (a, b) => {
 let tercerResultado = MiTercerFuncionSuma(10,20);
 ```
 
-## Concepto de Funciones
+### Concepto de Funciones
 
 Una función (en programación) se puede pensar como una máquina que toma una entrada, realiza un conjunto de operaciones definidas en su interior y produce una salida.
 

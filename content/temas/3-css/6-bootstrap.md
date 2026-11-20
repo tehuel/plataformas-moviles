@@ -2,13 +2,11 @@
 title: "3.6: Bootstrap"
 ---
 
-## Bootstrap
-
 [Bootstrap](https://getbootstrap.com/) es un framework de desarrollo front-end ampliamente utilizado que proporciona un conjunto de herramientas y estilos predefinidos para agilizar y facilitar la creación de sitios web responsivos con un enfoque *mobile-first*. 
 
-Se basa en HTML, CSS y JavaScript, y ofrece componentes reutilizables, grillas flexibles y otras funcionalidades interactivas que permiten a los desarrolladores construir interfaces de usuario de manera rápida y eficiente.
+Se basa en HTML, CSS y JavaScript, y ofrece [componentes reutilizables](/temas/3-css/62-componentes/), [grillas flexibles](/temas/3-css/61-grilla/) y otras funcionalidades interactivas que permiten a los desarrolladores construir interfaces de usuario de manera rápida y eficiente.
 
-### Separación entre `Contenedor` y `Contenido`
+## Separación entre `Contenedor` y `Contenido`
 
 Al implementar interfaces responsivas con Bootstrap, se aplica una separación clara entre **contenedores** y **contenido**. Esta distinción es fundamental para lograr un diseño flexible. 
 

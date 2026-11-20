@@ -24,4 +24,4 @@ Por ejemplo, si se tuviese definido un estilo para todas las imágenes de un sit
 
 ### Batificity
 
-A modo de ejemplo, existe el sitio http://batificity.com/
+A modo de ejemplo, existe el sitio [Batificity](http://batificity.com/)
