@@ -1,28 +1,50 @@
 {{- define "main" }}
 
 	{{ partial "breadcrumb.html" . }}
-	
+
 	<div class="text-center border-bottom mb-4">
 		<h1 class="display-3">{{ .Title }}</h1>
 	</div>
 
-	<div class="content my-4">
-		{{ .Content }}		
-	</div>
+	{{ with .Content }}
+		<div class="content my-4">
+			{{ . }}
+		</div>
+	{{ end }}
 
-	{{ $pages := .Pages }}
-	{{ $paginator := .Paginate $pages }} 
-	{{ range $paginator.Pages }}
-		{{ if not .IsSection }}
-			{{ with .Date }}
-				<time class="text-muted">{{ . | time.Format ":date_full" }}</time>
+	{{ with .GetPage "slides" }}
+		<div class="my-3">
+			<a class="btn btn-outline-secondary btn-sm" href="{{ .RelPermalink }}">Ver {{ .Title }}</a>
+		</div>
+	{{ end }}
+
+	{{ if .RegularPages }}
+		<div class="my-4">
+			{{ range .RegularPages.ByWeight }}
+				<h2 class="h4 mb-3">
+					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+					{{ if .Params.opcional }}
+						{{ $badgeText := "Opcional" }}
+						{{ $badgeClass := "text-bg-secondary" }}
+						{{ if eq .Params.tipo "actividad" }}
+							{{ $badgeText = "Actividad en clase" }}
+							{{ $badgeClass = "text-bg-info" }}
+						{{ else if eq .Params.tipo "guia" }}
+							{{ $badgeText = "Guía opcional" }}
+						{{ end }}
+						<span class="badge {{ $badgeClass }} ms-2">{{ $badgeText }}</span>
+					{{ end }}
+				</h2>
 			{{ end }}
+		</div>
+	{{ else }}
+		{{ range .Sections.ByWeight }}
+			<h2>
+				<a href="{{ .RelPermalink }}">
+					{{ .Title }}
+				</a>
+			</h2>
 		{{ end }}
-		<h2>
-			<a href="{{ .RelPermalink }}">
-				{{ .Title }}
-			</a>
-		</h2>
 	{{ end }}
 
 {{- end }}

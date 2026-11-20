@@ -1,21 +1,74 @@
 {{- define "main" }}
 
 	{{ partial "breadcrumb.html" . }}
-	
+
 	<div class="text-center border-bottom mb-4">
 		<h1 class="display-3">{{ .Title }}</h1>
 	</div>
 
-	<div class="content my-4">
-		{{ .Content }}		
-	</div>
+	{{ with .Content }}
+		<div class="content my-4">
+			{{ . }}
+		</div>
+	{{ end }}
 
-    {{ range where .Site.Pages "Params.tags" "intersect" (slice "tp") }}
-        <h2>
-            <a href="{{ .RelPermalink }}">
-                {{ .Title }}
-            </a>
-        </h2>
-    {{ end }}
+	{{ $obligatorios := slice }}
+	{{ $opcionales := slice }}
+
+	{{ with .Site.GetPage "/temas" }}
+		{{ range .Sections.ByWeight }}
+			{{ $unidad := . }}
+			{{ if $unidad.Params.integrador }}
+				{{ $obligatorios = $obligatorios | append (dict "page" $unidad "unidad" $unidad.Title) }}
+			{{ end }}
+			{{ range $unidad.RegularPages.ByWeight }}
+				{{ if or (eq .Params.tipo "tp") (eq .Params.tipo "actividad") }}
+					{{ $item := dict "page" . "unidad" $unidad.Title }}
+					{{ if .Params.opcional }}
+						{{ $opcionales = $opcionales | append $item }}
+					{{ else }}
+						{{ $obligatorios = $obligatorios | append $item }}
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+
+	{{ with $obligatorios }}
+		<section class="my-4">
+			<h2 class="h4 text-muted border-bottom pb-2 mb-3">Camino principal</h2>
+			{{ range . }}
+				<div class="mb-3">
+					<small class="text-muted d-block">{{ .unidad }}</small>
+					<h3 class="h4 mb-0">
+						<a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a>
+					</h3>
+				</div>
+			{{ end }}
+		</section>
+	{{ end }}
+
+	{{ with $opcionales }}
+		<section class="my-4">
+			<h2 class="h4 text-muted border-bottom pb-2 mb-3">Opcionales y práctica extra</h2>
+			{{ range . }}
+				{{ $badgeText := "Opcional" }}
+				{{ $badgeClass := "text-bg-secondary" }}
+				{{ if eq .page.Params.tipo "actividad" }}
+					{{ $badgeText = "Actividad en clase" }}
+					{{ $badgeClass = "text-bg-info" }}
+				{{ else if eq .page.Params.tipo "guia" }}
+					{{ $badgeText = "Guía opcional" }}
+				{{ end }}
+				<div class="mb-3">
+					<small class="text-muted d-block">{{ .unidad }}</small>
+					<h3 class="h5 mb-0">
+						<a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a>
+						<span class="badge {{ $badgeClass }} ms-2">{{ $badgeText }}</span>
+					</h3>
+				</div>
+			{{ end }}
+		</section>
+	{{ end }}
 
 {{- end }}
