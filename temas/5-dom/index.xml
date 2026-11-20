@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unidad 5: DOM on Plataformas Móviles</title><link>https://tehuel.github.io/plataformas-moviles/temas/5-dom/</link><description>Recent content in Unidad 5: DOM on Plataformas Móviles</description><generator>Hugo</generator><language>es-AR</language><atom:link href="https://tehuel.github.io/plataformas-moviles/temas/5-dom/index.xml" rel="self" type="application/rss+xml"/><item><title>5.1: Interfaces</title><link>https://tehuel.github.io/plataformas-moviles/temas/5-dom/1-interfaces/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/5-dom/1-interfaces/</guid><description>&lt;p>Vimos algunos conceptos antes de arrancar con código.&lt;/p>
+&lt;h2 id="interfaz">Interfaz&lt;/h2>
+&lt;blockquote>
+&lt;dl>
+&lt;dt>Interfaz (del inglés Interface)&lt;/dt>
+&lt;dd>Conexión o frontera común entre dos aparatos o sistemas independientes.&lt;/dd>
+&lt;dd>(Informática) Conexión, física o lógica, entre una computadora y el usuario, un dispositivo periférico o un enlace de comunicaciones.&lt;/dd>
+&lt;/dl>
+&lt;p>Fuente: &lt;a href="https://dle.rae.es/interfaz">RAE&lt;/a>
+&lt;/p>&lt;/blockquote>
+&lt;h2 id="api">API&lt;/h2>
+&lt;blockquote>
+&lt;p>Una API (del inglés, application programming interface, en español, interfaz de programación de aplicaciones) ​es una pieza de código que permite a diferentes aplicaciones comunicarse entre sí y compartir información y funcionalidades. Una API es un intermediario entre dos sistemas, que permite que una aplicación se comunique con otra y pida datos o acciones específicas.&lt;/p></description></item><item><title>5.2: DOM</title><link>https://tehuel.github.io/plataformas-moviles/temas/5-dom/2-dom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/5-dom/2-dom/</guid><description>&lt;p>Vimos distintas operaciones que podemos realizar conectando con el &lt;em>Modelo de Objetos del Documento&lt;/em> (DOM, por sus siglas en inglés). &lt;a href="https://developer.mozilla.org/es/docs/Web/API/Document_object_model/Using_the_Document_Object_Model">Referencia en MDN&lt;/a>
+&lt;/p>
+&lt;h2 id="organización-en-árbol">Organización en Árbol&lt;/h2>
+&lt;p>Podemos pensar la representación del documento HTML como una estructura de árbol, donde encontramos nodos, ramas y hojas todos partiendo desde un nodo raíz.&lt;/p>
+&lt;figure>
+ &lt;img src="https://tehuel.github.io/plataformas-moviles/img/dom-tree.png" alt="Representación en árbol de los nodos de un documento HTML en el DOM">&lt;/figure>&lt;p>Fuente: &lt;a href="https://en.wikipedia.org/wiki/Document_Object_Model">Wikipedia&lt;/a>
+&lt;/p>
+&lt;h2 id="buscar-elementos">Buscar Elementos&lt;/h2>
+&lt;p>Para buscar y seleccionar elementos dentro del DOM con &lt;a href="https://tehuel.github.io/plataformas-moviles/temas/3-css/2-selectores/">selectores de CSS&lt;/a>
+ podemos usar &lt;code>document.querySelector()&lt;/code> y &lt;code>document.querySelectorAll()&lt;/code>.&lt;/p></description></item><item><title>5.3: Eventos</title><link>https://tehuel.github.io/plataformas-moviles/temas/5-dom/3-eventos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/5-dom/3-eventos/</guid><description>&lt;p>En JavaScript, los eventos son acciones que ocurren en la página web y a las que podemos responder con código, como un clic en un botón, el envío de un formulario, mover el mouse o presionar una tecla.&lt;/p>
+&lt;p>Para reaccionar a los eventos se utilizan &lt;strong>&lt;em>manejadores de eventos&lt;/em> (event handlers)&lt;/strong>, que son funciones que se ejecutan cuando ocurre un evento específico.&lt;/p>
+&lt;p>Por ejemplo, con el atributo &lt;code>onclick=&amp;quot;miFuncion()&amp;quot;&lt;/code> o con el código &lt;code>addEventListener(&amp;quot;click&amp;quot;, miFuncion)&lt;/code> podemos indicar que al hacer clic en un elemento se ejecute la función &lt;code>miFuncion&lt;/code>.&lt;/p></description></item><item><title>5.3: tp-12 (Editor de Texto)</title><link>https://tehuel.github.io/plataformas-moviles/temas/5-dom/3-tp-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/5-dom/3-tp-editor/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Desarrollar un editor de texto básico que permita aplicar distintos estilos al texto utilizando JavaScript y manipulaciones del DOM.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Crear un archivo HTML en la ruta &lt;code>tp-12/index.html&lt;/code> con el contenido inicial proporcionado.&lt;/li>
+&lt;li>Subir el archivo al repositorio de entregas.&lt;/li>
+&lt;/ul>
+&lt;h3 id="html-inicial">HTML Inicial&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;utf-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;title&amp;gt;Editor de Texto - DOM y JavaScript&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;link href=&lt;span style="color:#a31515">&amp;#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css&amp;#34;&lt;/span> rel=&lt;span style="color:#a31515">&amp;#34;stylesheet&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;container my-1 my-sm-2 my-md-4 my-lg-5&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h1&amp;gt;Editor de Texto&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;card&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;card-body&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h2&amp;gt;Texto&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p class=&lt;span style="color:#a31515">&amp;#34;texto&amp;#34;&lt;/span> id=&lt;span style="color:#a31515">&amp;#34;texto&amp;#34;&lt;/span>&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum auctor libero, vel imperdiet est. Etiam blandit facilisis ex, nec cursus metus pharetra quis. Fusce imperdiet nisl nibh, ac aliquet ante elementum vitae.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;hr class=&lt;span style="color:#a31515">&amp;#34;hr&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h2&amp;gt;Opciones de Formato&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;row&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col-12 col-md-4 my-1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;button id=&lt;span style="color:#a31515">&amp;#34;btn-negrita&amp;#34;&lt;/span> class=&lt;span style="color:#a31515">&amp;#34;btn d-block w-100 btn-primary&amp;#34;&lt;/span> data-formato=&lt;span style="color:#a31515">&amp;#34;negrita&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Bold (Negrita)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/button&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col-12 col-md-4 my-1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;button id=&lt;span style="color:#a31515">&amp;#34;btn-cursiva&amp;#34;&lt;/span> class=&lt;span style="color:#a31515">&amp;#34;btn d-block w-100 btn-primary&amp;#34;&lt;/span> data-formato=&lt;span style="color:#a31515">&amp;#34;cursiva&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Italic (Cursiva)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/button&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col-12 col-md-4 my-1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;button id=&lt;span style="color:#a31515">&amp;#34;btn-subrayado&amp;#34;&lt;/span> class=&lt;span style="color:#a31515">&amp;#34;btn d-block w-100 btn-primary&amp;#34;&lt;/span> data-formato=&lt;span style="color:#a31515">&amp;#34;subrayado&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Underline (Subrayado)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/button&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;script src=&lt;span style="color:#a31515">&amp;#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js&amp;#34;&lt;/span>&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> * funcionNegrita()
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> * Esta función se ejecuta cuando el usuario selecciona la opción Bold (negrita).
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">function&lt;/span> funcionNegrita() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">// Implementación pendiente
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> * funcionCursiva()
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> * Esta función se ejecuta cuando el usuario selecciona la opción Italic (cursiva).
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">function&lt;/span> funcionCursiva() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">// Implementación pendiente
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> * funcionSubrayado()
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> * Esta función se ejecuta cuando el usuario selecciona la opción Underline (subrayado).
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">function&lt;/span> funcionSubrayado() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">// Implementación pendiente
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">function&lt;/span> handlerBoton(e) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">// Obtiene el valor del atributo &amp;#34;data-formato&amp;#34; del botón que disparó el evento
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span> &lt;span style="color:#00f">const&lt;/span> funcionBoton = e.target.dataset.formato;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">switch&lt;/span> (funcionBoton) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">case&lt;/span> &lt;span style="color:#a31515">&amp;#39;negrita&amp;#39;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> funcionNegrita();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">case&lt;/span> &lt;span style="color:#a31515">&amp;#39;cursiva&amp;#39;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> funcionCursiva();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">case&lt;/span> &lt;span style="color:#a31515">&amp;#39;subrayado&amp;#39;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> funcionSubrayado();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> document.querySelectorAll(&lt;span style="color:#a31515">&amp;#39;button.btn&amp;#39;&lt;/span>).forEach(e =&amp;gt; e.addEventListener(&lt;span style="color:#a31515">&amp;#39;click&amp;#39;&lt;/span>, handlerBoton));
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;ul>
+&lt;li>Implementar las funciones de estilo que ya están definidas en el HTML inicial: negrita, cursiva y subrayado.&lt;/li>
+&lt;li>Añadir un nuevo botón que aplique un estilo adicional al texto (por ejemplo, cambiar el color del texto).&lt;/li>
+&lt;li>Incluir un campo de entrada (input) que permita al usuario editar el texto mostrado.&lt;/li>
+&lt;li>Mostrar el estado actual de cada estilo en los botones correspondientes. Esto puede hacerse cambiando el color o el texto del botón para indicar si el estilo está activado o no.&lt;/li>
+&lt;li>Agregar una funcionalidad para modificar el tamaño del texto.&lt;/li>
+&lt;/ul>
+&lt;h2 id="bonus-track">Bonus Track&lt;/h2>
+&lt;ul>
+&lt;li>(Opcional) Explorar y añadir otras funcionalidades que puedan mejorar la experiencia del editor de texto.&lt;/li>
+&lt;/ul></description></item><item><title>5.3: tp-13 (Lista de Compras)</title><link>https://tehuel.github.io/plataformas-moviles/temas/5-dom/3-tp-lista-compras/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/5-dom/3-tp-lista-compras/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Construir una lista de compras donde se puedan agregar productos dinámicamente utilizando JavaScript y el DOM.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.&lt;/li>
+&lt;li>Subir el trabajo al repositorio de entregas, en el directorio &lt;code>tp-13/&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="html-inicial">HTML Inicial&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;utf-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;title&amp;gt;Lista de Compras - DOM y JavaScript&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;link href=&lt;span style="color:#a31515">&amp;#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css&amp;#34;&lt;/span> rel=&lt;span style="color:#a31515">&amp;#34;stylesheet&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;container my-1 my-sm-2 my-md-4 my-lg-5&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h1&amp;gt;Lista de Compras&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;card&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;card-body&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h2&amp;gt;Listado de Productos&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;ul id=&lt;span style="color:#a31515">&amp;#34;lista-productos&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;Pan&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/ul&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;hr class=&lt;span style="color:#a31515">&amp;#34;hr&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h2&amp;gt;Agregar Producto&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;form id=&lt;span style="color:#a31515">&amp;#34;form-producto&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;input-group mb-3&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;input type=&lt;span style="color:#a31515">&amp;#34;text&amp;#34;&lt;/span> class=&lt;span style="color:#a31515">&amp;#34;form-control&amp;#34;&lt;/span> aria-label=&lt;span style="color:#a31515">&amp;#34;Nombre del Producto&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;button class=&lt;span style="color:#a31515">&amp;#34;btn btn-primary&amp;#34;&lt;/span> type=&lt;span style="color:#a31515">&amp;#34;submit&amp;#34;&lt;/span>&amp;gt;Agregar Producto&amp;lt;/button&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/form&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;script src=&lt;span style="color:#a31515">&amp;#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js&amp;#34;&lt;/span>&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> * agregarProducto()
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> * esta función se va a llamar cuando el usuario envía el formulario con el nombre del producto para agregar.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">function&lt;/span> agregarProducto(nombreProducto) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">// su implementación
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">function&lt;/span> handlerFormulario(evento) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> evento.preventDefault();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">const&lt;/span> input = evento.target.querySelector(&lt;span style="color:#a31515">&amp;#39;input&amp;#39;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">const&lt;/span> nombreProducto = input.value;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> input.value = &lt;span style="color:#a31515">&amp;#34;&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> agregarProducto(nombreProducto);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> document.querySelector(&lt;span style="color:#a31515">&amp;#39;form&amp;#39;&lt;/span>).addEventListener(&lt;span style="color:#a31515">&amp;#39;submit&amp;#39;&lt;/span>, handlerFormulario);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;p>Implementar las siguientes funcionalidades en la lista de compras:&lt;/p></description></item><item><title>5.3: tp-14 (Lista de Contactos)</title><link>https://tehuel.github.io/plataformas-moviles/temas/5-dom/3-tp-lista-contactos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/5-dom/3-tp-lista-contactos/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Construir una lista de contactos, ordenada alfabéticamente, y agregar funcionalidades avanzadas de gestión.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.&lt;/li>
+&lt;li>Subir el trabajo al repositorio de entregas, en el directorio &lt;code>tp-14/&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="html-inicial">HTML Inicial&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;utf-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;title&amp;gt;Lista de Contactos - DOM y JavaScript&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;link href=&lt;span style="color:#a31515">&amp;#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css&amp;#34;&lt;/span> rel=&lt;span style="color:#a31515">&amp;#34;stylesheet&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;container my-1 my-sm-2 my-md-4 my-lg-5&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h1&amp;gt;Lista de Contactos&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;card&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;card-body&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h2&amp;gt;Contactos&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;ul id=&lt;span style="color:#a31515">&amp;#34;lista-contactos&amp;#34;&lt;/span>&amp;gt;&amp;lt;/ul&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;hr class=&lt;span style="color:#a31515">&amp;#34;hr&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h2&amp;gt;Nuevo Contacto&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;form id=&lt;span style="color:#a31515">&amp;#34;form-contacto&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;input-group mb-3&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;input type=&lt;span style="color:#a31515">&amp;#34;text&amp;#34;&lt;/span> class=&lt;span style="color:#a31515">&amp;#34;form-control&amp;#34;&lt;/span> name=&lt;span style="color:#a31515">&amp;#34;nombre&amp;#34;&lt;/span> id=&lt;span style="color:#a31515">&amp;#34;input-nombre&amp;#34;&lt;/span> placeholder=&lt;span style="color:#a31515">&amp;#34;Nombre&amp;#34;&lt;/span> aria-label=&lt;span style="color:#a31515">&amp;#34;Nombre&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;input type=&lt;span style="color:#a31515">&amp;#34;text&amp;#34;&lt;/span> class=&lt;span style="color:#a31515">&amp;#34;form-control&amp;#34;&lt;/span> name=&lt;span style="color:#a31515">&amp;#34;apellido&amp;#34;&lt;/span> id=&lt;span style="color:#a31515">&amp;#34;input-apellido&amp;#34;&lt;/span> placeholder=&lt;span style="color:#a31515">&amp;#34;Apellido&amp;#34;&lt;/span> aria-label=&lt;span style="color:#a31515">&amp;#34;Apellido&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;button class=&lt;span style="color:#a31515">&amp;#34;btn btn-primary&amp;#34;&lt;/span> type=&lt;span style="color:#a31515">&amp;#34;submit&amp;#34;&lt;/span>&amp;gt;Agregar Contacto&amp;lt;/button&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/form&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;script src=&lt;span style="color:#a31515">&amp;#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js&amp;#34;&lt;/span>&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">let&lt;/span> contactos = [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> nombre: &lt;span style="color:#a31515">&amp;#39;Juan&amp;#39;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> apellido: &lt;span style="color:#a31515">&amp;#39;Perez&amp;#39;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> * agregarContacto()
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> * esta función se va a llamar cuando el usuario envía el formulario con el nuevo contacto para agregar.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">function&lt;/span> agregarContacto(nombre, apellido) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">// su implementación
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> * mostrarListado()
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> * esta función se encarga de mostrar en el DOM la lista de todos los contactos guardados en la variable global contactos.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">function&lt;/span> mostrarListado() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">// su implementación
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">function&lt;/span> handlerFormulario(e) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> e.preventDefault();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">const&lt;/span> inputNombre = e.target.querySelector(&lt;span style="color:#a31515">&amp;#39;#input-nombre&amp;#39;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">const&lt;/span> inputApellido = e.target.querySelector(&lt;span style="color:#a31515">&amp;#39;#input-apellido&amp;#39;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">const&lt;/span> nombre = inputNombre.value;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">const&lt;/span> apellido = inputApellido.value;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> inputNombre.value = &lt;span style="color:#a31515">&amp;#34;&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> inputApellido.value = &lt;span style="color:#a31515">&amp;#34;&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> agregarContacto(nombre, apellido);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> document.querySelector(&lt;span style="color:#a31515">&amp;#39;form&amp;#39;&lt;/span>).addEventListener(&lt;span style="color:#a31515">&amp;#39;submit&amp;#39;&lt;/span>, handlerFormulario);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;p>Implementar las siguientes funcionalidades:&lt;/p></description></item><item><title>5.3: tp-15 (Tablero de Puntos)</title><link>https://tehuel.github.io/plataformas-moviles/temas/5-dom/3-tp-tablero/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/5-dom/3-tp-tablero/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Construir un tablero para mostrar y gestionar el puntaje de un partido entre 2 equipos.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.&lt;/li>
+&lt;li>Subir el trabajo al repositorio de entregas, en el directorio &lt;code>tp-15/&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="html-inicial">HTML Inicial&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;utf-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;title&amp;gt;Tablero de Puntos - DOM y JavaScript&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;link href=&lt;span style="color:#a31515">&amp;#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css&amp;#34;&lt;/span> rel=&lt;span style="color:#a31515">&amp;#34;stylesheet&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;container my-1 my-sm-2 my-md-4 my-lg-5&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 	&amp;lt;h1&amp;gt;Tablero de Puntos&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;card&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;card-body&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;row text-center&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col-5&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;span class=&lt;span style="color:#a31515">&amp;#34;display-1&amp;#34;&lt;/span>&amp;gt;0&amp;lt;/span&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p class=&lt;span style="color:#a31515">&amp;#34;m-0&amp;#34;&lt;/span>&amp;gt;Local&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col-2&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;span class=&lt;span style="color:#a31515">&amp;#34;display-1&amp;#34;&lt;/span>&amp;gt;:&amp;lt;/span&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col-5&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;span class=&lt;span style="color:#a31515">&amp;#34;display-1&amp;#34;&lt;/span>&amp;gt;0&amp;lt;/span&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p class=&lt;span style="color:#a31515">&amp;#34;m-0&amp;#34;&lt;/span>&amp;gt;Visitante&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;hr class=&lt;span style="color:#a31515">&amp;#34;hr&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h2&amp;gt;Actualizar Contador&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;row&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col-12 col-sm-4 my-1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;button class=&lt;span style="color:#a31515">&amp;#34;btn d-block w-100 btn-primary&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Punto Local
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/button&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col-12 col-sm-4 my-1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;button class=&lt;span style="color:#a31515">&amp;#34;btn d-block w-100 btn-primary&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Punto Visitante
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/button&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col-12 col-sm-4 my-1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;button class=&lt;span style="color:#a31515">&amp;#34;btn d-block w-100 btn-danger&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Reinicio
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/button&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;script src=&lt;span style="color:#a31515">&amp;#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js&amp;#34;&lt;/span>&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;p>Implementar las siguientes funcionalidades:&lt;/p></description></item></channel></rss>

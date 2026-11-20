@@ -1,0 +1,58 @@
+<!doctype html><html lang=es-AR class=h-100><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.145.0"><title>5.3: tp-13 (Lista de Compras) | Plataformas Móviles</title>
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/cosmo/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=/plataformas-moviles/css/syntax.css rel=stylesheet><style type=text/css>li>p{margin:0}.container{max-width:60rem;margin:0 auto}.container img{max-width:100%}figcaption{text-align:right;font-style:italic;color:var(--bs-gray-600)}blockquote{padding:1em;border-left:3px solid var(--bs-gray-600);background-color:var(--bs-gray-100)}blockquote p:last-child,footer p:last-child{margin:0}.highlight{position:relative}.highlight pre{border:var(--bs-border-width)var(--bs-border-style)var(--bs-gray-500);border-radius:var(--bs-border-radius);padding:1em}.btn-copy-code{position:absolute;right:0;top:-1rem}</style><link rel=apple-touch-icon sizes=180x180 href=/plataformas-moviles/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/plataformas-moviles/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/plataformas-moviles/favicon-16x16.png><link rel=mask-icon href=/plataformas-moviles/safari-pinned-tab.svg color=#5bbad5></head><body class="h-100 d-flex flex-column"><nav class="navbar navbar-expand-sm navbar-dark bg-dark"><div class=container><a class=navbar-brand href=/plataformas-moviles/>Plataformas Móviles</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarSupportedContent><ul class="navbar-nav ms-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" href=/plataformas-moviles/temas/>Temas</a></li><li class=nav-item><a class=nav-link href=/plataformas-moviles/trabajos-practicos/>Trabajos Prácticos</a></li><li class=nav-item><a class=nav-link href=/plataformas-moviles/recursos/>Recursos</a></li></ul></div></div></nav><div class="container flex-grow-1 my-3"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/plataformas-moviles/>Home</a></li><li class=breadcrumb-item><a href=/plataformas-moviles/temas/>Temas</a></li><li class=breadcrumb-item><a href=/plataformas-moviles/temas/5-dom/>Unidad 5: DOM</a></li><li class="breadcrumb-item active" aria-current=page>5.3: tp-13 (Lista de Compras)</li></ol></nav><div class="text-center border-bottom mb-4"><h1 class=display-3>5.3: tp-13 (Lista de Compras)</h1></div><h2 id=objetivo>Objetivo</h2><p>Construir una lista de compras donde se puedan agregar productos dinámicamente utilizando JavaScript y el DOM.</p><h2 id=formato-de-entrega>Formato de Entrega</h2><ul><li>Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.</li><li>Subir el trabajo al repositorio de entregas, en el directorio <code>tp-13/</code>.</li></ul><h3 id=html-inicial>HTML Inicial</h3><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#00f>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;html lang=<span style=color:#a31515>&#34;es&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;head&gt;
+</span></span><span style=display:flex><span>    &lt;meta charset=<span style=color:#a31515>&#34;utf-8&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;meta name=<span style=color:#a31515>&#34;viewport&#34;</span> content=<span style=color:#a31515>&#34;width=device-width, initial-scale=1&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;title&gt;Lista de Compras - DOM y JavaScript&lt;/title&gt;
+</span></span><span style=display:flex><span>    &lt;link href=<span style=color:#a31515>&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css&#34;</span> rel=<span style=color:#a31515>&#34;stylesheet&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;/head&gt;
+</span></span><span style=display:flex><span>&lt;body&gt;
+</span></span><span style=display:flex><span>    &lt;div class=<span style=color:#a31515>&#34;container my-1 my-sm-2 my-md-4 my-lg-5&#34;</span>&gt;
+</span></span><span style=display:flex><span>        &lt;h1&gt;Lista de Compras&lt;/h1&gt;
+</span></span><span style=display:flex><span>        &lt;div class=<span style=color:#a31515>&#34;card&#34;</span>&gt;
+</span></span><span style=display:flex><span>            &lt;div class=<span style=color:#a31515>&#34;card-body&#34;</span>&gt;
+</span></span><span style=display:flex><span>                &lt;h2&gt;Listado de Productos&lt;/h2&gt;
+</span></span><span style=display:flex><span>                
+</span></span><span style=display:flex><span>                &lt;ul id=<span style=color:#a31515>&#34;lista-productos&#34;</span>&gt;
+</span></span><span style=display:flex><span>                    &lt;li&gt;Pan&lt;/li&gt;
+</span></span><span style=display:flex><span>                &lt;/ul&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>                &lt;hr class=<span style=color:#a31515>&#34;hr&#34;</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>                &lt;h2&gt;Agregar Producto&lt;/h2&gt;
+</span></span><span style=display:flex><span>                &lt;form id=<span style=color:#a31515>&#34;form-producto&#34;</span>&gt;
+</span></span><span style=display:flex><span>                    &lt;div class=<span style=color:#a31515>&#34;input-group mb-3&#34;</span>&gt;
+</span></span><span style=display:flex><span>                        &lt;input type=<span style=color:#a31515>&#34;text&#34;</span> class=<span style=color:#a31515>&#34;form-control&#34;</span> aria-label=<span style=color:#a31515>&#34;Nombre del Producto&#34;</span>&gt;
+</span></span><span style=display:flex><span>                        &lt;button class=<span style=color:#a31515>&#34;btn btn-primary&#34;</span> type=<span style=color:#a31515>&#34;submit&#34;</span>&gt;Agregar Producto&lt;/button&gt;
+</span></span><span style=display:flex><span>                    &lt;/div&gt;
+</span></span><span style=display:flex><span>                &lt;/form&gt;
+</span></span><span style=display:flex><span>            &lt;/div&gt;
+</span></span><span style=display:flex><span>        &lt;/div&gt;
+</span></span><span style=display:flex><span>    &lt;/div&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    &lt;script src=<span style=color:#a31515>&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js&#34;</span>&gt;&lt;/script&gt;
+</span></span><span style=display:flex><span>    &lt;script&gt;
+</span></span><span style=display:flex><span>        <span style=color:green>/**
+</span></span></span><span style=display:flex><span><span style=color:green>         * agregarProducto()
+</span></span></span><span style=display:flex><span><span style=color:green>         * esta función se va a llamar cuando el usuario envía el formulario con el nombre del producto para agregar.
+</span></span></span><span style=display:flex><span><span style=color:green>         */</span>
+</span></span><span style=display:flex><span>        <span style=color:#00f>function</span> agregarProducto(nombreProducto) {
+</span></span><span style=display:flex><span>            <span style=color:green>// su implementación
+</span></span></span><span style=display:flex><span><span style=color:green></span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#00f>function</span> handlerFormulario(evento) {
+</span></span><span style=display:flex><span>            evento.preventDefault();
+</span></span><span style=display:flex><span>            <span style=color:#00f>const</span> input = evento.target.querySelector(<span style=color:#a31515>&#39;input&#39;</span>);
+</span></span><span style=display:flex><span>            <span style=color:#00f>const</span> nombreProducto = input.value;
+</span></span><span style=display:flex><span>            input.value = <span style=color:#a31515>&#34;&#34;</span>;
+</span></span><span style=display:flex><span>            agregarProducto(nombreProducto);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        document.querySelector(<span style=color:#a31515>&#39;form&#39;</span>).addEventListener(<span style=color:#a31515>&#39;submit&#39;</span>, handlerFormulario);
+</span></span><span style=display:flex><span>    &lt;/script&gt;
+</span></span><span style=display:flex><span>&lt;/body&gt;
+</span></span><span style=display:flex><span>&lt;/html&gt;
+</span></span></code></pre></div><h2 id=consigna>Consigna</h2><p>Implementar las siguientes funcionalidades en la lista de compras:</p><ul><li>Agregar productos: sumar nuevos productos a la lista.</li><li>Limpiar la lista: opción para borrar todos los productos.</li><li>Ordenar productos: posibilidad de ordenar la lista alfabéticamente.</li><li>Eliminar productos: cada producto debe poder eliminarse de forma individual.</li></ul><h2 id=bonus-track>Bonus Track</h2><ul><li>Habilitar la edición del nombre de un producto ya agregado.</li><li>Marcar productos como comprados: Permitir marcar/desmarcar productos como comprados (por ejemplo, tachando el texto).</li><li>Persistencia local: Guardar la lista de productos en <code>localStorage</code> para que no se pierda al recargar la página.</li></ul></div><footer class="footer py-5 bg-dark text-light"><div class=container><div class=row><div class=col-md><p>2026 | Plataformas Móviles</p></div><div class="col-md text-md-end"><a class=link-light href=https://github.com/tehuel/plataformas-moviles/edit/main/content/temas/5-dom/3-tp-lista-compras.md>Editar en GitHub</a> | <a class=link-light href=https://github.com/tehuel/plataformas-moviles/blob/main/content/temas/5-dom/3-tp-lista-compras.md>Ver Código Fuente</a></div></div></div></footer><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script>function initClipboardForCodeButtons(){if(typeof ClipboardJS=="undefined")return;document.querySelectorAll(".highlight").forEach(function(e,t){var n,o,s=e.querySelector("pre code");if(!s)return;s.id||(s.id="code-block-"+t),n=document.createElement("button"),n.className="btn btn-sm btn-secondary btn-copy-code",n.type="button",n.innerText="Copiar",n.setAttribute("data-clipboard-target","#"+s.id),e.insertBefore(n,e.firstChild),o=document.createElement("div"),o.className="highlight-wrapper",e.parentNode.insertBefore(o,e),o.appendChild(e)});var e=new ClipboardJS(".btn-copy-code");e.on("success",function(e){setCopyStatus(e.trigger,!0),e.clearSelection()}),e.on("error",function(e){setCopyStatus(e.trigger,!1)})}function setCopyStatus(e,t){e.blur(),e.innerText=t?"Copiado":"No se pudo copiar";const n=t?"btn-success":"btn-danger";e.classList.add(n),setTimeout(function(){e.innerText="Copiar",e.classList.remove(n)},2e3)}initClipboardForCodeButtons()</script></body></html>

@@ -1,0 +1,155 @@
+<!doctype html><html lang=es-AR class=h-100><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.145.0"><title>4.2: tp-8 (Funciones) | Plataformas Móviles</title>
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/cosmo/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=/plataformas-moviles/css/syntax.css rel=stylesheet><style type=text/css>li>p{margin:0}.container{max-width:60rem;margin:0 auto}.container img{max-width:100%}figcaption{text-align:right;font-style:italic;color:var(--bs-gray-600)}blockquote{padding:1em;border-left:3px solid var(--bs-gray-600);background-color:var(--bs-gray-100)}blockquote p:last-child,footer p:last-child{margin:0}.highlight{position:relative}.highlight pre{border:var(--bs-border-width)var(--bs-border-style)var(--bs-gray-500);border-radius:var(--bs-border-radius);padding:1em}.btn-copy-code{position:absolute;right:0;top:-1rem}</style><link rel=apple-touch-icon sizes=180x180 href=/plataformas-moviles/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/plataformas-moviles/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/plataformas-moviles/favicon-16x16.png><link rel=mask-icon href=/plataformas-moviles/safari-pinned-tab.svg color=#5bbad5></head><body class="h-100 d-flex flex-column"><nav class="navbar navbar-expand-sm navbar-dark bg-dark"><div class=container><a class=navbar-brand href=/plataformas-moviles/>Plataformas Móviles</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarSupportedContent><ul class="navbar-nav ms-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" href=/plataformas-moviles/temas/>Temas</a></li><li class=nav-item><a class=nav-link href=/plataformas-moviles/trabajos-practicos/>Trabajos Prácticos</a></li><li class=nav-item><a class=nav-link href=/plataformas-moviles/recursos/>Recursos</a></li></ul></div></div></nav><div class="container flex-grow-1 my-3"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/plataformas-moviles/>Home</a></li><li class=breadcrumb-item><a href=/plataformas-moviles/temas/>Temas</a></li><li class=breadcrumb-item><a href=/plataformas-moviles/temas/4-js/>Unidad 4: JavaScript</a></li><li class="breadcrumb-item active" aria-current=page>4.2: tp-8 (Funciones)</li></ol></nav><div class="text-center border-bottom mb-4"><h1 class=display-3>4.2: tp-8 (Funciones)</h1></div><h2 id=objetivo>Objetivo</h2><p>Practicar la definición y el uso de funciones en JavaScript.</p><h2 id=formato-de-entrega>Formato de Entrega</h2><ul><li>Crear un archivo HTML en la ruta <code>tp-8/index.html</code>, con el contenido del HTML inicial.</li><li>Subir el archivo al repositorio de entregas.</li></ul><h3 id=html-inicial>HTML Inicial</h3><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#00f>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;html lang=<span style=color:#a31515>&#34;es&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;head&gt;
+</span></span><span style=display:flex><span>	&lt;meta charset=<span style=color:#a31515>&#34;utf-8&#34;</span>&gt;
+</span></span><span style=display:flex><span>	&lt;meta name=<span style=color:#a31515>&#34;viewport&#34;</span> content=<span style=color:#a31515>&#34;width=device-width, initial-scale=1&#34;</span>&gt;
+</span></span><span style=display:flex><span>	&lt;title&gt;TP-8: Funciones en JavaScript&lt;/title&gt;
+</span></span><span style=display:flex><span>&lt;/head&gt;
+</span></span><span style=display:flex><span>&lt;body&gt;
+</span></span><span style=display:flex><span>&lt;p&gt;Completar con la implementación de las funciones correspondientes&lt;/p&gt;
+</span></span><span style=display:flex><span>&lt;script&gt;
+</span></span><span style=display:flex><span><span style=color:green>// Números
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span><span style=color:green>// 1- Implementar una función &#34;suma&#34; que retorne la suma de 2 números
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: suma(2,3) retorna 5
+</span></span></span><span style=display:flex><span><span style=color:green></span><span style=color:#00f>function</span> suma(num1, num2) {
+</span></span><span style=display:flex><span>    <span style=color:green>// return num1 + num2;
+</span></span></span><span style=display:flex><span><span style=color:green></span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de suma():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(suma(2,3)); <span style=color:green>// 5
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(suma(4,4)); <span style=color:green>// 8
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(suma(-10,10)); <span style=color:green>// 0
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// 2- Implementar una función &#34;elevarAlCubo&#34; que eleve al cubo un número
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: elevarAlCubo(3) retorna 27
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de elevarAlCubo():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(elevarAlCubo(3)); <span style=color:green>// 27
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(elevarAlCubo(99)); <span style=color:green>// 970299
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span><span style=color:green>// 3- Implementar una función &#34;restoDivisionEntera&#34; para devolver el resto de una división entera entre un dividendo y un divisor
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: restoDivisionEntera(3,2) retorna 1
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de restoDivisionEntera():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(restoDivisionEntera(1,3)); <span style=color:green>// 1
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(restoDivisionEntera(2,3)); <span style=color:green>// 2
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(restoDivisionEntera(3,3)); <span style=color:green>// 0
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(restoDivisionEntera(4,3)); <span style=color:green>// 1
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// 4- Implementar una función &#34;numeroPi&#34; para devolver el número PI
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: numeroPi() retorna 3,14...
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultado de numeroPi():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(numeroPi())
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// 5- Implementar una función &#34;numeroRandom&#34; para devolver un número random (aleatorio)
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: numeroRandom() retorna 0,123...
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de numeroRandom():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(numeroRandom())
+</span></span><span style=display:flex><span>console.log(numeroRandom())
+</span></span><span style=display:flex><span>console.log(numeroRandom())
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// 6- Implementar una función &#34;numeroRandomDesdeHasta&#34; para devolver un número random entre 2 valores recibidos como parámetros
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: numeroRandomDesdeHasta(1,6) retorna 3
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de numeroRandomDesdeHasta():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(numeroRandomDesdeHasta(1,6))
+</span></span><span style=display:flex><span>console.log(numeroRandomDesdeHasta(2,5))
+</span></span><span style=display:flex><span>console.log(numeroRandomDesdeHasta(3,4))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// 7- Implementar una función &#34;esPar&#34; que reciba un número como parámetro y devuelva verdadero si el número es par, o falso si es impar
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: esPar(4) retorna true, esPar(5) retorna false
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de esPar():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(esPar(4)); <span style=color:green>// true
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(esPar(5)); <span style=color:green>// false
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(esPar(0)); <span style=color:green>// true
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(esPar(-2)); <span style=color:green>// true
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// 8- Implementar una función &#34;esPositivo&#34; que reciba un número y devuelva true si el número es positivo, o false si es negativo o cero
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: esPositivo(4) retorna true, esPositivo(-3) retorna false
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de esPositivo():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(esPositivo(4)); <span style=color:green>// true
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(esPositivo(-3)); <span style=color:green>// false
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(esPositivo(0)); <span style=color:green>// false
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span><span style=color:green>// 9- Implementar una función &#34;clasificarNumero&#34; que reciba un número y retorne un mensaje indicando si el número es par o impar, y si es positivo o negativo
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: clasificarNumero(4) retorna &#34;El número 4 es par y positivo.&#34;
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: clasificarNumero(-3) retorna &#34;El número -3 es impar y negativo.&#34;
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de clasificarNumero():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(clasificarNumero(4)); <span style=color:green>// &#34;El número 4 es par y positivo.&#34;
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(clasificarNumero(-3)); <span style=color:green>// &#34;El número -3 es impar y negativo.&#34;
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(clasificarNumero(0)); <span style=color:green>// &#34;El número 0 es par y no positivo.&#34;
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span><span style=color:green>// Cadenas de Caracteres
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span><span style=color:green>// 10- Implementar una función &#34;transformarMayuscula&#34; que transforme a mayúscula la cadena de caracteres recibida como parámetro
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: transformarMayuscula(&#34;Plataformas Móviles&#34;) retorna &#34;PLATAFORMAS MÓVILES&#34;
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de transformarMayuscula():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(transformarMayuscula(<span style=color:#a31515>&#34;Plataformas Móviles&#34;</span>))
+</span></span><span style=display:flex><span>console.log(transformarMayuscula(<span style=color:#a31515>&#34;hola mundo&#34;</span>))
+</span></span><span style=display:flex><span>console.log(transformarMayuscula(<span style=color:#a31515>&#34;abc&#34;</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// 11- Implementar una función &#34;primeraLetra&#34; que nos devuelva la inicial de la cadena de caracteres recibida como parámetro
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: primeraLetra(&#34;Plataformas&#34;) retorna &#34;P&#34;
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de primeraLetra():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(primeraLetra(<span style=color:#a31515>&#34;Plataformas Móviles&#34;</span>))
+</span></span><span style=display:flex><span>console.log(primeraLetra(<span style=color:#a31515>&#34;hola mundo&#34;</span>))
+</span></span><span style=display:flex><span>console.log(primeraLetra(<span style=color:#a31515>&#34;abc&#34;</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// 12- Implementar una función &#34;sinPrimeraLetra&#34; que nos devuelva la cadena de caracteres recibida como parámetro sin la primera letra
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: sinPrimeraLetra(&#34;Plataformas&#34;) retorna &#34;lataformas&#34;
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de sinPrimeraLetra():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(sinPrimeraLetra(<span style=color:#a31515>&#34;Plataformas Móviles&#34;</span>))
+</span></span><span style=display:flex><span>console.log(sinPrimeraLetra(<span style=color:#a31515>&#34;hola mundo&#34;</span>))
+</span></span><span style=display:flex><span>console.log(sinPrimeraLetra(<span style=color:#a31515>&#34;abc&#34;</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// 13- Implementar una función &#34;primeraLetraMayuscula&#34; que devuelve la cadena de caracteres recibida, pero con su primera letra en mayúscula
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: primeraLetraMayuscula(&#34;plataformas&#34;) retorna &#34;Plataformas&#34;
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de primeraLetraMayuscula():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(primeraLetraMayuscula(<span style=color:#a31515>&#34;plataformas móviles&#34;</span>))
+</span></span><span style=display:flex><span>console.log(primeraLetraMayuscula(<span style=color:#a31515>&#34;hola mundo&#34;</span>))
+</span></span><span style=display:flex><span>console.log(primeraLetraMayuscula(<span style=color:#a31515>&#34;abc&#34;</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// 14- Implementar una función &#34;terminaCon&#34; que devuelve verdadero o falso si la palabra termina con la terminación recibida
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: terminaCon(&#34;plataformas&#34;, &#34;mas&#34;) retorna true
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de terminaCon():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(terminaCon(<span style=color:#a31515>&#34;hola&#34;</span>, <span style=color:#a31515>&#34;a&#34;</span>)); <span style=color:green>// true
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(terminaCon(<span style=color:#a31515>&#34;hola&#34;</span>, <span style=color:#a31515>&#34;o&#34;</span>)); <span style=color:green>// false
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(terminaCon(<span style=color:#a31515>&#34;plataformas&#34;</span>, <span style=color:#a31515>&#34;mas&#34;</span>)); <span style=color:green>// true
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(terminaCon(<span style=color:#a31515>&#34;plataformas&#34;</span>, <span style=color:#a31515>&#34;más&#34;</span>)); <span style=color:green>// false
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span><span style=color:green>// 15- Implementar una función &#34;palabraInvertida&#34; que devuelva la palabra invertida
+</span></span></span><span style=display:flex><span><span style=color:green>// ejemplo: palabraInvertida(&#34;hola&#34;) retorna &#34;aloh&#34;;
+</span></span></span><span style=display:flex><span><span style=color:green></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Resultados de palabraInvertida():&#34;</span>)
+</span></span><span style=display:flex><span>console.log(palabraInvertida(<span style=color:#a31515>&#34;plataformas móviles&#34;</span>))
+</span></span><span style=display:flex><span>console.log(palabraInvertida(<span style=color:#a31515>&#34;hola mundo&#34;</span>))
+</span></span><span style=display:flex><span>console.log(palabraInvertida(<span style=color:#a31515>&#34;abc&#34;</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;/script&gt;
+</span></span><span style=display:flex><span>&lt;/body&gt;
+</span></span><span style=display:flex><span>&lt;/html&gt;
+</span></span></code></pre></div><h2 id=consigna>Consigna</h2><ul><li>Implementar dentro del <code>&lt;script></code> las funciones solicitadas</li><li>Usar al menos una vez cada una de las 3 formas distintas de definición de funciones que vimos en clase.</li></ul><h2 id=condiciones>Condiciones</h2><ul><li>No modificar el código provisto.</li></ul><h2 id=bonus-track>Bonus Track</h2><ul><li>(Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.</li></ul></div><footer class="footer py-5 bg-dark text-light"><div class=container><div class=row><div class=col-md><p>2026 | Plataformas Móviles</p></div><div class="col-md text-md-end"><a class=link-light href=https://github.com/tehuel/plataformas-moviles/edit/main/content/temas/4-js/2-tp-funciones.md>Editar en GitHub</a> | <a class=link-light href=https://github.com/tehuel/plataformas-moviles/blob/main/content/temas/4-js/2-tp-funciones.md>Ver Código Fuente</a></div></div></div></footer><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script>function initClipboardForCodeButtons(){if(typeof ClipboardJS=="undefined")return;document.querySelectorAll(".highlight").forEach(function(e,t){var n,o,s=e.querySelector("pre code");if(!s)return;s.id||(s.id="code-block-"+t),n=document.createElement("button"),n.className="btn btn-sm btn-secondary btn-copy-code",n.type="button",n.innerText="Copiar",n.setAttribute("data-clipboard-target","#"+s.id),e.insertBefore(n,e.firstChild),o=document.createElement("div"),o.className="highlight-wrapper",e.parentNode.insertBefore(o,e),o.appendChild(e)});var e=new ClipboardJS(".btn-copy-code");e.on("success",function(e){setCopyStatus(e.trigger,!0),e.clearSelection()}),e.on("error",function(e){setCopyStatus(e.trigger,!1)})}function setCopyStatus(e,t){e.blur(),e.innerText=t?"Copiado":"No se pudo copiar";const n=t?"btn-success":"btn-danger";e.classList.add(n),setTimeout(function(){e.innerText="Copiar",e.classList.remove(n)},2e3)}initClipboardForCodeButtons()</script></body></html>

@@ -1,0 +1,81 @@
+<!doctype html><html lang=es-AR class=h-100><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.145.0"><title>3.6: tp-5 (Bootstrap) | Plataformas Móviles</title>
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/cosmo/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=/plataformas-moviles/css/syntax.css rel=stylesheet><style type=text/css>li>p{margin:0}.container{max-width:60rem;margin:0 auto}.container img{max-width:100%}figcaption{text-align:right;font-style:italic;color:var(--bs-gray-600)}blockquote{padding:1em;border-left:3px solid var(--bs-gray-600);background-color:var(--bs-gray-100)}blockquote p:last-child,footer p:last-child{margin:0}.highlight{position:relative}.highlight pre{border:var(--bs-border-width)var(--bs-border-style)var(--bs-gray-500);border-radius:var(--bs-border-radius);padding:1em}.btn-copy-code{position:absolute;right:0;top:-1rem}</style><link rel=apple-touch-icon sizes=180x180 href=/plataformas-moviles/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/plataformas-moviles/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/plataformas-moviles/favicon-16x16.png><link rel=mask-icon href=/plataformas-moviles/safari-pinned-tab.svg color=#5bbad5></head><body class="h-100 d-flex flex-column"><nav class="navbar navbar-expand-sm navbar-dark bg-dark"><div class=container><a class=navbar-brand href=/plataformas-moviles/>Plataformas Móviles</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarSupportedContent><ul class="navbar-nav ms-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" href=/plataformas-moviles/temas/>Temas</a></li><li class=nav-item><a class=nav-link href=/plataformas-moviles/trabajos-practicos/>Trabajos Prácticos</a></li><li class=nav-item><a class=nav-link href=/plataformas-moviles/recursos/>Recursos</a></li></ul></div></div></nav><div class="container flex-grow-1 my-3"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/plataformas-moviles/>Home</a></li><li class=breadcrumb-item><a href=/plataformas-moviles/temas/>Temas</a></li><li class=breadcrumb-item><a href=/plataformas-moviles/temas/3-css/>Unidad 3: CSS</a></li><li class="breadcrumb-item active" aria-current=page>3.6: tp-5 (Bootstrap)</li></ol></nav><div class="text-center border-bottom mb-4"><h1 class=display-3>3.6: tp-5 (Bootstrap)</h1></div><h2 id=objetivo>Objetivo</h2><p>Integrar el framework Bootstrap para mejorar la presentación y la funcionalidad de una página web.</p><h2 id=formato-de-entrega>Formato de Entrega</h2><ul><li>Crear un archivo HTML en la ruta <code>tp-5/index.html</code> con el contenido del HTML inicial.</li><li>Subir el archivo HTML junto con todos los recursos que consideren necesarios al repositorio de entregas de la materia.</li></ul><h3 id=html-inicial>HTML Inicial</h3><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#00f>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;html lang=<span style=color:#a31515>&#34;es&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;head&gt;
+</span></span><span style=display:flex><span>    &lt;meta charset=<span style=color:#a31515>&#34;UTF-8&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;meta name=<span style=color:#a31515>&#34;viewport&#34;</span> content=<span style=color:#a31515>&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;title&gt;Control de Versiones con Git&lt;/title&gt;
+</span></span><span style=display:flex><span>&lt;/head&gt;
+</span></span><span style=display:flex><span>&lt;body&gt;
+</span></span><span style=display:flex><span>    &lt;h1&gt;Control de Versiones con Git&lt;/h1&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    &lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; es un sistema de control de versiones distribuido, ampliamente utilizado en el desarrollo de
+</span></span><span style=display:flex><span>        software moderno. Fue creado para gestionar proyectos de forma rápida, eficiente y colaborativa.&lt;/p&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    &lt;h2&gt;Comandos más populares de Git&lt;/h2&gt;
+</span></span><span style=display:flex><span>    &lt;ul&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;&lt;code&gt;git init&lt;/code&gt; - Inicializa un nuevo repositorio Git en el directorio actual. Este comando crea un repositorio vacío.&lt;/li&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;&lt;code&gt;git clone [url]&lt;/code&gt; - Clona un repositorio remoto en tu máquina local. Ejemplo: &lt;code&gt;git clone https://github.com/usuario/repositorio.git&lt;/code&gt;.&lt;/li&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;&lt;code&gt;git status&lt;/code&gt; - Muestra el estado del repositorio: archivos modificados, nuevos archivos no rastreados, cambios preparados para el commit, etc.&lt;/li&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;&lt;code&gt;git add [archivo]&lt;/code&gt; - Agrega un archivo o cambios específicos al área de preparación (staging area) para el commit.&lt;/li&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;&lt;code&gt;git commit -m &#34;[mensaje]&#34;&lt;/code&gt; - Crea un commit con los archivos añadidos al área de preparación, agregando un mensaje descriptivo.&lt;/li&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;&lt;code&gt;git push&lt;/code&gt; - Sube los cambios locales al repositorio remoto. Generalmente se usa después de un commit para actualizar el repositorio remoto.&lt;/li&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;&lt;code&gt;git pull&lt;/code&gt; - Obtiene y combina los cambios del repositorio remoto al local. Equivalente a &lt;code&gt;git fetch&lt;/code&gt; seguido de &lt;code&gt;git merge&lt;/code&gt;.&lt;/li&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;&lt;code&gt;git checkout [rama]&lt;/code&gt; - Cambia a una rama específica del repositorio. Si la rama no existe, se puede crear con &lt;code&gt;git checkout -b [rama]&lt;/code&gt;.&lt;/li&gt;
+</span></span><span style=display:flex><span>    &lt;/ul&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    &lt;h2&gt;Comparación con otros sistemas&lt;/h2&gt;
+</span></span><span style=display:flex><span>    &lt;table class=<span style=color:#a31515>&#34;table&#34;</span>&gt;
+</span></span><span style=display:flex><span>        &lt;thead&gt;
+</span></span><span style=display:flex><span>            &lt;tr&gt;
+</span></span><span style=display:flex><span>                &lt;th&gt;Sistema&lt;/th&gt;
+</span></span><span style=display:flex><span>                &lt;th&gt;Tipo&lt;/th&gt;
+</span></span><span style=display:flex><span>                &lt;th&gt;Popularidad&lt;/th&gt;
+</span></span><span style=display:flex><span>            &lt;/tr&gt;
+</span></span><span style=display:flex><span>        &lt;/thead&gt;
+</span></span><span style=display:flex><span>        &lt;tbody&gt;
+</span></span><span style=display:flex><span>            &lt;tr&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;Git&lt;/td&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;Distribuido&lt;/td&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;Muy alta&lt;/td&gt;
+</span></span><span style=display:flex><span>            &lt;/tr&gt;
+</span></span><span style=display:flex><span>            &lt;tr&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;SVN&lt;/td&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;Centralizado&lt;/td&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;Media&lt;/td&gt;
+</span></span><span style=display:flex><span>            &lt;/tr&gt;
+</span></span><span style=display:flex><span>            &lt;tr&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;Mercurial&lt;/td&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;Distribuido&lt;/td&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;Baja&lt;/td&gt;
+</span></span><span style=display:flex><span>            &lt;/tr&gt;
+</span></span><span style=display:flex><span>            &lt;tr&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;Perforce&lt;/td&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;Centralizado&lt;/td&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;Especializado (AAA, empresas)&lt;/td&gt;
+</span></span><span style=display:flex><span>            &lt;/tr&gt;
+</span></span><span style=display:flex><span>        &lt;/tbody&gt;
+</span></span><span style=display:flex><span>    &lt;/table&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    &lt;h2&gt;¿Ya usaste Git?&lt;/h2&gt;
+</span></span><span style=display:flex><span>    &lt;p&gt;Completá el siguiente formulario para compartir tu experiencia:&lt;/p&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    &lt;form class=<span style=color:#a31515>&#34;form&#34;</span>&gt;
+</span></span><span style=display:flex><span>        &lt;label for=<span style=color:#a31515>&#34;nombre&#34;</span>&gt;Tu nombre:&lt;/label&gt;
+</span></span><span style=display:flex><span>        &lt;input type=<span style=color:#a31515>&#34;text&#34;</span> id=<span style=color:#a31515>&#34;nombre&#34;</span> name=<span style=color:#a31515>&#34;nombre&#34;</span> class=<span style=color:#a31515>&#34;form-control&#34;</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        &lt;label for=<span style=color:#a31515>&#34;experiencia&#34;</span>&gt;¿Qué usás más?&lt;/label&gt;&lt;br&gt;
+</span></span><span style=display:flex><span>        &lt;select id=<span style=color:#a31515>&#34;experiencia&#34;</span> name=<span style=color:#a31515>&#34;experiencia&#34;</span> class=<span style=color:#a31515>&#34;form-select&#34;</span>&gt;
+</span></span><span style=display:flex><span>            &lt;option value=<span style=color:#a31515>&#34;git&#34;</span>&gt;Git&lt;/option&gt;
+</span></span><span style=display:flex><span>            &lt;option value=<span style=color:#a31515>&#34;github&#34;</span>&gt;Git + GitHub&lt;/option&gt;
+</span></span><span style=display:flex><span>            &lt;option value=<span style=color:#a31515>&#34;otro&#34;</span>&gt;Otro sistema&lt;/option&gt;
+</span></span><span style=display:flex><span>            &lt;option value=<span style=color:#a31515>&#34;ninguno&#34;</span>&gt;Todavía no uso ninguno&lt;/option&gt;
+</span></span><span style=display:flex><span>        &lt;/select&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        &lt;input type=<span style=color:#a31515>&#34;submit&#34;</span> value=<span style=color:#a31515>&#34;Enviar&#34;</span> class=<span style=color:#a31515>&#34;btn btn-primary mt-2&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;/form&gt;
+</span></span><span style=display:flex><span>&lt;/body&gt;
+</span></span><span style=display:flex><span>&lt;/html&gt;
+</span></span></code></pre></div><h2 id=consigna>Consigna</h2><h3 id=1-instalar-bootstrap>1. Instalar Bootstrap</h3><p>Instalar Bootstrap en el documento utilizando alguna de las dos formas vistas en clase:</p><ul><li><strong>CDN</strong>: Agregar el enlace al archivo CSS y JS de Bootstrap desde su servidor oficial.</li><li><strong>Archivos locales</strong>: Descargar los archivos de Bootstrap y enlazarlos desde el proyecto.</li></ul><h3 id=2-usar-clases-de-bootstrap>2. Usar Clases de Bootstrap</h3><p>Aplicar las siguientes modificaciones utilizando clases de Bootstrap:</p><ul><li>Centrar el título <code>&lt;h1></code>.</li><li>Cambiar el tamaño del primer párrafo para que sea más grande.</li><li>Cambiar el estilo del botón de envío del formulario.</li><li>Cambiar el estilo y color de la tabla.</li><li>Agregar márgenes y sombra al listado de comandos.</li></ul><h3 id=3-usar-componentes-de-bootstrap>3. Usar Componentes de Bootstrap</h3><p>Agregar al menos <strong>dos componentes</strong> de Bootstrap a la página. Algunas sugerencias:</p><ul><li><strong>Cards</strong>: Contener alguno de los elementos actuales en una tarjeta.</li><li><strong>List Group</strong>: Para mostrar listados de una forma estilizada.</li><li><strong>Navbar</strong>: Agregar una barra de navegación en la parte superior de la página.</li><li><strong>Accordion</strong>: Para mostrar componentes o secciones de una a la vez</li><li><strong>Carousel</strong>: Incluir un carrusel de imágenes.</li><li><strong>Container</strong>: Para agregar un espaciado a todo el documento</li></ul><h2 id=bonus-track>Bonus Track</h2><p>Agregar algunos de los componentes más avanzados, activados a través de botones:</p><ul><li>Alert</li><li>Modal</li><li>Collapse</li><li>Toasts</li></ul></div><footer class="footer py-5 bg-dark text-light"><div class=container><div class=row><div class=col-md><p>2026 | Plataformas Móviles</p></div><div class="col-md text-md-end"><a class=link-light href=https://github.com/tehuel/plataformas-moviles/edit/main/content/temas/3-css/6-tp-bootstrap.md>Editar en GitHub</a> | <a class=link-light href=https://github.com/tehuel/plataformas-moviles/blob/main/content/temas/3-css/6-tp-bootstrap.md>Ver Código Fuente</a></div></div></div></footer><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script>function initClipboardForCodeButtons(){if(typeof ClipboardJS=="undefined")return;document.querySelectorAll(".highlight").forEach(function(e,t){var n,o,s=e.querySelector("pre code");if(!s)return;s.id||(s.id="code-block-"+t),n=document.createElement("button"),n.className="btn btn-sm btn-secondary btn-copy-code",n.type="button",n.innerText="Copiar",n.setAttribute("data-clipboard-target","#"+s.id),e.insertBefore(n,e.firstChild),o=document.createElement("div"),o.className="highlight-wrapper",e.parentNode.insertBefore(o,e),o.appendChild(e)});var e=new ClipboardJS(".btn-copy-code");e.on("success",function(e){setCopyStatus(e.trigger,!0),e.clearSelection()}),e.on("error",function(e){setCopyStatus(e.trigger,!1)})}function setCopyStatus(e,t){e.blur(),e.innerText=t?"Copiado":"No se pudo copiar";const n=t?"btn-success":"btn-danger";e.classList.add(n),setTimeout(function(){e.innerText="Copiar",e.classList.remove(n)},2e3)}initClipboardForCodeButtons()</script></body></html>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unidad 4: JavaScript on Plataformas Móviles</title><link>https://tehuel.github.io/plataformas-moviles/temas/4-js/</link><description>Recent content in Unidad 4: JavaScript on Plataformas Móviles</description><generator>Hugo</generator><language>es-AR</language><atom:link href="https://tehuel.github.io/plataformas-moviles/temas/4-js/index.xml" rel="self" type="application/rss+xml"/><item><title>4.1: Entornos de JavaScript</title><link>https://tehuel.github.io/plataformas-moviles/temas/4-js/1-contexto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/4-js/1-contexto/</guid><description>&lt;h2 id="stack-de-aplicaciones">Stack de aplicaciones&lt;/h2>
+&lt;ul>
+&lt;li>fullstack&lt;/li>
+&lt;li>frontend&lt;/li>
+&lt;li>backend&lt;/li>
+&lt;/ul>
+&lt;h2 id="ejecución">Ejecución&lt;/h2>
+&lt;ul>
+&lt;li>compilado&lt;/li>
+&lt;li>interpretado&lt;/li>
+&lt;/ul>
+&lt;h2 id="tipado">Tipado&lt;/h2>
+&lt;ul>
+&lt;li>tipado estático&lt;/li>
+&lt;li>tipado dinámico&lt;/li>
+&lt;/ul></description></item><item><title>4.2: Sintaxis Básica</title><link>https://tehuel.github.io/plataformas-moviles/temas/4-js/2-sintaxis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/4-js/2-sintaxis/</guid><description>&lt;h2 id="tipos-de-datos-primitivos">Tipos de Datos (Primitivos)&lt;/h2>
+&lt;ul>
+&lt;li>números (enteros y de punto flotante)&lt;/li>
+&lt;li>strings&lt;/li>
+&lt;li>booleanos&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// variables y tipos
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> MiVariable;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>MiVariable = 1;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>MiVariable = 1.234;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>MiVariable = &lt;span style="color:#a31515">&amp;#34;Hola&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>MiVariable = &lt;span style="color:#00f">true&lt;/span>;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="condicionales">Condicionales&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// condicionales
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">if&lt;/span> (condicion) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>} &lt;span style="color:#00f">else&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="bucles">Bucles&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">while&lt;/span> (condicion) {}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">do&lt;/span> {} &lt;span style="color:#00f">while&lt;/span> (condicion);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">for&lt;/span> (inicio; condicion; incremento) {}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="funciones">Funciones&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// expresión de función
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">function&lt;/span> MiPrimeraFuncionSuma(a, b) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">return&lt;/span> a + b;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> primerResultado = MiPrimeraFuncionSuma(10, 20);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// función anónima
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> MiSegundaFuncionSuma = &lt;span style="color:#00f">function&lt;/span> (a, b) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">return&lt;/span> a + b;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> segundoResultado = MiSegundaFuncionSuma(10,20);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// expresión de función flecha (arrow function)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> MiTercerFuncionSuma = (a, b) =&amp;gt; {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">return&lt;/span> a + b;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> tercerResultado = MiTercerFuncionSuma(10,20);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="concepto-de-funciones">Concepto de Funciones&lt;/h3>
+&lt;p>Una función (en programación) se puede pensar como una máquina que toma una entrada, realiza un conjunto de operaciones definidas en su interior y produce una salida.&lt;/p></description></item><item><title>4.2: tp-8 (Funciones)</title><link>https://tehuel.github.io/plataformas-moviles/temas/4-js/2-tp-funciones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/4-js/2-tp-funciones/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Practicar la definición y el uso de funciones en JavaScript.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Crear un archivo HTML en la ruta &lt;code>tp-8/index.html&lt;/code>, con el contenido del HTML inicial.&lt;/li>
+&lt;li>Subir el archivo al repositorio de entregas.&lt;/li>
+&lt;/ul>
+&lt;h3 id="html-inicial">HTML Inicial&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;utf-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;title&amp;gt;TP-8: Funciones en JavaScript&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;p&amp;gt;Completar con la implementación de las funciones correspondientes&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// Números
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 1- Implementar una función &amp;#34;suma&amp;#34; que retorne la suma de 2 números
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: suma(2,3) retorna 5
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">function&lt;/span> suma(num1, num2) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">// return num1 + num2;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de suma():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(suma(2,3)); &lt;span style="color:#008000">// 5
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(suma(4,4)); &lt;span style="color:#008000">// 8
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(suma(-10,10)); &lt;span style="color:#008000">// 0
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 2- Implementar una función &amp;#34;elevarAlCubo&amp;#34; que eleve al cubo un número
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: elevarAlCubo(3) retorna 27
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de elevarAlCubo():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(elevarAlCubo(3)); &lt;span style="color:#008000">// 27
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(elevarAlCubo(99)); &lt;span style="color:#008000">// 970299
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 3- Implementar una función &amp;#34;restoDivisionEntera&amp;#34; para devolver el resto de una división entera entre un dividendo y un divisor
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: restoDivisionEntera(3,2) retorna 1
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de restoDivisionEntera():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(restoDivisionEntera(1,3)); &lt;span style="color:#008000">// 1
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(restoDivisionEntera(2,3)); &lt;span style="color:#008000">// 2
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(restoDivisionEntera(3,3)); &lt;span style="color:#008000">// 0
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(restoDivisionEntera(4,3)); &lt;span style="color:#008000">// 1
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 4- Implementar una función &amp;#34;numeroPi&amp;#34; para devolver el número PI
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: numeroPi() retorna 3,14...
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultado de numeroPi():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(numeroPi())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 5- Implementar una función &amp;#34;numeroRandom&amp;#34; para devolver un número random (aleatorio)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: numeroRandom() retorna 0,123...
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de numeroRandom():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(numeroRandom())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(numeroRandom())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(numeroRandom())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 6- Implementar una función &amp;#34;numeroRandomDesdeHasta&amp;#34; para devolver un número random entre 2 valores recibidos como parámetros
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: numeroRandomDesdeHasta(1,6) retorna 3
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de numeroRandomDesdeHasta():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(numeroRandomDesdeHasta(1,6))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(numeroRandomDesdeHasta(2,5))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(numeroRandomDesdeHasta(3,4))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 7- Implementar una función &amp;#34;esPar&amp;#34; que reciba un número como parámetro y devuelva verdadero si el número es par, o falso si es impar
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: esPar(4) retorna true, esPar(5) retorna false
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de esPar():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(esPar(4)); &lt;span style="color:#008000">// true
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(esPar(5)); &lt;span style="color:#008000">// false
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(esPar(0)); &lt;span style="color:#008000">// true
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(esPar(-2)); &lt;span style="color:#008000">// true
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 8- Implementar una función &amp;#34;esPositivo&amp;#34; que reciba un número y devuelva true si el número es positivo, o false si es negativo o cero
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: esPositivo(4) retorna true, esPositivo(-3) retorna false
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de esPositivo():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(esPositivo(4)); &lt;span style="color:#008000">// true
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(esPositivo(-3)); &lt;span style="color:#008000">// false
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(esPositivo(0)); &lt;span style="color:#008000">// false
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 9- Implementar una función &amp;#34;clasificarNumero&amp;#34; que reciba un número y retorne un mensaje indicando si el número es par o impar, y si es positivo o negativo
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: clasificarNumero(4) retorna &amp;#34;El número 4 es par y positivo.&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: clasificarNumero(-3) retorna &amp;#34;El número -3 es impar y negativo.&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de clasificarNumero():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(clasificarNumero(4)); &lt;span style="color:#008000">// &amp;#34;El número 4 es par y positivo.&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(clasificarNumero(-3)); &lt;span style="color:#008000">// &amp;#34;El número -3 es impar y negativo.&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(clasificarNumero(0)); &lt;span style="color:#008000">// &amp;#34;El número 0 es par y no positivo.&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// Cadenas de Caracteres
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 10- Implementar una función &amp;#34;transformarMayuscula&amp;#34; que transforme a mayúscula la cadena de caracteres recibida como parámetro
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: transformarMayuscula(&amp;#34;Plataformas Móviles&amp;#34;) retorna &amp;#34;PLATAFORMAS MÓVILES&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de transformarMayuscula():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(transformarMayuscula(&lt;span style="color:#a31515">&amp;#34;Plataformas Móviles&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(transformarMayuscula(&lt;span style="color:#a31515">&amp;#34;hola mundo&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(transformarMayuscula(&lt;span style="color:#a31515">&amp;#34;abc&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 11- Implementar una función &amp;#34;primeraLetra&amp;#34; que nos devuelva la inicial de la cadena de caracteres recibida como parámetro
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: primeraLetra(&amp;#34;Plataformas&amp;#34;) retorna &amp;#34;P&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de primeraLetra():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(primeraLetra(&lt;span style="color:#a31515">&amp;#34;Plataformas Móviles&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(primeraLetra(&lt;span style="color:#a31515">&amp;#34;hola mundo&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(primeraLetra(&lt;span style="color:#a31515">&amp;#34;abc&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 12- Implementar una función &amp;#34;sinPrimeraLetra&amp;#34; que nos devuelva la cadena de caracteres recibida como parámetro sin la primera letra
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: sinPrimeraLetra(&amp;#34;Plataformas&amp;#34;) retorna &amp;#34;lataformas&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de sinPrimeraLetra():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(sinPrimeraLetra(&lt;span style="color:#a31515">&amp;#34;Plataformas Móviles&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(sinPrimeraLetra(&lt;span style="color:#a31515">&amp;#34;hola mundo&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(sinPrimeraLetra(&lt;span style="color:#a31515">&amp;#34;abc&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 13- Implementar una función &amp;#34;primeraLetraMayuscula&amp;#34; que devuelve la cadena de caracteres recibida, pero con su primera letra en mayúscula
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: primeraLetraMayuscula(&amp;#34;plataformas&amp;#34;) retorna &amp;#34;Plataformas&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de primeraLetraMayuscula():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(primeraLetraMayuscula(&lt;span style="color:#a31515">&amp;#34;plataformas móviles&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(primeraLetraMayuscula(&lt;span style="color:#a31515">&amp;#34;hola mundo&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(primeraLetraMayuscula(&lt;span style="color:#a31515">&amp;#34;abc&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 14- Implementar una función &amp;#34;terminaCon&amp;#34; que devuelve verdadero o falso si la palabra termina con la terminación recibida
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: terminaCon(&amp;#34;plataformas&amp;#34;, &amp;#34;mas&amp;#34;) retorna true
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de terminaCon():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(terminaCon(&lt;span style="color:#a31515">&amp;#34;hola&amp;#34;&lt;/span>, &lt;span style="color:#a31515">&amp;#34;a&amp;#34;&lt;/span>)); &lt;span style="color:#008000">// true
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(terminaCon(&lt;span style="color:#a31515">&amp;#34;hola&amp;#34;&lt;/span>, &lt;span style="color:#a31515">&amp;#34;o&amp;#34;&lt;/span>)); &lt;span style="color:#008000">// false
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(terminaCon(&lt;span style="color:#a31515">&amp;#34;plataformas&amp;#34;&lt;/span>, &lt;span style="color:#a31515">&amp;#34;mas&amp;#34;&lt;/span>)); &lt;span style="color:#008000">// true
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>console.log(terminaCon(&lt;span style="color:#a31515">&amp;#34;plataformas&amp;#34;&lt;/span>, &lt;span style="color:#a31515">&amp;#34;más&amp;#34;&lt;/span>)); &lt;span style="color:#008000">// false
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// 15- Implementar una función &amp;#34;palabraInvertida&amp;#34; que devuelva la palabra invertida
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// ejemplo: palabraInvertida(&amp;#34;hola&amp;#34;) retorna &amp;#34;aloh&amp;#34;;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Resultados de palabraInvertida():&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(palabraInvertida(&lt;span style="color:#a31515">&amp;#34;plataformas móviles&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(palabraInvertida(&lt;span style="color:#a31515">&amp;#34;hola mundo&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(palabraInvertida(&lt;span style="color:#a31515">&amp;#34;abc&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;ul>
+&lt;li>Implementar dentro del &lt;code>&amp;lt;script&amp;gt;&lt;/code> las funciones solicitadas&lt;/li>
+&lt;li>Usar al menos una vez cada una de las 3 formas distintas de definición de funciones que vimos en clase.&lt;/li>
+&lt;/ul>
+&lt;h2 id="condiciones">Condiciones&lt;/h2>
+&lt;ul>
+&lt;li>No modificar el código provisto.&lt;/li>
+&lt;/ul>
+&lt;h2 id="bonus-track">Bonus Track&lt;/h2>
+&lt;ul>
+&lt;li>(Opcional) Está permitido agregar casos de pruebas nuevos, además de los casos ya incluidos.&lt;/li>
+&lt;/ul></description></item><item><title>4.3: Listas</title><link>https://tehuel.github.io/plataformas-moviles/temas/4-js/3-listas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/4-js/3-listas/</guid><description>&lt;p>Vimos el tipo de datos lista (array) en JavaScript, y algunos ejemplos de código.&lt;/p>
+&lt;h2 id="definir-listas">Definir listas&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> listaDeNumeros = [1, 23, 56, 1234];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> listaDeStrings = [&lt;span style="color:#a31515">&amp;#39;a&amp;#39;&lt;/span>, &lt;span style="color:#a31515">&amp;#39;abc&amp;#39;&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> listaDeFloats = [1.23, 2.34, 3.45];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> listaDeBooleanos = [&lt;span style="color:#00f">false&lt;/span>, &lt;span style="color:#00f">false&lt;/span>, &lt;span style="color:#00f">true&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> listaDeMultiplesTipos = [1, &lt;span style="color:#a31515">&amp;#39;a&amp;#39;&lt;/span>, 1.23, &lt;span style="color:#00f">false&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> listaVacia = [];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="operaciones-sobre-listas">Operaciones sobre listas&lt;/h2>
+&lt;h3 id="acceder-a-valores-de-una-lista">Acceder a valores de una lista&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// acceder a un elemento determinado
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> primerElemento = listaDeNumeros[0];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// conocer la longitud de una lista
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> cantidadElementos = listaDeNumeros.length
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// acceder a último elemento?
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="agregar-elementos">Agregar elementos&lt;/h3>
+&lt;p>Se pueden usar los métodos &lt;code>push()&lt;/code> y &lt;code>unshift()&lt;/code> de listas.&lt;/p></description></item><item><title>4.3: tp-9 (Listas)</title><link>https://tehuel.github.io/plataformas-moviles/temas/4-js/3-tp-listas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/4-js/3-tp-listas/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Definir funciones para el manejo de listas (arrays) dentro del lenguaje JavaScript.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Subir todos los archivos a un directorio &lt;code>tp-9/&lt;/code> en el repositorio de entregas en GitHub. Deberían quedar los 2 archivos (&lt;code>index.html&lt;/code>, &lt;code>listas.js&lt;/code>) dentro del mismo directorio.&lt;/li>
+&lt;/ul>
+&lt;h3 id="código-inicial">Código Inicial&lt;/h3>
+&lt;p>Archivo &lt;code>index.html&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;utf-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;title&amp;gt;Listas en JavaScript&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h1&amp;gt;Listas en JavaScript&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p&amp;gt;Completar con la implementación de las funciones solicitadas en los comentarios del archivo &amp;lt;code&amp;gt;listas.js&amp;lt;/code&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;script src=&lt;span style="color:#a31515">&amp;#34;listas.js&amp;#34;&lt;/span>&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Archivo &lt;code>listas.js&lt;/code>:&lt;/p></description></item><item><title>4.4: Objetos</title><link>https://tehuel.github.io/plataformas-moviles/temas/4-js/4-objetos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/4-js/4-objetos/</guid><description>&lt;p>Los objetos son estructuras que podemos definir para agrupar valores correspondientes a una entidad.&lt;/p>
+&lt;p>Los objetos se componen de propiedades con sus respectivos valores. Estas propiedades proporcionan información sobre el objeto.&lt;/p>
+&lt;h2 id="declaración-y-creación-de-objetos">Declaración y creación de Objetos&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> alumno = {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> nombre: &lt;span style="color:#a31515">&amp;#34;Juan&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> apellido: &lt;span style="color:#a31515">&amp;#34;Pérez&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a31515">&amp;#34;edad&amp;#34;&lt;/span>: 18,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a31515">&amp;#34;Un.Campo.Apodo&amp;#34;&lt;/span>: &lt;span style="color:#a31515">&amp;#34;Jota Pe&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> objetoVacio = {};
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="acceso-a-propiedades">Acceso a propiedades&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// acceso por sintaxis de punto
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>alumno.edad;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// acceso por sintaxis de corchetes
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>alumno[&lt;span style="color:#a31515">&amp;#34;edad&amp;#34;&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>alumno[&lt;span style="color:#a31515">&amp;#34;Un.Campo.Apodo&amp;#34;&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// el acceso por corchetes se puede usar para acceder a campos con nombres calculados
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> campoImportante = &lt;span style="color:#a31515">&amp;#34;nombre&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>alumno[campoImportante]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>campoImportante = &lt;span style="color:#a31515">&amp;#34;apellido&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>alumno[campoImportante]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="asignación-de-valores">Asignación de valores&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// sintaxis de punto
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>alumno.edad = 19;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// sintaxis de corchetes
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>alumno[&lt;span style="color:#a31515">&amp;#34;edad&amp;#34;&lt;/span>] = 18;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>alumno[&lt;span style="color:#a31515">&amp;#34;Un.Campo.Apodo&amp;#34;&lt;/span>] = &lt;span style="color:#a31515">&amp;#34;Juampi&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="tipos-de-valores-en-un-objeto">Tipos de valores en un objeto&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> objetoConDatosDeDistintosTipos = {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> unValorBooleano: &lt;span style="color:#00f">true&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> unValorNumerico: 2,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> unValorString: &lt;span style="color:#a31515">&amp;#34;aaaaa&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> unValorLista: [],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> unValorObjeto: {},
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>4.4: tp-10 (Objetos)</title><link>https://tehuel.github.io/plataformas-moviles/temas/4-js/4-tp-objetos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/4-js/4-tp-objetos/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Usar el tipo de datos &lt;code>objeto&lt;/code> dentro del lenguaje JavaScript.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Subir todos los archivos a un directorio &lt;code>tp-10/&lt;/code> en el repositorio de entregas en GitHub. Deberían quedar los archivos (&lt;code>index.html&lt;/code> y &lt;code>objetos.js&lt;/code>) dentro del mismo directorio.&lt;/li>
+&lt;/ul>
+&lt;h3 id="código-inicial">Código Inicial&lt;/h3>
+&lt;p>Archivo &lt;code>index.html&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;utf-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;title&amp;gt;Objetos en JavaScript&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h1&amp;gt;Objetos en JavaScript&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p&amp;gt;Completar con la implementación de las funciones solicitadas en los comentarios del archivo &amp;lt;code&amp;gt;objetos.js&amp;lt;/code&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;script src=&lt;span style="color:#a31515">&amp;#34;objetos.js&amp;#34;&lt;/span>&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Archivo &lt;code>objetos.js&lt;/code>:&lt;/p></description></item><item><title>4.5: Listas y Objetos</title><link>https://tehuel.github.io/plataformas-moviles/temas/4-js/5-listas-y-objetos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/4-js/5-listas-y-objetos/</guid><description>&lt;p>Queremos almacenar un listado de alumnos. Evaluamos distintas opciones&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// la posición indica a qué alumno refiere en los listados
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> listadoDeNombres = [&lt;span style="color:#a31515">&amp;#34;Lionel&amp;#34;&lt;/span>, &lt;span style="color:#a31515">&amp;#34;Sahid&amp;#34;&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> listadoDeApellidos = []
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> listaDeEdades = [18, 19, 20]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// objeto con todos los alumnos
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> objetoDeAlumnos = {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> nombre_1: &lt;span style="color:#a31515">&amp;#34;Lionel&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> apellido_1: &lt;span style="color:#a31515">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> edad_1: 18,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> nombre_2: &lt;span style="color:#a31515">&amp;#34;Sahid&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> apellido_2: &lt;span style="color:#a31515">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> edad_2: 19,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// Un objeto para cada alumno, dentro de otro objeto.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> objetoListaAlumnos = {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> alumno_1: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> nombre: &lt;span style="color:#a31515">&amp;#34;Lionel&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> apellido: &lt;span style="color:#a31515">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> edad: 18,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> alumno_2: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> nombre: &lt;span style="color:#a31515">&amp;#34;Sahid&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> apellido: &lt;span style="color:#a31515">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> edad: 19,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// un objeto para cada alumno, una lista para contener a todos los alumnos
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> listaDeAlumnos = [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> nombre: &lt;span style="color:#a31515">&amp;#34;Lionel&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> apellido: &lt;span style="color:#a31515">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> edad: 18,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> nombre: &lt;span style="color:#a31515">&amp;#34;Sahid&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> apellido: &lt;span style="color:#a31515">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> edad: 19,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="agregar-nuevos-valores">Agregar nuevos valores&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// Agrego un nuevo alumno como objeto
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>listaDeAlumnos.push({
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> nombre: &lt;span style="color:#a31515">&amp;#34;Agustin&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> apellido: &lt;span style="color:#a31515">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> edad: 19,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>});
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// Agrego otro nuevo alumno desde variable
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> otroNuevoAlumno = {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> nombre: &lt;span style="color:#a31515">&amp;#34;Camila&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> apellido: &lt;span style="color:#a31515">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> edad: 19,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>listaDeAlumnos.push(otroNuevoAlumno);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// Agrego un alumno creado desde una función
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> resultadoDeCrearNuevoAlumno = crearNuevoAlumno(&lt;span style="color:#a31515">&amp;#34;Fabian&amp;#34;&lt;/span>, &lt;span style="color:#a31515">&amp;#34;&amp;#34;&lt;/span>, 20);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>listaDeAlumnos.push(resultadoDeCrearNuevoAlumno);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">//...
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>console.log(&lt;span style="color:#a31515">&amp;#34;Lista de alumnos actualizada: &amp;#34;&lt;/span>, listaDeAlumnos);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="accediendo-a-valores-dentro-de-una-lista-de-objetos">Accediendo a valores dentro de una lista de objetos&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">// accedo a campos dentro de los alumnos, dentro del listado
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">&lt;/span>&lt;span style="color:#00f">let&lt;/span> nombreDelAlumno = listaDeAlumnos[1].nombre;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">let&lt;/span> apellidoDelAlumno = listaDeAlumnos[1].apellido;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>4.5: tp-11 (Listas y Objetos)</title><link>https://tehuel.github.io/plataformas-moviles/temas/4-js/5-tp-listas-y-objetos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/4-js/5-tp-listas-y-objetos/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Usar de manera combinada los tipos de datos &lt;code>lista&lt;/code> y &lt;code>objeto&lt;/code> dentro del lenguaje JavaScript.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Subir todos los archivos a un directorio &lt;code>tp-11/&lt;/code> en el repositorio de entregas en GitHub. Deberían quedar los archivos (&lt;code>index.html&lt;/code> y &lt;code>listas-y-objetos.js&lt;/code>) dentro del mismo directorio.&lt;/li>
+&lt;/ul>
+&lt;h3 id="código-inicial">Código Inicial&lt;/h3>
+&lt;p>Archivo &lt;code>index.html&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;utf-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;title&amp;gt;Listas y Objetos en JavaScript&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h1&amp;gt;Listas y Objetos en JavaScript&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p&amp;gt;Completar con la implementación de las funciones solicitadas en los comentarios del archivo &amp;lt;code&amp;gt;listas-y-objetos.js&amp;lt;/code&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;script src=&lt;span style="color:#a31515">&amp;#34;listas-y-objetos.js&amp;#34;&lt;/span>&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Archivo &lt;code>listas-y-objetos.js&lt;/code>:&lt;/p></description></item></channel></rss>

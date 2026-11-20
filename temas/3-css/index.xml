@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unidad 3: CSS on Plataformas Móviles</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/</link><description>Recent content in Unidad 3: CSS on Plataformas Móviles</description><generator>Hugo</generator><language>es-AR</language><atom:link href="https://tehuel.github.io/plataformas-moviles/temas/3-css/index.xml" rel="self" type="application/rss+xml"/><item><title>3.1: Sintaxis</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/1-sintaxis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/1-sintaxis/</guid><description>&lt;h2 id="puesta-en-marcha">Puesta en Marcha&lt;/h2>
+&lt;p>Vimos distintas maneras de incluir CSS en un archivo HTML:&lt;/p>
+&lt;ul>
+&lt;li>Usando una etiqueta &lt;code>&amp;lt;link&amp;gt;&lt;/code> dentro del &lt;code>&amp;lt;head&amp;gt;&lt;/code> de un documento HTML.&lt;/li>
+&lt;li>Usando una etiqueta &lt;code>&amp;lt;style&amp;gt;&lt;/code> dentro del &lt;code>&amp;lt;head&amp;gt;&lt;/code> o del &lt;code>&amp;lt;body&amp;gt;&lt;/code> de un documento HTML.&lt;/li>
+&lt;li>Agregando un atributo &lt;code>style=&amp;quot;&amp;quot;&lt;/code> a una etiqueta HTML directamente, esto se conoce como estilo &lt;em>inline&lt;/em> (en línea)&lt;/li>
+&lt;/ul>
+&lt;h2 id="lenguaje-css">Lenguaje CSS&lt;/h2>
+&lt;p>Sintaxis de CSS, con los nombres apropiados:&lt;/p>
+&lt;figure>
+ &lt;img src="https://tehuel.github.io/plataformas-moviles/img/regla-css.png" alt="Anatomía de una regla CSS: selector, declaración, propiedad y valor">&lt;/figure>&lt;p>Comentamos que el procesamiento de CSS se hace en orden, lo que se escribe último pisa a lo que se escribe primero.&lt;/p></description></item><item><title>3.2: Selectores</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/2-selectores/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/2-selectores/</guid><description>&lt;p>Vimos algunos de los selectores que se pueden usar en CSS:&lt;/p>
+&lt;h2 id="selectores-básicos">Selectores Básicos&lt;/h2>
+&lt;h3 id="selector-de-etiqueta">Selector de Etiqueta&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">/* selecciona todos los elementos &amp;lt;p&amp;gt; del documento html */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>p {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">/**/&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="selector-de-clase">Selector de Clase&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">/* selecciona todos los elementos del documento html con la clase &amp;#34;elemento&amp;#34; */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#2b91af">elemento&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">/**/&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="selector-de-id">Selector de ID&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">/* selecciona todos los elementos con el id &amp;#34;elemento&amp;#34; */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>#elemento {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">/**/&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="selector-universal">Selector Universal&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#008000">/* selecciona todos los elementos */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>* {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#008000">/**/&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="combinación-de-selectores">Combinación de Selectores&lt;/h2>
+&lt;p>Podemos unir varios selectores para combinar su funcionamiento. Por ejemplo, para seleccionar todos los párrafos que tengan la clase &amp;ldquo;resaltado&amp;rdquo;, podemos hacer:&lt;/p></description></item><item><title>3.2: tp-2 (Selectores)</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/2-tp-selectores/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/2-tp-selectores/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Aplicar estilos básicos a un documento HTML utilizando selectores CSS.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Crear un archivo HTML en la ruta &lt;code>tp-2/index.html&lt;/code>, con el contenido del HTML inicial.&lt;/li>
+&lt;li>Agregar estilos CSS al documento HTML (usando un archivo &lt;code>.css&lt;/code> externo o una etiqueta &lt;code>&amp;lt;style&amp;gt;&lt;/code> dentro del documento).&lt;/li>
+&lt;li>Subir todo al repositorio de entregas en GitHub.&lt;/li>
+&lt;/ul>
+&lt;h3 id="html-inicial">HTML Inicial&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;utf-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;title&amp;gt;TP2 - Selectores CSS&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h1&amp;gt;Star Wars&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Star Wars&amp;lt;/strong&amp;gt;, conocida también en español como &amp;lt;strong&amp;gt;La guerra de las galaxias&amp;lt;/strong&amp;gt;, es una franquicia compuesta primordialmente de una serie de películas concebidas por el cineasta estadounidense George Lucas en la década de 1970, y producidas y distribuidas por &amp;lt;a&amp;gt;The Walt Disney Company&amp;lt;/a&amp;gt; a partir de 2012.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p&amp;gt;Su trama describe las vivencias de un grupo de personajes que habitan en una galaxia ficticia e interactúan con elementos como &amp;lt;span class=&lt;span style="color:#a31515">&amp;#34;the-force&amp;#34;&lt;/span>&amp;gt;«la Fuerza»&amp;lt;/span&amp;gt;, un campo de energía metafísico y omnipresente que posee un &amp;lt;span class=&lt;span style="color:#a31515">&amp;#34;the-force light-side&amp;#34;&lt;/span>&amp;gt;«lado luminoso»&amp;lt;/span&amp;gt; impulsado por la sabiduría, la nobleza y la justicia y utilizado por los Jedi, y un &amp;lt;span class=&lt;span style="color:#a31515">&amp;#34;the-force dark-side&amp;#34;&lt;/span>&amp;gt;«lado oscuro»&amp;lt;/span&amp;gt; usado por los Sith y provocado por la ira, el miedo y el odio.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h2&amp;gt;Películas&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h3&amp;gt;Trilogía Original&amp;lt;/h3&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;ul id=&lt;span style="color:#a31515">&amp;#34;og-trilogy&amp;#34;&lt;/span> class=&lt;span style="color:#a31515">&amp;#34;movies-list&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Star_Wars:_Episodio_IV_-_Una_nueva_esperanza&amp;#34;&lt;/span>&amp;gt;Star Wars: Episodio IV - Una nueva esperanza&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Star_Wars:_Episodio_V_-_El_Imperio_contraataca&amp;#34;&lt;/span>&amp;gt;Star Wars: Episodio V - El Imperio contraataca&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Star_Wars:_Episode_VI_-_Return_of_the_Jedi&amp;#34;&lt;/span>&amp;gt;Star Wars: Episode VI - El retorno del Jedi&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/ul&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h3&amp;gt;Trilogía de precuelas&amp;lt;/h3&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;ul class=&lt;span style="color:#a31515">&amp;#34;movies-list&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Star_Wars:_Episodio_I_-_La_amenaza_fantasma&amp;#34;&lt;/span>&amp;gt;Star Wars: Episodio I - La amenaza fantasma&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Star_Wars:_Episodio_II_-_El_ataque_de_los_clones&amp;#34;&lt;/span>&amp;gt;Star Wars: Episodio II - El ataque de los clones&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Star_Wars:_Episodio_III_-_La_venganza_de_los_Sith&amp;#34;&lt;/span>&amp;gt;Star Wars: Episodio III - La venganza de los Sith&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/ul&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h3&amp;gt;Trilogía de secuelas&amp;lt;/h3&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;ul class=&lt;span style="color:#a31515">&amp;#34;movies-list&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Star_Wars:_Episodio_VII_-_El_despertar_de_la_Fuerza&amp;#34;&lt;/span>&amp;gt;Star Wars: Episodio VII - El despertar de la Fuerza&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Star_Wars:_Episodio_VIII_-_Los_últimos_Jedi&amp;#34;&lt;/span>&amp;gt;Star Wars: Episodio VIII - Los últimos Jedi&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Star_Wars:_Episodio_IX_-_El_ascenso_de_Skywalker&amp;#34;&lt;/span>&amp;gt;Star Wars: Episodio IX - El ascenso de Skywalker&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/ul&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p&amp;gt;Fuente: &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Star_Wars&amp;#34;&lt;/span>&amp;gt;Wikipedia&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
+&lt;p>&lt;strong>Nota:&lt;/strong> Sería buena idea recordar también modificar el archivo &lt;code>index.html&lt;/code> (en la raíz del repositorio) para incluir un link a este nuevo &lt;code>tp-2/index.html&lt;/code> recién creado.&lt;/p></description></item><item><title>3.3: Especificidad</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/3-especificidad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/3-especificidad/</guid><description>&lt;p>Se entiende la especificidad como una importancia que se le da a las declaraciones de CSS para determinar qué reglas aplicar sobre los elementos.&lt;/p>
+&lt;p>La especificidad solo se aplica cuando el mismo elemento es objeto de múltiples declaraciones.&lt;/p>
+&lt;p>Por ejemplo, si se tuviese definido un estilo para todas las imágenes de un sitio, pero quisiéramos que la imagen principal se viese diferente, se deberá agregar un selector de mayor importancia que el resto.&lt;/p></description></item><item><title>3.3: tp-3 (Especificidad)</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/3-tp-especificidad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/3-tp-especificidad/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Practicar el uso de la especificidad en CSS para aplicar estilos de manera precisa.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Crear un archivo HTML en la ruta &lt;code>tp-3/index.html&lt;/code>, con el contenido del HTML inicial.&lt;/li>
+&lt;li>Crear una hoja de estilos CSS vinculada al HTML.&lt;/li>
+&lt;li>Subir ambos archivos al repositorio de entregas.&lt;/li>
+&lt;/ul>
+&lt;h3 id="html-inicial">HTML Inicial&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;utf-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;title&amp;gt;TP3 - Especificidad CSS&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;link rel=&lt;span style="color:#a31515">&amp;#34;stylesheet&amp;#34;&lt;/span> type=&lt;span style="color:#a31515">&amp;#34;text/css&amp;#34;&lt;/span> href=&lt;span style="color:#a31515">&amp;#34;style.css&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;style type=&lt;span style="color:#a31515">&amp;#34;text/css&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		body {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">font-size&lt;/span>: 18&lt;span style="color:#2b91af">px&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">background-color&lt;/span>: #ffe;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">color&lt;/span>: #210;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		#contenedor {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">max-width&lt;/span>: 40&lt;span style="color:#2b91af">ch&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">margin&lt;/span>: 2&lt;span style="color:#2b91af">rem&lt;/span> &lt;span style="color:#00f">auto&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">padding&lt;/span>: 1&lt;span style="color:#2b91af">rem&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		h1 {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">font-size&lt;/span>: 2&lt;span style="color:#2b91af">rem&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">text-align&lt;/span>: &lt;span style="color:#00f">left&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		p {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">font-family&lt;/span>: &lt;span style="color:#00f">sans-serif&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		#primer-parrafo {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">font-size&lt;/span>: 1.3&lt;span style="color:#2b91af">rem&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">background-color&lt;/span>: #eec;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		p.&lt;span style="color:#2b91af">importante&lt;/span> em {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">font-weight&lt;/span>: &lt;span style="color:#00f">bold&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">color&lt;/span>: #144;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		p.&lt;span style="color:#2b91af">novelas&lt;/span> a {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">outline&lt;/span>: &lt;span style="color:#00f">none&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">text-decoration&lt;/span>: &lt;span style="color:#00f">none&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		p.&lt;span style="color:#2b91af">novelas&lt;/span> a:hover {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">text-decoration&lt;/span>: &lt;span style="color:#00f">underline&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">background-color&lt;/span>: #ccd;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		body p.&lt;span style="color:#2b91af">fuente&lt;/span>.&lt;span style="color:#2b91af">parrafo&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">color&lt;/span>: #bbb &lt;span style="color:#00f">!important&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">font-size&lt;/span>: 0.9&lt;span style="color:#2b91af">rem&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">opacity&lt;/span>: 50&lt;span style="color:#2b91af">%&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			&lt;span style="color:#00f">text-align&lt;/span>: &lt;span style="color:#00f">center&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;/style&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;article id=&lt;span style="color:#a31515">&amp;#34;contenedor&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		&amp;lt;h1 class=&lt;span style="color:#a31515">&amp;#34;titulo&amp;#34;&lt;/span>&amp;gt;Gandalf&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		&amp;lt;p id=&lt;span style="color:#a31515">&amp;#34;primer-parrafo&amp;#34;&lt;/span> class=&lt;span style="color:#a31515">&amp;#34;importante parrafo&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			Gandalf es un personaje ficticio perteneciente al &amp;lt;em&amp;gt;legendarium&amp;lt;/em&amp;gt; del escritor británico &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/J._R._R._Tolkien&amp;#34;&lt;/span>&amp;gt;J. R. R. Tolkien.&amp;lt;/a&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		&amp;lt;p class=&lt;span style="color:#a31515">&amp;#34;novelas parrafo&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>			Es uno de los principales personajes de las novelas &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/El_hobbit&amp;#34;&lt;/span>&amp;gt;El hobbit&amp;lt;/a&amp;gt; y &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/El_Señor_de_los_Anillos&amp;#34;&lt;/span>&amp;gt;El Señor de los Anillos&amp;lt;/a&amp;gt;, aunque también aparece en &amp;lt;span class=&lt;span style="color:#a31515">&amp;#34;complicado&amp;#34;&lt;/span> style=&lt;span style="color:#a31515">&amp;#34;color: #622&amp;#34;&lt;/span>&amp;gt;El Silmarillion&amp;lt;/span&amp;gt;, donde se narran sus orígenes.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;/article&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;p class=&lt;span style="color:#a31515">&amp;#34;fuente parrafo&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>		Fuente: &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Gandalf&amp;#34;&lt;/span>&amp;gt;https://es.wikipedia.org/wiki/Gandalf&amp;lt;/a&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;h3 id="1-crear-archivo-css">1. Crear Archivo CSS&lt;/h3>
+&lt;p>Crear en el repositorio de GitHub un archivo &lt;code>style.css&lt;/code> al mismo nivel que el archivo HTML anterior, esto sería en &lt;code>tp-3/style.css&lt;/code>.&lt;/p></description></item><item><title>3.4: Media Queries</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/4-media-queries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/4-media-queries/</guid><description>&lt;p>La idea de Media Queries es hacer consultas sobre las características del dispositivo.&lt;/p>
+&lt;p>Con esto podemos aplicar de forma condicional estilos CSS.&lt;/p>
+&lt;h2 id="documento-de-ejemplo">Documento de ejemplo&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;UTF-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta http-equiv=&lt;span style="color:#a31515">&amp;#34;X-UA-Compatible&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;IE=edge&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;style&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@&lt;span style="color:#00f">media&lt;/span> print {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> p {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">color&lt;/span>: &lt;span style="color:#00f">blue&lt;/span> &lt;span style="color:#00f">!important&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@&lt;span style="color:#00f">media&lt;/span> screen {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> p {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">background-color&lt;/span>: &lt;span style="color:#00f">yellow&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@&lt;span style="color:#00f">media&lt;/span> (min-width: 320px) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> html {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">background-color&lt;/span>: &lt;span style="color:#00f">cadetblue&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>#primer-parrafo {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">color&lt;/span>: &lt;span style="color:#00f">gray&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#2b91af">parrafo&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">color&lt;/span>: &lt;span style="color:#00f">green&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>p {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">color&lt;/span>: &lt;span style="color:#00f">red&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>* {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00f">color&lt;/span>: &lt;span style="color:#00f">blueviolet&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/style&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> class=&lt;span style="color:#a31515">&amp;#34;parrafo&amp;#34;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> id=&lt;span style="color:#a31515">&amp;#34;primer-parrafo&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Hola Mundo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p id=&lt;span style="color:#a31515">&amp;#34;mensaje&amp;#34;&lt;/span>&amp;gt;Estoy en una pantalla chica!&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="compatibilidad-de-navegadores">Compatibilidad de Navegadores&lt;/h2>
+&lt;p>Hablamos por un momento de los distintos niveles de compatibilidad que presentan las versiones de los navegadores para las diferentes media queries (y para cualquier otra característica de la plataforma web), y que nosotros como programadores vamos a decidir si esa compatibilidad es importante para nuestros proyectos.&lt;/p></description></item><item><title>3.4: tp-4 (Media Queries)</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/4-tp-media-queries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/4-tp-media-queries/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Definir estilos condicionales utilizando media queries para adaptar el diseño a diferentes dispositivos.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Crear un archivo HTML en la ruta &lt;code>tp-4/index.html&lt;/code>, con el contenido del HTML inicial.&lt;/li>
+&lt;li>Crear una hoja de estilos CSS vinculada al HTML, en la ruta &lt;code>tp-4/style.css&lt;/code>.&lt;/li>
+&lt;li>Subir ambos archivos al repositorio de entregas.&lt;/li>
+&lt;/ul>
+&lt;h3 id="html-inicial">HTML Inicial&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;UTF-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta http-equiv=&lt;span style="color:#a31515">&amp;#34;X-UA-Compatible&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;IE=edge&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;title&amp;gt;TP4 - CSS Media Queries&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;link rel=&lt;span style="color:#a31515">&amp;#34;stylesheet&amp;#34;&lt;/span> href=&lt;span style="color:#a31515">&amp;#34;style.css&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;style&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> * {&lt;span style="color:#00f">margin&lt;/span>: 0; &lt;span style="color:#00f">padding&lt;/span>: 0;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> body {&lt;span style="color:#00f">margin&lt;/span>: 1&lt;span style="color:#2b91af">rem&lt;/span>; &lt;span style="color:#00f">background-color&lt;/span>: #012; &lt;span style="color:#00f">color&lt;/span>: #e6e8ff; &lt;span style="color:#00f">font-family&lt;/span>: ui-monospace, &lt;span style="color:#a31515">&amp;#39;Cascadia Code&amp;#39;&lt;/span>, &lt;span style="color:#a31515">&amp;#39;Source Code Pro&amp;#39;&lt;/span>, Menlo, Consolas, &lt;span style="color:#a31515">&amp;#39;DejaVu Sans Mono&amp;#39;&lt;/span>, &lt;span style="color:#00f">monospace&lt;/span>;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> article {&lt;span style="color:#00f">margin&lt;/span>: 0 &lt;span style="color:#00f">auto&lt;/span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> a {&lt;span style="color:#00f">color&lt;/span>: #A06CD5}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> a:visited {&lt;span style="color:#00f">color&lt;/span>: #E2CFEA}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> p {&lt;span style="color:#00f">margin&lt;/span>: 1&lt;span style="color:#2b91af">rem&lt;/span> 0;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> figure {&lt;span style="color:#00f">text-align&lt;/span>: &lt;span style="color:#00f">center&lt;/span>;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> img {&lt;span style="color:#00f">display&lt;/span>: &lt;span style="color:#00f">block&lt;/span>; &lt;span style="color:#00f">max-width&lt;/span>: 100&lt;span style="color:#2b91af">%&lt;/span>; &lt;span style="color:#00f">height&lt;/span>: &lt;span style="color:#00f">auto&lt;/span>; &lt;span style="color:#00f">margin&lt;/span>: 0 &lt;span style="color:#00f">auto&lt;/span>; &lt;span style="color:#00f">border-radius&lt;/span>: 10&lt;span style="color:#2b91af">px&lt;/span>;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/style&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;article&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h1&amp;gt;Del videojuego a la pantalla grande&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Cada vez son más los videojuegos que tienen una adaptación cinematográfica. Estos últimos años se han visto en el cine títulos como &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Sonic,_la_pel%C3%ADcula&amp;#34;&lt;/span>&amp;gt;Sonic&amp;lt;/a&amp;gt; o &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Pokémon:_Detective_Pikachu&amp;#34;&lt;/span>&amp;gt;Detective Pikachu&amp;lt;/a&amp;gt; y se espera que en los próximos años esta tendencia se mantenga, con los rumores de películas de &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/God_of_War_(franquicia)&amp;#34;&lt;/span>&amp;gt;God of War&amp;lt;/a&amp;gt; y &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Street_Fighter&amp;#34;&lt;/span>&amp;gt;Street Fighter&amp;lt;/a&amp;gt;.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Sin embargo hay una en particular que llama mucho la atención, pues estamos hablando de nada más y nada menos que la película del famoso videojuego &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Minecraft&amp;#34;&lt;/span>&amp;gt;Minecraft&amp;lt;/a&amp;gt;.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Los planes para esta adaptación cinematográfica comenzaron en febrero de 2014 cuando &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Markus_Persson&amp;#34;&lt;/span>&amp;gt;Markus Persson&amp;lt;/a&amp;gt; reveló que Mojang estaba en conversaciones con &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://es.wikipedia.org/wiki/Warner_Bros.&amp;#34;&lt;/span>&amp;gt;Warner Bros&amp;lt;/a&amp;gt; para el proyecto. El rodaje comenzó a mediados de enero de 2024 en Nueva Zelanda y se espera que la obra se estrene el 4 de abril de 2025.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;figure&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;img src=&lt;span style="color:#a31515">&amp;#34;https://tehuel.github.io/plataformas-moviles/img/minecraft.jpg&amp;#34;&lt;/span> alt=&lt;span style="color:#a31515">&amp;#34;Minecraft Cover&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;figcaption&amp;gt;Portada del Minecraft&amp;lt;/figcaption&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/figure&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p&amp;gt;La película tratará de una adolescente que intentará salvar el &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://minecraft.fandom.com/es/wiki/Superficie&amp;#34;&lt;/span>&amp;gt;Overworld&amp;lt;/a&amp;gt; del &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;https://minecraft.fandom.com/es/wiki/Enderdragón&amp;#34;&lt;/span>&amp;gt;Enderdragon&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/article&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;p>Dentro del archivo CSS creado, implementar las siguientes reglas de estilo, con sus respectivas media queries&lt;/p></description></item><item><title>3.5: Frameworks CSS</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/5-frameworks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/5-frameworks/</guid><description>&lt;h2 id="framework-vs-librería">Framework vs Librería&lt;/h2>
+&lt;p>Un &lt;strong>framework&lt;/strong> en programación es un conjunto de herramientas, bibliotecas y patrones de diseño que proporcionan una estructura de trabajo para el desarrollo de aplicaciones. Es una infraestructura de software que establece reglas y directrices para facilitar la creación de aplicaciones y simplificar el proceso de desarrollo. Un framework generalmente incluye una arquitectura predefinida, componentes reutilizables y funcionalidades comunes que permiten a los desarrolladores crear aplicaciones de manera más eficiente y rápida.&lt;/p></description></item><item><title>3.6: Bootstrap</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/6-bootstrap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/6-bootstrap/</guid><description>&lt;p>&lt;a href="https://getbootstrap.com/">Bootstrap&lt;/a>
+ es un framework de desarrollo front-end ampliamente utilizado que proporciona un conjunto de herramientas y estilos predefinidos para agilizar y facilitar la creación de sitios web responsivos con un enfoque &lt;em>mobile-first&lt;/em>.&lt;/p>
+&lt;p>Se basa en HTML, CSS y JavaScript, y ofrece &lt;a href="https://tehuel.github.io/plataformas-moviles/temas/3-css/62-componentes/">componentes reutilizables&lt;/a>
+, &lt;a href="https://tehuel.github.io/plataformas-moviles/temas/3-css/61-grilla/">grillas flexibles&lt;/a>
+ y otras funcionalidades interactivas que permiten a los desarrolladores construir interfaces de usuario de manera rápida y eficiente.&lt;/p>
+&lt;h2 id="separación-entre-contenedor-y-contenido">Separación entre &lt;code>Contenedor&lt;/code> y &lt;code>Contenido&lt;/code>&lt;/h2>
+&lt;p>Al implementar interfaces responsivas con Bootstrap, se aplica una separación clara entre &lt;strong>contenedores&lt;/strong> y &lt;strong>contenido&lt;/strong>. Esta distinción es fundamental para lograr un diseño flexible.&lt;/p></description></item><item><title>3.6: tp-5 (Bootstrap)</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/6-tp-bootstrap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/6-tp-bootstrap/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Integrar el framework Bootstrap para mejorar la presentación y la funcionalidad de una página web.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Crear un archivo HTML en la ruta &lt;code>tp-5/index.html&lt;/code> con el contenido del HTML inicial.&lt;/li>
+&lt;li>Subir el archivo HTML junto con todos los recursos que consideren necesarios al repositorio de entregas de la materia.&lt;/li>
+&lt;/ul>
+&lt;h3 id="html-inicial">HTML Inicial&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;UTF-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;title&amp;gt;Control de Versiones con Git&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h1&amp;gt;Control de Versiones con Git&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Git&amp;lt;/strong&amp;gt; es un sistema de control de versiones distribuido, ampliamente utilizado en el desarrollo de
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> software moderno. Fue creado para gestionar proyectos de forma rápida, eficiente y colaborativa.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h2&amp;gt;Comandos más populares de Git&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;ul&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;git init&amp;lt;/code&amp;gt; - Inicializa un nuevo repositorio Git en el directorio actual. Este comando crea un repositorio vacío.&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;git clone [url]&amp;lt;/code&amp;gt; - Clona un repositorio remoto en tu máquina local. Ejemplo: &amp;lt;code&amp;gt;git clone https://github.com/usuario/repositorio.git&amp;lt;/code&amp;gt;.&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;git status&amp;lt;/code&amp;gt; - Muestra el estado del repositorio: archivos modificados, nuevos archivos no rastreados, cambios preparados para el commit, etc.&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;git add [archivo]&amp;lt;/code&amp;gt; - Agrega un archivo o cambios específicos al área de preparación (staging area) para el commit.&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;git commit -m &amp;#34;[mensaje]&amp;#34;&amp;lt;/code&amp;gt; - Crea un commit con los archivos añadidos al área de preparación, agregando un mensaje descriptivo.&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;git push&amp;lt;/code&amp;gt; - Sube los cambios locales al repositorio remoto. Generalmente se usa después de un commit para actualizar el repositorio remoto.&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;git pull&amp;lt;/code&amp;gt; - Obtiene y combina los cambios del repositorio remoto al local. Equivalente a &amp;lt;code&amp;gt;git fetch&amp;lt;/code&amp;gt; seguido de &amp;lt;code&amp;gt;git merge&amp;lt;/code&amp;gt;.&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;git checkout [rama]&amp;lt;/code&amp;gt; - Cambia a una rama específica del repositorio. Si la rama no existe, se puede crear con &amp;lt;code&amp;gt;git checkout -b [rama]&amp;lt;/code&amp;gt;.&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/ul&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h2&amp;gt;Comparación con otros sistemas&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;table class=&lt;span style="color:#a31515">&amp;#34;table&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;thead&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;tr&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;th&amp;gt;Sistema&amp;lt;/th&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;th&amp;gt;Tipo&amp;lt;/th&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;th&amp;gt;Popularidad&amp;lt;/th&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/tr&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/thead&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;tbody&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;tr&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;td&amp;gt;Git&amp;lt;/td&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;td&amp;gt;Distribuido&amp;lt;/td&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;td&amp;gt;Muy alta&amp;lt;/td&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/tr&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;tr&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;td&amp;gt;SVN&amp;lt;/td&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;td&amp;gt;Centralizado&amp;lt;/td&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;td&amp;gt;Media&amp;lt;/td&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/tr&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;tr&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;td&amp;gt;Mercurial&amp;lt;/td&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;td&amp;gt;Distribuido&amp;lt;/td&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;td&amp;gt;Baja&amp;lt;/td&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/tr&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;tr&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;td&amp;gt;Perforce&amp;lt;/td&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;td&amp;gt;Centralizado&amp;lt;/td&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;td&amp;gt;Especializado (AAA, empresas)&amp;lt;/td&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/tr&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/tbody&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/table&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h2&amp;gt;¿Ya usaste Git?&amp;lt;/h2&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p&amp;gt;Completá el siguiente formulario para compartir tu experiencia:&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;form class=&lt;span style="color:#a31515">&amp;#34;form&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;label for=&lt;span style="color:#a31515">&amp;#34;nombre&amp;#34;&lt;/span>&amp;gt;Tu nombre:&amp;lt;/label&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;input type=&lt;span style="color:#a31515">&amp;#34;text&amp;#34;&lt;/span> id=&lt;span style="color:#a31515">&amp;#34;nombre&amp;#34;&lt;/span> name=&lt;span style="color:#a31515">&amp;#34;nombre&amp;#34;&lt;/span> class=&lt;span style="color:#a31515">&amp;#34;form-control&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;label for=&lt;span style="color:#a31515">&amp;#34;experiencia&amp;#34;&lt;/span>&amp;gt;¿Qué usás más?&amp;lt;/label&amp;gt;&amp;lt;br&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;select id=&lt;span style="color:#a31515">&amp;#34;experiencia&amp;#34;&lt;/span> name=&lt;span style="color:#a31515">&amp;#34;experiencia&amp;#34;&lt;/span> class=&lt;span style="color:#a31515">&amp;#34;form-select&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;option value=&lt;span style="color:#a31515">&amp;#34;git&amp;#34;&lt;/span>&amp;gt;Git&amp;lt;/option&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;option value=&lt;span style="color:#a31515">&amp;#34;github&amp;#34;&lt;/span>&amp;gt;Git + GitHub&amp;lt;/option&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;option value=&lt;span style="color:#a31515">&amp;#34;otro&amp;#34;&lt;/span>&amp;gt;Otro sistema&amp;lt;/option&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;option value=&lt;span style="color:#a31515">&amp;#34;ninguno&amp;#34;&lt;/span>&amp;gt;Todavía no uso ninguno&amp;lt;/option&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/select&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;input type=&lt;span style="color:#a31515">&amp;#34;submit&amp;#34;&lt;/span> value=&lt;span style="color:#a31515">&amp;#34;Enviar&amp;#34;&lt;/span> class=&lt;span style="color:#a31515">&amp;#34;btn btn-primary mt-2&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/form&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;h3 id="1-instalar-bootstrap">1. Instalar Bootstrap&lt;/h3>
+&lt;p>Instalar Bootstrap en el documento utilizando alguna de las dos formas vistas en clase:&lt;/p></description></item><item><title>3.6.1: Grilla de Bootstrap</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/61-grilla/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/61-grilla/</guid><description>&lt;p>La grilla de Bootstrap es un sistema de diseño que permite estructurar el contenido en sitios web. Está compuesta por filas y columnas, donde las filas representan el contenedor principal y las columnas se utilizan para dividir el espacio horizontalmente. La grilla de Bootstrap utiliza un sistema de &lt;strong>12 columnas&lt;/strong>.&lt;/p>
+&lt;figure>
+ &lt;img src="https://tehuel.github.io/plataformas-moviles/img/12-grid.png" alt="Esquema del sistema de grilla de 12 columnas de Bootstrap">&lt;/figure>&lt;p>Las columnas en Bootstrap se dividen en diferentes &amp;ldquo;porciones&amp;rdquo; utilizando clases predefinidas, como &lt;code>col-nn&lt;/code> donde &lt;code>nn&lt;/code> representa el número de columnas que ocupará. Por ejemplo, una columna con la clase &lt;code>col-6&lt;/code> ocupará la mitad del ancho disponible en una fila, mientras que una columna con la clase &lt;code>col-12&lt;/code> ocupará todo el ancho de la fila.&lt;/p></description></item><item><title>3.6.1: tp-6 (Grilla Bootstrap)</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/61-tp-bootstrap-grilla/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/61-tp-bootstrap-grilla/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Practicar el uso del sistema de grillas de Bootstrap para construir diferentes layouts responsivos.&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Crear los siguientes archivos (todo dentro de una carpeta &lt;code>tp-6/&lt;/code>):
+&lt;ul>
+&lt;li>&lt;code>tp-6/layout-1.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>tp-6/layout-2.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>tp-6/layout-3.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>tp-6/index.html&lt;/code> (índice con enlaces a cada uno de los layouts).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Subir todos los archivos al repositorio de entregas.&lt;/li>
+&lt;/ul>
+&lt;h3 id="html-inicial">HTML Inicial&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00f">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;html lang=&lt;span style="color:#a31515">&amp;#34;es&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta charset=&lt;span style="color:#a31515">&amp;#34;UTF-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta http-equiv=&lt;span style="color:#a31515">&amp;#34;X-UA-Compatible&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;IE=edge&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;meta name=&lt;span style="color:#a31515">&amp;#34;viewport&amp;#34;&lt;/span> content=&lt;span style="color:#a31515">&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;title&amp;gt;Layout N&amp;lt;/title&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;style&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> .&lt;span style="color:#2b91af">content&lt;/span> {&lt;span style="color:#00f">padding&lt;/span>: 2&lt;span style="color:#2b91af">em&lt;/span> 0.5&lt;span style="color:#2b91af">em&lt;/span>; &lt;span style="color:#00f">text-align&lt;/span>: &lt;span style="color:#00f">center&lt;/span>;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> .&lt;span style="color:#2b91af">s1&lt;/span> {&lt;span style="color:#00f">background-color&lt;/span>: #ca9f77;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> .&lt;span style="color:#2b91af">s2&lt;/span> {&lt;span style="color:#00f">background-color&lt;/span>: #cbc168;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> .&lt;span style="color:#2b91af">s3&lt;/span> {&lt;span style="color:#00f">background-color&lt;/span>: #a3c55b;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> .&lt;span style="color:#2b91af">s4&lt;/span> {&lt;span style="color:#00f">background-color&lt;/span>: #76d179;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> .&lt;span style="color:#2b91af">s5&lt;/span> {&lt;span style="color:#00f">background-color&lt;/span>: #85e3c1;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> .&lt;span style="color:#2b91af">s6&lt;/span> {&lt;span style="color:#00f">background-color&lt;/span>: #79bfe5;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/style&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;container-sm g-0&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;row g-0&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;content s1&amp;#34;&lt;/span>&amp;gt;sección 1&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;content s2&amp;#34;&lt;/span>&amp;gt;sección 2&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;content s3&amp;#34;&lt;/span>&amp;gt;sección 3&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;content s4&amp;#34;&lt;/span>&amp;gt;sección 4&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;content s5&amp;#34;&lt;/span>&amp;gt;sección 5&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;col&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;content s6&amp;#34;&lt;/span>&amp;gt;sección 6&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/body&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;p>Para cada layout, realizar las modificaciones necesarias al HTML inicial para que el sistema de grilla se comporte de la misma forma que se ve en las imágenes. Esto incluye realizar las modificaciones necesarias para instalar Bootstrap en cada uno de los documentos.&lt;/p></description></item><item><title>3.6.2: Componentes de Bootstrap</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/62-componentes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/62-componentes/</guid><description>&lt;p>Los componentes de Bootstrap permiten crear interfaces de usuario responsivas de manera sencilla.&lt;/p>
+&lt;p>Algunos de los componentes que disponemos son:&lt;/p>
+&lt;h2 id="card">Card&lt;/h2>
+&lt;p>Las &lt;a href="https://getbootstrap.com/docs/5.3/components/card/">cards&lt;/a>
+ de Bootstrap se utilizan para mostrar contenido variado con un diseño consistente, incluyendo encabezados, pies de página, imágenes y texto.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;card&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;img class=&lt;span style="color:#a31515">&amp;#34;card-img-top&amp;#34;&lt;/span> src=&lt;span style="color:#a31515">&amp;#34;...&amp;#34;&lt;/span> alt=&lt;span style="color:#a31515">&amp;#34;Imagen de tarjeta&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;div class=&lt;span style="color:#a31515">&amp;#34;card-body&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;h5 class=&lt;span style="color:#a31515">&amp;#34;card-title&amp;#34;&lt;/span>&amp;gt;Título&amp;lt;/h5&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;p class=&lt;span style="color:#a31515">&amp;#34;card-text&amp;#34;&lt;/span>&amp;gt;Lorem ipsum dolor sit amet.&amp;lt;/p&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;a href=&lt;span style="color:#a31515">&amp;#34;#&amp;#34;&lt;/span> class=&lt;span style="color:#a31515">&amp;#34;btn btn-primary&amp;#34;&lt;/span>&amp;gt;Botón&amp;lt;/a&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="button">Button&lt;/h2>
+&lt;p>Se incluyen distintos estilos predefinidos de &lt;a href="https://getbootstrap.com/docs/5.3/components/buttons/">botones&lt;/a>
+, con diferencias en su aspecto visual y también en su semántica.&lt;/p></description></item><item><title>3.6.2: tp-7 (Bootstrap 2)</title><link>https://tehuel.github.io/plataformas-moviles/temas/3-css/62-tp-bootstrap-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tehuel.github.io/plataformas-moviles/temas/3-css/62-tp-bootstrap-2/</guid><description>&lt;h2 id="objetivo">Objetivo&lt;/h2>
+&lt;p>Usar Bootstrap para reconstruir &amp;ldquo;la estructura&amp;rdquo; de un sitio web, partiendo de un diseño.&lt;/p>
+&lt;p>&lt;a href="https://www.figma.com/file/FCPcWiELkdba5KxVf7c3YQ/Grillas---PMoviles?type=design&amp;amp;mode=design">&lt;img src="https://tehuel.github.io/plataformas-moviles/img/screen-figma-bootstrap.png" alt="Diseño esquemático"> click para ver versión completa del diseño&lt;/a>
+&lt;/p>
+&lt;h2 id="formato-de-entrega">Formato de Entrega&lt;/h2>
+&lt;ul>
+&lt;li>Crear un archivo &lt;code>tp-7/index.html&lt;/code> en el repositorio de entregas de la materia, en GitHub.&lt;/li>
+&lt;/ul>
+&lt;h2 id="consigna">Consigna&lt;/h2>
+&lt;ul>
+&lt;li>En ese archivo HTML creado implementar un sitio web que replique la estructura mostrada en los diseños esquemáticos.&lt;/li>
+&lt;/ul>
+&lt;h2 id="condiciones">Condiciones&lt;/h2>
+&lt;ul>
+&lt;li>Usar la última versión de Bootstrap.&lt;/li>
+&lt;li>Usar la grilla y las columnas para armar la estructura&lt;/li>
+&lt;li>Incluir los componentes de Bootstrap (como Card, Navbar, Button, etc&amp;hellip;) que consideren necesarios.&lt;/li>
+&lt;li>Replicar &amp;ldquo;la estructura&amp;rdquo; del sitio, sin preocuparse en el aspecto visual o el diseño, sino dando prioridad al comportamiento en diferentes breakpoints.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;strong>Nota:&lt;/strong> El tema o contenido del trabajo es libre. En caso de querer generar texto de relleno, una práctica común es usar &lt;a href="https://www.lipsum.com/">Lorem Ipsum&lt;/a>
+&lt;/p></description></item></channel></rss>

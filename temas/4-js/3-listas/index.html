@@ -1,0 +1,119 @@
+<!doctype html><html lang=es-AR class=h-100><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=generator content="Hugo 0.145.0"><title>4.3: Listas | Plataformas Móviles</title>
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/cosmo/bootstrap.min.css rel=stylesheet crossorigin=anonymous><link href=/plataformas-moviles/css/syntax.css rel=stylesheet><style type=text/css>li>p{margin:0}.container{max-width:60rem;margin:0 auto}.container img{max-width:100%}figcaption{text-align:right;font-style:italic;color:var(--bs-gray-600)}blockquote{padding:1em;border-left:3px solid var(--bs-gray-600);background-color:var(--bs-gray-100)}blockquote p:last-child,footer p:last-child{margin:0}.highlight{position:relative}.highlight pre{border:var(--bs-border-width)var(--bs-border-style)var(--bs-gray-500);border-radius:var(--bs-border-radius);padding:1em}.btn-copy-code{position:absolute;right:0;top:-1rem}</style><link rel=apple-touch-icon sizes=180x180 href=/plataformas-moviles/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/plataformas-moviles/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/plataformas-moviles/favicon-16x16.png><link rel=mask-icon href=/plataformas-moviles/safari-pinned-tab.svg color=#5bbad5></head><body class="h-100 d-flex flex-column"><nav class="navbar navbar-expand-sm navbar-dark bg-dark"><div class=container><a class=navbar-brand href=/plataformas-moviles/>Plataformas Móviles</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarSupportedContent><ul class="navbar-nav ms-auto mb-2 mb-lg-0"><li class=nav-item><a class="nav-link active" href=/plataformas-moviles/temas/>Temas</a></li><li class=nav-item><a class=nav-link href=/plataformas-moviles/trabajos-practicos/>Trabajos Prácticos</a></li><li class=nav-item><a class=nav-link href=/plataformas-moviles/recursos/>Recursos</a></li></ul></div></div></nav><div class="container flex-grow-1 my-3"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/plataformas-moviles/>Home</a></li><li class=breadcrumb-item><a href=/plataformas-moviles/temas/>Temas</a></li><li class=breadcrumb-item><a href=/plataformas-moviles/temas/4-js/>Unidad 4: JavaScript</a></li><li class="breadcrumb-item active" aria-current=page>4.3: Listas</li></ol></nav><div class="text-center border-bottom mb-4"><h1 class=display-3>4.3: Listas</h1></div><p>Vimos el tipo de datos lista (array) en JavaScript, y algunos ejemplos de código.</p><h2 id=definir-listas>Definir listas</h2><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#00f>let</span> listaDeNumeros = [1, 23, 56, 1234];
+</span></span><span style=display:flex><span><span style=color:#00f>let</span> listaDeStrings = [<span style=color:#a31515>&#39;a&#39;</span>, <span style=color:#a31515>&#39;abc&#39;</span>];
+</span></span><span style=display:flex><span><span style=color:#00f>let</span> listaDeFloats = [1.23, 2.34, 3.45];
+</span></span><span style=display:flex><span><span style=color:#00f>let</span> listaDeBooleanos = [<span style=color:#00f>false</span>, <span style=color:#00f>false</span>, <span style=color:#00f>true</span>];
+</span></span><span style=display:flex><span><span style=color:#00f>let</span> listaDeMultiplesTipos = [1, <span style=color:#a31515>&#39;a&#39;</span>, 1.23, <span style=color:#00f>false</span>];
+</span></span><span style=display:flex><span><span style=color:#00f>let</span> listaVacia = [];
+</span></span></code></pre></div><h2 id=operaciones-sobre-listas>Operaciones sobre listas</h2><h3 id=acceder-a-valores-de-una-lista>Acceder a valores de una lista</h3><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:green>// acceder a un elemento determinado
+</span></span></span><span style=display:flex><span><span style=color:green></span><span style=color:#00f>let</span> primerElemento = listaDeNumeros[0];
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// conocer la longitud de una lista
+</span></span></span><span style=display:flex><span><span style=color:green></span><span style=color:#00f>let</span> cantidadElementos = listaDeNumeros.length
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// acceder a último elemento?
+</span></span></span></code></pre></div><h3 id=agregar-elementos>Agregar elementos</h3><p>Se pueden usar los métodos <code>push()</code> y <code>unshift()</code> de listas.</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#00f>let</span> nuevoValor = 33;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// agregar elemento al final de la lista
+</span></span></span><span style=display:flex><span><span style=color:green></span>listaDeNumeros.push(nuevoValor);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// agregar elemento al inicio de la lista
+</span></span></span><span style=display:flex><span><span style=color:green></span>listaDeNumeros.unshift(nuevoValor);
+</span></span></code></pre></div><blockquote><p><strong>Nota:</strong> Existe otra forma de agregar o eliminar elementos usando posiciones, pero puede traer problemas:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:green>// agregar un nuevo elemento al final de la lista
+</span></span></span><span style=display:flex><span><span style=color:green></span><span style=color:#00f>let</span> nuevoValor = 42;
+</span></span><span style=display:flex><span><span style=color:#00f>let</span> nuevaPosicion = listaDeNumeros.length;
+</span></span><span style=display:flex><span>listaDeNumeros[nuevaPosicion] = nuevoValor;
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;lista con nuevo valor: &#34;</span>, listaDeNumeros);
+</span></span></code></pre></div><p>Esta opción puede traer complicaciones, dejando listas inconsistentes al agregar o eliminar elementos</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:green>// agregar otro elemento
+</span></span></span><span style=display:flex><span><span style=color:green></span>listaDeNumeros[99] = nuevoValor;
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;lista con nuevo valor en posición 99&#34;</span>, listaDeNumeros);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// eliminar elemento de una lista
+</span></span></span><span style=display:flex><span><span style=color:green></span><span style=color:#00f>delete</span> listaDeNumeros[99];
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;lista con nuevo valor eliminado&#34;</span>, listaDeNumeros);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// en este punto la longitud de la lista quedó inconsistente
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(listaDeNumeros.length);
+</span></span></code></pre></div></blockquote><h3 id=quitar-elementos>Quitar elementos</h3><p>Se pueden usar los métodos <code>pop()</code> y <code>shift()</code> de listas para eliminar elementos.</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:green>// remover de la lista el último elemento
+</span></span></span><span style=display:flex><span><span style=color:green></span>listaDeNumeros.pop();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// remover de la lista y obtener el último elemento
+</span></span></span><span style=display:flex><span><span style=color:green></span><span style=color:#00f>let</span> ultimoNumero = listaDeNumeros.pop();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// remover de la lista el primer elemento
+</span></span></span><span style=display:flex><span><span style=color:green></span>listaDeNumeros.shift();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// remover de la lista y obtener el primer elemento
+</span></span></span><span style=display:flex><span><span style=color:green></span><span style=color:#00f>let</span> primerNumero = listaDeNumeros.shift();
+</span></span></code></pre></div><h2 id=recorridos-sobre-listas>Recorridos sobre Listas</h2><h3 id=calcular-la-suma-de-todos-los-valores>Calcular la suma de todos los valores</h3><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:green>// calcular la suma total de listaDeNumeros
+</span></span></span><span style=display:flex><span><span style=color:green></span><span style=color:#00f>let</span> sumaTotal = 0;
+</span></span><span style=display:flex><span><span style=color:#00f>for</span> (<span style=color:#00f>let</span> i = 0; i &lt; listaDeNumeros.length; i++) {
+</span></span><span style=display:flex><span>    console.log(<span style=color:#a31515>&#34;Posición: &#34;</span>, i);
+</span></span><span style=display:flex><span>    console.log(<span style=color:#a31515>&#34;Valor en posición: &#34;</span>, listaDeNumeros[i]);
+</span></span><span style=display:flex><span>    sumaTotal = sumaTotal + listaDeNumeros[i];
+</span></span><span style=display:flex><span>    console.log(<span style=color:#a31515>&#34;Suma hasta el momento: &#34;</span>, sumaTotal);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Suma total: &#34;</span>, sumaTotal);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// calcular la suma total de listaDeNumeros (otra versión)
+</span></span></span><span style=display:flex><span><span style=color:green></span><span style=color:#00f>let</span> sumaTotalv2 = 0;
+</span></span><span style=display:flex><span>listaDeNumeros.forEach((e) =&gt; {sumaTotalv2 += e})
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Suma total (v2): &#34;</span>, sumaTotalv2);
+</span></span></code></pre></div><h3 id=multiplicar-todos-los-valores>Multiplicar todos los valores</h3><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:green>// multiplicar todos los números por 5
+</span></span></span><span style=display:flex><span><span style=color:green></span><span style=color:#00f>let</span> listaPor5 = [];
+</span></span><span style=display:flex><span><span style=color:#00f>for</span> (<span style=color:#00f>let</span> i = 0; i &lt; listaDeNumeros.length; i++) {
+</span></span><span style=display:flex><span>    <span style=color:green>// accedo al valor en posición actual y lo multiplico por 5
+</span></span></span><span style=display:flex><span><span style=color:green></span>    <span style=color:#00f>let</span> valorActual = listaDeNumeros[i];
+</span></span><span style=display:flex><span>    <span style=color:#00f>let</span> resultadoPosicionActual = valorActual * 5;
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:green>// modifico el valor en la lista
+</span></span></span><span style=display:flex><span><span style=color:green></span>    listaPor5[i] = resultadoPosicionActual; 
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;lista resultado: &#34;</span>, listaPor5);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// multiplicar por 5
+</span></span></span><span style=display:flex><span><span style=color:green></span><span style=color:#00f>let</span> listaPor5opcion2 = listaDeNumeros.map((e) =&gt; {<span style=color:#00f>return</span> e * 5});
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;lista resultado v2: &#34;</span>, listaPor5opcion2);
+</span></span></code></pre></div><h2 id=filtrar-listas>Filtrar Listas</h2><p>Se puede usar el método <code>filter()</code> para filtrar los elementos de una lista. La función de filtro que recibe <code>filter()</code> debe devolver <code>true</code> para que el elemento permanezca en la lista resultante y <code>false</code> para que sea eliminado de la lista resultante.</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#00f>let</span> listaDePreposiciones = [<span style=color:#a31515>&#39;a&#39;</span>, <span style=color:#a31515>&#39;ante&#39;</span>, <span style=color:#a31515>&#39;bajo&#39;</span>, <span style=color:#a31515>&#39;cabe&#39;</span>, <span style=color:#a31515>&#39;con&#39;</span>, <span style=color:#a31515>&#39;contra&#39;</span>, <span style=color:#a31515>&#39;de&#39;</span>, <span style=color:#a31515>&#39;desde&#39;</span>, <span style=color:#a31515>&#39;durante&#39;</span>, <span style=color:#a31515>&#39;en&#39;</span>, <span style=color:#a31515>&#39;entre&#39;</span>, <span style=color:#a31515>&#39;hacia&#39;</span>, <span style=color:#a31515>&#39;hasta&#39;</span>, <span style=color:#a31515>&#39;mediante&#39;</span>, <span style=color:#a31515>&#39;para&#39;</span>, <span style=color:#a31515>&#39;por&#39;</span>, <span style=color:#a31515>&#39;según&#39;</span>, <span style=color:#a31515>&#39;sin&#39;</span>, <span style=color:#a31515>&#39;so&#39;</span>, <span style=color:#a31515>&#39;sobre&#39;</span>, <span style=color:#a31515>&#39;tras&#39;</span>, <span style=color:#a31515>&#39;versus&#39;</span>, <span style=color:#a31515>&#39;vía&#39;</span>];
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// me quedo con las palabras de al menos 3 letras de largo
+</span></span></span><span style=display:flex><span><span style=color:green></span><span style=color:#00f>let</span> listaFiltrada = listaDePreposiciones.filter((elementoActual) =&gt; {
+</span></span><span style=display:flex><span>    <span style=color:#00f>return</span> elementoActual.length &gt; 3;
+</span></span><span style=display:flex><span>})
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;lista de preposiciones filtrada&#34;</span>, listaFiltrada)
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;lista de preposiciones original&#34;</span>, listaDePreposiciones)
+</span></span></code></pre></div><h2 id=ordenar-listas>Ordenar Listas</h2><p>Se puede usar el método <code>sort()</code> de listas para ordenarlas.</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#00f>let</span> listaDesordenada = [4,6,2,1,9];
+</span></span><span style=display:flex><span><span style=color:#00f>let</span> listaOrdenada = listaDesordenada.sort();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;lista ordenada&#34;</span>, listaOrdenada)
+</span></span></code></pre></div><p>Al método <a href=https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort><code>.sort()</code></a>
+se le puede pasar como parámetro una función que defina el criterio por el que queremos ordenar la lista. Esta función &ldquo;criterioDeOrdenamiento&rdquo; recibe 2 elementos de la lista, y devuelve como resultado un número para decidir cuál de los 2 elementos debe aparecer antes en la lista.</p><ul><li>Si devuelve un número negativo es que los elementos tienen que intercambiar posiciones.</li><li>Si devuelve un número positivo es para que los elementos mantengan su posición en la lista.</li></ul><p>Con strings la comparación se puede hacer con <a href=https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare><code>localeCompare()</code></a></p><h2 id=existencia-de-elemento-en-lista>Existencia de elemento en lista</h2><p>Podemos necesitar averiguar si un elemento es parte de la lista. Para eso debemos recorrer la lista y consultar cada elemento (hasta encontrar el elemento buscado).</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#00f>let</span> listaDeNombres = [<span style=color:#a31515>&#34;Mateo&#34;</span>, <span style=color:#a31515>&#34;Sofía&#34;</span>, <span style=color:#a31515>&#34;Benjamín&#34;</span>, <span style=color:#a31515>&#34;Valentina&#34;</span>, <span style=color:#a31515>&#34;Thiago&#34;</span>];
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#00f>function</span> existeElementoEnLista(elemento, lista) {
+</span></span><span style=display:flex><span>	<span style=color:#00f>let</span> encontrado = <span style=color:#00f>false</span>;
+</span></span><span style=display:flex><span>	<span style=color:green>// queremos saber si elemento está en lista
+</span></span></span><span style=display:flex><span><span style=color:green></span>	<span style=color:#00f>for</span>(<span style=color:#00f>let</span> i = 0; i &lt; lista.length; i++) {
+</span></span><span style=display:flex><span>		<span style=color:green>// accedemos a valor en posición i
+</span></span></span><span style=display:flex><span><span style=color:green></span>		<span style=color:#00f>let</span> valorActual = lista[i];
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>		<span style=color:green>// si es el que buscamos
+</span></span></span><span style=display:flex><span><span style=color:green></span>		<span style=color:#00f>if</span> (valorActual == elemento) {
+</span></span><span style=display:flex><span>			encontrado = <span style=color:#00f>true</span>;
+</span></span><span style=display:flex><span>		}
+</span></span><span style=display:flex><span>	}
+</span></span><span style=display:flex><span>	<span style=color:#00f>return</span> encontrado;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a31515>&#34;Existe &#39;Martina&#39; en lista?&#34;</span>, existeElementoEnLista(<span style=color:#a31515>&#34;Martina&#34;</span>, listaDeNombres));
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green>// Otra opción para consultar existencia de elemento en lista
+</span></span></span><span style=display:flex><span><span style=color:green></span>console.log(<span style=color:#a31515>&#34;Existe &#39;Lautaro&#39; en lista?&#34;</span>, listaDeNombres.includes(<span style=color:#a31515>&#34;Lautaro&#34;</span>));
+</span></span></code></pre></div><hr><blockquote><p><strong>Nota:</strong> Para intercambiar 2 posiciones de una lista es necesario usar una variable temporal:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#00f>let</span> temporal = nuevaLista[0];
+</span></span><span style=display:flex><span>nuevaLista[0] = nuevaLista[1];
+</span></span><span style=display:flex><span>nuevaLista[1] = temporal;
+</span></span></code></pre></div></blockquote><h2 id=listas-dentro-de-listas>Listas dentro de listas</h2><p>Se pueden definir listas dentro de otras listas</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#00f>let</span> listaAnidada = [ 1, 2, 3, [7, 8, 9], 4, 5, 6 ]
+</span></span><span style=display:flex><span>listaAnidada[3][1] <span style=color:green>// accedo al 8
+</span></span></span></code></pre></div><h2 id=otra-forma-de-pensar-operaciones>Otra Forma de pensar Operaciones</h2><p>Vimos los conceptos de los métodos:</p><ul><li><code>Array.filter()</code></li><li><code>Array.map()</code></li><li><code>Array.reduce()</code></li><li><code>Array.sort()</code></li></ul><p>También vimos que se puede seguir usando el <code>for(;;)</code> de toda la vida, y existe una alternativa <code>Array.forEach()</code>.</p></div><footer class="footer py-5 bg-dark text-light"><div class=container><div class=row><div class=col-md><p>2026 | Plataformas Móviles</p></div><div class="col-md text-md-end"><a class=link-light href=https://github.com/tehuel/plataformas-moviles/edit/main/content/temas/4-js/3-listas.md>Editar en GitHub</a> | <a class=link-light href=https://github.com/tehuel/plataformas-moviles/blob/main/content/temas/4-js/3-listas.md>Ver Código Fuente</a></div></div></div></footer><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script>function initClipboardForCodeButtons(){if(typeof ClipboardJS=="undefined")return;document.querySelectorAll(".highlight").forEach(function(e,t){var n,o,s=e.querySelector("pre code");if(!s)return;s.id||(s.id="code-block-"+t),n=document.createElement("button"),n.className="btn btn-sm btn-secondary btn-copy-code",n.type="button",n.innerText="Copiar",n.setAttribute("data-clipboard-target","#"+s.id),e.insertBefore(n,e.firstChild),o=document.createElement("div"),o.className="highlight-wrapper",e.parentNode.insertBefore(o,e),o.appendChild(e)});var e=new ClipboardJS(".btn-copy-code");e.on("success",function(e){setCopyStatus(e.trigger,!0),e.clearSelection()}),e.on("error",function(e){setCopyStatus(e.trigger,!1)})}function setCopyStatus(e,t){e.blur(),e.innerText=t?"Copiado":"No se pudo copiar";const n=t?"btn-success":"btn-danger";e.classList.add(n),setTimeout(function(){e.innerText="Copiar",e.classList.remove(n)},2e3)}initClipboardForCodeButtons()</script></body></html>
