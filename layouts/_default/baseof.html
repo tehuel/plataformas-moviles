@@ -95,7 +95,7 @@
               {{- $active := or $isCurrent ($currentPage.HasMenuCurrent "main" .) $isDescendant -}}
 
               <li class="nav-item">
-                <a class="nav-link{{ if $active }} active{{ end }}" aria-current="page" href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
+                <a class="nav-link{{ if $active }} active{{ end }}"{{ if $isCurrent }} aria-current="page"{{ end }} href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
               </li>
             {{ end }}
           </ul>
