@@ -1,6 +1,8 @@
 ---
-title: "5.3: tp-15 (Tablero de Puntos)"
-tags: ["tp"]
+title: "TP: Tablero de Puntos"
+weight: 15
+tipo: "tp"
+opcional: false
 ---
 
 ## Objetivo
@@ -10,7 +12,8 @@ Construir un tablero para mostrar y gestionar el puntaje de un partido entre 2 e
 ## Formato de Entrega
 
 - Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
-- Subir el trabajo al repositorio de entregas, en el directorio `tp-15/`.
+- Subir el trabajo al repositorio de entregas, en el directorio `tp-tablero/`.
+- Comprobar el funcionamiento en el modo responsive de las herramientas de desarrollo (DevTools) y abriendo la URL de GitHub Pages desde un celular.
 
 ### HTML Inicial
 

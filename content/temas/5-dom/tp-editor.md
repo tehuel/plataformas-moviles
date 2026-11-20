@@ -1,6 +1,8 @@
 ---
-title: "5.3: tp-12 (Editor de Texto)"
-tags: ["tp"]
+title: "TP: Editor de Texto"
+weight: 18
+tipo: "tp"
+opcional: true
 ---
 
 ## Objetivo
@@ -10,7 +12,7 @@ Desarrollar un editor de texto básico que permita aplicar distintos estilos al 
 
 ## Formato de Entrega
 
-- Crear un archivo HTML en la ruta `tp-12/index.html` con el contenido inicial proporcionado.
+- Crear un archivo HTML en la ruta `tp-editor/index.html` con el contenido inicial proporcionado.
 - Subir el archivo al repositorio de entregas.
 
 ### HTML Inicial

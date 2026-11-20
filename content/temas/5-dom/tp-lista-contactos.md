@@ -1,6 +1,8 @@
 ---
-title: "5.3: tp-14 (Lista de Contactos)"
-tags: ["tp"]
+title: "TP: Lista de Contactos"
+weight: 25
+tipo: "tp"
+opcional: false
 ---
 
 ## Objetivo
@@ -10,7 +12,8 @@ Construir una lista de contactos, ordenada alfabéticamente, y agregar funcional
 ## Formato de Entrega
 
 - Entregar un archivo HTML con el código solicitado y las funcionalidades implementadas.
-- Subir el trabajo al repositorio de entregas, en el directorio `tp-14/`.
+- Subir el trabajo al repositorio de entregas, en el directorio `tp-lista-contactos/`.
+- Comprobar el funcionamiento en el modo responsive de las herramientas de desarrollo (DevTools) y abriendo la URL de GitHub Pages desde un celular.
 
 ### HTML Inicial
 
