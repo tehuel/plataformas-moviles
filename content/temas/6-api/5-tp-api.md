@@ -5,7 +5,7 @@ tags: ["tp"]
 
 ## Objetivo
 
-El objetivo es construir una aplicación con HTML + CSS (con Bootstrap) + JS, que consuma recursos de alguna API.
+Construir una aplicación con HTML + CSS (con Bootstrap) + JS, que consuma recursos de alguna API.
 
 ## Formato de Entrega
 

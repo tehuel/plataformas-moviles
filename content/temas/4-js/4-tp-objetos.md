@@ -5,7 +5,7 @@ tags: ["tp"]
 
 ## Objetivo
 
-En este trabajo práctico vamos a usar el tipo de datos `objeto` dentro del lenguaje JavaScript.
+Usar el tipo de datos `objeto` dentro del lenguaje JavaScript.
 
 ## Formato de Entrega
 

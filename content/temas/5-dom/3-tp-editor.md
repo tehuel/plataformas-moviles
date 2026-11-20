@@ -5,7 +5,7 @@ tags: ["tp"]
 
 ## Objetivo
 
-El objetivo de este trabajo práctico es desarrollar un editor de texto básico que permita aplicar distintos estilos al texto utilizando JavaScript y manipulaciones del DOM.
+Desarrollar un editor de texto básico que permita aplicar distintos estilos al texto utilizando JavaScript y manipulaciones del DOM.
 
 
 ## Formato de Entrega

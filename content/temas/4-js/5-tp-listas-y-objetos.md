@@ -5,7 +5,7 @@ tags: ["tp"]
 
 ## Objetivo
 
-En este trabajo práctico vamos a usar de manera combinada los tipos de datos `lista` y `objeto` dentro del lenguaje JavaScript.
+Usar de manera combinada los tipos de datos `lista` y `objeto` dentro del lenguaje JavaScript.
 
 ## Formato de Entrega
 

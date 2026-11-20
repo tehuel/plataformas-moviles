@@ -10,7 +10,7 @@ Integrar el framework Bootstrap para mejorar la presentación y la funcionalidad
 ## Formato de Entrega
 
 - Crear un archivo HTML en la ruta `tp-5/index.html` con el contenido del HTML inicial.
-- Subir el archivo HTML junto con todos los recursos que considere necesarios al repositorio de entregas de la materia.
+- Subir el archivo HTML junto con todos los recursos que consideren necesarios al repositorio de entregas de la materia.
 
 ### HTML Inicial
 

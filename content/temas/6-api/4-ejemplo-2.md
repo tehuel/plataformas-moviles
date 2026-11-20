@@ -89,7 +89,7 @@ Podemos ver un ejemplo completo en funcionamiento que genera una tabla y permite
 
 Al configurar el permiso como "Cualquier persona con el enlace - Lector", la hoja y todos sus datos quedan disponibles públicamente en internet. 
 
-**Nunca** guardes contraseñas, claves secretas ni datos personales sensibles en hojas configuradas de esta manera.
+**Nunca** se deben guardar contraseñas, claves secretas ni datos personales sensibles en hojas configuradas de esta manera.
 
 </details>
 
